@@ -1,7 +1,7 @@
 ---
 title: "SSD NVMe Gen3 vs Gen4: vale pagar mais pela geração nova?"
 description: "Diferenca real de velocidade entre PCIe Gen3 e Gen4 em SSD NVMe, e em quais casos o Gen4 realmente compensa o preco mais alto."
-pubDate: 2026-09-18
+pubDate: 2026-09-18T19:00:00-03:00
 tags: ["hardware", "guia"]
 cover: "/blog/nvme-gen-cover.svg"
 ---

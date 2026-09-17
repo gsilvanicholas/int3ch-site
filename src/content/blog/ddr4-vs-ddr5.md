@@ -1,7 +1,7 @@
 ---
 title: "DDR4 vs DDR5: vale a pena migrar agora?"
 description: "Diferenca real de desempenho entre DDR4 e DDR5, o custo total da migracao (inclui placa-mae) e quando vale a pena trocar."
-pubDate: 2026-09-18
+pubDate: 2026-09-18T09:00:00-03:00
 tags: ["hardware", "guia"]
 cover: "/blog/ddr4-ddr5-cover.svg"
 ---

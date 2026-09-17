@@ -1,7 +1,7 @@
 ---
 title: "HDMI 2.0 vs 2.1: quando isso realmente importa pra você"
 description: "A diferenca real entre HDMI 2.0 e 2.1 em taxa de atualizacao, resolucao e VRR - e se vale a pena exigir 2.1 na hora de comprar monitor ou TV."
-pubDate: 2026-09-18
+pubDate: 2026-09-18T14:00:00-03:00
 tags: ["hardware", "guia"]
 cover: "/blog/hdmi-cover.svg"
 ---

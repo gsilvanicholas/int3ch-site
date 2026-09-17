@@ -1,7 +1,7 @@
 ---
 title: "Como saber se seu PC está superaquecendo (e o que fazer)"
 description: "Sinais de que seu processador ou placa de video estao passando do limite de temperatura, como checar de forma simples, e como resolver sem gastar."
-pubDate: 2026-09-18
+pubDate: 2026-09-18T16:30:00-03:00
 tags: ["hardware", "guia"]
 cover: "/blog/temperatura-cover.svg"
 ---

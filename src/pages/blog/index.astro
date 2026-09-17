@@ -1,10 +1,10 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import { getCollection } from 'astro:content';
+export const prerender = false;
 
-const posts = (await getCollection('blog')).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-);
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getPublishedPosts } from '../../lib/posts';
+
+const posts = await getPublishedPosts();
 ---
 <BaseLayout title="Blog" description="Artigos sobre tecnologia, hardware e guias de compra.">
   <section class="max-w-5xl mx-auto px-4 sm:px-6 py-14">

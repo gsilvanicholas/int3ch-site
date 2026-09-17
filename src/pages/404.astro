@@ -1,6 +1,10 @@
 ---
+export const prerender = false;
+
 import BaseLayout from '../layouts/BaseLayout.astro';
 import TelegramCTA from '../components/TelegramCTA.astro';
+
+Astro.response.status = 404;
 ---
 <BaseLayout title="Página não encontrada" description="Essa pagina nao existe ou foi movida.">
   <section class="max-w-xl mx-auto px-4 sm:px-6 py-24 text-center">

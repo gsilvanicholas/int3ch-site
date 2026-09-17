@@ -1,11 +1,11 @@
 ﻿---
+export const prerender = false;
+
 import BaseLayout from '../layouts/BaseLayout.astro';
 import TelegramCTA from '../components/TelegramCTA.astro';
-import { getCollection } from 'astro:content';
+import { getPublishedPosts } from '../lib/posts';
 
-const posts = (await getCollection('blog'))
-  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
-  .slice(0, 3);
+const posts = (await getPublishedPosts()).slice(0, 3);
 
 const guias = [
   { titulo: 'Como Escolher uma Placa de Vídeo', href: '/funis/placa-de-video', resumo: 'VRAM, resolução e ray tracing por faixa de orçamento.' },

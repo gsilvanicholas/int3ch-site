@@ -1,7 +1,7 @@
 ---
 title: "Switches de teclado mecânico: linear, tátil e clicky explicados"
 description: "Entenda a diferenca entre switch linear, tatil e clicky antes de escolher seu teclado mecanico - e qual combina com jogo, digitacao ou escritorio."
-pubDate: 2026-09-18
+pubDate: 2026-09-18T11:30:00-03:00
 tags: ["hardware", "guia"]
 cover: "/blog/switches-cover.svg"
 ---
