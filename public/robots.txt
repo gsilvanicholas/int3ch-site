@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://int3ch.com.br/sitemap-index.xml
+Sitemap: https://int3ch-site.vercel.app/sitemap-index.xml
