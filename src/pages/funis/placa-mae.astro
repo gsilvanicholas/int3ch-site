@@ -1,0 +1,58 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import TelegramCTA from '../../components/TelegramCTA.astro';
+
+const pontos = [
+  {
+    titulo: 'Soquete: o primeiro filtro, sem exceção',
+    texto: 'A placa-mãe só aceita processadores do mesmo soquete e, geralmente, da mesma geração (ex: LGA1700 para Intel de certas gerações, AM5 para Ryzen atual). Confirme sempre a compatibilidade exata antes de qualquer outra consideração — nenhuma outra característica importa se o soquete não bate.',
+  },
+  {
+    titulo: 'Chipset define recursos, não só "categoria"',
+    texto: 'Chipsets diferentes da mesma marca liberam recursos diferentes: overclock, quantidade de portas USB/SATA, suporte a PCIe mais rápido, número de slots M.2. Um chipset de entrada pode não permitir overclock mesmo com um processador "K"/"X" que suporta.',
+  },
+  {
+    titulo: 'Tamanho: ATX, Micro-ATX ou Mini-ITX',
+    texto: 'ATX (tamanho padrão) tem mais slots e espaço. Micro-ATX é um meio-termo comum em builds custo-benefício. Mini-ITX é para gabinetes compactos, mas custa mais e tem menos slots de expansão. Escolha pelo gabinete que você já tem ou pretende comprar, não o contrário.',
+  },
+  {
+    titulo: 'VRM (entrega de energia) importa pra CPUs de consumo alto',
+    texto: 'Placas de entrada com VRM fraco podem limitar o desempenho sustentado de processadores mais potentes, mesmo que "encaixem" fisicamente. Para CPUs de consumo alto ou overclock, vale checar reviews sobre a qualidade do VRM daquele modelo específico, não só o preço.',
+  },
+];
+---
+<BaseLayout
+  title="Como Escolher uma Placa-Mãe: Guia de Compra 2026"
+  description="Soquete, chipset, tamanho e VRM explicados de forma pratica, pra nao comprar placa-mae incompativel ou fraca demais pro processador."
+>
+  <section class="max-w-3xl mx-auto px-4 sm:px-6 py-14">
+    <p class="text-brand-2 font-semibold uppercase text-sm tracking-wide mb-3">Guia de compra</p>
+    <h1 class="text-3xl sm:text-4xl font-extrabold text-white leading-tight">Como Escolher uma Placa-Mãe</h1>
+    <p class="text-muted text-lg mt-4">
+      É a peça que menos chama atenção visualmente, mas a que mais restringe suas opções futuras de upgrade.
+      Esses quatro pontos evitam o erro mais caro: comprar algo incompatível ou insuficiente pro resto do sistema.
+    </p>
+
+    <div class="mt-10 space-y-6">
+      {pontos.map((p) => (
+        <div class="rounded-2xl border border-line bg-panel p-6">
+          <h2 class="text-xl font-bold text-white">{p.titulo}</h2>
+          <p class="text-muted text-sm mt-3 leading-relaxed">{p.texto}</p>
+        </div>
+      ))}
+    </div>
+
+    <div class="mt-10 rounded-2xl border border-brand/30 bg-gradient-to-br from-panel to-panel-2 p-6">
+      <h2 class="text-xl font-bold text-white">Monte na ordem certa</h2>
+      <p class="text-muted text-sm mt-3 leading-relaxed">
+        Escolha primeiro o <a href="/funis/processador" class="text-brand-2 hover:text-brand transition-colors">processador</a>,
+        depois a placa-mãe compatível com ele, e só então o resto (RAM, armazenamento). Fazer na ordem inversa é a receita
+        mais comum pra descobrir, tarde demais, que a peça escolhida não encaixa.
+      </p>
+    </div>
+
+    <div class="mt-12">
+      <TelegramCTA variant="banner" texto="Placa-mãe boa em promoção passa rápido — entre no canal pra não perder." />
+    </div>
+  </section>
+</BaseLayout>
