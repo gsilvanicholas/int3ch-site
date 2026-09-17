@@ -1,0 +1,58 @@
+﻿---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import TelegramCTA from '../../components/TelegramCTA.astro';
+
+const fatores = [
+  {
+    titulo: 'Taxa de atualização (Hz)',
+    texto: '60Hz é o mínimo aceitável hoje. 144Hz é o "ponto doce" pra maioria — salto grande de suavidade sobre 60Hz. Acima de 165Hz o ganho já é mais sutil e depende da sua placa de vídeo conseguir entregar os FPS pra aproveitar.',
+  },
+  {
+    titulo: 'Tipo de painel',
+    texto: 'IPS: melhor cor e ângulo de visão, ótimo custo-benefício hoje. VA: contraste mais alto, bom pra ambiente escuro, mas pode borrar em cenas rápidas. TN: mais barato e rápido, mas cor fraca — cada vez mais raro.',
+  },
+  {
+    titulo: 'Resolução',
+    texto: 'Full HD (1080p) ainda é o mais fácil de rodar com FPS alto. 1440p é o equilíbrio ideal se sua placa de vídeo for de médio/alto padrão. 4K exige muito mais poder gráfico pra manter taxa de quadros alta.',
+  },
+  {
+    titulo: 'Tempo de resposta',
+    texto: '1ms (MPRT) costuma ser suficiente pra maioria dos jogos competitivos. Não confunda com o "GtG" anunciado, que às vezes é medido de forma otimista pelo fabricante.',
+  },
+];
+---
+<BaseLayout
+  title="Como Escolher um Monitor Gamer: Guia de Compra 2026"
+  description="Taxa de atualizacao, painel, resolucao e tempo de resposta explicados sem enrolacao, pra voce escolher o monitor certo pro seu orcamento."
+>
+  <section class="max-w-3xl mx-auto px-4 sm:px-6 py-14">
+    <p class="text-brand-2 font-semibold uppercase text-sm tracking-wide mb-3">Guia de compra</p>
+    <h1 class="text-3xl sm:text-4xl font-extrabold text-white leading-tight">Como Escolher um Monitor Gamer</h1>
+    <p class="text-muted text-lg mt-4">
+      Ficha técnica de monitor tem número pra tudo. Esses quatro fatores são os que realmente mudam sua experiência —
+      o resto é, na maior parte das vezes, detalhe.
+    </p>
+
+    <div class="mt-10 space-y-6">
+      {fatores.map((f) => (
+        <div class="rounded-2xl border border-line bg-panel p-6">
+          <h2 class="text-xl font-bold text-white">{f.titulo}</h2>
+          <p class="text-muted text-sm mt-3 leading-relaxed">{f.texto}</p>
+        </div>
+      ))}
+    </div>
+
+    <div class="mt-10 rounded-2xl border border-brand/30 bg-gradient-to-br from-panel to-panel-2 p-6">
+      <h2 class="text-xl font-bold text-white">Regra rápida pra não gastar à toa</h2>
+      <p class="text-muted text-sm mt-3 leading-relaxed">
+        Combine a taxa de atualização do monitor com o que sua placa de vídeo realmente entrega no jogo que você mais joga.
+        Comprar um monitor 240Hz pra uma placa que roda 90 FPS é dinheiro parado na mesa — nesse caso, um 144Hz de painel
+        melhor custa menos e entrega mais experiência de verdade.
+      </p>
+    </div>
+
+    <div class="mt-12">
+      <TelegramCTA variant="banner" texto="Monitor bom em promoção some rápido — entre no canal pra ver assim que aparecer." />
+    </div>
+  </section>
+</BaseLayout>

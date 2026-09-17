@@ -1,0 +1,99 @@
+﻿---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TelegramCTA from '../components/TelegramCTA.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog'))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
+
+const guias = [
+  { titulo: 'Melhores Mouses Gamer', href: '/funis/mouses-gamer', resumo: 'Comparativo por sensor, DPI e faixa de preço.' },
+  { titulo: 'Como Escolher um Monitor Gamer', href: '/funis/monitores-gamer', resumo: 'Taxa de atualização, painel e resolução explicados.' },
+];
+
+const produtosDestaque = [
+  { titulo: 'Kit Teclado + Mouse + Mouse Pad Sem Fio', imagem: 'https://cf.shopee.com.br/file/br-11134207-820m9-mq95l752w4ci28', desconto: 67 },
+  { titulo: 'Switch Vermelho Teclado Mecânico Outemu', imagem: 'https://cf.shopee.com.br/file/br-11134207-820mb-mm1251qc4wzk0a', desconto: 65 },
+  { titulo: 'Mouse Pad Gaming Base Ampla 80x30', imagem: 'https://cf.shopee.com.br/file/sg-11134201-81zvl-mmudxwbyir6072', desconto: 61 },
+  { titulo: 'Teclado Mecânico Pichau Aurum V100 RGB', imagem: 'https://cf.shopee.com.br/file/br-11134207-81zu4-mkwisv7kl3b633', desconto: 57 },
+  { titulo: 'Monitor Gamer Mancer Horizon Z Pro 23.8" 144Hz', imagem: 'https://cf.shopee.com.br/file/br-11134207-820lz-mqnc8afjw2ki1a', desconto: 57 },
+  { titulo: 'Mouse Gamer LED RGB 3200 DPI', imagem: 'https://cf.shopee.com.br/file/br-11134207-820l5-mm7uj0v0d7no28', desconto: 50 },
+  { titulo: 'Monitor Gamer Mancer Horizon Z2B 27" 100Hz', imagem: 'https://cf.shopee.com.br/file/sg-11134201-81zth-miuacn8lmubq0d', desconto: 50 },
+  { titulo: 'Kit Mousepad + Mouse + Porta Copos', imagem: 'https://cf.shopee.com.br/file/br-11134207-820md-ms0np79dhedge1', desconto: 60 },
+];
+---
+<BaseLayout
+  title="Tecnologia, hardware e as melhores ofertas"
+  description="Noticias, guias de compra e as melhores ofertas de hardware e tecnologia, com curadoria diaria no canal do Telegram."
+>
+  <section class="max-w-5xl mx-auto px-4 sm:px-6 pt-16 pb-14 text-center">
+    <p class="text-brand-2 font-semibold tracking-wide uppercase text-sm mb-3">Hardware · Tecnologia · Ofertas</p>
+    <h1 class="text-4xl sm:text-5xl font-extrabold text-white leading-tight max-w-3xl mx-auto">
+      Entenda tecnologia e nunca mais pague caro por hardware
+    </h1>
+    <p class="text-muted text-lg mt-5 max-w-2xl mx-auto">
+      Guias de compra e curadoria diária de ofertas em monitores, placas de vídeo, processadores
+      e periféricos — com critérios claros de qualidade e confiabilidade.
+    </p>
+    <div class="mt-8 flex justify-center">
+      <TelegramCTA variant="banner" texto="Receba as ofertas assim que elas saem, direto no Telegram." />
+    </div>
+  </section>
+
+  <section class="max-w-5xl mx-auto px-4 sm:px-6 py-10">
+    <div class="flex items-baseline justify-between mb-6">
+      <h2 class="text-2xl font-bold text-white">Ofertas recentes no canal</h2>
+      <a href="https://t.me/int3ch" target="_blank" rel="noopener" class="text-brand-2 text-sm font-semibold hover:text-brand transition-colors">Ver todas →</a>
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      {produtosDestaque.map((p) => (
+        <a href="https://t.me/int3ch" target="_blank" rel="noopener"
+           class="group rounded-xl border border-line bg-panel overflow-hidden hover:border-brand/50 transition-colors">
+          <div class="relative aspect-square bg-panel-2">
+            <img src={p.imagem} alt={p.titulo} loading="lazy" class="w-full h-full object-cover"
+                 onerror="this.closest('a').querySelector('.img-fallback').hidden=false; this.remove()" />
+            <div class="img-fallback absolute inset-0 flex items-center justify-center text-muted text-xs px-2 text-center" hidden>
+              Imagem indisponível
+            </div>
+            <span class="absolute top-2 left-2 rounded-full bg-gradient-to-r from-brand to-brand-2 text-black text-xs font-bold px-2 py-1">
+              -{p.desconto}%
+            </span>
+          </div>
+          <p class="text-xs text-muted p-2.5 line-clamp-2 group-hover:text-white transition-colors">{p.titulo}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="max-w-5xl mx-auto px-4 sm:px-6 py-10">
+    <div class="flex items-baseline justify-between mb-6">
+      <h2 class="text-2xl font-bold text-white">Guias de compra</h2>
+    </div>
+    <div class="grid sm:grid-cols-2 gap-5">
+      {guias.map((g) => (
+        <a href={g.href} class="group rounded-2xl border border-line bg-panel p-6 hover:border-brand/50 transition-colors">
+          <h3 class="text-lg font-bold text-white group-hover:text-brand-2 transition-colors">{g.titulo}</h3>
+          <p class="text-muted text-sm mt-2">{g.resumo}</p>
+          <span class="text-brand-2 text-sm font-semibold mt-4 inline-block">Ver guia →</span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="max-w-5xl mx-auto px-4 sm:px-6 py-10">
+    <div class="flex items-baseline justify-between mb-6">
+      <h2 class="text-2xl font-bold text-white">Últimos artigos</h2>
+      <a href="/blog" class="text-brand-2 text-sm font-semibold hover:text-brand transition-colors">Ver todos →</a>
+    </div>
+    <div class="grid sm:grid-cols-3 gap-5">
+      {posts.map((post) => (
+        <a href={`/blog/${post.id}`} class="group rounded-2xl border border-line bg-panel p-5 hover:border-brand/50 transition-colors">
+          <p class="text-xs text-muted mb-2">{post.data.pubDate.toLocaleDateString('pt-BR')}</p>
+          <h3 class="font-bold text-white group-hover:text-brand-2 transition-colors leading-snug">{post.data.title}</h3>
+          <p class="text-muted text-sm mt-2 line-clamp-3">{post.data.description}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

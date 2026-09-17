@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const guias = [
+  { titulo: 'Melhores Mouses Gamer', href: '/funis/mouses-gamer', resumo: 'Comparativo por sensor, DPI e faixa de preço.' },
+  { titulo: 'Como Escolher um Monitor Gamer', href: '/funis/monitores-gamer', resumo: 'Taxa de atualização, painel e resolução explicados.' },
+];
+---
+<BaseLayout title="Guias de compra" description="Guias praticos para escolher hardware e perifericos sem gastar mais do que precisa.">
+  <section class="max-w-5xl mx-auto px-4 sm:px-6 py-14">
+    <h1 class="text-3xl font-extrabold text-white mb-8">Guias de compra</h1>
+    <div class="grid sm:grid-cols-2 gap-5">
+      {guias.map((g) => (
+        <a href={g.href} class="group rounded-2xl border border-line bg-panel p-6 hover:border-brand/50 transition-colors">
+          <h2 class="text-lg font-bold text-white group-hover:text-brand-2 transition-colors">{g.titulo}</h2>
+          <p class="text-muted text-sm mt-2">{g.resumo}</p>
+          <span class="text-brand-2 text-sm font-semibold mt-4 inline-block">Ver guia →</span>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://int3ch.com.br/sitemap-index.xml

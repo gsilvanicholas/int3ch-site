@@ -1,0 +1,26 @@
+---
+interface Props {
+  variant?: 'inline' | 'banner';
+  texto?: string;
+}
+const { variant = 'inline', texto = 'Ofertas de hardware e tecnologia todo dia, direto no seu Telegram.' } = Astro.props;
+const link = 'https://t.me/int3ch';
+---
+
+{variant === 'banner' ? (
+  <div class="rounded-2xl border border-brand-2/30 bg-gradient-to-br from-panel to-panel-2 p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-5 justify-between">
+    <div>
+      <p class="text-sm uppercase tracking-wide text-brand-2 font-semibold mb-1">iNT3CH Ofertas</p>
+      <p class="text-lg sm:text-xl font-bold text-white">{texto}</p>
+    </div>
+    <a href={link} target="_blank" rel="noopener"
+       class="shrink-0 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-brand to-brand-2 px-6 py-3 font-semibold text-black hover:opacity-90 transition-opacity">
+      Entrar no canal →
+    </a>
+  </div>
+) : (
+  <a href={link} target="_blank" rel="noopener"
+     class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-brand to-brand-2 px-5 py-2.5 text-sm font-semibold text-black hover:opacity-90 transition-opacity">
+    🔥 Ver ofertas no Telegram
+  </a>
+)}
