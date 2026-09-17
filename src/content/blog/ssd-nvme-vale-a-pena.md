@@ -3,6 +3,7 @@ title: "SSD NVMe vale a pena pra quem só joga e usa o PC no dia a dia?"
 description: "Diferenca real entre HD, SSD SATA e SSD NVMe na pratica - e quando o upgrade realmente compensa."
 pubDate: 2026-09-12
 tags: ["hardware", "guia"]
+cover: "/blog/ssd-cover.svg"
 ---
 
 A resposta curta: quase sempre sim, mas não do jeito que o marketing vende.

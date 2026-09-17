@@ -1,0 +1,58 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import TelegramCTA from '../../components/TelegramCTA.astro';
+
+const pontos = [
+  {
+    titulo: 'Núcleos e threads não é tudo',
+    texto: 'Mais núcleos ajudam em tarefas que dividem bem o trabalho (edição, renderização, várias VMs). Para jogos, o desempenho por núcleo (clock + arquitetura) costuma pesar mais que a quantidade total de núcleos.',
+  },
+  {
+    titulo: 'Compatibilidade com a placa-mãe',
+    texto: 'Cada geração de processador usa um soquete específico (ex: LGA1700, AM5). Confirme sempre se a placa-mãe suporta o processador escolhido antes de comprar — é o erro mais caro de se cometer nessa hora.',
+  },
+  {
+    titulo: 'TDP e necessidade de cooler',
+    texto: 'Processadores de maior consumo (TDP alto) esquentam mais e podem exigir um cooler melhor do que o que acompanha a caixa (quando vem algum). Verifique se o processador inclui cooler — muitos modelos de topo não incluem.',
+  },
+  {
+    titulo: 'Geração atual vs. geração anterior',
+    texto: 'Um processador topo de linha da geração passada muitas vezes custa menos e entrega desempenho parecido com um processador mediano da geração atual. Vale comparar benchmarks reais, não só o nome da geração.',
+  },
+];
+---
+<BaseLayout
+  title="Como Escolher um Processador: Guia de Compra 2026"
+  description="Nucleos, threads, TDP e compatibilidade de soquete explicados de forma pratica pra escolher o processador certo."
+>
+  <section class="max-w-3xl mx-auto px-4 sm:px-6 py-14">
+    <p class="text-brand-2 font-semibold uppercase text-sm tracking-wide mb-3">Guia de compra</p>
+    <h1 class="text-3xl sm:text-4xl font-extrabold text-white leading-tight">Como Escolher um Processador</h1>
+    <p class="text-muted text-lg mt-4">
+      Ficha técnica de processador é cheia de números que soam importantes mas raramente são o que decide sua
+      experiência real. Esses quatro pontos são os que efetivamente importam na hora de comprar.
+    </p>
+
+    <div class="mt-10 space-y-6">
+      {pontos.map((p) => (
+        <div class="rounded-2xl border border-line bg-panel p-6">
+          <h2 class="text-xl font-bold text-white">{p.titulo}</h2>
+          <p class="text-muted text-sm mt-3 leading-relaxed">{p.texto}</p>
+        </div>
+      ))}
+    </div>
+
+    <div class="mt-10 rounded-2xl border border-brand/30 bg-gradient-to-br from-panel to-panel-2 p-6">
+      <h2 class="text-xl font-bold text-white">Combine com a placa de vídeo certa</h2>
+      <p class="text-muted text-sm mt-3 leading-relaxed">
+        Um processador muito acima do necessário pra sua placa de vídeo é dinheiro parado — e o contrário gera
+        gargalo. Veja nosso <a href="/funis/placa-de-video" class="text-brand-2 hover:text-brand transition-colors">guia de placa de vídeo</a>
+        e o artigo sobre <a href="/blog/gargalo-cpu-gpu" class="text-brand-2 hover:text-brand transition-colors">gargalo de CPU/GPU</a> antes de fechar a compra.
+      </p>
+    </div>
+
+    <div class="mt-12">
+      <TelegramCTA variant="banner" texto="Processador em promoção de verdade, sem preço fake — a gente filtra pra você." />
+    </div>
+  </section>
+</BaseLayout>

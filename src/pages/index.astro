@@ -8,8 +8,10 @@ const posts = (await getCollection('blog'))
   .slice(0, 3);
 
 const guias = [
-  { titulo: 'Melhores Mouses Gamer', href: '/funis/mouses-gamer', resumo: 'Comparativo por sensor, DPI e faixa de preço.' },
+  { titulo: 'Como Escolher uma Placa de Vídeo', href: '/funis/placa-de-video', resumo: 'VRAM, resolução e ray tracing por faixa de orçamento.' },
+  { titulo: 'Como Escolher um Processador', href: '/funis/processador', resumo: 'Núcleos, TDP e compatibilidade de soquete explicados.' },
   { titulo: 'Como Escolher um Monitor Gamer', href: '/funis/monitores-gamer', resumo: 'Taxa de atualização, painel e resolução explicados.' },
+  { titulo: 'Melhores Mouses Gamer', href: '/funis/mouses-gamer', resumo: 'Comparativo por sensor, DPI e faixa de preço.' },
 ];
 
 const produtosDestaque = [
@@ -46,23 +48,33 @@ const produtosDestaque = [
       <h2 class="text-2xl font-bold text-white">Ofertas recentes no canal</h2>
       <a href="https://t.me/int3ch" target="_blank" rel="noopener" class="text-brand-2 text-sm font-semibold hover:text-brand transition-colors">Ver todas →</a>
     </div>
-    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-      {produtosDestaque.map((p) => (
-        <a href="https://t.me/int3ch" target="_blank" rel="noopener"
-           class="group rounded-xl border border-line bg-panel overflow-hidden hover:border-brand/50 transition-colors">
-          <div class="relative aspect-square bg-panel-2">
-            <img src={p.imagem} alt={p.titulo} loading="lazy" class="w-full h-full object-cover"
+    <div class="grid grid-cols-2 sm:grid-cols-4 auto-rows-[150px] sm:auto-rows-[170px] gap-5">
+      {produtosDestaque.map((p, i) => {
+        const grande = i === 0;
+        const alta = i === 3;
+        return (
+          <a href="https://t.me/int3ch" target="_blank" rel="noopener"
+             class:list={[
+               'group relative rounded-2xl border border-line bg-panel overflow-hidden',
+               'hover:border-brand/50 hover:-translate-y-1 hover:shadow-xl hover:shadow-brand-2/10 transition-all duration-300',
+               grande && 'col-span-2 row-span-2',
+               alta && 'row-span-2',
+             ]}>
+            <img src={p.imagem} alt={p.titulo} loading="lazy" class="absolute inset-0 w-full h-full object-cover"
                  onerror="this.closest('a').querySelector('.img-fallback').hidden=false; this.remove()" />
-            <div class="img-fallback absolute inset-0 flex items-center justify-center text-muted text-xs px-2 text-center" hidden>
+            <div class="img-fallback absolute inset-0 flex items-center justify-center text-muted text-xs px-2 text-center bg-panel-2" hidden>
               Imagem indisponível
             </div>
-            <span class="absolute top-2 left-2 rounded-full bg-gradient-to-r from-brand to-brand-2 text-black text-xs font-bold px-2 py-1">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent" />
+            <span class="absolute top-2.5 left-2.5 rounded-full bg-gradient-to-r from-brand to-brand-2 text-black text-xs font-bold px-2.5 py-1">
               -{p.desconto}%
             </span>
-          </div>
-          <p class="text-xs text-muted p-2.5 line-clamp-2 group-hover:text-white transition-colors">{p.titulo}</p>
-        </a>
-      ))}
+            <p class="absolute bottom-0 left-0 right-0 text-xs text-white/90 p-3 line-clamp-2 group-hover:text-white transition-colors">
+              {p.titulo}
+            </p>
+          </a>
+        );
+      })}
     </div>
   </section>
 
@@ -72,7 +84,7 @@ const produtosDestaque = [
     </div>
     <div class="grid sm:grid-cols-2 gap-5">
       {guias.map((g) => (
-        <a href={g.href} class="group rounded-2xl border border-line bg-panel p-6 hover:border-brand/50 transition-colors">
+        <a href={g.href} class="group rounded-2xl border border-line bg-panel p-6 hover:border-brand/50 hover:-translate-y-1 hover:shadow-xl hover:shadow-brand-2/10 transition-all duration-300">
           <h3 class="text-lg font-bold text-white group-hover:text-brand-2 transition-colors">{g.titulo}</h3>
           <p class="text-muted text-sm mt-2">{g.resumo}</p>
           <span class="text-brand-2 text-sm font-semibold mt-4 inline-block">Ver guia →</span>
@@ -88,10 +100,17 @@ const produtosDestaque = [
     </div>
     <div class="grid sm:grid-cols-3 gap-5">
       {posts.map((post) => (
-        <a href={`/blog/${post.id}`} class="group rounded-2xl border border-line bg-panel p-5 hover:border-brand/50 transition-colors">
-          <p class="text-xs text-muted mb-2">{post.data.pubDate.toLocaleDateString('pt-BR')}</p>
-          <h3 class="font-bold text-white group-hover:text-brand-2 transition-colors leading-snug">{post.data.title}</h3>
-          <p class="text-muted text-sm mt-2 line-clamp-3">{post.data.description}</p>
+        <a href={`/blog/${post.id}`} class="group rounded-2xl border border-line bg-panel overflow-hidden hover:border-brand/50 hover:-translate-y-1 hover:shadow-xl hover:shadow-brand-2/10 transition-all duration-300">
+          {post.data.cover && (
+            <div class="aspect-[16/9] bg-panel-2 overflow-hidden">
+              <img src={post.data.cover} alt="" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            </div>
+          )}
+          <div class="p-5">
+            <p class="text-xs text-muted mb-2">{post.data.pubDate.toLocaleDateString('pt-BR')}</p>
+            <h3 class="font-bold text-white group-hover:text-brand-2 transition-colors leading-snug">{post.data.title}</h3>
+            <p class="text-muted text-sm mt-2 line-clamp-3">{post.data.description}</p>
+          </div>
         </a>
       ))}
     </div>

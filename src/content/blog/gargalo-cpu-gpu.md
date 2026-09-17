@@ -3,6 +3,7 @@ title: "O que é 'gargalo' de CPU/GPU e como saber se o seu PC tem um"
 description: "Entenda de forma simples o que causa gargalo entre processador e placa de video, e como identificar antes de fazer upgrade errado."
 pubDate: 2026-09-14
 tags: ["hardware", "guia"]
+cover: "/blog/gargalo-cover.svg"
 ---
 
 "Gargalo" é o termo mais usado (e mais mal explicado) quando o assunto é montar ou fazer upgrade de PC. A ideia central é simples: **seu PC só vai tão rápido quanto a peça mais lenta permite**.

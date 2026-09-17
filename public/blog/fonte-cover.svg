@@ -1,0 +1,32 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2f7fe0"/>
+      <stop offset="1" stop-color="#22c9c9"/>
+    </linearGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#12151b"/>
+      <stop offset="1" stop-color="#0c0e12"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+
+  <!-- PSU box -->
+  <rect x="240" y="100" width="320" height="200" rx="14" fill="#0c0e12" stroke="url(#g1)" stroke-width="2.5"/>
+  <circle cx="300" cy="150" r="28" fill="none" stroke="#2f7fe0" stroke-width="3"/>
+  <circle cx="300" cy="150" r="10" fill="none" stroke="#2f7fe0" stroke-width="2"/>
+
+  <!-- wattage gauge -->
+  <g transform="translate(430,190)">
+    <path d="M -70 20 A 70 70 0 0 1 70 20" fill="none" stroke="#21252e" stroke-width="12"/>
+    <path d="M -70 20 A 70 70 0 0 1 40 -58" fill="none" stroke="url(#g1)" stroke-width="12" stroke-linecap="round"/>
+    <text x="0" y="10" text-anchor="middle" fill="#f2f4f8" font-family="Arial, sans-serif" font-size="30" font-weight="700">650W</text>
+  </g>
+
+  <text x="300" y="260" fill="#aab2c0" font-family="Arial, sans-serif" font-size="16" font-weight="700">80+ GOLD</text>
+
+  <!-- cable -->
+  <path d="M 240 320 h -80" stroke="#22c9c9" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <text x="400" y="390" text-anchor="middle" fill="#f2f4f8" font-family="Arial, sans-serif" font-size="20" font-weight="700">A potencia certa evita gargalo e desperdicio</text>
+</svg>

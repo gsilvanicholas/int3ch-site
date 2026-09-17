@@ -1,0 +1,66 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import TelegramCTA from '../../components/TelegramCTA.astro';
+
+const faixas = [
+  {
+    nome: 'Full HD (1080p)',
+    para: 'Jogar em 1080p com boa taxa de quadros, sem gastar demais',
+    olhar: ['8GB de VRAM já é confortável pra maioria dos jogos atuais', 'Não vale pagar a mais por 4K se você não vai usar 4K', 'Boa opção pra quem tem monitor 144Hz e quer aproveitar de verdade'],
+  },
+  {
+    nome: '1440p (2K)',
+    para: 'O equilíbrio entre nitidez e desempenho pra quem já tem monitor 1440p',
+    olhar: ['12GB de VRAM evita gargalo em texturas altas', 'Ray tracing começa a fazer sentido aqui, com upscaling (DLSS/FSR) ligado', 'Verifique se sua fonte suporta o consumo — GPUs dessa faixa consomem mais'],
+  },
+  {
+    nome: '4K / topo de linha',
+    para: 'Quem quer o máximo, sem economizar',
+    olhar: ['16GB+ de VRAM pra não virar gargalo em alguns jogos mais pesados', 'Exige processador forte junto — GPU boa com CPU fraca também trava frame', 'Fonte robusta (750W+) e boa ventilação no gabinete'],
+  },
+];
+---
+<BaseLayout
+  title="Como Escolher uma Placa de Vídeo: Guia de Compra 2026"
+  description="VRAM, resolucao e ray tracing explicados de forma pratica, por faixa de uso e orcamento."
+>
+  <section class="max-w-3xl mx-auto px-4 sm:px-6 py-14">
+    <p class="text-brand-2 font-semibold uppercase text-sm tracking-wide mb-3">Guia de compra</p>
+    <h1 class="text-3xl sm:text-4xl font-extrabold text-white leading-tight">Como Escolher uma Placa de Vídeo</h1>
+    <p class="text-muted text-lg mt-4">
+      A pergunta certa não é "qual a mais forte que cabe no meu orçamento" — é "qual resolução eu realmente uso".
+      Escolher pela resolução do seu monitor evita pagar por poder que você nunca vai aproveitar.
+    </p>
+
+    <div class="mt-10 space-y-6">
+      {faixas.map((f) => (
+        <div class="rounded-2xl border border-line bg-panel p-6">
+          <div class="flex items-baseline justify-between flex-wrap gap-2">
+            <h2 class="text-xl font-bold text-white">{f.nome}</h2>
+            <span class="text-muted text-sm">{f.para}</span>
+          </div>
+          <ul class="mt-4 space-y-2">
+            {f.olhar.map((item) => (
+              <li class="text-sm text-muted flex gap-2">
+                <span class="text-brand-2">✓</span> {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+
+    <div class="mt-10 rounded-2xl border border-brand/30 bg-gradient-to-br from-panel to-panel-2 p-6">
+      <h2 class="text-xl font-bold text-white">VRAM não é só número de marketing</h2>
+      <p class="text-muted text-sm mt-3 leading-relaxed">
+        Memória de vídeo insuficiente causa quedas bruscas de FPS em texturas altas, mesmo que a GPU em si seja
+        potente. Antes de comparar só o "poder bruto" entre modelos, confira se a VRAM é adequada pra resolução
+        e qualidade gráfica que você pretende usar — é um dos erros mais comuns na hora de comprar.
+      </p>
+    </div>
+
+    <div class="mt-12">
+      <TelegramCTA variant="banner" texto="Placa de vídeo boa em promoção não dura — entre no canal pra não perder." />
+    </div>
+  </section>
+</BaseLayout>

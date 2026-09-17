@@ -34,3 +34,25 @@ a:focus-visible, button:focus-visible {
   outline: 2px solid var(--color-brand-2);
   outline-offset: 2px;
 }
+
+/* transicao de pagina: fade + leve deslocamento vertical, em vez do crossfade padrao */
+@keyframes fade-slide-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fade-slide-out {
+  from { opacity: 1; transform: translateY(0); }
+  to { opacity: 0; transform: translateY(-8px); }
+}
+::view-transition-old(root) {
+  animation: 180ms ease-out both fade-slide-out;
+}
+::view-transition-new(root) {
+  animation: 220ms ease-out both fade-slide-in;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(root), ::view-transition-new(root) {
+    animation: none;
+  }
+}

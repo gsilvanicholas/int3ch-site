@@ -3,6 +3,7 @@ title: "5 sinais de que uma 'promoção' de 90% é fake"
 description: "Como identificar anuncios com preco 'de' inflado artificialmente antes de cair na pegadinha do desconto que nao existe."
 pubDate: 2026-09-10
 tags: ["compras", "guia"]
+cover: "/blog/anuncio-fake-cover.svg"
 ---
 
 Se você já rolou o feed de ofertas de qualquer marketplace, já viu um produto de R$50 "de" R$500. Na prática, quase sempre isso significa uma coisa: o preço "de" nunca existiu de verdade — foi inflado só pra fazer o desconto parecer maior.
