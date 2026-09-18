@@ -9,18 +9,64 @@
   --color-brand: #2f7fe0;
   --color-brand-2: #22c9c9;
   --color-muted: #aab2c0;
+  --color-text: #f2f4f8;
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-heading: "Space Grotesk", "Inter", ui-sans-serif, system-ui, sans-serif;
 }
 
+/* tema claro: aplicado via [data-theme="light"] (alternancia manual) ou
+   automaticamente quando o sistema prefere claro e o usuario nao escolheu tema */
+:root[data-theme="light"] {
+  --color-ink: #ffffff;
+  --color-panel: #f6f7f9;
+  --color-panel-2: #edeff3;
+  --color-line: #e1e5eb;
+  --color-brand: #1d5fc7;
+  --color-brand-2: #0c8a82;
+  --color-muted: #5b6472;
+  --color-text: #14181f;
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --color-ink: #ffffff;
+    --color-panel: #f6f7f9;
+    --color-panel-2: #edeff3;
+    --color-line: #e1e5eb;
+    --color-brand: #1d5fc7;
+    --color-brand-2: #0c8a82;
+    --color-muted: #5b6472;
+    --color-text: #14181f;
+  }
+}
+
 body {
   background-color: var(--color-ink);
-  color: #f2f4f8;
+  color: var(--color-text);
 }
 
 h1, h2, h3, h4 {
   font-family: var(--font-heading);
   letter-spacing: -0.01em;
+}
+
+.prose-theme {
+  --tw-prose-body: var(--color-muted);
+  --tw-prose-headings: var(--color-text);
+  --tw-prose-lead: var(--color-muted);
+  --tw-prose-links: var(--color-brand-2);
+  --tw-prose-bold: var(--color-text);
+  --tw-prose-counters: var(--color-muted);
+  --tw-prose-bullets: var(--color-line);
+  --tw-prose-hr: var(--color-line);
+  --tw-prose-quotes: var(--color-text);
+  --tw-prose-quote-borders: var(--color-line);
+  --tw-prose-captions: var(--color-muted);
+  --tw-prose-code: var(--color-text);
+  --tw-prose-pre-code: var(--color-text);
+  --tw-prose-pre-bg: var(--color-panel);
+  --tw-prose-th-borders: var(--color-line);
+  --tw-prose-td-borders: var(--color-line);
 }
 
 .text-gradient {

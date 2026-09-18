@@ -32,7 +32,7 @@ const produtosDestaque = [
 >
   <section class="max-w-5xl mx-auto px-4 sm:px-6 pt-16 pb-14 text-center">
     <p class="text-brand-2 font-semibold tracking-wide uppercase text-sm mb-3">Hardware · Tecnologia · Ofertas</p>
-    <h1 class="text-4xl sm:text-5xl font-extrabold text-white leading-tight max-w-3xl mx-auto">
+    <h1 class="text-4xl sm:text-5xl font-extrabold text-text leading-tight max-w-3xl mx-auto">
       Entenda tecnologia e nunca mais pague caro por hardware
     </h1>
     <p class="text-muted text-lg mt-5 max-w-2xl mx-auto">
@@ -46,7 +46,7 @@ const produtosDestaque = [
 
   <section class="max-w-5xl mx-auto px-4 sm:px-6 py-10">
     <div class="flex items-baseline justify-between mb-6">
-      <h2 class="text-2xl font-bold text-white">Ofertas recentes no canal</h2>
+      <h2 class="text-2xl font-bold text-text">Ofertas recentes no canal</h2>
       <a href="https://t.me/int3ch" target="_blank" rel="noopener" class="text-brand-2 text-sm font-semibold hover:text-brand transition-colors">Ver todas →</a>
     </div>
     <div class="grid grid-cols-2 sm:grid-cols-4 auto-rows-[150px] sm:auto-rows-[170px] gap-5">
@@ -61,7 +61,7 @@ const produtosDestaque = [
                grande && 'col-span-2 row-span-2',
                alta && 'row-span-2',
              ]}>
-            <img src={p.imagem} alt={p.titulo} loading="lazy" class="absolute inset-0 w-full h-full object-cover"
+            <img src={p.imagem} alt={p.titulo} loading="lazy" referrerpolicy="no-referrer" class="absolute inset-0 w-full h-full object-cover"
                  onerror="this.closest('a').querySelector('.img-fallback').hidden=false; this.remove()" />
             <div class="img-fallback absolute inset-0 flex items-center justify-center text-muted text-xs px-2 text-center bg-panel-2" hidden>
               Imagem indisponível
@@ -81,12 +81,12 @@ const produtosDestaque = [
 
   <section class="max-w-5xl mx-auto px-4 sm:px-6 py-10">
     <div class="flex items-baseline justify-between mb-6">
-      <h2 class="text-2xl font-bold text-white">Guias de compra</h2>
+      <h2 class="text-2xl font-bold text-text">Guias de compra</h2>
     </div>
     <div class="grid sm:grid-cols-2 gap-5">
       {guias.map((g) => (
         <a href={g.href} class="group rounded-2xl border border-line bg-panel p-6 hover:border-brand/50 hover:-translate-y-1 hover:shadow-xl hover:shadow-brand-2/10 transition-all duration-300">
-          <h3 class="text-lg font-bold text-white group-hover:text-brand-2 transition-colors">{g.titulo}</h3>
+          <h3 class="text-lg font-bold text-text group-hover:text-brand-2 transition-colors">{g.titulo}</h3>
           <p class="text-muted text-sm mt-2">{g.resumo}</p>
           <span class="text-brand-2 text-sm font-semibold mt-4 inline-block">Ver guia →</span>
         </a>
@@ -96,7 +96,7 @@ const produtosDestaque = [
 
   <section class="max-w-5xl mx-auto px-4 sm:px-6 py-10">
     <div class="flex items-baseline justify-between mb-6">
-      <h2 class="text-2xl font-bold text-white">Últimos artigos</h2>
+      <h2 class="text-2xl font-bold text-text">Últimos artigos</h2>
       <a href="/blog" class="text-brand-2 text-sm font-semibold hover:text-brand transition-colors">Ver todos →</a>
     </div>
     <div class="grid sm:grid-cols-3 gap-5">
@@ -109,7 +109,7 @@ const produtosDestaque = [
           )}
           <div class="p-5">
             <p class="text-xs text-muted mb-2">{post.data.pubDate.toLocaleDateString('pt-BR')}</p>
-            <h3 class="font-bold text-white group-hover:text-brand-2 transition-colors leading-snug">{post.data.title}</h3>
+            <h3 class="font-bold text-text group-hover:text-brand-2 transition-colors leading-snug">{post.data.title}</h3>
             <p class="text-muted text-sm mt-2 line-clamp-3">{post.data.description}</p>
           </div>
         </a>

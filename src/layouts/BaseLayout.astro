@@ -18,6 +18,15 @@ const ogImage = new URL('/og-image.png', Astro.site);
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+    <script is:inline>
+      // aplica o tema salvo antes da primeira pintura, pra nao "piscar" o tema errado
+      (function () {
+        var salvo = localStorage.getItem('theme');
+        if (salvo === 'light' || salvo === 'dark') {
+          document.documentElement.dataset.theme = salvo;
+        }
+      })();
+    </script>
     <link rel="icon" href="/logo.png" type="image/png" />
     <link rel="apple-touch-icon" href="/logo.png" />
     <link rel="canonical" href={canonicalURL} />

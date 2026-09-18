@@ -1,4 +1,4 @@
----
+﻿---
 export const prerender = false;
 
 import BaseLayout from '../layouts/BaseLayout.astro';
@@ -9,10 +9,10 @@ Astro.response.status = 404;
 <BaseLayout title="Página não encontrada" description="Essa pagina nao existe ou foi movida.">
   <section class="max-w-xl mx-auto px-4 sm:px-6 py-24 text-center">
     <p class="text-brand-2 font-bold text-6xl mb-4">404</p>
-    <h1 class="text-2xl font-bold text-white">Essa página não existe</h1>
+    <h1 class="text-2xl font-bold text-text">Essa página não existe</h1>
     <p class="text-muted mt-3">O link pode estar errado ou a página foi movida.</p>
     <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
-      <a href="/" class="rounded-full border border-line px-5 py-2.5 text-sm font-semibold text-white hover:border-brand/50 transition-colors">
+      <a href="/" class="rounded-full border border-line px-5 py-2.5 text-sm font-semibold text-text hover:border-brand/50 transition-colors">
         Voltar para a home
       </a>
       <TelegramCTA />
