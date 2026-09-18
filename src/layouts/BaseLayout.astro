@@ -21,10 +21,18 @@ const ogImage = new URL('/og-image.png', Astro.site);
     <script is:inline>
       // aplica o tema salvo antes da primeira pintura, pra nao "piscar" o tema errado
       (function () {
-        var salvo = localStorage.getItem('theme');
-        if (salvo === 'light' || salvo === 'dark') {
-          document.documentElement.dataset.theme = salvo;
+        function aplicarTema(doc) {
+          var salvo = localStorage.getItem('theme');
+          if (salvo === 'light' || salvo === 'dark') {
+            doc.documentElement.dataset.theme = salvo;
+          }
         }
+        aplicarTema(document);
+        // com View Transitions, a navegacao entre paginas troca o documento
+        // sem recarregar a pagina — reaplica o tema no documento novo antes da troca
+        document.addEventListener('astro:before-swap', function (ev) {
+          aplicarTema(ev.newDocument);
+        });
       })();
     </script>
     <link rel="icon" href="/logo.png" type="image/png" />

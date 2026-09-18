@@ -5,6 +5,7 @@
     "link": "https://meli.la/2XiVzd2",
     "precoOriginal": "R$122,00",
     "desconto": 23,
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_896263-MLA96145842619_102025-O.webp",
     "cupom": "GOLMELI10"
   },
   {
@@ -12,14 +13,16 @@
     "preco": "R$24,58",
     "link": "https://meli.la/2TxCwcF",
     "precoOriginal": "R$49,99",
-    "desconto": 51
+    "desconto": 51,
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_686275-MLB94462971009_102025-O.webp"
   },
   {
     "titulo": "Gabinete Gamer Mancer CV550",
     "preco": "R$266,20",
     "link": "https://s.shopee.com.br/7VGU0NBcjl",
     "precoOriginal": "R$299,99",
-    "desconto": 11
+    "desconto": 11,
+    "imagem": "https://cdn1.telesco.pe/file/crlTP5yNzWxmmZgzKT4MqYA-Lj0xtv4myCHdKlvIW-Qs7liww9Zau1AMYhYc-wlCq5m1TtT89UiqnAsHLQUjJZcPcdnLSjRsYWZe9Fy78WulibuItbcqWdq82urwpArvbbmdcsfNzhvQhcRVUXZ0XoBEym_XUN1B7yV6ZDcGHbwWl_aoqrCONJq7EO2kWSDgfEoeis6n4WJBWfer9tdplYFRFkUEMoP4JE09FOsiFG7F0ppWH-chQVwlhg3GgruL9nOQYnVlnrUuf_j2F6woXW-9ETunJM6NcehUB41JU-qL28ffv4oyG-uMqVWk6ipueUb6nJZgoJUX5e_ECPvp5A.jpg"
   },
   {
     "titulo": "Monitor Gamer AOC AGON G50 27\" 144Hz 0,5ms",
