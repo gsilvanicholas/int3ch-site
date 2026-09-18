@@ -4,8 +4,16 @@ export const prerender = false;
 import BaseLayout from '../layouts/BaseLayout.astro';
 import TelegramCTA from '../components/TelegramCTA.astro';
 import { getPublishedPosts } from '../lib/posts';
+import { getOfertas, type Oferta } from '../lib/ofertas';
 
 const posts = (await getPublishedPosts()).slice(0, 3);
+
+let produtosDestaque: Oferta[] = [];
+try {
+  produtosDestaque = (await getOfertas()).slice(0, 8);
+} catch {
+  produtosDestaque = [];
+}
 
 const guias = [
   { titulo: 'Como Escolher uma Placa de Vídeo', href: '/funis/placa-de-video', resumo: 'VRAM, resolução e ray tracing por faixa de orçamento.' },
@@ -13,17 +21,6 @@ const guias = [
   { titulo: 'Como Escolher uma Placa-Mãe', href: '/funis/placa-mae', resumo: 'Soquete, chipset, tamanho e VRM explicados.' },
   { titulo: 'Como Escolher um Monitor Gamer', href: '/funis/monitores-gamer', resumo: 'Taxa de atualização, painel e resolução explicados.' },
   { titulo: 'Melhores Mouses Gamer', href: '/funis/mouses-gamer', resumo: 'Comparativo por sensor, DPI e faixa de preço.' },
-];
-
-const produtosDestaque = [
-  { titulo: 'Kit Teclado + Mouse + Mouse Pad Sem Fio', imagem: 'https://cf.shopee.com.br/file/br-11134207-820m9-mq95l752w4ci28', desconto: 67 },
-  { titulo: 'Switch Vermelho Teclado Mecânico Outemu', imagem: 'https://cf.shopee.com.br/file/br-11134207-820mb-mm1251qc4wzk0a', desconto: 65 },
-  { titulo: 'Mouse Pad Gaming Base Ampla 80x30', imagem: 'https://cf.shopee.com.br/file/sg-11134201-81zvl-mmudxwbyir6072', desconto: 61 },
-  { titulo: 'Teclado Mecânico Pichau Aurum V100 RGB', imagem: 'https://cf.shopee.com.br/file/br-11134207-81zu4-mkwisv7kl3b633', desconto: 57 },
-  { titulo: 'Monitor Gamer Mancer Horizon Z Pro 23.8" 144Hz', imagem: 'https://cf.shopee.com.br/file/br-11134207-820lz-mqnc8afjw2ki1a', desconto: 57 },
-  { titulo: 'Mouse Gamer LED RGB 3200 DPI', imagem: 'https://cf.shopee.com.br/file/br-11134207-820l5-mm7uj0v0d7no28', desconto: 50 },
-  { titulo: 'Monitor Gamer Mancer Horizon Z2B 27" 100Hz', imagem: 'https://cf.shopee.com.br/file/sg-11134201-81zth-miuacn8lmubq0d', desconto: 50 },
-  { titulo: 'Kit Mousepad + Mouse + Porta Copos', imagem: 'https://cf.shopee.com.br/file/br-11134207-820md-ms0np79dhedge1', desconto: 60 },
 ];
 ---
 <BaseLayout
@@ -49,34 +46,45 @@ const produtosDestaque = [
       <h2 class="text-2xl font-bold text-text">Ofertas recentes no canal</h2>
       <a href="https://t.me/int3ch" target="_blank" rel="noopener" class="text-brand-2 text-sm font-semibold hover:text-brand transition-colors">Ver todas →</a>
     </div>
-    <div class="grid grid-cols-2 sm:grid-cols-4 auto-rows-[150px] sm:auto-rows-[170px] gap-5">
-      {produtosDestaque.map((p, i) => {
-        const grande = i === 0;
-        const alta = i === 3;
-        return (
-          <a href="https://t.me/int3ch" target="_blank" rel="noopener"
-             class:list={[
-               'group relative rounded-2xl border border-line bg-panel overflow-hidden',
-               'hover:border-brand/50 hover:-translate-y-1 hover:shadow-xl hover:shadow-brand-2/10 transition-all duration-300',
-               grande && 'col-span-2 row-span-2',
-               alta && 'row-span-2',
-             ]}>
-            <img src={p.imagem} alt={p.titulo} loading="lazy" referrerpolicy="no-referrer" class="absolute inset-0 w-full h-full object-cover"
-                 onerror="this.closest('a').querySelector('.img-fallback').hidden=false; this.remove()" />
-            <div class="img-fallback absolute inset-0 flex items-center justify-center text-muted text-xs px-2 text-center bg-panel-2" hidden>
-              Imagem indisponível
-            </div>
-            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent" />
-            <span class="absolute top-2.5 left-2.5 rounded-full bg-gradient-to-r from-brand to-brand-2 text-black text-xs font-bold px-2.5 py-1">
-              -{p.desconto}%
-            </span>
-            <p class="absolute bottom-0 left-0 right-0 text-xs text-white/90 p-3 line-clamp-2 group-hover:text-white transition-colors">
-              {p.titulo}
-            </p>
-          </a>
-        );
-      })}
-    </div>
+    {produtosDestaque.length === 0 ? (
+      <div class="rounded-2xl border border-line bg-panel p-8 text-center text-muted">
+        Nenhuma oferta disponível no momento. Confira o
+        <a href="https://t.me/int3ch" target="_blank" rel="noopener" class="text-brand-2 hover:text-brand transition-colors"> canal no Telegram</a>.
+      </div>
+    ) : (
+      <div class="grid grid-cols-2 sm:grid-cols-4 auto-rows-[150px] sm:auto-rows-[170px] gap-5">
+        {produtosDestaque.map((p, i) => {
+          const grande = i === 0;
+          const alta = i === 3;
+          return (
+            <a href={p.link} target="_blank" rel="noopener sponsored"
+               class:list={[
+                 'group relative rounded-2xl border border-line bg-panel overflow-hidden',
+                 'hover:border-brand/50 hover:-translate-y-1 hover:shadow-xl hover:shadow-brand-2/10 transition-all duration-300',
+                 grande && 'col-span-2 row-span-2',
+                 alta && 'row-span-2',
+               ]}>
+              {p.imagem ? (
+                <img src={p.imagem} alt={p.titulo} loading="lazy" referrerpolicy="no-referrer" class="absolute inset-0 w-full h-full object-cover"
+                     onerror="this.closest('a').querySelector('.img-fallback').hidden=false; this.remove()" />
+              ) : null}
+              <div class="img-fallback absolute inset-0 flex items-center justify-center text-muted text-xs px-2 text-center bg-panel-2" hidden={!!p.imagem}>
+                Imagem indisponível
+              </div>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent" />
+              {p.desconto ? (
+                <span class="absolute top-2.5 left-2.5 rounded-full bg-gradient-to-r from-brand to-brand-2 text-black text-xs font-bold px-2.5 py-1">
+                  -{p.desconto}%
+                </span>
+              ) : null}
+              <p class="absolute bottom-0 left-0 right-0 text-xs text-white/90 p-3 line-clamp-2 group-hover:text-white transition-colors">
+                {p.titulo}
+              </p>
+            </a>
+          );
+        })}
+      </div>
+    )}
   </section>
 
   <section class="max-w-5xl mx-auto px-4 sm:px-6 py-10">
