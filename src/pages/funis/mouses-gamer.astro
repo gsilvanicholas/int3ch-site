@@ -1,6 +1,9 @@
 ﻿---
+export const prerender = false;
+
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import TelegramCTA from '../../components/TelegramCTA.astro';
+import OfertasRelacionadas from '../../components/OfertasRelacionadas.astro';
 
 const tipos = [
   {
@@ -58,6 +61,11 @@ const tipos = [
         (sem "spin outs" em movimentos rápidos) e o <strong class="text-text">tracking</strong>, não o número máximo na caixa.
       </p>
     </div>
+
+    <OfertasRelacionadas
+      titulo="Mouses em oferta agora"
+      termos={['mouse']}
+    />
 
     <div class="mt-12">
       <TelegramCTA variant="banner" texto="Acompanhamos o preço de mouses gamer todo dia — entre no canal pra pegar quando o seu modelo entrar em promoção de verdade." />

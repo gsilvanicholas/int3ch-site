@@ -1,6 +1,9 @@
 ﻿---
+export const prerender = false;
+
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import TelegramCTA from '../../components/TelegramCTA.astro';
+import OfertasRelacionadas from '../../components/OfertasRelacionadas.astro';
 
 const pontos = [
   {
@@ -50,6 +53,11 @@ const pontos = [
         e o artigo sobre <a href="/blog/gargalo-cpu-gpu" class="text-brand-2 hover:text-brand transition-colors">gargalo de CPU/GPU</a> antes de fechar a compra.
       </p>
     </div>
+
+    <OfertasRelacionadas
+      titulo="Processadores em oferta agora"
+      termos={['processador', ' cpu ', 'ryzen', 'intel core', 'i5', 'i7', 'i9']}
+    />
 
     <div class="mt-12">
       <TelegramCTA variant="banner" texto="Processador em promoção de verdade, sem preço fake — a gente filtra pra você." />

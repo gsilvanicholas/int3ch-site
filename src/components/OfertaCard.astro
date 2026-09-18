@@ -1,0 +1,28 @@
+---
+import type { Oferta } from '../lib/ofertas';
+
+interface Props {
+  oferta: Oferta;
+}
+const { oferta: o } = Astro.props;
+---
+<a href={o.link} target="_blank" rel="noopener sponsored"
+   class="group relative rounded-2xl border border-line bg-panel overflow-hidden aspect-square hover:border-brand/50 hover:-translate-y-1 hover:shadow-xl hover:shadow-brand-2/10 transition-all duration-300">
+  {o.imagem ? (
+    <img src={o.imagem} alt={o.titulo} loading="lazy" referrerpolicy="no-referrer" class="absolute inset-0 w-full h-full object-cover"
+         onerror="this.closest('a').querySelector('.img-fallback').hidden=false; this.remove()" />
+  ) : null}
+  <div class="img-fallback absolute inset-0 flex items-center justify-center text-muted text-xs px-2 text-center bg-panel-2" hidden={!!o.imagem}>
+    Imagem indisponível
+  </div>
+  <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent" />
+  {o.desconto ? (
+    <span class="absolute top-2.5 left-2.5 rounded-full bg-gradient-to-r from-brand to-brand-2 text-black text-xs font-bold px-2.5 py-1">
+      -{o.desconto}%
+    </span>
+  ) : null}
+  <div class="absolute bottom-0 left-0 right-0 p-3">
+    <p class="text-xs text-white/90 line-clamp-2 group-hover:text-white transition-colors">{o.titulo}</p>
+    <p class="text-sm font-bold text-white mt-1">{o.preco}</p>
+  </div>
+</a>

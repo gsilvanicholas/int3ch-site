@@ -1,6 +1,9 @@
 ﻿---
+export const prerender = false;
+
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import TelegramCTA from '../../components/TelegramCTA.astro';
+import OfertasRelacionadas from '../../components/OfertasRelacionadas.astro';
 
 const fatores = [
   {
@@ -50,6 +53,11 @@ const fatores = [
         melhor custa menos e entrega mais experiência de verdade.
       </p>
     </div>
+
+    <OfertasRelacionadas
+      titulo="Monitores em oferta agora"
+      termos={['monitor']}
+    />
 
     <div class="mt-12">
       <TelegramCTA variant="banner" texto="Monitor bom em promoção some rápido — entre no canal pra ver assim que aparecer." />

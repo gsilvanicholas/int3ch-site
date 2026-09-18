@@ -1,0 +1,25 @@
+---
+import OfertaCard from './OfertaCard.astro';
+import { getOfertas, filtrarPorTermos, type Oferta } from '../lib/ofertas';
+
+interface Props {
+  termos: string[];
+  titulo?: string;
+}
+const { termos, titulo = 'Ofertas relacionadas' } = Astro.props;
+
+let ofertas: Oferta[] = [];
+try {
+  ofertas = filtrarPorTermos(await getOfertas(), termos, 8);
+} catch {
+  ofertas = [];
+}
+---
+{ofertas.length > 0 ? (
+  <div class="mt-12">
+    <h2 class="text-xl font-bold text-text mb-5">{titulo}</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      {ofertas.map((o) => <OfertaCard oferta={o} />)}
+    </div>
+  </div>
+) : null}

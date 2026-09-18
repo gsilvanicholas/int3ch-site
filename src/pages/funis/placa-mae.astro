@@ -1,6 +1,9 @@
 ﻿---
+export const prerender = false;
+
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import TelegramCTA from '../../components/TelegramCTA.astro';
+import OfertasRelacionadas from '../../components/OfertasRelacionadas.astro';
 
 const pontos = [
   {
@@ -50,6 +53,11 @@ const pontos = [
         mais comum pra descobrir, tarde demais, que a peça escolhida não encaixa.
       </p>
     </div>
+
+    <OfertasRelacionadas
+      titulo="Placas-mãe em oferta agora"
+      termos={['placa-mãe', 'placa mãe', 'placa-mae', 'placa mae', 'motherboard']}
+    />
 
     <div class="mt-12">
       <TelegramCTA variant="banner" texto="Placa-mãe boa em promoção passa rápido — entre no canal pra não perder." />

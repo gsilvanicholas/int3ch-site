@@ -29,3 +29,13 @@ export async function getOfertas(): Promise<Oferta[]> {
   // manuais primeiro: curadoria direta do canal, prioridade sobre o feed automatico
   return resultados.flat();
 }
+
+export function filtrarPorTermos(ofertas: Oferta[], termos: string[], limite = 6): Oferta[] {
+  const termosNormalizados = termos.map((t) => t.toLowerCase());
+  return ofertas
+    .filter((o) => {
+      const titulo = o.titulo.toLowerCase();
+      return termosNormalizados.some((t) => titulo.includes(t));
+    })
+    .slice(0, limite);
+}

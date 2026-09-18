@@ -1,6 +1,9 @@
 ﻿---
+export const prerender = false;
+
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import TelegramCTA from '../../components/TelegramCTA.astro';
+import OfertasRelacionadas from '../../components/OfertasRelacionadas.astro';
 
 const faixas = [
   {
@@ -58,6 +61,11 @@ const faixas = [
         e qualidade gráfica que você pretende usar — é um dos erros mais comuns na hora de comprar.
       </p>
     </div>
+
+    <OfertasRelacionadas
+      titulo="Placas de vídeo em oferta agora"
+      termos={['placa de vídeo', 'placa de video', ' gpu ', 'rtx', 'gtx', 'radeon', 'geforce']}
+    />
 
     <div class="mt-12">
       <TelegramCTA variant="banner" texto="Placa de vídeo boa em promoção não dura — entre no canal pra não perder." />

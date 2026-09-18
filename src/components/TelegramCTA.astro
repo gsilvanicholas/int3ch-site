@@ -1,16 +1,24 @@
 ---
+import { getMembrosCanal } from '../lib/telegram';
+
 interface Props {
   variant?: 'inline' | 'banner';
   texto?: string;
 }
 const { variant = 'inline', texto = 'Ofertas de hardware e tecnologia todo dia, direto no seu Telegram.' } = Astro.props;
 const link = 'https://t.me/int3ch';
+const membros = variant === 'banner' ? await getMembrosCanal() : null;
 ---
 
 {variant === 'banner' ? (
   <div class="rounded-2xl border border-brand-2/30 bg-gradient-to-br from-panel to-panel-2 p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-5 justify-between">
     <div>
-      <p class="text-sm uppercase tracking-wide text-brand-2 font-semibold mb-1">iNT3CH Ofertas</p>
+      <p class="text-sm uppercase tracking-wide text-brand-2 font-semibold mb-1">
+        iNT3CH Ofertas
+        {membros ? (
+          <span class="text-muted normal-case font-normal">· {membros.toLocaleString('pt-BR')} membros no canal</span>
+        ) : null}
+      </p>
       <p class="text-lg sm:text-xl font-bold text-text">{texto}</p>
     </div>
     <a href={link} target="_blank" rel="noopener"
