@@ -1,6 +1,9 @@
 export async function getMembrosCanal(): Promise<number | null> {
   const token = import.meta.env.TELEGRAM_BOT_TOKEN;
-  if (!token) return null;
+  if (!token) {
+    console.error('[telegram] TELEGRAM_BOT_TOKEN ausente em import.meta.env');
+    return null;
+  }
 
   try {
     const resp = await fetch(
@@ -11,8 +14,9 @@ export async function getMembrosCanal(): Promise<number | null> {
     if (data.ok && typeof data.result === 'number') {
       return data.result;
     }
-  } catch {
-    // segue sem o numero se a API do Telegram falhar
+    console.error('[telegram] resposta inesperada da API', data);
+  } catch (e) {
+    console.error('[telegram] falha ao buscar contagem de membros', e);
   }
   return null;
 }
