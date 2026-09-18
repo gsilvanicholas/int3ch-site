@@ -1,0 +1,61 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1d5fc7"/>
+      <stop offset="1" stop-color="#0c8a82"/>
+    </linearGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#edeff3"/>
+      <stop offset="1" stop-color="#f6f7f9"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+
+  <g transform="translate(150,110)">
+    <rect x="0" y="0" width="500" height="90" rx="8" fill="#f6f7f9" stroke="url(#g1)" stroke-width="2.5"/>
+    <g fill="#1d5fc7" opacity="0.85">
+      <rect x="20" y="0" width="14" height="30"/>
+      <rect x="45" y="0" width="14" height="30"/>
+      <rect x="70" y="0" width="14" height="30"/>
+      <rect x="95" y="0" width="14" height="30"/>
+      <rect x="140" y="0" width="14" height="30"/>
+      <rect x="165" y="0" width="14" height="30"/>
+      <rect x="190" y="0" width="14" height="30"/>
+      <rect x="215" y="0" width="14" height="30"/>
+      <rect x="260" y="0" width="14" height="30"/>
+      <rect x="285" y="0" width="14" height="30"/>
+      <rect x="310" y="0" width="14" height="30"/>
+      <rect x="335" y="0" width="14" height="30"/>
+      <rect x="380" y="0" width="14" height="30"/>
+      <rect x="405" y="0" width="14" height="30"/>
+      <rect x="430" y="0" width="14" height="30"/>
+      <rect x="455" y="0" width="14" height="30"/>
+    </g>
+    <text x="250" y="70" text-anchor="middle" fill="#14181f" font-family="Arial, sans-serif" font-size="26" font-weight="700">16 GB DDR5</text>
+  </g>
+
+  <g transform="translate(150,230)">
+    <rect x="0" y="0" width="500" height="90" rx="8" fill="#f6f7f9" stroke="#e1e5eb" stroke-width="2.5"/>
+    <g fill="#0c8a82" opacity="0.85">
+      <rect x="20" y="0" width="14" height="30"/>
+      <rect x="45" y="0" width="14" height="30"/>
+      <rect x="70" y="0" width="14" height="30"/>
+      <rect x="95" y="0" width="14" height="30"/>
+      <rect x="140" y="0" width="14" height="30"/>
+      <rect x="165" y="0" width="14" height="30"/>
+      <rect x="190" y="0" width="14" height="30"/>
+      <rect x="215" y="0" width="14" height="30"/>
+      <rect x="260" y="0" width="14" height="30"/>
+      <rect x="285" y="0" width="14" height="30"/>
+      <rect x="310" y="0" width="14" height="30"/>
+      <rect x="335" y="0" width="14" height="30"/>
+      <rect x="380" y="0" width="14" height="30"/>
+      <rect x="405" y="0" width="14" height="30"/>
+      <rect x="430" y="0" width="14" height="30"/>
+      <rect x="455" y="0" width="14" height="30"/>
+    </g>
+    <text x="250" y="70" text-anchor="middle" fill="#5b6472" font-family="Arial, sans-serif" font-size="26" font-weight="700">32 GB DDR5</text>
+  </g>
+
+  <text x="400" y="390" text-anchor="middle" fill="#14181f" font-family="Arial, sans-serif" font-size="20" font-weight="700">Quanta memoria seu uso realmente pede?</text>
+</svg>

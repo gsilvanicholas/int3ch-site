@@ -3,7 +3,7 @@ export const prerender = false;
 
 import BaseLayout from '../layouts/BaseLayout.astro';
 import TelegramCTA from '../components/TelegramCTA.astro';
-import { getPublishedPosts } from '../lib/posts';
+import { getPublishedPosts, coverClara } from '../lib/posts';
 import { getOfertas, type Oferta } from '../lib/ofertas';
 
 const posts = (await getPublishedPosts()).slice(0, 3);
@@ -112,7 +112,8 @@ const guias = [
         <a href={`/blog/${post.id}`} class="group rounded-2xl border border-line bg-panel overflow-hidden hover:border-brand/50 hover:-translate-y-1 hover:shadow-xl hover:shadow-brand-2/10 transition-all duration-300">
           {post.data.cover && (
             <div class="aspect-[16/9] bg-panel-2 overflow-hidden">
-              <img src={post.data.cover} alt="" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <img src={post.data.cover} alt="" loading="lazy" class="cover-dark w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <img src={coverClara(post.data.cover)} alt="" loading="lazy" class="cover-light w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             </div>
           )}
           <div class="p-5">

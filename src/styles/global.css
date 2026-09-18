@@ -76,6 +76,15 @@ h1, h2, h3, h4 {
   color: transparent;
 }
 
+.cover-dark { display: block; }
+.cover-light { display: none; }
+:root[data-theme="light"] .cover-dark { display: none; }
+:root[data-theme="light"] .cover-light { display: block; }
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) .cover-dark { display: none; }
+  :root:not([data-theme="dark"]) .cover-light { display: block; }
+}
+
 a:focus-visible, button:focus-visible {
   outline: 2px solid var(--color-brand-2);
   outline-offset: 2px;

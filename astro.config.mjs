@@ -42,6 +42,7 @@ export default defineConfig({
         `${SITE}/blog`,
         ...POSTS_BLOG.map((slug) => `${SITE}/blog/${slug}`),
         `${SITE}/ofertas`,
+        `${SITE}/top5`,
         `${SITE}/funis/placa-de-video`,
         `${SITE}/funis/processador`,
         `${SITE}/funis/placa-mae`,

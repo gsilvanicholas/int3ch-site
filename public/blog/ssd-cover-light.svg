@@ -1,0 +1,30 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1d5fc7"/>
+      <stop offset="1" stop-color="#0c8a82"/>
+    </linearGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#edeff3"/>
+      <stop offset="1" stop-color="#f6f7f9"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+
+  <text x="80" y="90" fill="#14181f" font-family="Arial, sans-serif" font-size="24" font-weight="700">Velocidade de leitura (aprox.)</text>
+
+  <!-- HD bar -->
+  <text x="80" y="170" fill="#5b6472" font-family="Arial, sans-serif" font-size="16">HD mecanico</text>
+  <rect x="80" y="185" width="60" height="28" rx="6" fill="#1d5fc7" opacity="0.5"/>
+  <text x="150" y="204" fill="#5b6472" font-family="Arial, sans-serif" font-size="14">~150 MB/s</text>
+
+  <!-- SATA SSD bar -->
+  <text x="80" y="255" fill="#5b6472" font-family="Arial, sans-serif" font-size="16">SSD SATA</text>
+  <rect x="80" y="270" width="280" height="28" rx="6" fill="#1d5fc7"/>
+  <text x="370" y="289" fill="#5b6472" font-family="Arial, sans-serif" font-size="14">~550 MB/s</text>
+
+  <!-- NVMe bar -->
+  <text x="80" y="340" fill="#5b6472" font-family="Arial, sans-serif" font-size="16">SSD NVMe</text>
+  <rect x="80" y="355" width="620" height="28" rx="6" fill="url(#g1)"/>
+  <text x="710" y="374" fill="#14181f" font-family="Arial, sans-serif" font-size="14" font-weight="700">3000+ MB/s</text>
+</svg>

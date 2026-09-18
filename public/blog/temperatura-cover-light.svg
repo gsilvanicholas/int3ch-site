@@ -1,0 +1,32 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1d5fc7"/>
+      <stop offset="1" stop-color="#0c8a82"/>
+    </linearGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#edeff3"/>
+      <stop offset="1" stop-color="#f6f7f9"/>
+    </linearGradient>
+    <linearGradient id="therm" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#0c8a82"/>
+      <stop offset="0.6" stop-color="#1d5fc7"/>
+      <stop offset="1" stop-color="#e14545"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+
+  <g transform="translate(340,90)">
+    <rect x="20" y="0" width="20" height="220" rx="10" fill="#f6f7f9" stroke="#e1e5eb" stroke-width="2"/>
+    <rect x="24" y="80" width="12" height="136" rx="6" fill="url(#therm)"/>
+    <circle cx="30" cy="240" r="32" fill="#f6f7f9" stroke="url(#g1)" stroke-width="3"/>
+    <circle cx="30" cy="240" r="16" fill="#e14545"/>
+  </g>
+
+  <text x="500" y="150" fill="#5b6472" font-family="Arial, sans-serif" font-size="16">90°C+</text>
+  <text x="500" y="150" fill="#e14545" font-family="Arial, sans-serif" font-size="16" font-weight="700" dx="0"></text>
+  <text x="500" y="200" fill="#5b6472" font-family="Arial, sans-serif" font-size="16">60-80°C</text>
+  <text x="500" y="250" fill="#0c8a82" font-family="Arial, sans-serif" font-size="16">idle / leve</text>
+
+  <text x="400" y="380" text-anchor="middle" fill="#14181f" font-family="Arial, sans-serif" font-size="20" font-weight="700">Nem toda queda de FPS e falta de poder</text>
+</svg>
