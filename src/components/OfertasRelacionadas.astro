@@ -5,12 +5,13 @@ import { getOfertas, filtrarPorTermos, type Oferta } from '../lib/ofertas';
 interface Props {
   termos: string[];
   titulo?: string;
+  excluir?: string[];
 }
-const { termos, titulo = 'Ofertas relacionadas' } = Astro.props;
+const { termos, titulo = 'Ofertas relacionadas', excluir = [] } = Astro.props;
 
 let ofertas: Oferta[] = [];
 try {
-  ofertas = filtrarPorTermos(await getOfertas(), termos, 8);
+  ofertas = filtrarPorTermos(await getOfertas(), termos, 8, excluir);
 } catch {
   ofertas = [];
 }

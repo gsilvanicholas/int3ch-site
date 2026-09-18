@@ -30,11 +30,13 @@ export async function getOfertas(): Promise<Oferta[]> {
   return resultados.flat();
 }
 
-export function filtrarPorTermos(ofertas: Oferta[], termos: string[], limite = 6): Oferta[] {
+export function filtrarPorTermos(ofertas: Oferta[], termos: string[], limite = 6, excluir: string[] = []): Oferta[] {
   const termosNormalizados = termos.map((t) => t.toLowerCase());
+  const excluirNormalizados = excluir.map((t) => t.toLowerCase());
   return ofertas
     .filter((o) => {
       const titulo = o.titulo.toLowerCase();
+      if (excluirNormalizados.some((t) => titulo.includes(t))) return false;
       return termosNormalizados.some((t) => titulo.includes(t));
     })
     .slice(0, limite);
