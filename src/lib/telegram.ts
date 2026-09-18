@@ -4,6 +4,7 @@ export async function getMembrosCanal(): Promise<number | null> {
     console.error('[telegram] TELEGRAM_BOT_TOKEN ausente em import.meta.env');
     return null;
   }
+  console.error('[telegram] token length', token.length);
 
   try {
     const resp = await fetch(
