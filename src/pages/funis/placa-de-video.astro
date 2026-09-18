@@ -4,6 +4,27 @@ export const prerender = false;
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import TelegramCTA from '../../components/TelegramCTA.astro';
 import OfertasRelacionadas from '../../components/OfertasRelacionadas.astro';
+import FAQ from '../../components/FAQ.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+
+const perguntas = [
+  {
+    pergunta: 'Quanto de VRAM eu preciso, na prática?',
+    resposta: '8GB é o mínimo confortável para jogar em 1080p hoje. Para 1440p, prefira 12GB. Para 4K ou jogos muito pesados com texturas em qualidade máxima, 16GB ou mais evita perda de desempenho por falta de memória.',
+  },
+  {
+    pergunta: 'Vale a pena pagar mais por ray tracing?',
+    resposta: 'Só se você joga títulos que suportam bem a tecnologia e sua placa tem upscaling (DLSS/FSR) para compensar a perda de desempenho. Em faixas de entrada, o ray tracing costuma ser pouco utilizável na prática.',
+  },
+  {
+    pergunta: 'Minha fonte de alimentação aguenta a placa nova?',
+    resposta: 'Confira o consumo recomendado pelo fabricante (normalmente informado na página do produto) e compare com a potência real da sua fonte, não só o valor impresso. Placas de faixa alta costumam exigir fontes de 750W ou mais.',
+  },
+  {
+    pergunta: 'GPU forte com processador fraco funciona bem?',
+    resposta: 'Não necessariamente — um processador abaixo do necessário cria gargalo e impede a placa de entregar todo o FPS que ela é capaz de gerar. Vale equilibrar as duas peças, especialmente em resoluções mais baixas.',
+  },
+];
 
 const faixas = [
   {
@@ -27,7 +48,8 @@ const faixas = [
   title="Como Escolher uma Placa de Vídeo: Guia de Compra 2026"
   description="VRAM, resolucao e ray tracing explicados de forma pratica, por faixa de uso e orcamento."
 >
-  <section class="max-w-3xl mx-auto px-4 sm:px-6 py-14">
+  <Breadcrumbs itens={[{ nome: 'Início', href: '/' }, { nome: 'Guias', href: '/guias' }, { nome: 'Placa de Vídeo' }]} />
+  <section class="max-w-3xl mx-auto px-4 sm:px-6 pt-6 pb-14">
     <p class="text-brand-2 font-semibold uppercase text-sm tracking-wide mb-3">Guia de compra</p>
     <h1 class="text-3xl sm:text-4xl font-extrabold text-text leading-tight">Como Escolher uma Placa de Vídeo</h1>
     <p class="text-muted text-lg mt-4">
@@ -66,6 +88,8 @@ const faixas = [
       titulo="Placas de vídeo em oferta agora"
       termos={['placa de vídeo', 'placa de video', ' gpu ', 'rtx', 'gtx', 'radeon', 'geforce']}
     />
+
+    <FAQ perguntas={perguntas} />
 
     <div class="mt-12">
       <TelegramCTA variant="banner" texto="Placa de vídeo boa em promoção não dura — entre no canal pra não perder." />

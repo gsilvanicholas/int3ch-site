@@ -3,6 +3,7 @@ export const prerender = false;
 
 import BaseLayout from '../layouts/BaseLayout.astro';
 import OfertaCard from '../components/OfertaCard.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
 import { getOfertas, type Oferta } from '../lib/ofertas';
 
 let ofertas: Oferta[] = [];
@@ -19,7 +20,8 @@ try {
   title="Ofertas"
   description="Ofertas de hardware e tecnologia atualizadas automaticamente, com desconto confiavel e sem produto replica."
 >
-  <section class="max-w-5xl mx-auto px-4 sm:px-6 py-14">
+  <Breadcrumbs itens={[{ nome: 'Início', href: '/' }, { nome: 'Ofertas' }]} maxWidth="max-w-5xl" />
+  <section class="max-w-5xl mx-auto px-4 sm:px-6 pt-6 pb-14">
     <h1 class="text-3xl font-extrabold text-text mb-2">Ofertas</h1>
     <p class="text-muted mb-8">
       Atualizado automaticamente a cada ciclo do canal — mesmos critérios de qualidade: desconto entre 25%-70%,

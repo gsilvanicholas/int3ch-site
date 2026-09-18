@@ -1,0 +1,37 @@
+---
+interface Item {
+  nome: string;
+  href?: string;
+}
+interface Props {
+  itens: Item[];
+  maxWidth?: string;
+}
+const { itens, maxWidth = 'max-w-3xl' } = Astro.props;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: itens.map((item, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: item.nome,
+    ...(item.href ? { item: new URL(item.href, Astro.site).toString() } : {}),
+  })),
+};
+---
+<nav aria-label="Breadcrumb" class:list={[maxWidth, 'mx-auto px-4 sm:px-6 pt-8']}>
+  <ol class="flex flex-wrap items-center gap-1.5 text-sm text-muted">
+    {itens.map((item, i) => (
+      <li class="flex items-center gap-1.5">
+        {i > 0 ? <span class="text-line">/</span> : null}
+        {item.href ? (
+          <a href={item.href} class="hover:text-brand-2 transition-colors">{item.nome}</a>
+        ) : (
+          <span class="text-text">{item.nome}</span>
+        )}
+      </li>
+    ))}
+  </ol>
+</nav>
+<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />

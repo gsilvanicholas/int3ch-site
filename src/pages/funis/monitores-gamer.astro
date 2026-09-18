@@ -4,6 +4,27 @@ export const prerender = false;
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import TelegramCTA from '../../components/TelegramCTA.astro';
 import OfertasRelacionadas from '../../components/OfertasRelacionadas.astro';
+import FAQ from '../../components/FAQ.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+
+const perguntas = [
+  {
+    pergunta: '144Hz faz diferença de verdade sobre 60Hz?',
+    resposta: 'Sim, é o salto mais perceptível de suavidade que existe hoje em monitores. Acima de 165Hz o ganho já fica mais sutil e depende da sua placa de vídeo conseguir entregar os FPS necessários pra aproveitar a taxa toda.',
+  },
+  {
+    pergunta: 'IPS, VA ou TN: qual painel escolher?',
+    resposta: 'IPS tem melhor cor e ângulo de visão, com ótimo custo-benefício hoje. VA tem contraste mais alto, bom pra ambiente escuro, mas pode borrar em cenas rápidas. TN é mais barato e rápido, mas com cor fraca — cada vez mais raro.',
+  },
+  {
+    pergunta: 'Preciso de 4K para jogar bem?',
+    resposta: 'Não necessariamente. Full HD ainda é o mais fácil de rodar com FPS alto. 1440p é o equilíbrio ideal com placas de médio/alto padrão. 4K exige muito mais poder gráfico pra manter a taxa de quadros alta.',
+  },
+  {
+    pergunta: 'O tempo de resposta anunciado é confiável?',
+    resposta: 'Nem sempre. O "GtG" anunciado pelo fabricante às vezes é medido de forma otimista. 1ms de MPRT costuma ser suficiente pra maioria dos jogos competitivos — vale comparar reviews independentes antes de confiar só na ficha técnica.',
+  },
+];
 
 const fatores = [
   {
@@ -28,7 +49,8 @@ const fatores = [
   title="Como Escolher um Monitor Gamer: Guia de Compra 2026"
   description="Taxa de atualizacao, painel, resolucao e tempo de resposta explicados sem enrolacao, pra voce escolher o monitor certo pro seu orcamento."
 >
-  <section class="max-w-3xl mx-auto px-4 sm:px-6 py-14">
+  <Breadcrumbs itens={[{ nome: 'Início', href: '/' }, { nome: 'Guias', href: '/guias' }, { nome: 'Monitor Gamer' }]} />
+  <section class="max-w-3xl mx-auto px-4 sm:px-6 pt-6 pb-14">
     <p class="text-brand-2 font-semibold uppercase text-sm tracking-wide mb-3">Guia de compra</p>
     <h1 class="text-3xl sm:text-4xl font-extrabold text-text leading-tight">Como Escolher um Monitor Gamer</h1>
     <p class="text-muted text-lg mt-4">
@@ -58,6 +80,8 @@ const fatores = [
       titulo="Monitores em oferta agora"
       termos={['monitor']}
     />
+
+    <FAQ perguntas={perguntas} />
 
     <div class="mt-12">
       <TelegramCTA variant="banner" texto="Monitor bom em promoção some rápido — entre no canal pra ver assim que aparecer." />

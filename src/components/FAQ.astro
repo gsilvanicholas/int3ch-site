@@ -1,0 +1,39 @@
+---
+interface Pergunta {
+  pergunta: string;
+  resposta: string;
+}
+interface Props {
+  perguntas: Pergunta[];
+  titulo?: string;
+}
+const { perguntas, titulo = 'Perguntas frequentes' } = Astro.props;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: perguntas.map((p) => ({
+    '@type': 'Question',
+    name: p.pergunta,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: p.resposta,
+    },
+  })),
+};
+---
+<div class="mt-12">
+  <h2 class="text-xl font-bold text-text mb-5">{titulo}</h2>
+  <div class="space-y-3">
+    {perguntas.map((p) => (
+      <details class="group rounded-2xl border border-line bg-panel p-5 [&_summary::-webkit-details-marker]:hidden">
+        <summary class="flex items-center justify-between gap-4 cursor-pointer list-none font-semibold text-text">
+          {p.pergunta}
+          <span class="shrink-0 text-brand-2 transition-transform group-open:rotate-45 text-xl leading-none">+</span>
+        </summary>
+        <p class="text-muted text-sm mt-3 leading-relaxed">{p.resposta}</p>
+      </details>
+    ))}
+  </div>
+</div>
+<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />

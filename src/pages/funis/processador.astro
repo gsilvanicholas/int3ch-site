@@ -4,6 +4,27 @@ export const prerender = false;
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import TelegramCTA from '../../components/TelegramCTA.astro';
 import OfertasRelacionadas from '../../components/OfertasRelacionadas.astro';
+import FAQ from '../../components/FAQ.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+
+const perguntas = [
+  {
+    pergunta: 'Mais núcleos sempre significa mais desempenho em jogos?',
+    resposta: 'Não. Para jogos, o desempenho por núcleo (clock e arquitetura) costuma importar mais do que a quantidade total de núcleos. Mais núcleos ajudam mesmo em tarefas que dividem bem o trabalho, como edição e renderização.',
+  },
+  {
+    pergunta: 'Como sei se o processador é compatível com minha placa-mãe?',
+    resposta: 'Confira o soquete (ex: LGA1700, AM5) e a geração suportada pela placa-mãe, geralmente informados na ficha técnica do produto ou no site do fabricante. É o erro mais caro de se cometer na hora da compra.',
+  },
+  {
+    pergunta: 'Preciso comprar um cooler separado?',
+    resposta: 'Depende do modelo. Muitos processadores de topo não acompanham cooler na caixa, e processadores de consumo mais alto (TDP alto) costumam precisar de um cooler melhor do que o que acompanha, quando vem algum.',
+  },
+  {
+    pergunta: 'Vale a pena comprar a geração anterior mais barata?',
+    resposta: 'Muitas vezes sim — um processador topo de linha da geração passada pode entregar desempenho parecido com um modelo mediano da geração atual, por um preço menor. Vale comparar benchmarks reais antes de decidir.',
+  },
+];
 
 const pontos = [
   {
@@ -28,7 +49,8 @@ const pontos = [
   title="Como Escolher um Processador: Guia de Compra 2026"
   description="Nucleos, threads, TDP e compatibilidade de soquete explicados de forma pratica pra escolher o processador certo."
 >
-  <section class="max-w-3xl mx-auto px-4 sm:px-6 py-14">
+  <Breadcrumbs itens={[{ nome: 'Início', href: '/' }, { nome: 'Guias', href: '/guias' }, { nome: 'Processador' }]} />
+  <section class="max-w-3xl mx-auto px-4 sm:px-6 pt-6 pb-14">
     <p class="text-brand-2 font-semibold uppercase text-sm tracking-wide mb-3">Guia de compra</p>
     <h1 class="text-3xl sm:text-4xl font-extrabold text-text leading-tight">Como Escolher um Processador</h1>
     <p class="text-muted text-lg mt-4">
@@ -58,6 +80,8 @@ const pontos = [
       titulo="Processadores em oferta agora"
       termos={['processador', ' cpu ', 'ryzen', 'intel core', 'i5', 'i7', 'i9']}
     />
+
+    <FAQ perguntas={perguntas} />
 
     <div class="mt-12">
       <TelegramCTA variant="banner" texto="Processador em promoção de verdade, sem preço fake — a gente filtra pra você." />

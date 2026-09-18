@@ -3,6 +3,7 @@ export const prerender = false;
 
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import TelegramCTA from '../../components/TelegramCTA.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import { getEntry, render } from 'astro:content';
 
 const { slug } = Astro.params;
@@ -15,7 +16,8 @@ if (!post || post.data.pubDate > new Date()) {
 const { Content } = await render(post);
 ---
 <BaseLayout title={post.data.title} description={post.data.description}>
-  <article class="max-w-2xl mx-auto px-4 sm:px-6 py-14">
+  <Breadcrumbs itens={[{ nome: 'Início', href: '/' }, { nome: 'Blog', href: '/blog' }, { nome: post.data.title }]} maxWidth="max-w-2xl" />
+  <article class="max-w-2xl mx-auto px-4 sm:px-6 pt-6 pb-14">
     <p class="text-xs text-muted mb-2">{post.data.pubDate.toLocaleDateString('pt-BR')}</p>
     <h1 class="text-3xl sm:text-4xl font-extrabold text-text leading-tight">{post.data.title}</h1>
     <p class="text-muted text-lg mt-4">{post.data.description}</p>

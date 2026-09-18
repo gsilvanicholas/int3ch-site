@@ -2,12 +2,14 @@
 export const prerender = false;
 
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import { getPublishedPosts } from '../../lib/posts';
 
 const posts = await getPublishedPosts();
 ---
 <BaseLayout title="Blog" description="Artigos sobre tecnologia, hardware e guias de compra.">
-  <section class="max-w-5xl mx-auto px-4 sm:px-6 py-14">
+  <Breadcrumbs itens={[{ nome: 'Início', href: '/' }, { nome: 'Blog' }]} maxWidth="max-w-5xl" />
+  <section class="max-w-5xl mx-auto px-4 sm:px-6 pt-6 pb-14">
     <h1 class="text-3xl font-extrabold text-text mb-8">Blog</h1>
     <div class="grid sm:grid-cols-2 gap-5">
       {posts.map((post) => (

@@ -4,6 +4,27 @@ export const prerender = false;
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import TelegramCTA from '../../components/TelegramCTA.astro';
 import OfertasRelacionadas from '../../components/OfertasRelacionadas.astro';
+import FAQ from '../../components/FAQ.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+
+const perguntas = [
+  {
+    pergunta: 'DPI mais alto é sinônimo de mouse melhor?',
+    resposta: 'Não. A maioria dos jogadores usa entre 400 e 1600 DPI na prática — mouses anunciando 20.000+ DPI raramente são usados nessa faixa. O que separa um sensor bom de um ruim é a consistência e o tracking, não o número máximo na caixa.',
+  },
+  {
+    pergunta: 'Mouse sem fio tem lag perceptível em jogos competitivos?',
+    resposta: 'Modelos com sensor topo de linha e conexão 2.4GHz dedicada (não Bluetooth) têm resposta equivalente à de um mouse com fio hoje em dia. Bluetooth puro ainda pode introduzir latência perceptível em jogos mais exigentes.',
+  },
+  {
+    pergunta: 'Peso do mouse importa mesmo?',
+    resposta: 'Sim, principalmente em sessões longas ou jogos competitivos. Entre 70g e 90g já ajuda a reduzir fadiga no pulso; nos modelos ultraleves competitivos, o peso costuma ficar abaixo de 60g.',
+  },
+  {
+    pergunta: 'Vale a pena pagar mais por um sensor "de verdade"?',
+    resposta: 'Sim, se você joga com frequência. Sensores como PixArt PAW3311/3325 (intermediários) ou PAW3395/3950 (topo) evitam problemas como "spin outs" em movimentos rápidos, o que sensores genéricos de entrada costumam sofrer.',
+  },
+];
 
 const tipos = [
   {
@@ -27,7 +48,8 @@ const tipos = [
   title="Melhores Mouses Gamer: Guia de Compra 2026"
   description="Como escolher um mouse gamer sem gastar mais do que precisa - sensor, DPI, peso e faixas de preço explicadas."
 >
-  <section class="max-w-3xl mx-auto px-4 sm:px-6 py-14">
+  <Breadcrumbs itens={[{ nome: 'Início', href: '/' }, { nome: 'Guias', href: '/guias' }, { nome: 'Mouses Gamer' }]} />
+  <section class="max-w-3xl mx-auto px-4 sm:px-6 pt-6 pb-14">
     <p class="text-brand-2 font-semibold uppercase text-sm tracking-wide mb-3">Guia de compra</p>
     <h1 class="text-3xl sm:text-4xl font-extrabold text-text leading-tight">Melhores Mouses Gamer: o que realmente importa</h1>
     <p class="text-muted text-lg mt-4">
@@ -66,6 +88,8 @@ const tipos = [
       titulo="Mouses em oferta agora"
       termos={['mouse']}
     />
+
+    <FAQ perguntas={perguntas} />
 
     <div class="mt-12">
       <TelegramCTA variant="banner" texto="Acompanhamos o preço de mouses gamer todo dia — entre no canal pra pegar quando o seu modelo entrar em promoção de verdade." />

@@ -1,5 +1,6 @@
 ﻿---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
 
 const guias = [
   { titulo: 'Como Escolher uma Placa de Vídeo', href: '/funis/placa-de-video', resumo: 'VRAM, resolução e ray tracing por faixa de orçamento.' },
@@ -10,7 +11,8 @@ const guias = [
 ];
 ---
 <BaseLayout title="Guias de compra" description="Guias praticos para escolher hardware e perifericos sem gastar mais do que precisa.">
-  <section class="max-w-5xl mx-auto px-4 sm:px-6 py-14">
+  <Breadcrumbs itens={[{ nome: 'Início', href: '/' }, { nome: 'Guias' }]} maxWidth="max-w-5xl" />
+  <section class="max-w-5xl mx-auto px-4 sm:px-6 pt-6 pb-14">
     <h1 class="text-3xl font-extrabold text-text mb-8">Guias de compra</h1>
     <div class="grid sm:grid-cols-2 gap-5">
       {guias.map((g) => (
