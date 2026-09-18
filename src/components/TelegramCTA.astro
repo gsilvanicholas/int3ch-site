@@ -14,7 +14,7 @@ const membros = variant === 'banner' ? await getMembrosCanal() : null;
   <div class="rounded-2xl border border-brand-2/30 bg-gradient-to-br from-panel to-panel-2 p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-5 justify-between">
     <div>
       <p class="text-sm uppercase tracking-wide text-brand-2 font-semibold mb-1">
-        iNT3CH Ofertas
+        iNT3CH Ofertas{' '}
         {membros ? (
           <span class="text-muted normal-case font-normal">· {membros.toLocaleString('pt-BR')} membros no canal</span>
         ) : null}
