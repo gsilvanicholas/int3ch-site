@@ -26,10 +26,32 @@ import TelegramCTA from '../../components/TelegramCTA.astro';
         <label class="block">
           <span class="text-sm font-semibold text-text">Processador</span>
           <select id="cpu" class="mt-2 w-full rounded-lg border border-line bg-panel-2 text-text px-3 py-2.5 text-sm">
-            <option value="65">Entrada (i3, Ryzen 3) — ~65W</option>
-            <option value="95" selected>Médio (i5, Ryzen 5) — ~95W</option>
-            <option value="125">Alto (i7, Ryzen 7) — ~125W</option>
-            <option value="170">Topo de linha (i9, Ryzen 9) — ~170W</option>
+            <optgroup label="AMD Ryzen (AM4)">
+              <option value="65">Ryzen 3 4100 — ~65W</option>
+              <option value="65">Ryzen 5 5500 — ~65W</option>
+              <option value="76">Ryzen 5 5600 — ~76W</option>
+              <option value="88" selected>Ryzen 5 5600X — ~88W</option>
+              <option value="88">Ryzen 7 5700X — ~88W</option>
+              <option value="142">Ryzen 7 5800X — ~142W</option>
+              <option value="142">Ryzen 7 5800X3D — ~142W</option>
+              <option value="142">Ryzen 9 5900X — ~142W</option>
+            </optgroup>
+            <optgroup label="AMD Ryzen (AM5)">
+              <option value="65">Ryzen 5 7500F — ~65W</option>
+              <option value="88">Ryzen 5 7600 — ~88W</option>
+              <option value="142">Ryzen 7 7700X — ~142W</option>
+              <option value="170">Ryzen 9 7900X — ~170W</option>
+              <option value="230">Ryzen 9 7950X — ~230W</option>
+            </optgroup>
+            <optgroup label="Intel">
+              <option value="89">Core i3-12100F — ~89W</option>
+              <option value="117">Core i5-12400F — ~117W</option>
+              <option value="148">Core i5-13400F — ~148W</option>
+              <option value="181">Core i5-13600K — ~181W</option>
+              <option value="190">Core i7-12700F — ~190W</option>
+              <option value="219">Core i7-13700F — ~219W</option>
+              <option value="253">Core i9-13900F — ~253W</option>
+            </optgroup>
           </select>
         </label>
 
@@ -37,15 +59,47 @@ import TelegramCTA from '../../components/TelegramCTA.astro';
           <span class="text-sm font-semibold text-text">Placa de vídeo</span>
           <select id="gpu" class="mt-2 w-full rounded-lg border border-line bg-panel-2 text-text px-3 py-2.5 text-sm">
             <option value="0">Sem placa dedicada (vídeo integrado)</option>
-            <option value="75">Entrada (GTX 1650, RX 6400) — ~75W</option>
-            <option value="115" selected>Médio (RTX 4060, RX 7600) — ~115W</option>
-            <option value="200">Alto (RTX 4070, RX 7800 XT) — ~200W</option>
-            <option value="320">Topo de linha (RTX 4080/4090, RX 7900 XTX) — ~320W</option>
+            <optgroup label="NVIDIA">
+              <option value="75">GTX 1650 — ~75W</option>
+              <option value="125">GTX 1660 Super — ~125W</option>
+              <option value="130">RTX 3050 — ~130W</option>
+              <option value="170">RTX 3060 — ~170W</option>
+              <option value="115" selected>RTX 4060 — ~115W</option>
+              <option value="160">RTX 4060 Ti — ~160W</option>
+              <option value="200">RTX 4070 — ~200W</option>
+              <option value="220">RTX 4070 Super — ~220W</option>
+              <option value="285">RTX 4070 Ti Super — ~285W</option>
+              <option value="320">RTX 4080 Super — ~320W</option>
+              <option value="450">RTX 4090 — ~450W</option>
+            </optgroup>
+            <optgroup label="AMD">
+              <option value="132">RX 6600 — ~132W</option>
+              <option value="180">RX 6650 XT — ~180W</option>
+              <option value="230">RX 6700 XT — ~230W</option>
+              <option value="165">RX 7600 — ~165W</option>
+              <option value="245">RX 7700 XT — ~245W</option>
+              <option value="263">RX 7800 XT — ~263W</option>
+              <option value="355">RX 7900 XTX — ~355W</option>
+            </optgroup>
           </select>
         </label>
 
         <label class="block">
-          <span class="text-sm font-semibold text-text">Pentes de memória RAM</span>
+          <span class="text-sm font-semibold text-text">Memória RAM (por pente)</span>
+          <select id="ram-spec" class="mt-2 w-full rounded-lg border border-line bg-panel-2 text-text px-3 py-2.5 text-sm">
+            <option value="2.5">DDR4 8GB 2666MHz — ~2,5W</option>
+            <option value="3" selected>DDR4 8GB 3200MHz — ~3W</option>
+            <option value="3.5">DDR4 16GB 3200MHz — ~3,5W</option>
+            <option value="4">DDR4 16GB 3600MHz — ~4W</option>
+            <option value="4">DDR5 16GB 5200MHz — ~4W</option>
+            <option value="4.5">DDR5 16GB 6000MHz — ~4,5W</option>
+            <option value="5.5">DDR5 32GB 5600MHz — ~5,5W</option>
+            <option value="6">DDR5 32GB 6000MHz — ~6W</option>
+          </select>
+        </label>
+
+        <label class="block">
+          <span class="text-sm font-semibold text-text">Quantidade de pentes</span>
           <input id="ram" type="number" min="0" max="8" value="2"
                  class="mt-2 w-full rounded-lg border border-line bg-panel-2 text-text px-3 py-2.5 text-sm" />
         </label>
@@ -78,8 +132,9 @@ import TelegramCTA from '../../components/TelegramCTA.astro';
     <div class="mt-10 rounded-2xl border border-line bg-panel p-6">
       <h2 class="text-lg font-bold text-text">Como calculamos</h2>
       <p class="text-muted text-sm mt-3 leading-relaxed">
-        Somamos o consumo típico de cada componente (CPU, GPU, placa-mãe ~50W, ~5W por pente de RAM, ~6W por SSD/HD,
-        ~3W por ventoinha) e aplicamos uma margem de segurança de 30% (40% com overclock marcado) — ela cobre picos
+        Somamos o consumo típico de cada componente — CPU e GPU pelo modelo escolhido, placa-mãe ~50W, RAM conforme
+        o tipo/frequência selecionado, ~6W por SSD/HD, ~3W por ventoinha — e aplicamos uma margem de segurança de
+        30% (40% com overclock marcado) — ela cobre picos
         de consumo momentâneos que a média não mostra. O resultado é arredondado pra cima, pro tamanho de fonte
         comercial mais próximo. Quer entender o raciocínio completo?
         <a href="/blog/como-calcular-fonte" class="text-brand-2 hover:text-brand transition-colors">Leia o guia de fonte</a>.
@@ -105,14 +160,14 @@ import TelegramCTA from '../../components/TelegramCTA.astro';
   function calcular() {
     const cpu = document.getElementById('cpu') as HTMLSelectElement | null;
     const gpu = document.getElementById('gpu') as HTMLSelectElement | null;
+    const ramSpec = document.getElementById('ram-spec') as HTMLSelectElement | null;
     const ram = document.getElementById('ram') as HTMLInputElement | null;
     const storage = document.getElementById('storage') as HTMLInputElement | null;
     const fans = document.getElementById('fans') as HTMLInputElement | null;
     const overclock = document.getElementById('overclock') as HTMLInputElement | null;
-    if (!cpu || !gpu || !ram || !storage || !fans || !overclock) return;
+    if (!cpu || !gpu || !ramSpec || !ram || !storage || !fans || !overclock) return;
 
     const PLACA_MAE = 50;
-    const POR_RAM = 5;
     const POR_STORAGE = 6;
     const POR_FAN = 3;
 
@@ -120,7 +175,7 @@ import TelegramCTA from '../../components/TelegramCTA.astro';
       Number(cpu.value) +
       Number(gpu.value) +
       PLACA_MAE +
-      Number(ram.value || 0) * POR_RAM +
+      Number(ram.value || 0) * Number(ramSpec.value) +
       Number(storage.value || 0) * POR_STORAGE +
       Number(fans.value || 0) * POR_FAN;
 
@@ -134,7 +189,7 @@ import TelegramCTA from '../../components/TelegramCTA.astro';
   }
 
   function setup() {
-    ['cpu', 'gpu', 'ram', 'storage', 'fans', 'overclock'].forEach((id) => {
+    ['cpu', 'gpu', 'ram-spec', 'ram', 'storage', 'fans', 'overclock'].forEach((id) => {
       const el = document.getElementById(id);
       if (!el || el.hasAttribute('data-bound')) return;
       el.setAttribute('data-bound', 'true');
