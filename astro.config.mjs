@@ -7,7 +7,7 @@ import sitemap from '@astrojs/sitemap';
 
 import vercel from '@astrojs/vercel';
 
-const SITE = 'https://int3ch-site.vercel.app';
+const SITE = 'https://int3ch.com.br';
 
 // A home e as paginas de blog viraram SSR (para o agendamento de posts funcionar
 // sem precisar de redeploy a cada lancamento), entao o sitemap nao as descobre
@@ -28,7 +28,6 @@ const POSTS_BLOG = [
 
 // https://astro.build/config
 export default defineConfig({
-  // TODO: trocar pelo dominio definitivo quando comprar um
   site: SITE,
 
   vite: {
