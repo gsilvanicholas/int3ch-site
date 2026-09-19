@@ -1,0 +1,239 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ShareButtons from '../../components/ShareButtons.astro';
+import TelegramCTA from '../../components/TelegramCTA.astro';
+import { CPU_LIST, GPU_LIST, agruparPorGrupo } from '../../lib/hardware-data';
+
+const cpuGrupos = agruparPorGrupo(CPU_LIST);
+const gpuGrupos = agruparPorGrupo(GPU_LIST.filter((g) => g.grupo));
+---
+<BaseLayout
+  title="Vale a Pena o Upgrade? Compare CPU ou GPU e Veja o Ganho Real"
+  description="Compare seu processador ou placa de vídeo atual com um modelo novo e descubra o ganho de desempenho estimado antes de trocar."
+>
+  <Breadcrumbs itens={[{ nome: 'Início', href: '/' }, { nome: 'Ferramentas' }, { nome: 'Vale a Pena o Upgrade?' }]} />
+  <section class="max-w-3xl mx-auto px-4 sm:px-6 pt-6 pb-14">
+    <p class="text-brand-2 font-semibold uppercase text-sm tracking-wide mb-3">Ferramenta</p>
+    <h1 class="text-3xl sm:text-4xl font-extrabold text-text leading-tight">Vale a Pena o Upgrade?</h1>
+    <p class="text-muted text-lg mt-4">
+      Compare o que você tem hoje com o modelo que está de olho e veja o ganho de desempenho estimado antes de gastar.
+    </p>
+
+    <div class="mt-5">
+      <ShareButtons titulo="Vale a Pena o Upgrade? Compare CPU ou GPU e Veja o Ganho Real" />
+    </div>
+
+    <div class="mt-10 rounded-2xl border border-line bg-panel p-6 sm:p-8">
+      <div class="flex gap-2 mb-6" role="tablist">
+        <button type="button" id="tab-cpu" data-tipo="cpu"
+                class="flex-1 rounded-lg px-4 py-2.5 text-sm font-semibold transition-colors bg-gradient-to-r from-brand to-brand-2 text-black">
+          Processador
+        </button>
+        <button type="button" id="tab-gpu" data-tipo="gpu"
+                class="flex-1 rounded-lg px-4 py-2.5 text-sm font-semibold transition-colors bg-panel-2 text-muted hover:text-text">
+          Placa de vídeo
+        </button>
+      </div>
+
+      <div id="bloco-cpu" class="grid sm:grid-cols-2 gap-6">
+        <label class="block">
+          <span class="text-sm font-semibold text-text">Você tem hoje</span>
+          <select id="cpu-atual" class="mt-2 w-full rounded-lg border border-line bg-panel-2 text-text px-3 py-2.5 text-sm">
+            {Array.from(cpuGrupos).map(([grupo, itens]) => (
+              <optgroup label={grupo}>
+                {itens.map((item) => (
+                  <option value={item.id} selected={item.id === 'ryzen5-5600x'}>{item.label}</option>
+                ))}
+              </optgroup>
+            ))}
+          </select>
+        </label>
+        <label class="block">
+          <span class="text-sm font-semibold text-text">Está pensando em trocar por</span>
+          <select id="cpu-novo" class="mt-2 w-full rounded-lg border border-line bg-panel-2 text-text px-3 py-2.5 text-sm">
+            {Array.from(cpuGrupos).map(([grupo, itens]) => (
+              <optgroup label={grupo}>
+                {itens.map((item) => (
+                  <option value={item.id} selected={item.id === 'ryzen7-7800x3d'}>{item.label}</option>
+                ))}
+              </optgroup>
+            ))}
+          </select>
+        </label>
+      </div>
+
+      <div id="bloco-gpu" class="hidden grid sm:grid-cols-2 gap-6">
+        <label class="block">
+          <span class="text-sm font-semibold text-text">Você tem hoje</span>
+          <select id="gpu-atual" class="mt-2 w-full rounded-lg border border-line bg-panel-2 text-text px-3 py-2.5 text-sm">
+            {Array.from(gpuGrupos).map(([grupo, itens]) => (
+              <optgroup label={grupo}>
+                {itens.map((item) => (
+                  <option value={item.id} selected={item.id === 'rtx3060'}>{item.label}</option>
+                ))}
+              </optgroup>
+            ))}
+          </select>
+        </label>
+        <label class="block">
+          <span class="text-sm font-semibold text-text">Está pensando em trocar por</span>
+          <select id="gpu-novo" class="mt-2 w-full rounded-lg border border-line bg-panel-2 text-text px-3 py-2.5 text-sm">
+            {Array.from(gpuGrupos).map(([grupo, itens]) => (
+              <optgroup label={grupo}>
+                {itens.map((item) => (
+                  <option value={item.id} selected={item.id === 'rtx4070'}>{item.label}</option>
+                ))}
+              </optgroup>
+            ))}
+          </select>
+        </label>
+      </div>
+
+      <div id="resultado" class="mt-8 rounded-2xl border p-6 text-center transition-colors">
+        <p id="veredito-ganho" class="text-4xl font-extrabold text-text">+0%</p>
+        <p id="veredito-titulo" class="text-lg font-bold text-text mt-1">Escolha os componentes acima</p>
+        <p id="veredito-texto" class="text-sm text-muted mt-2 leading-relaxed"></p>
+      </div>
+    </div>
+
+    <div class="mt-10 rounded-2xl border border-line bg-panel p-6">
+      <h2 class="text-lg font-bold text-text">Como calculamos</h2>
+      <p class="text-muted text-sm mt-3 leading-relaxed">
+        Cada CPU e cada GPU recebe uma nota de desempenho relativo em jogos. Comparamos a nota do modelo que você tem
+        com a do modelo novo e calculamos a diferença percentual entre eles. É uma estimativa pra te dar uma direção
+        antes de gastar — o ganho real varia por jogo e por resolução. Quer saber se sua combinação atual já está
+        balanceada? Use também o
+        <a href="/ferramentas/verificador-de-gargalo" class="text-brand-2 hover:text-brand transition-colors">verificador de gargalo CPU/GPU</a>.
+      </p>
+    </div>
+
+    <div class="mt-12">
+      <TelegramCTA variant="banner" texto="Achou que vale a pena? As melhores ofertas de CPU e GPU saem primeiro no canal." />
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  import { CPU_LIST, GPU_LIST } from '../../lib/hardware-data';
+
+  const TIER_POR_ID = new Map<string, number>();
+  [...CPU_LIST, ...GPU_LIST].forEach((item) => TIER_POR_ID.set(item.id, item.tier));
+
+  let tipoAtivo: 'cpu' | 'gpu' = 'cpu';
+
+  function trocarTipo(tipo: 'cpu' | 'gpu') {
+    tipoAtivo = tipo;
+    const tabCpu = document.getElementById('tab-cpu');
+    const tabGpu = document.getElementById('tab-gpu');
+    const blocoCpu = document.getElementById('bloco-cpu');
+    const blocoGpu = document.getElementById('bloco-gpu');
+    if (!tabCpu || !tabGpu || !blocoCpu || !blocoGpu) return;
+
+    const ativo = ['bg-gradient-to-r', 'from-brand', 'to-brand-2', 'text-black'];
+    const inativo = ['bg-panel-2', 'text-muted'];
+
+    if (tipo === 'cpu') {
+      tabCpu.classList.add(...ativo);
+      tabCpu.classList.remove(...inativo);
+      tabGpu.classList.add(...inativo);
+      tabGpu.classList.remove(...ativo);
+      blocoCpu.classList.remove('hidden');
+      blocoGpu.classList.add('hidden');
+    } else {
+      tabGpu.classList.add(...ativo);
+      tabGpu.classList.remove(...inativo);
+      tabCpu.classList.add(...inativo);
+      tabCpu.classList.remove(...ativo);
+      blocoGpu.classList.remove('hidden');
+      blocoCpu.classList.add('hidden');
+    }
+    calcular();
+  }
+
+  function calcular() {
+    const idAtual = tipoAtivo === 'cpu' ? 'cpu-atual' : 'gpu-atual';
+    const idNovo = tipoAtivo === 'cpu' ? 'cpu-novo' : 'gpu-novo';
+    const atual = document.getElementById(idAtual) as HTMLSelectElement | null;
+    const novo = document.getElementById(idNovo) as HTMLSelectElement | null;
+    const elGanho = document.getElementById('veredito-ganho');
+    const elTitulo = document.getElementById('veredito-titulo');
+    const elTexto = document.getElementById('veredito-texto');
+    const caixa = document.getElementById('resultado');
+    if (!atual || !novo || !elGanho || !elTitulo || !elTexto || !caixa) return;
+
+    const tierAtual = TIER_POR_ID.get(atual.value) || 0;
+    const tierNovo = TIER_POR_ID.get(novo.value) || 0;
+    if (tierAtual <= 0) return;
+
+    const ganho = ((tierNovo - tierAtual) / tierAtual) * 100;
+    const ganhoArredondado = Math.round(ganho);
+
+    caixa.classList.remove(
+      'border-red-500/40', 'bg-red-500/5',
+      'border-yellow-500/40', 'bg-yellow-500/5',
+      'border-brand/30', 'bg-gradient-to-br', 'from-panel', 'to-panel-2',
+      'border-emerald-500/40', 'bg-emerald-500/5'
+    );
+
+    elGanho.textContent = (ganhoArredondado >= 0 ? '+' : '') + ganhoArredondado + '%';
+
+    const peca = tipoAtivo === 'cpu' ? 'processador' : 'placa de vídeo';
+
+    if (ganho <= 0) {
+      caixa.classList.add('border-red-500/40', 'bg-red-500/5');
+      elGanho.className = 'text-4xl font-extrabold text-red-500';
+      elTitulo.textContent = 'Isso seria um downgrade';
+      elTexto.textContent = `O modelo escolhido é igual ou mais fraco que sua ${peca} atual. Não vale a pena trocar por esse.`;
+    } else if (ganho <= 5) {
+      caixa.classList.add('border-red-500/40', 'bg-red-500/5');
+      elGanho.className = 'text-4xl font-extrabold text-red-500';
+      elTitulo.textContent = 'Não vale a pena';
+      elTexto.textContent = 'O ganho é pequeno demais pra justificar o gasto. Melhor esperar um salto maior de geração.';
+    } else if (ganho <= 15) {
+      caixa.classList.add('border-yellow-500/40', 'bg-yellow-500/5');
+      elGanho.className = 'text-4xl font-extrabold text-yellow-500';
+      elTitulo.textContent = 'Ganho pequeno';
+      elTexto.textContent = 'Dá pra medir em benchmark, mas dificilmente você vai sentir isso jogando no dia a dia.';
+    } else if (ganho <= 35) {
+      caixa.classList.add('border-brand/30', 'bg-gradient-to-br', 'from-panel', 'to-panel-2');
+      elGanho.className = 'text-4xl font-extrabold text-text';
+      elTitulo.textContent = 'Ganho perceptível';
+      elTexto.textContent = 'Boa melhora de desempenho. Se o preço estiver justo, o upgrade compensa.';
+    } else if (ganho <= 70) {
+      caixa.classList.add('border-emerald-500/40', 'bg-emerald-500/5');
+      elGanho.className = 'text-4xl font-extrabold text-emerald-500';
+      elTitulo.textContent = 'Ganho grande';
+      elTexto.textContent = 'Melhora clara de desempenho, deve ser bem perceptível em qualquer jogo.';
+    } else {
+      caixa.classList.add('border-emerald-500/40', 'bg-emerald-500/5');
+      elGanho.className = 'text-4xl font-extrabold text-emerald-500';
+      elTitulo.textContent = 'Salto enorme';
+      elTexto.textContent = 'É praticamente trocar essa peça por outro PC. O upgrade vale muito a pena.';
+    }
+  }
+
+  function setup() {
+    const tabCpu = document.getElementById('tab-cpu');
+    const tabGpu = document.getElementById('tab-gpu');
+    if (tabCpu && !tabCpu.hasAttribute('data-bound')) {
+      tabCpu.setAttribute('data-bound', 'true');
+      tabCpu.addEventListener('click', () => trocarTipo('cpu'));
+    }
+    if (tabGpu && !tabGpu.hasAttribute('data-bound')) {
+      tabGpu.setAttribute('data-bound', 'true');
+      tabGpu.addEventListener('click', () => trocarTipo('gpu'));
+    }
+    ['cpu-atual', 'cpu-novo', 'gpu-atual', 'gpu-novo'].forEach((id) => {
+      const el = document.getElementById(id);
+      if (!el || el.hasAttribute('data-bound')) return;
+      el.setAttribute('data-bound', 'true');
+      el.addEventListener('change', calcular);
+    });
+    tipoAtivo = 'cpu';
+    calcular();
+  }
+
+  setup();
+  document.addEventListener('astro:page-load', setup);
+</script>
