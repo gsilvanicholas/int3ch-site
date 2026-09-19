@@ -30,3 +30,5 @@ Trocar a placa de vídeo por uma mais cara esperando mais FPS, sem checar se o p
 ## Resumo prático
 
 Upgrade de placa de vídeo rende mais em resoluções altas (1440p, 4K). Upgrade de processador rende mais em resoluções baixas (Full HD) ou em jogos que dependem muito de física/simulação (estratégia, simulação, mundo aberto denso).
+
+Não quer abrir o gerenciador de tarefas pra descobrir na prática? Use o [verificador de gargalo CPU/GPU](/ferramentas/verificador-de-gargalo) — escolha seus componentes e a resolução, e a ferramenta já aponta se a combinação está balanceada.

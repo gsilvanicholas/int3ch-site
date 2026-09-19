@@ -1,0 +1,165 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ShareButtons from '../../components/ShareButtons.astro';
+import TelegramCTA from '../../components/TelegramCTA.astro';
+import { CPU_LIST, GPU_LIST, agruparPorGrupo } from '../../lib/hardware-data';
+
+const cpuGrupos = agruparPorGrupo(CPU_LIST);
+const gpuGrupos = agruparPorGrupo(GPU_LIST.filter((g) => g.grupo));
+const gpuIntegrada = GPU_LIST.find((g) => g.id === 'integrada')!;
+---
+<BaseLayout
+  title="Verificador de Gargalo CPU/GPU: Sua Combinação Está Balanceada?"
+  description="Descubra se o seu processador está travando sua placa de vídeo (ou o contrário). Ferramenta gratuita com mais de 60 modelos de CPU e GPU."
+>
+  <Breadcrumbs itens={[{ nome: 'Início', href: '/' }, { nome: 'Ferramentas' }, { nome: 'Verificador de Gargalo' }]} />
+  <section class="max-w-3xl mx-auto px-4 sm:px-6 pt-6 pb-14">
+    <p class="text-brand-2 font-semibold uppercase text-sm tracking-wide mb-3">Ferramenta</p>
+    <h1 class="text-3xl sm:text-4xl font-extrabold text-text leading-tight">Verificador de Gargalo CPU/GPU</h1>
+    <p class="text-muted text-lg mt-4">
+      Escolha seu processador e sua placa de vídeo e veja se a combinação está balanceada, ou se uma peça está
+      limitando a outra.
+    </p>
+
+    <div class="mt-5">
+      <ShareButtons titulo="Verificador de Gargalo CPU/GPU: Sua Combinação Está Balanceada?" />
+    </div>
+
+    <div class="mt-10 rounded-2xl border border-line bg-panel p-6 sm:p-8">
+      <div class="grid sm:grid-cols-2 gap-6">
+        <label class="block">
+          <span class="text-sm font-semibold text-text">Processador</span>
+          <select id="cpu" class="mt-2 w-full rounded-lg border border-line bg-panel-2 text-text px-3 py-2.5 text-sm">
+            {Array.from(cpuGrupos).map(([grupo, itens]) => (
+              <optgroup label={grupo}>
+                {itens.map((item) => (
+                  <option value={item.id} selected={item.id === 'ryzen5-5600x'}>{item.label}</option>
+                ))}
+              </optgroup>
+            ))}
+          </select>
+        </label>
+
+        <label class="block">
+          <span class="text-sm font-semibold text-text">Placa de vídeo</span>
+          <select id="gpu" class="mt-2 w-full rounded-lg border border-line bg-panel-2 text-text px-3 py-2.5 text-sm">
+            <option value={gpuIntegrada.id}>{gpuIntegrada.label}</option>
+            {Array.from(gpuGrupos).map(([grupo, itens]) => (
+              <optgroup label={grupo}>
+                {itens.map((item) => (
+                  <option value={item.id} selected={item.id === 'rtx4060'}>{item.label}</option>
+                ))}
+              </optgroup>
+            ))}
+          </select>
+        </label>
+
+        <label class="block sm:col-span-2">
+          <span class="text-sm font-semibold text-text">Resolução de jogo</span>
+          <select id="resolucao" class="mt-2 w-full rounded-lg border border-line bg-panel-2 text-text px-3 py-2.5 text-sm">
+            <option value="1080">Full HD (1920×1080)</option>
+            <option value="1440" selected>1440p / QHD (2560×1440)</option>
+            <option value="2160">4K (3840×2160)</option>
+          </select>
+          <span class="text-xs text-muted mt-1.5 block">
+            Em resoluções mais baixas o processador pesa mais na equação; em resoluções mais altas, a placa de vídeo domina.
+          </span>
+        </label>
+      </div>
+
+      <div id="resultado" class="mt-8 rounded-2xl border p-6 text-center transition-colors">
+        <p id="veredito-titulo" class="text-2xl font-extrabold text-text">Combinação balanceada</p>
+        <p id="veredito-texto" class="text-sm text-muted mt-2 leading-relaxed">Escolha os componentes acima.</p>
+      </div>
+    </div>
+
+    <div class="mt-10 rounded-2xl border border-line bg-panel p-6">
+      <h2 class="text-lg font-bold text-text">Como calculamos</h2>
+      <p class="text-muted text-sm mt-3 leading-relaxed">
+        Cada CPU e cada GPU recebe uma nota de desempenho relativo em jogos (escala comparável entre as duas peças).
+        Comparamos essas notas e ajustamos pela resolução escolhida — CPU pesa mais em Full HD, GPU pesa mais em 4K,
+        exatamente como explicamos no
+        <a href="/blog/gargalo-cpu-gpu" class="text-brand-2 hover:text-brand transition-colors">guia sobre gargalo de CPU/GPU</a>.
+        O resultado é uma estimativa pra te dar uma direção antes de comprar — não substitui medir o uso real das
+        peças com um monitor de hardware durante o jogo.
+      </p>
+    </div>
+
+    <div class="mt-12">
+      <TelegramCTA variant="banner" texto="Ofertas de processador e placa de vídeo também saem no canal — não perca." />
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  import { CPU_LIST, GPU_LIST } from '../../lib/hardware-data';
+
+  const TIER_POR_ID = new Map<string, number>();
+  [...CPU_LIST, ...GPU_LIST].forEach((item) => TIER_POR_ID.set(item.id, item.tier));
+
+  function fatorResolucao(resolucao: string): number {
+    if (resolucao === '1080') return 1.3;
+    if (resolucao === '2160') return 0.7;
+    return 1;
+  }
+
+  function calcular() {
+    const cpu = document.getElementById('cpu') as HTMLSelectElement | null;
+    const gpu = document.getElementById('gpu') as HTMLSelectElement | null;
+    const resolucao = document.getElementById('resolucao') as HTMLSelectElement | null;
+    const titulo = document.getElementById('veredito-titulo');
+    const texto = document.getElementById('veredito-texto');
+    const caixa = document.getElementById('resultado');
+    if (!cpu || !gpu || !resolucao || !titulo || !texto || !caixa) return;
+
+    const tierCpu = TIER_POR_ID.get(cpu.value) || 0;
+    const tierGpu = TIER_POR_ID.get(gpu.value) || 0;
+    const diff = (tierGpu - tierCpu) * fatorResolucao(resolucao.value);
+
+    caixa.classList.remove(
+      'border-brand/30', 'bg-gradient-to-br', 'from-panel', 'to-panel-2',
+      'border-yellow-500/40', 'bg-yellow-500/5',
+      'border-red-500/40', 'bg-red-500/5',
+      'border-sky-500/40', 'bg-sky-500/5'
+    );
+
+    if (diff <= 1) {
+      caixa.classList.add('border-brand/30', 'bg-gradient-to-br', 'from-panel', 'to-panel-2');
+      titulo.textContent = 'Combinação balanceada';
+      titulo.className = 'text-2xl font-extrabold text-text';
+      texto.textContent = 'CPU e GPU estão numa faixa de desempenho parecida. Nenhuma das duas deve travar a outra de forma relevante.';
+    } else if (diff <= 2.5) {
+      caixa.classList.add('border-yellow-500/40', 'bg-yellow-500/5');
+      titulo.textContent = 'Leve gargalo de CPU';
+      titulo.className = 'text-2xl font-extrabold text-yellow-500';
+      texto.textContent = 'Sua GPU está um pouco acima do que essa CPU consegue "alimentar" nessa resolução. Não é grave, mas em jogos mais pesados de CPU você pode não tirar 100% da placa de vídeo.';
+    } else {
+      caixa.classList.add('border-red-500/40', 'bg-red-500/5');
+      titulo.textContent = 'Gargalo significativo de CPU';
+      titulo.className = 'text-2xl font-extrabold text-red-500';
+      texto.textContent = 'Essa GPU provavelmente vai ficar boa parte do tempo ociosa, esperando a CPU. Antes de investir mais na placa de vídeo, vale considerar trocar o processador — principalmente em Full HD.';
+    }
+
+    if (diff < -1) {
+      caixa.classList.remove('border-yellow-500/40', 'bg-yellow-500/5', 'border-red-500/40', 'bg-red-500/5');
+      caixa.classList.add('border-sky-500/40', 'bg-sky-500/5');
+      titulo.textContent = 'CPU acima do necessário';
+      titulo.className = 'text-2xl font-extrabold text-sky-500';
+      texto.textContent = 'Sua CPU tem folga sobrando pra essa GPU. Isso não é um problema — a placa de vídeo é o fator limitante, que é o cenário mais comum e desejável — só significa que há espaço pra um upgrade futuro de GPU sem precisar trocar o processador.';
+    }
+  }
+
+  function setup() {
+    ['cpu', 'gpu', 'resolucao'].forEach((id) => {
+      const el = document.getElementById(id);
+      if (!el || el.hasAttribute('data-bound')) return;
+      el.setAttribute('data-bound', 'true');
+      el.addEventListener('change', calcular);
+    });
+    calcular();
+  }
+
+  setup();
+  document.addEventListener('astro:page-load', setup);
+</script>
