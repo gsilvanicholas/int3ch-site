@@ -6,6 +6,7 @@ import TelegramCTA from '../../components/TelegramCTA.astro';
 import OfertasRelacionadas from '../../components/OfertasRelacionadas.astro';
 import FAQ from '../../components/FAQ.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ShareButtons from '../../components/ShareButtons.astro';
 
 const perguntas = [
   {
@@ -57,6 +58,10 @@ const fatores = [
       Ficha técnica de monitor tem número pra tudo. Esses quatro fatores são os que realmente mudam sua experiência —
       o resto é, na maior parte das vezes, detalhe.
     </p>
+
+    <div class="mt-5">
+      <ShareButtons titulo="Como Escolher um Monitor Gamer" />
+    </div>
 
     <div class="mt-10 space-y-6">
       {fatores.map((f) => (

@@ -6,6 +6,7 @@ import TelegramCTA from '../../components/TelegramCTA.astro';
 import OfertasRelacionadas from '../../components/OfertasRelacionadas.astro';
 import FAQ from '../../components/FAQ.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ShareButtons from '../../components/ShareButtons.astro';
 
 const perguntas = [
   {
@@ -57,6 +58,10 @@ const pontos = [
       Ficha técnica de processador é cheia de números que soam importantes mas raramente são o que decide sua
       experiência real. Esses quatro pontos são os que efetivamente importam na hora de comprar.
     </p>
+
+    <div class="mt-5">
+      <ShareButtons titulo="Como Escolher um Processador" />
+    </div>
 
     <div class="mt-10 space-y-6">
       {pontos.map((p) => (

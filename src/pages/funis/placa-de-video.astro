@@ -6,6 +6,7 @@ import TelegramCTA from '../../components/TelegramCTA.astro';
 import OfertasRelacionadas from '../../components/OfertasRelacionadas.astro';
 import FAQ from '../../components/FAQ.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ShareButtons from '../../components/ShareButtons.astro';
 
 const perguntas = [
   {
@@ -56,6 +57,10 @@ const faixas = [
       A pergunta certa não é "qual a mais forte que cabe no meu orçamento" — é "qual resolução eu realmente uso".
       Escolher pela resolução do seu monitor evita pagar por poder que você nunca vai aproveitar.
     </p>
+
+    <div class="mt-5">
+      <ShareButtons titulo="Como Escolher uma Placa de Vídeo" />
+    </div>
 
     <div class="mt-10 space-y-6">
       {faixas.map((f) => (

@@ -5,6 +5,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import OfertaCard from '../components/OfertaCard.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import { getOfertas, type Oferta } from '../lib/ofertas';
+import ShareButtons from '../components/ShareButtons.astro';
 
 let ofertas: Oferta[] = [];
 let erro = false;
@@ -27,6 +28,10 @@ try {
       Atualizado automaticamente a cada ciclo do canal — mesmos critérios de qualidade: desconto entre 25%-70%,
       nota alta e sem sinal de réplica.
     </p>
+
+    <div class="mb-8">
+      <ShareButtons titulo="Ofertas de hardware e tecnologia" />
+    </div>
 
     {erro || ofertas.length === 0 ? (
       <div class="rounded-2xl border border-line bg-panel p-8 text-center text-muted">

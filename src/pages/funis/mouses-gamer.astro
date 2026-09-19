@@ -6,6 +6,7 @@ import TelegramCTA from '../../components/TelegramCTA.astro';
 import OfertasRelacionadas from '../../components/OfertasRelacionadas.astro';
 import FAQ from '../../components/FAQ.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ShareButtons from '../../components/ShareButtons.astro';
 
 const perguntas = [
   {
@@ -56,6 +57,10 @@ const tipos = [
       Marketing de mouse gamer adora empilhar número de DPI. Na prática, isso quase nunca é o que faz diferença no seu jogo.
       Aqui está o que olhar de verdade, por faixa de orçamento.
     </p>
+
+    <div class="mt-5">
+      <ShareButtons titulo="Melhores Mouses Gamer" />
+    </div>
 
     <div class="mt-10 space-y-6">
       {tipos.map((t) => (

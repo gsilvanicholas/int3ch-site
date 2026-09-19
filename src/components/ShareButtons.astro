@@ -1,0 +1,49 @@
+---
+interface Props {
+  titulo: string;
+}
+const { titulo } = Astro.props;
+const url = new URL(Astro.url.pathname, Astro.site).toString();
+const texto = `${titulo} — iNT3CH`;
+
+const whatsapp = `https://wa.me/?text=${encodeURIComponent(`${texto}\n${url}`)}`;
+const telegram = `https://t.me/share/url?url=${encodeURIComponent(url)}&text=${encodeURIComponent(texto)}`;
+---
+<div class="flex items-center gap-2" data-share-buttons data-url={url}>
+  <span class="text-xs text-muted font-semibold uppercase tracking-wide mr-1">Compartilhar</span>
+  <a href={whatsapp} target="_blank" rel="noopener" aria-label="Compartilhar no WhatsApp"
+     class="p-2 rounded-lg border border-line text-muted hover:text-brand-2 hover:border-brand/50 transition-colors">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.44.79 3.06 1.2 4.72 1.2h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.85 9.85 0 0 0 12.04 2Zm5.8 14.14c-.24.68-1.4 1.3-1.93 1.36-.5.06-1.09.29-3.6-.75-3.05-1.26-4.99-4.42-5.15-4.63-.15-.2-1.22-1.63-1.22-3.1 0-1.48.77-2.2 1.05-2.5.28-.3.6-.38.8-.38.2 0 .4 0 .58.01.19.01.44-.07.68.53.25.6.85 2.07.92 2.22.07.15.12.33.02.53-.1.2-.15.32-.3.5-.15.17-.31.39-.44.52-.15.15-.3.31-.13.6.17.3.77 1.27 1.65 2.06 1.13 1.01 2.09 1.32 2.38 1.47.29.15.46.13.63-.08.17-.2.72-.84.91-1.13.19-.29.38-.24.63-.14.26.09 1.65.78 1.93.92.29.15.48.22.55.34.07.13.07.72-.17 1.4Z"/></svg>
+  </a>
+  <a href={telegram} target="_blank" rel="noopener" aria-label="Compartilhar no Telegram"
+     class="p-2 rounded-lg border border-line text-muted hover:text-brand-2 hover:border-brand/50 transition-colors">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M21.94 4.6 18.58 20.1c-.25 1.12-.9 1.4-1.83.87l-5.05-3.72-2.44 2.35c-.27.27-.5.5-1.02.5l.36-5.15L18.03 6.5c.4-.35-.09-.55-.62-.2L6.5 13.3 1.5 11.73c-1.1-.34-1.12-1.1.23-1.63L20.5 3.14c.9-.34 1.7.2 1.44 1.46Z"/></svg>
+  </a>
+  <button type="button" data-copy-link aria-label="Copiar link"
+          class="p-2 rounded-lg border border-line text-muted hover:text-brand-2 hover:border-brand/50 transition-colors">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+  </button>
+</div>
+
+<script>
+  function setupCopyLink() {
+    document.querySelectorAll('[data-share-buttons]').forEach((wrap) => {
+      const btn = wrap.querySelector('[data-copy-link]');
+      const url = wrap.getAttribute('data-url');
+      if (!btn || !url || btn.hasAttribute('data-bound')) return;
+      btn.setAttribute('data-bound', 'true');
+      btn.addEventListener('click', async () => {
+        try {
+          await navigator.clipboard.writeText(url);
+          const original = btn.innerHTML;
+          btn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
+          setTimeout(() => { btn.innerHTML = original; }, 1500);
+        } catch {
+          // clipboard indisponivel (ex: contexto nao seguro) - ignora silenciosamente
+        }
+      });
+    });
+  }
+  setupCopyLink();
+  document.addEventListener('astro:page-load', setupCopyLink);
+</script>

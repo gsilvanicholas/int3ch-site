@@ -6,6 +6,7 @@ import TelegramCTA from '../../components/TelegramCTA.astro';
 import OfertasRelacionadas from '../../components/OfertasRelacionadas.astro';
 import FAQ from '../../components/FAQ.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ShareButtons from '../../components/ShareButtons.astro';
 
 const perguntas = [
   {
@@ -57,6 +58,10 @@ const pontos = [
       É a peça que menos chama atenção visualmente, mas a que mais restringe suas opções futuras de upgrade.
       Esses quatro pontos evitam o erro mais caro: comprar algo incompatível ou insuficiente pro resto do sistema.
     </p>
+
+    <div class="mt-5">
+      <ShareButtons titulo="Como Escolher uma Placa-Mãe" />
+    </div>
 
     <div class="mt-10 space-y-6">
       {pontos.map((p) => (
