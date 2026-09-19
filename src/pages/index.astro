@@ -111,26 +111,12 @@ for (let i = 0; i < maxLen; i++) {
   if (itensPost[i]) feed.push(itensPost[i]);
 }
 
-type Ladrilho =
-  | { tipo: 'oferta'; span: string; oferta: Oferta }
-  | { tipo: 'post'; span: string; post: (typeof posts)[number] }
-  | { tipo: 'ferramenta'; span: string; ferramenta: (typeof ferramentas)[number] };
-
-const mosaico: Ladrilho[] = [];
-if (ofertasRestantes[0]) mosaico.push({ tipo: 'oferta', span: 'sm:col-span-2 sm:row-span-2', oferta: ofertasRestantes[0] });
-if (posts[0]) mosaico.push({ tipo: 'post', span: 'sm:col-span-2', post: posts[0] });
-mosaico.push({ tipo: 'ferramenta', span: '', ferramenta: ferramentas[0] });
-mosaico.push({ tipo: 'ferramenta', span: '', ferramenta: ferramentas[1] });
-if (posts[1]) mosaico.push({ tipo: 'post', span: 'sm:col-span-2', post: posts[1] });
-mosaico.push({ tipo: 'ferramenta', span: '', ferramenta: ferramentas[2] });
-if (ofertasRestantes[1]) mosaico.push({ tipo: 'oferta', span: '', oferta: ofertasRestantes[1] });
 ---
 <BaseLayout
   title="Tecnologia, hardware e as melhores ofertas"
   description="Noticias, guias de compra e as melhores ofertas de hardware e tecnologia, com curadoria diaria no canal do Telegram."
 >
-  <div class="home-a">
-    {heroOferta && (
+  {heroOferta && (
       <section class="border-b border-line bg-panel-2">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 py-10 flex flex-col sm:flex-row items-center justify-between gap-6">
           <div class="max-w-xl">
@@ -233,63 +219,9 @@ if (ofertasRestantes[1]) mosaico.push({ tipo: 'oferta', span: '', oferta: oferta
         </div>
       </div>
     </section>
-  </div>
-
-  <div class="home-b">
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 pt-12 pb-6">
-      <p class="text-muted text-xs font-bold uppercase tracking-wide">iNT3CH — hardware sem enrolação</p>
-      <h1 class="text-3xl sm:text-5xl font-extrabold text-text mt-4 max-w-2xl leading-[1.08]">Ofertas boas têm hora certa. A gente avisa.</h1>
-      {heroOferta && (
-        <p class="mt-5 text-sm flex items-center gap-2 flex-wrap">
-          <span class="w-1.5 h-1.5 rounded-full bg-brand-2 inline-block"></span>
-          <span class="text-brand-2 font-bold">Ao vivo:</span>
-          <span class="text-text">{heroOferta.titulo} — {heroOferta.preco}</span>
-          <a href={heroOferta.link} target="_blank" rel="noopener sponsored" class="text-brand font-semibold hover:text-brand-2 transition-colors">Ver oferta →</a>
-        </p>
-      )}
-    </section>
-
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 pb-16">
-      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:auto-rows-[160px]">
-        {mosaico.map((item) => (
-          item.tipo === 'oferta' ? (
-            <a href={item.oferta.link} target="_blank" rel="noopener sponsored"
-               class={`rounded-2xl border border-line bg-panel p-5 flex flex-col hover:border-brand/50 transition-colors ${item.span}`}>
-              <span class="bg-brand-2/15 text-brand-2 text-[11px] font-bold px-2.5 py-1 rounded-full self-start">Oferta</span>
-              <span class="font-bold text-text mt-3 flex-1 line-clamp-2">{item.oferta.titulo}</span>
-              <span class="text-sm font-bold text-text mt-2">{item.oferta.preco}</span>
-            </a>
-          ) : item.tipo === 'post' ? (
-            <a href={`/blog/${item.post.id}`}
-               class={`rounded-2xl border border-line bg-panel p-5 flex flex-col hover:border-brand/50 transition-colors ${item.span}`}>
-              <span class="bg-[#3d8cf0]/15 text-[#3d8cf0] text-[11px] font-bold px-2.5 py-1 rounded-full self-start">Post</span>
-              <span class="font-bold text-text mt-3 flex-1 line-clamp-2">{item.post.data.title}</span>
-              <span class="text-xs text-muted mt-2">{tempoRelativo(item.post.data.pubDate)}</span>
-            </a>
-          ) : (
-            <a href={item.ferramenta.href}
-               class={`rounded-2xl border border-line bg-panel p-5 flex flex-col hover:border-brand/50 transition-colors ${item.span}`}>
-              <span class={`text-[11px] font-bold px-2.5 py-1 rounded-full self-start ${corClasses[item.ferramenta.cor].badge}`}>Ferramenta</span>
-              <span class="font-bold text-text mt-3 flex-1 line-clamp-2">{item.ferramenta.titulo}</span>
-              <span class={`text-xs font-semibold mt-2 ${item.ferramenta.cor === 'teal' ? 'text-brand-2' : item.ferramenta.cor === 'blue' ? 'text-[#3d8cf0]' : 'text-[#f0a63c]'}`}>Abrir →</span>
-            </a>
-          )
-        ))}
-      </div>
-    </section>
-  </div>
 </BaseLayout>
 
 <style>
-  .home-a { display: block; }
-  .home-b { display: none; }
-  :root[data-theme="light"] .home-a { display: none; }
-  :root[data-theme="light"] .home-b { display: block; }
-  @media (prefers-color-scheme: light) {
-    :root:not([data-theme="dark"]) .home-a { display: none; }
-    :root:not([data-theme="dark"]) .home-b { display: block; }
-  }
-
   #feed-lista[data-feed-filtro="oferta"] a[data-feed-tipo="post"] { display: none; }
   #feed-lista[data-feed-filtro="post"] a[data-feed-tipo="oferta"] { display: none; }
 </style>
