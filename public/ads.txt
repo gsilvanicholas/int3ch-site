@@ -1,0 +1,7 @@
+# Quando a conta do Google AdSense for aprovada, adicione a linha exata
+# fornecida pelo painel do AdSense (Sites > Adicionar site > ads.txt), no formato:
+#
+# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+#
+# O pub-XXXXXXXXXXXXXXXX e o codigo de editor da sua conta especifica -
+# nao copie de outro site, tem que ser o seu.
