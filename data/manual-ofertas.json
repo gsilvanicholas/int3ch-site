@@ -1,5 +1,14 @@
 [
   {
+    "titulo": "Ryzen 5 5500",
+    "preco": "R$469,00",
+    "link": "https://meli.la/1eggmND",
+    "precoOriginal": "R$699,00",
+    "desconto": 33,
+    "imagem": "/ofertas/ryzen-5-5500.jpg",
+    "cupom": "PROMOHOJE"
+  },
+  {
     "titulo": "Monitor Gamer Curvo Samsung Odyssey G5, VA (32 POLEGADAS) (QHD, 165Hz)",
     "preco": "R$919,00",
     "link": "https://meli.la/2NuCu1E",
