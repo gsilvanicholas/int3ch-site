@@ -117,25 +117,17 @@ for (let i = 0; i < maxLen; i++) {
   description="Noticias, guias de compra e as melhores ofertas de hardware e tecnologia, com curadoria diaria no canal do Telegram."
 >
   {heroOferta && (
-      <section class="border-b border-line bg-panel-2">
-        <div class="max-w-[1600px] mx-auto px-4 sm:px-6 py-10 flex flex-col sm:flex-row items-center justify-between gap-6">
-          <div class="max-w-xl">
-            <p class="text-brand-2 font-semibold uppercase text-xs tracking-wide">Ao vivo no canal</p>
-            <h1 class="text-3xl sm:text-4xl font-extrabold text-text mt-3 leading-tight">{heroOferta.titulo}</h1>
-            <p class="text-muted mt-3">
-              <span class="text-text font-bold text-lg">{heroOferta.preco}</span>
-              {heroOferta.precoOriginal && <span class="line-through text-muted ml-2 text-sm">{heroOferta.precoOriginal}</span>}
-              {heroOferta.desconto ? <span class="ml-2 text-brand-2 font-semibold text-sm">-{heroOferta.desconto}%</span> : null}
-            </p>
-            <a href={heroOferta.link} target="_blank" rel="noopener sponsored"
-               class="inline-block mt-5 bg-gradient-to-r from-brand to-brand-2 text-black font-semibold text-sm px-6 py-3 rounded-full hover:opacity-90 transition-opacity">
-              Ver oferta →
-            </a>
-          </div>
-          {heroOferta.imagem && (
-            <img src={heroOferta.imagem} alt="" loading="eager" referrerpolicy="no-referrer"
-                 class="w-32 h-32 sm:w-40 sm:h-40 object-cover rounded-2xl shrink-0 bg-panel" />
-          )}
+      <section class="border-b border-line bg-panel-2/60">
+        <div class="max-w-[1600px] mx-auto px-4 sm:px-6 py-3 flex items-center gap-2 sm:gap-3 flex-wrap">
+          <span class="w-1.5 h-1.5 rounded-full bg-brand-2 shrink-0"></span>
+          <span class="text-brand-2 font-semibold text-xs uppercase tracking-wide shrink-0">Ao vivo</span>
+          <h1 class="text-sm text-text font-normal truncate min-w-0">{heroOferta.titulo}</h1>
+          <span class="text-text font-bold text-sm shrink-0">{heroOferta.preco}</span>
+          {heroOferta.desconto ? <span class="text-brand-2 font-semibold text-xs shrink-0">-{heroOferta.desconto}%</span> : null}
+          <a href={heroOferta.link} target="_blank" rel="noopener sponsored"
+             class="text-brand font-semibold text-sm hover:text-brand-2 transition-colors shrink-0 sm:ml-auto">
+            Ver oferta →
+          </a>
         </div>
       </section>
     )}
