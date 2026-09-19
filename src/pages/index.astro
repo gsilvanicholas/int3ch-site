@@ -1,4 +1,4 @@
-﻿---
+---
 export const prerender = false;
 
 import BaseLayout from '../layouts/BaseLayout.astro';
@@ -6,13 +6,13 @@ import TelegramCTA from '../components/TelegramCTA.astro';
 import { getPublishedPosts, coverClara } from '../lib/posts';
 import { getOfertas, type Oferta } from '../lib/ofertas';
 
-const posts = (await getPublishedPosts()).slice(0, 3);
+const posts = (await getPublishedPosts()).slice(0, 6);
 
-let produtosDestaque: Oferta[] = [];
+let ofertasFaixa: Oferta[] = [];
 try {
-  produtosDestaque = (await getOfertas()).slice(0, 8);
+  ofertasFaixa = (await getOfertas()).slice(0, 4);
 } catch {
-  produtosDestaque = [];
+  ofertasFaixa = [];
 }
 
 const guias = [
@@ -27,69 +27,21 @@ const guias = [
   title="Tecnologia, hardware e as melhores ofertas"
   description="Noticias, guias de compra e as melhores ofertas de hardware e tecnologia, com curadoria diaria no canal do Telegram."
 >
-  <section class="max-w-5xl mx-auto px-4 sm:px-6 pt-16 pb-14 text-center">
-    <p class="text-brand-2 font-semibold tracking-wide uppercase text-sm mb-3">Hardware · Tecnologia · Ofertas</p>
+  <section class="max-w-5xl mx-auto px-4 sm:px-6 pt-16 pb-12 text-center">
+    <p class="text-brand-2 font-semibold tracking-wide uppercase text-sm mb-3">Hardware · Tecnologia</p>
     <h1 class="text-4xl sm:text-5xl font-extrabold text-text leading-tight max-w-3xl mx-auto">
       Entenda tecnologia e nunca mais pague caro por hardware
     </h1>
     <p class="text-muted text-lg mt-5 max-w-2xl mx-auto">
-      Guias de compra e curadoria diária de ofertas em monitores, placas de vídeo, processadores
-      e periféricos — com critérios claros de qualidade e confiabilidade.
+      Guias de compra práticos e conteúdo sobre hardware e tecnologia, escrito pra quem quer entender
+      antes de comprar — sem enrolação e sem jargão.
     </p>
-    <div class="mt-8 flex justify-center">
-      <TelegramCTA variant="banner" texto="Receba as ofertas assim que elas saem, direto no Telegram." />
-    </div>
-  </section>
-
-  <section class="max-w-5xl mx-auto px-4 sm:px-6 py-10">
-    <div class="flex items-baseline justify-between mb-6">
-      <h2 class="text-2xl font-bold text-text">Ofertas recentes no canal</h2>
-      <a href="https://t.me/int3ch" target="_blank" rel="noopener" class="text-brand-2 text-sm font-semibold hover:text-brand transition-colors">Ver todas →</a>
-    </div>
-    {produtosDestaque.length === 0 ? (
-      <div class="rounded-2xl border border-line bg-panel p-8 text-center text-muted">
-        Nenhuma oferta disponível no momento. Confira o
-        <a href="https://t.me/int3ch" target="_blank" rel="noopener" class="text-brand-2 hover:text-brand transition-colors"> canal no Telegram</a>.
-      </div>
-    ) : (
-      <div class="grid grid-cols-2 sm:grid-cols-4 auto-rows-[150px] sm:auto-rows-[170px] gap-5">
-        {produtosDestaque.map((p, i) => {
-          const grande = i === 0;
-          const alta = i === 3;
-          return (
-            <a href={p.link} target="_blank" rel="noopener sponsored"
-               class:list={[
-                 'group relative rounded-2xl border border-line bg-panel overflow-hidden',
-                 'hover:border-brand/50 hover:-translate-y-1 hover:shadow-xl hover:shadow-brand-2/10 transition-all duration-300',
-                 grande && 'col-span-2 row-span-2',
-                 alta && 'row-span-2',
-               ]}>
-              {p.imagem ? (
-                <img src={p.imagem} alt={p.titulo} loading="lazy" referrerpolicy="no-referrer" class="absolute inset-0 w-full h-full object-cover"
-                     onerror="this.closest('a').querySelector('.img-fallback').hidden=false; this.remove()" />
-              ) : null}
-              <div class="img-fallback absolute inset-0 flex items-center justify-center text-muted text-xs px-2 text-center bg-panel-2" hidden={!!p.imagem}>
-                Imagem indisponível
-              </div>
-              <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent" />
-              {p.desconto ? (
-                <span class="absolute top-2.5 left-2.5 rounded-full bg-gradient-to-r from-brand to-brand-2 text-black text-xs font-bold px-2.5 py-1">
-                  -{p.desconto}%
-                </span>
-              ) : null}
-              <p class="absolute bottom-0 left-0 right-0 text-xs text-white/90 p-3 line-clamp-2 group-hover:text-white transition-colors">
-                {p.titulo}
-              </p>
-            </a>
-          );
-        })}
-      </div>
-    )}
   </section>
 
   <section class="max-w-5xl mx-auto px-4 sm:px-6 py-10">
     <div class="flex items-baseline justify-between mb-6">
       <h2 class="text-2xl font-bold text-text">Guias de compra</h2>
+      <a href="/guias" class="text-brand-2 text-sm font-semibold hover:text-brand transition-colors">Ver todos →</a>
     </div>
     <div class="grid sm:grid-cols-2 gap-5">
       {guias.map((g) => (
@@ -124,5 +76,37 @@ const guias = [
         </a>
       ))}
     </div>
+  </section>
+
+  {ofertasFaixa.length > 0 && (
+    <section class="max-w-5xl mx-auto px-4 sm:px-6 py-10">
+      <div class="flex items-baseline justify-between mb-6">
+        <div>
+          <h2 class="text-2xl font-bold text-text">Fique de olho</h2>
+          <p class="text-muted text-sm mt-1">Algumas ofertas ativas agora no canal.</p>
+        </div>
+        <a href="/ofertas" class="text-brand-2 text-sm font-semibold hover:text-brand transition-colors shrink-0">Ver todas →</a>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        {ofertasFaixa.map((o) => (
+          <a href={o.link} target="_blank" rel="noopener sponsored"
+             class="group flex items-center gap-3 rounded-2xl border border-line bg-panel p-3 hover:border-brand/50 transition-colors">
+            <div class="shrink-0 w-14 h-14 rounded-lg overflow-hidden bg-panel-2 relative">
+              {o.imagem ? (
+                <img src={o.imagem} alt={o.titulo} loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover" />
+              ) : null}
+            </div>
+            <div class="min-w-0">
+              <p class="text-xs text-muted line-clamp-2 group-hover:text-text transition-colors">{o.titulo}</p>
+              {o.desconto ? <p class="text-xs font-bold text-brand-2 mt-0.5">-{o.desconto}%</p> : null}
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <section class="max-w-5xl mx-auto px-4 sm:px-6 py-14">
+    <TelegramCTA variant="banner" texto="Curtiu o conteúdo? Receba as ofertas assim que elas saem, direto no Telegram." />
   </section>
 </BaseLayout>
