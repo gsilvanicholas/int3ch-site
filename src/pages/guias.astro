@@ -11,9 +11,24 @@ const guias = [
 ];
 
 const ferramentas = [
-  { titulo: 'Calculadora de Fonte', href: '/ferramentas/calculadora-de-fonte', resumo: 'Descubra quantos watts sua fonte precisa, com margem de segurança.' },
-  { titulo: 'Verificador de Gargalo CPU/GPU', href: '/ferramentas/verificador-de-gargalo', resumo: 'Veja se seu processador e sua placa de vídeo estão balanceados.' },
-  { titulo: 'Vale a Pena o Upgrade?', href: '/ferramentas/vale-a-pena-upgrade', resumo: 'Compare seu componente atual com um modelo novo e veja o ganho real.' },
+  {
+    titulo: 'Calculadora de Fonte',
+    href: '/ferramentas/calculadora-de-fonte',
+    resumo: 'Descubra quantos watts sua fonte precisa, com margem de segurança.',
+    icone: '<path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/>',
+  },
+  {
+    titulo: 'Verificador de Gargalo CPU/GPU',
+    href: '/ferramentas/verificador-de-gargalo',
+    resumo: 'Veja se seu processador e sua placa de vídeo estão balanceados.',
+    icone: '<path d="M12 15 16 10"/><circle cx="12" cy="15" r="1"/><path d="M4 15a8 8 0 1 1 16 0"/>',
+  },
+  {
+    titulo: 'Vale a Pena o Upgrade?',
+    href: '/ferramentas/vale-a-pena-upgrade',
+    resumo: 'Compare seu componente atual com um modelo novo e veja o ganho real.',
+    icone: '<polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/>',
+  },
 ];
 ---
 <BaseLayout title="Guias de compra" description="Guias praticos para escolher hardware e perifericos sem gastar mais do que precisa.">
@@ -43,6 +58,9 @@ const ferramentas = [
             Novo
           </span>
           <div class="h-full rounded-[calc(1rem-1.5px)] bg-panel p-6">
+            <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-brand to-brand-2 text-black flex items-center justify-center mb-4">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" set:html={f.icone} />
+            </div>
             <h3 class="text-lg font-bold text-text group-hover:text-brand-2 transition-colors">{f.titulo}</h3>
             <p class="text-muted text-sm mt-2">{f.resumo}</p>
             <span class="text-brand-2 text-sm font-semibold mt-4 inline-block">Abrir ferramenta →</span>
