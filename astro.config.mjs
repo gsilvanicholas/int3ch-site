@@ -24,6 +24,11 @@ const POSTS_BLOG = [
   'hdmi-2-0-vs-2-1',
   'pc-superaquecendo',
   'nvme-gen3-vs-gen4',
+  'placa-video-usada',
+  'selo-80-plus-fonte',
+  'vida-util-ssd',
+  '144hz-vs-240hz',
+  'overclock-vale-a-pena',
 ];
 
 // https://astro.build/config

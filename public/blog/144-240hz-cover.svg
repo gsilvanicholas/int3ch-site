@@ -1,0 +1,33 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2f7fe0"/>
+      <stop offset="1" stop-color="#22c9c9"/>
+    </linearGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#12151b"/>
+      <stop offset="1" stop-color="#0c0e12"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+
+  <g transform="translate(110,140)">
+    <rect x="0" y="0" width="160" height="100" rx="10" fill="#0c0e12" stroke="#2f7fe0" stroke-width="3"/>
+    <rect x="60" y="100" width="40" height="20" fill="#0c0e12" stroke="#21252e" stroke-width="2"/>
+    <text x="80" y="60" text-anchor="middle" fill="#f2f4f8" font-family="Arial, sans-serif" font-size="22" font-weight="700">144Hz</text>
+  </g>
+
+  <g transform="translate(330,120)">
+    <rect x="0" y="0" width="180" height="120" rx="10" fill="#0c0e12" stroke="url(#g1)" stroke-width="3"/>
+    <rect x="70" y="120" width="40" height="20" fill="#0c0e12" stroke="#21252e" stroke-width="2"/>
+    <text x="90" y="70" text-anchor="middle" fill="#f2f4f8" font-family="Arial, sans-serif" font-size="24" font-weight="700">165Hz</text>
+  </g>
+
+  <g transform="translate(570,90)">
+    <rect x="0" y="0" width="200" height="150" rx="10" fill="#0c0e12" stroke="#22c9c9" stroke-width="4"/>
+    <rect x="80" y="150" width="40" height="24" fill="#0c0e12" stroke="#21252e" stroke-width="2"/>
+    <text x="100" y="85" text-anchor="middle" fill="#22c9c9" font-family="Arial, sans-serif" font-size="26" font-weight="800">240Hz</text>
+  </g>
+
+  <text x="400" y="380" text-anchor="middle" fill="#f2f4f8" font-family="Arial, sans-serif" font-size="20" font-weight="700">So vale se sua GPU entrega esse FPS</text>
+</svg>

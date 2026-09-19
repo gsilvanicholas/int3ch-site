@@ -1,0 +1,35 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1d5fc7"/>
+      <stop offset="1" stop-color="#0c8a82"/>
+    </linearGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#edeff3"/>
+      <stop offset="1" stop-color="#f6f7f9"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+
+  <g transform="translate(140,140)" fill="none" stroke="#e1e5eb" stroke-width="3">
+    <rect x="0" y="120" width="70" height="50" fill="#f6f7f9"/>
+    <text x="35" y="150" text-anchor="middle" fill="#5b6472" font-family="Arial, sans-serif" font-size="14" stroke="none">Bronze</text>
+  </g>
+  <g transform="translate(140,140)" fill="none" stroke="#e1e5eb" stroke-width="3">
+    <rect x="100" y="80" width="70" height="90" fill="#f6f7f9"/>
+    <text x="135" y="110" text-anchor="middle" fill="#5b6472" font-family="Arial, sans-serif" font-size="14" stroke="none">Silver</text>
+  </g>
+  <g transform="translate(140,140)">
+    <rect x="200" y="40" width="70" height="130" fill="#f6f7f9" stroke="url(#g1)" stroke-width="3"/>
+    <text x="235" y="70" text-anchor="middle" fill="#14181f" font-family="Arial, sans-serif" font-size="14" font-weight="700">Gold</text>
+  </g>
+  <g transform="translate(140,140)" fill="none" stroke="#0c8a82" stroke-width="3">
+    <rect x="300" y="0" width="70" height="170" fill="#f6f7f9"/>
+    <text x="335" y="30" text-anchor="middle" fill="#0c8a82" font-family="Arial, sans-serif" font-size="14" font-weight="700" stroke="none">Platinum</text>
+  </g>
+
+  <text x="620" y="220" text-anchor="middle" fill="#14181f" font-family="Arial, sans-serif" font-size="42" font-weight="800">80+</text>
+  <text x="620" y="255" text-anchor="middle" fill="#5b6472" font-family="Arial, sans-serif" font-size="14">eficiencia minima</text>
+
+  <text x="400" y="380" text-anchor="middle" fill="#14181f" font-family="Arial, sans-serif" font-size="20" font-weight="700">Selo mais alto nao e so sobre economia de luz</text>
+</svg>
