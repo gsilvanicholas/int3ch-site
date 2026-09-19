@@ -29,13 +29,23 @@ const ferramentas = [
       ))}
     </div>
 
-    <h2 id="ferramentas" class="text-2xl font-bold text-text mt-14 mb-6">Ferramentas</h2>
+    <div class="flex items-center gap-3 mt-14 mb-6">
+      <h2 id="ferramentas" class="text-2xl font-bold text-text">Ferramentas</h2>
+      <span class="text-xs font-bold uppercase tracking-wide text-black bg-gradient-to-r from-brand to-brand-2 rounded-full px-2.5 py-1">
+        Novo
+      </span>
+    </div>
     <div class="grid sm:grid-cols-2 gap-5">
       {ferramentas.map((f) => (
-        <a href={f.href} class="group rounded-2xl border border-line bg-panel p-6 hover:border-brand/50 hover:-translate-y-1 hover:shadow-xl hover:shadow-brand-2/10 transition-all duration-300">
-          <h3 class="text-lg font-bold text-text group-hover:text-brand-2 transition-colors">{f.titulo}</h3>
-          <p class="text-muted text-sm mt-2">{f.resumo}</p>
-          <span class="text-brand-2 text-sm font-semibold mt-4 inline-block">Abrir ferramenta →</span>
+        <a href={f.href} class="group relative rounded-2xl p-[1.5px] bg-gradient-to-br from-brand to-brand-2 hover:-translate-y-1 hover:shadow-xl hover:shadow-brand-2/20 transition-all duration-300">
+          <span class="absolute -top-2.5 -right-2.5 text-[11px] font-bold uppercase tracking-wide text-black bg-gradient-to-r from-brand to-brand-2 rounded-full px-2.5 py-1 shadow-lg">
+            Novo
+          </span>
+          <div class="h-full rounded-[calc(1rem-1.5px)] bg-panel p-6">
+            <h3 class="text-lg font-bold text-text group-hover:text-brand-2 transition-colors">{f.titulo}</h3>
+            <p class="text-muted text-sm mt-2">{f.resumo}</p>
+            <span class="text-brand-2 text-sm font-semibold mt-4 inline-block">Abrir ferramenta →</span>
+          </div>
         </a>
       ))}
     </div>
