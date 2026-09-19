@@ -20,6 +20,8 @@ Fonte fraca demais causa desligamentos aleatórios, instabilidade sob carga (pri
 
 Exemplo prático: uma CPU de 120W + GPU de 220W = 340W de base. Somando o resto (~80W) chega a 420W. Com 25% de margem, uma fonte de **550W** já fica confortável.
 
+Não quer fazer a conta na mão? Use a [calculadora de fonte](/ferramentas/calculadora-de-fonte) — é só escolher seus componentes e ela calcula pra você.
+
 ## Certificação 80 Plus: o que muda na prática
 
 A certificação (Bronze, Silver, Gold, Platinum) indica eficiência energética — quanto da energia da tomada realmente vira energia pro PC, versus o que se perde em calor. Bronze já é aceitável pra maioria; Gold é o ponto de equilíbrio comum entre custo e eficiência. A diferença prática entre Gold e Platinum é pequena pro usuário comum, e o preço sobe bem mais que o ganho.

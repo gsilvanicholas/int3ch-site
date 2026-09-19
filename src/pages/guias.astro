@@ -9,6 +9,10 @@ const guias = [
   { titulo: 'Como Escolher um Monitor Gamer', href: '/funis/monitores-gamer', resumo: 'Taxa de atualização, painel e resolução explicados.' },
   { titulo: 'Melhores Mouses Gamer', href: '/funis/mouses-gamer', resumo: 'Comparativo por sensor, DPI e faixa de preço.' },
 ];
+
+const ferramentas = [
+  { titulo: 'Calculadora de Fonte', href: '/ferramentas/calculadora-de-fonte', resumo: 'Descubra quantos watts sua fonte precisa, com margem de segurança.' },
+];
 ---
 <BaseLayout title="Guias de compra" description="Guias praticos para escolher hardware e perifericos sem gastar mais do que precisa.">
   <Breadcrumbs itens={[{ nome: 'Início', href: '/' }, { nome: 'Guias' }]} maxWidth="max-w-5xl" />
@@ -20,6 +24,17 @@ const guias = [
           <h2 class="text-lg font-bold text-text group-hover:text-brand-2 transition-colors">{g.titulo}</h2>
           <p class="text-muted text-sm mt-2">{g.resumo}</p>
           <span class="text-brand-2 text-sm font-semibold mt-4 inline-block">Ver guia →</span>
+        </a>
+      ))}
+    </div>
+
+    <h2 class="text-2xl font-bold text-text mt-14 mb-6">Ferramentas</h2>
+    <div class="grid sm:grid-cols-2 gap-5">
+      {ferramentas.map((f) => (
+        <a href={f.href} class="group rounded-2xl border border-line bg-panel p-6 hover:border-brand/50 hover:-translate-y-1 hover:shadow-xl hover:shadow-brand-2/10 transition-all duration-300">
+          <h3 class="text-lg font-bold text-text group-hover:text-brand-2 transition-colors">{f.titulo}</h3>
+          <p class="text-muted text-sm mt-2">{f.resumo}</p>
+          <span class="text-brand-2 text-sm font-semibold mt-4 inline-block">Abrir ferramenta →</span>
         </a>
       ))}
     </div>
