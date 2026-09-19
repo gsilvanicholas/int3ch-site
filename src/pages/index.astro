@@ -2,111 +2,324 @@
 export const prerender = false;
 
 import BaseLayout from '../layouts/BaseLayout.astro';
-import TelegramCTA from '../components/TelegramCTA.astro';
-import { getPublishedPosts, coverClara } from '../lib/posts';
+import { getPublishedPosts } from '../lib/posts';
 import { getOfertasRecentes, type Oferta } from '../lib/ofertas';
+import { getMembrosCanal } from '../lib/telegram';
 
-const posts = (await getPublishedPosts()).slice(0, 6);
+const posts = await getPublishedPosts();
 
-let ofertasFaixa: Oferta[] = [];
+let ofertas: Oferta[] = [];
 try {
-  ofertasFaixa = await getOfertasRecentes(2, 2);
+  ofertas = await getOfertasRecentes(4, 4);
 } catch {
-  ofertasFaixa = [];
+  ofertas = [];
+}
+
+let membros: number | null = null;
+try {
+  membros = await getMembrosCanal();
+} catch {
+  membros = null;
 }
 
 const guias = [
-  { titulo: 'Como Escolher uma Placa de Vídeo', href: '/funis/placa-de-video', resumo: 'VRAM, resolução e ray tracing por faixa de orçamento.' },
-  { titulo: 'Como Escolher um Processador', href: '/funis/processador', resumo: 'Núcleos, TDP e compatibilidade de soquete explicados.' },
-  { titulo: 'Como Escolher uma Placa-Mãe', href: '/funis/placa-mae', resumo: 'Soquete, chipset, tamanho e VRM explicados.' },
-  { titulo: 'Como Escolher um Monitor Gamer', href: '/funis/monitores-gamer', resumo: 'Taxa de atualização, painel e resolução explicados.' },
-  { titulo: 'Melhores Mouses Gamer', href: '/funis/mouses-gamer', resumo: 'Comparativo por sensor, DPI e faixa de preço.' },
+  { titulo: 'Como Escolher uma Placa de Vídeo', href: '/funis/placa-de-video' },
+  { titulo: 'Como Escolher um Processador', href: '/funis/processador' },
+  { titulo: 'Certificação 80 Plus explicada', href: '/blog/selo-80-plus-fonte' },
 ];
+
+const ferramentas = [
+  {
+    titulo: 'Calculadora de Fonte',
+    href: '/ferramentas/calculadora-de-fonte',
+    resumo: 'Quantos watts sua fonte precisa, com margem de segurança.',
+    categoria: 'Cálculo',
+    cor: 'teal',
+    icone: '<path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/>',
+  },
+  {
+    titulo: 'Verificador de Gargalo',
+    href: '/ferramentas/verificador-de-gargalo',
+    resumo: 'Veja se CPU e GPU estão balanceados.',
+    categoria: 'Diagnóstico',
+    cor: 'blue',
+    icone: '<path d="M12 15 16 10"/><circle cx="12" cy="15" r="1"/><path d="M4 15a8 8 0 1 1 16 0"/>',
+  },
+  {
+    titulo: 'Vale a Pena o Upgrade?',
+    href: '/ferramentas/vale-a-pena-upgrade',
+    resumo: 'Compare seu componente atual com um modelo novo.',
+    categoria: 'Decisão de compra',
+    cor: 'amber',
+    icone: '<polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/>',
+  },
+];
+
+const corClasses: Record<string, { badge: string; chip: string }> = {
+  teal: { badge: 'bg-brand-2/15 text-brand-2', chip: 'bg-brand-2/15 text-brand-2' },
+  blue: { badge: 'bg-[#3d8cf0]/15 text-[#3d8cf0]', chip: 'bg-[#3d8cf0]/15 text-[#3d8cf0]' },
+  amber: { badge: 'bg-[#f0a63c]/15 text-[#f0a63c]', chip: 'bg-[#f0a63c]/15 text-[#f0a63c]' },
+};
+
+function tempoRelativo(data: Date): string {
+  const diffMin = Math.max(1, Math.floor((Date.now() - data.getTime()) / 60000));
+  if (diffMin < 60) return `há ${diffMin} min`;
+  const diffH = Math.floor(diffMin / 60);
+  if (diffH < 24) return `há ${diffH} h`;
+  const diffD = Math.floor(diffH / 24);
+  return `há ${diffD} d`;
+}
+
+interface ItemFeed {
+  tipo: 'oferta' | 'post';
+  titulo: string;
+  href: string;
+  externo: boolean;
+  meta: string;
+  tempo: string | null;
+  preco?: string;
+  imagem?: string;
+}
+
+const heroOferta = ofertas[0] ?? null;
+const ofertasRestantes = ofertas.slice(1);
+
+const itensOferta: ItemFeed[] = ofertasRestantes.map((o) => ({
+  tipo: 'oferta',
+  titulo: o.titulo,
+  href: o.link,
+  externo: true,
+  meta: o.cupom ? `Cupom: ${o.cupom}` : '',
+  tempo: null,
+  preco: o.preco,
+  imagem: o.imagem,
+}));
+
+const itensPost: ItemFeed[] = posts.slice(0, 6).map((p) => ({
+  tipo: 'post',
+  titulo: p.data.title,
+  href: `/blog/${p.id}`,
+  externo: false,
+  meta: p.data.description,
+  tempo: tempoRelativo(p.data.pubDate),
+}));
+
+const feed: ItemFeed[] = [];
+const maxLen = Math.max(itensOferta.length, itensPost.length);
+for (let i = 0; i < maxLen; i++) {
+  if (itensOferta[i]) feed.push(itensOferta[i]);
+  if (itensPost[i]) feed.push(itensPost[i]);
+}
+
+type Ladrilho =
+  | { tipo: 'oferta'; span: string; oferta: Oferta }
+  | { tipo: 'post'; span: string; post: (typeof posts)[number] }
+  | { tipo: 'ferramenta'; span: string; ferramenta: (typeof ferramentas)[number] };
+
+const mosaico: Ladrilho[] = [];
+if (ofertasRestantes[0]) mosaico.push({ tipo: 'oferta', span: 'sm:col-span-2 sm:row-span-2', oferta: ofertasRestantes[0] });
+if (posts[0]) mosaico.push({ tipo: 'post', span: 'sm:col-span-2', post: posts[0] });
+mosaico.push({ tipo: 'ferramenta', span: '', ferramenta: ferramentas[0] });
+mosaico.push({ tipo: 'ferramenta', span: '', ferramenta: ferramentas[1] });
+if (posts[1]) mosaico.push({ tipo: 'post', span: 'sm:col-span-2', post: posts[1] });
+mosaico.push({ tipo: 'ferramenta', span: '', ferramenta: ferramentas[2] });
+if (ofertasRestantes[1]) mosaico.push({ tipo: 'oferta', span: '', oferta: ofertasRestantes[1] });
 ---
 <BaseLayout
   title="Tecnologia, hardware e as melhores ofertas"
   description="Noticias, guias de compra e as melhores ofertas de hardware e tecnologia, com curadoria diaria no canal do Telegram."
 >
-  <section class="max-w-5xl mx-auto px-4 sm:px-6 pt-16 pb-12 text-center">
-    <p class="text-brand-2 font-semibold tracking-wide uppercase text-sm mb-3">Hardware · Tecnologia</p>
-    <h1 class="text-4xl sm:text-5xl font-extrabold text-text leading-tight max-w-3xl mx-auto">
-      Entenda tecnologia e nunca mais pague caro por hardware
-    </h1>
-    <p class="text-muted text-lg mt-5 max-w-2xl mx-auto">
-      Guias de compra práticos e conteúdo sobre hardware e tecnologia, escrito pra quem quer entender
-      antes de comprar — sem enrolação e sem jargão.
-    </p>
-  </section>
-
-  <section class="max-w-5xl mx-auto px-4 sm:px-6 py-10">
-    <div class="flex items-baseline justify-between mb-6">
-      <h2 class="text-2xl font-bold text-text">Guias de compra</h2>
-      <a href="/guias" class="text-brand-2 text-sm font-semibold hover:text-brand transition-colors">Ver todos →</a>
-    </div>
-    <div class="grid sm:grid-cols-2 gap-5">
-      {guias.map((g) => (
-        <a href={g.href} class="group rounded-2xl border border-line bg-panel p-6 hover:border-brand/50 hover:-translate-y-1 hover:shadow-xl hover:shadow-brand-2/10 transition-all duration-300">
-          <h3 class="text-lg font-bold text-text group-hover:text-brand-2 transition-colors">{g.titulo}</h3>
-          <p class="text-muted text-sm mt-2">{g.resumo}</p>
-          <span class="text-brand-2 text-sm font-semibold mt-4 inline-block">Ver guia →</span>
-        </a>
-      ))}
-    </div>
-  </section>
-
-  <section class="max-w-5xl mx-auto px-4 sm:px-6 py-10">
-    <div class="flex items-baseline justify-between mb-6">
-      <h2 class="text-2xl font-bold text-text">Últimos artigos</h2>
-      <a href="/blog" class="text-brand-2 text-sm font-semibold hover:text-brand transition-colors">Ver todos →</a>
-    </div>
-    <div class="grid sm:grid-cols-3 gap-5">
-      {posts.map((post) => (
-        <a href={`/blog/${post.id}`} class="group rounded-2xl border border-line bg-panel overflow-hidden hover:border-brand/50 hover:-translate-y-1 hover:shadow-xl hover:shadow-brand-2/10 transition-all duration-300">
-          {post.data.cover && (
-            <div class="aspect-[16/9] bg-panel-2 overflow-hidden">
-              <img src={post.data.cover} alt="" loading="lazy" class="cover-dark w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-              <img src={coverClara(post.data.cover)} alt="" loading="lazy" class="cover-light w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-            </div>
-          )}
-          <div class="p-5">
-            <p class="text-xs text-muted mb-2">{post.data.pubDate.toLocaleDateString('pt-BR')}</p>
-            <h3 class="font-bold text-text group-hover:text-brand-2 transition-colors leading-snug">{post.data.title}</h3>
-            <p class="text-muted text-sm mt-2 line-clamp-3">{post.data.description}</p>
+  <div class="home-a">
+    {heroOferta && (
+      <section class="border-b border-line bg-panel-2">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 py-10 flex flex-col sm:flex-row items-center justify-between gap-6">
+          <div class="max-w-xl">
+            <p class="text-brand-2 font-semibold uppercase text-xs tracking-wide">Ao vivo no canal</p>
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-text mt-3 leading-tight">{heroOferta.titulo}</h1>
+            <p class="text-muted mt-3">
+              <span class="text-text font-bold text-lg">{heroOferta.preco}</span>
+              {heroOferta.precoOriginal && <span class="line-through text-muted ml-2 text-sm">{heroOferta.precoOriginal}</span>}
+              {heroOferta.desconto ? <span class="ml-2 text-brand-2 font-semibold text-sm">-{heroOferta.desconto}%</span> : null}
+            </p>
+            <a href={heroOferta.link} target="_blank" rel="noopener sponsored"
+               class="inline-block mt-5 bg-gradient-to-r from-brand to-brand-2 text-black font-semibold text-sm px-6 py-3 rounded-full hover:opacity-90 transition-opacity">
+              Ver oferta →
+            </a>
           </div>
-        </a>
-      ))}
-    </div>
-  </section>
-
-  {ofertasFaixa.length > 0 && (
-    <section class="max-w-5xl mx-auto px-4 sm:px-6 py-10">
-      <div class="flex items-baseline justify-between mb-6">
-        <div>
-          <h2 class="text-2xl font-bold text-text">Fique de olho</h2>
-          <p class="text-muted text-sm mt-1">Algumas ofertas ativas agora no canal.</p>
+          {heroOferta.imagem && (
+            <img src={heroOferta.imagem} alt="" loading="eager" referrerpolicy="no-referrer"
+                 class="w-32 h-32 sm:w-40 sm:h-40 object-cover rounded-2xl shrink-0 bg-panel" />
+          )}
         </div>
-        <a href="/ofertas" class="text-brand-2 text-sm font-semibold hover:text-brand transition-colors shrink-0">Ver todas →</a>
-      </div>
-      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-        {ofertasFaixa.map((o) => (
-          <a href={o.link} target="_blank" rel="noopener sponsored"
-             class="group flex items-center gap-3 rounded-2xl border border-line bg-panel p-3 hover:border-brand/50 transition-colors">
-            <div class="shrink-0 w-14 h-14 rounded-lg overflow-hidden bg-panel-2 relative">
-              {o.imagem ? (
-                <img src={o.imagem} alt={o.titulo} loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover" />
-              ) : null}
+      </section>
+    )}
+
+    <section class="max-w-5xl mx-auto px-4 sm:px-6 py-10">
+      <h2 class="text-2xl font-bold text-text">Ferramentas em destaque</h2>
+      <p class="text-muted text-sm mt-1">As ferramentas mais usadas do site, direto na página inicial.</p>
+      <div class="grid sm:grid-cols-3 gap-5 mt-6">
+        {ferramentas.map((f) => (
+          <a href={f.href} class="group rounded-2xl border border-line bg-panel p-6 hover:border-brand/50 hover:-translate-y-1 transition-all duration-300">
+            <span class={`text-xs font-bold px-2.5 py-1 rounded-full ${corClasses[f.cor].badge}`}>{f.categoria}</span>
+            <div class={`w-11 h-11 rounded-xl mt-4 flex items-center justify-center ${corClasses[f.cor].chip}`}>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" set:html={f.icone} />
             </div>
-            <div class="min-w-0">
-              <p class="text-xs text-muted line-clamp-2 group-hover:text-text transition-colors">{o.titulo}</p>
-              {o.desconto ? <p class="text-xs font-bold text-brand-2 mt-0.5">-{o.desconto}%</p> : null}
-            </div>
+            <h3 class="font-bold text-text mt-4 group-hover:text-brand-2 transition-colors">{f.titulo}</h3>
+            <p class="text-muted text-sm mt-2">{f.resumo}</p>
+            <span class="text-brand-2 text-sm font-semibold mt-4 inline-block">Abrir ferramenta →</span>
           </a>
         ))}
       </div>
     </section>
-  )}
 
-  <section class="max-w-5xl mx-auto px-4 sm:px-6 py-14">
-    <TelegramCTA variant="banner" texto="Curtiu o conteúdo? Receba as ofertas assim que elas saem, direto no Telegram." />
-  </section>
+    <section class="max-w-5xl mx-auto px-4 sm:px-6 py-10 grid lg:grid-cols-[2fr_1fr] gap-10 items-start">
+      <div>
+        <h2 class="text-2xl font-bold text-text mb-4">Feed</h2>
+        <div class="flex gap-2 mb-2" id="feed-tabs">
+          <button type="button" data-filtro="todos" class="feed-tab px-3.5 py-1.5 rounded-full text-sm font-semibold border border-line">Tudo</button>
+          <button type="button" data-filtro="oferta" class="feed-tab px-3.5 py-1.5 rounded-full text-sm font-semibold border border-transparent text-muted">Ofertas</button>
+          <button type="button" data-filtro="post" class="feed-tab px-3.5 py-1.5 rounded-full text-sm font-semibold border border-transparent text-muted">Conteúdo</button>
+        </div>
+        <div id="feed-lista">
+          {feed.map((item) => (
+            <a href={item.href} target={item.externo ? '_blank' : undefined} rel={item.externo ? 'noopener sponsored' : undefined}
+               data-feed-tipo={item.tipo}
+               class="group flex items-center gap-3 py-3 border-b border-line hover:bg-panel/60 transition-colors -mx-2 px-2 rounded-lg">
+              <span class={`shrink-0 text-[11px] font-bold px-2.5 py-1 rounded-full ${item.tipo === 'oferta' ? 'bg-brand-2/15 text-brand-2' : 'bg-[#3d8cf0]/15 text-[#3d8cf0]'}`}>
+                {item.tipo === 'oferta' ? 'Oferta' : 'Post'}
+              </span>
+              <span class="min-w-0 flex-1">
+                <span class="block text-sm text-text group-hover:text-brand-2 transition-colors line-clamp-1">{item.titulo}</span>
+                {item.meta && <span class="block text-xs text-muted mt-0.5 line-clamp-1">{item.meta}</span>}
+              </span>
+              {item.tipo === 'oferta' ? (
+                <span class="shrink-0 text-sm font-bold text-text">{item.preco}</span>
+              ) : (
+                <span class="shrink-0 text-xs text-muted">{item.tempo}</span>
+              )}
+            </a>
+          ))}
+          {feed.length === 0 && <p class="text-muted text-sm">Nenhuma novidade por aqui ainda.</p>}
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-4">
+        <div class="rounded-2xl bg-panel-2 p-5">
+          {membros !== null && (
+            <div class="flex items-center justify-between">
+              <span class="text-xs text-muted">Membros no canal</span>
+              <span class="text-lg font-bold text-text">{membros.toLocaleString('pt-BR')}</span>
+            </div>
+          )}
+          <div class={`flex items-center justify-between ${membros !== null ? 'mt-3' : ''}`}>
+            <span class="text-xs text-muted">Ofertas no feed</span>
+            <span class="text-lg font-bold text-text">{ofertas.length}</span>
+          </div>
+        </div>
+        <div class="rounded-2xl border border-brand-2/30 bg-panel p-5">
+          <p class="text-sm text-text mb-3">Ofertas de hardware e tecnologia todo dia, direto no seu Telegram.</p>
+          <a href="https://t.me/int3ch" target="_blank" rel="noopener"
+             class="inline-block bg-gradient-to-r from-brand to-brand-2 text-black font-semibold text-sm px-4 py-2 rounded-full hover:opacity-90 transition-opacity">
+            Entrar no canal →
+          </a>
+        </div>
+        <div class="rounded-2xl border border-line bg-panel p-5">
+          <span class="text-xs text-muted">Guias em destaque</span>
+          <div class="flex flex-col gap-2 mt-3">
+            {guias.map((g) => (
+              <a href={g.href} class="text-sm text-text hover:text-brand-2 transition-colors">{g.titulo} →</a>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="home-b">
+    <section class="max-w-5xl mx-auto px-4 sm:px-6 pt-12 pb-6">
+      <p class="text-muted text-xs font-bold uppercase tracking-wide">iNT3CH — hardware sem enrolação</p>
+      <h1 class="text-3xl sm:text-5xl font-extrabold text-text mt-4 max-w-2xl leading-[1.08]">Ofertas boas têm hora certa. A gente avisa.</h1>
+      {heroOferta && (
+        <p class="mt-5 text-sm flex items-center gap-2 flex-wrap">
+          <span class="w-1.5 h-1.5 rounded-full bg-brand-2 inline-block"></span>
+          <span class="text-brand-2 font-bold">Ao vivo:</span>
+          <span class="text-text">{heroOferta.titulo} — {heroOferta.preco}</span>
+          <a href={heroOferta.link} target="_blank" rel="noopener sponsored" class="text-brand font-semibold hover:text-brand-2 transition-colors">Ver oferta →</a>
+        </p>
+      )}
+    </section>
+
+    <section class="max-w-5xl mx-auto px-4 sm:px-6 pb-16">
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:auto-rows-[160px]">
+        {mosaico.map((item) => (
+          item.tipo === 'oferta' ? (
+            <a href={item.oferta.link} target="_blank" rel="noopener sponsored"
+               class={`rounded-2xl border border-line bg-panel p-5 flex flex-col hover:border-brand/50 transition-colors ${item.span}`}>
+              <span class="bg-brand-2/15 text-brand-2 text-[11px] font-bold px-2.5 py-1 rounded-full self-start">Oferta</span>
+              <span class="font-bold text-text mt-3 flex-1 line-clamp-2">{item.oferta.titulo}</span>
+              <span class="text-sm font-bold text-text mt-2">{item.oferta.preco}</span>
+            </a>
+          ) : item.tipo === 'post' ? (
+            <a href={`/blog/${item.post.id}`}
+               class={`rounded-2xl border border-line bg-panel p-5 flex flex-col hover:border-brand/50 transition-colors ${item.span}`}>
+              <span class="bg-[#3d8cf0]/15 text-[#3d8cf0] text-[11px] font-bold px-2.5 py-1 rounded-full self-start">Post</span>
+              <span class="font-bold text-text mt-3 flex-1 line-clamp-2">{item.post.data.title}</span>
+              <span class="text-xs text-muted mt-2">{tempoRelativo(item.post.data.pubDate)}</span>
+            </a>
+          ) : (
+            <a href={item.ferramenta.href}
+               class={`rounded-2xl border border-line bg-panel p-5 flex flex-col hover:border-brand/50 transition-colors ${item.span}`}>
+              <span class={`text-[11px] font-bold px-2.5 py-1 rounded-full self-start ${corClasses[item.ferramenta.cor].badge}`}>Ferramenta</span>
+              <span class="font-bold text-text mt-3 flex-1 line-clamp-2">{item.ferramenta.titulo}</span>
+              <span class={`text-xs font-semibold mt-2 ${item.ferramenta.cor === 'teal' ? 'text-brand-2' : item.ferramenta.cor === 'blue' ? 'text-[#3d8cf0]' : 'text-[#f0a63c]'}`}>Abrir →</span>
+            </a>
+          )
+        ))}
+      </div>
+    </section>
+  </div>
 </BaseLayout>
+
+<style>
+  .home-a { display: block; }
+  .home-b { display: none; }
+  :root[data-theme="light"] .home-a { display: none; }
+  :root[data-theme="light"] .home-b { display: block; }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) .home-a { display: none; }
+    :root:not([data-theme="dark"]) .home-b { display: block; }
+  }
+
+  #feed-lista[data-feed-filtro="oferta"] a[data-feed-tipo="post"] { display: none; }
+  #feed-lista[data-feed-filtro="post"] a[data-feed-tipo="oferta"] { display: none; }
+</style>
+
+<script>
+  function setupFeedTabs() {
+    const tabs = document.querySelectorAll<HTMLButtonElement>('.feed-tab');
+    const lista = document.getElementById('feed-lista');
+    if (!lista || tabs.length === 0) return;
+
+    tabs.forEach((btn) => {
+      if (btn.hasAttribute('data-bound')) return;
+      btn.setAttribute('data-bound', 'true');
+      btn.addEventListener('click', () => {
+        tabs.forEach((b) => {
+          b.classList.remove('border-line');
+          b.classList.add('border-transparent', 'text-muted');
+          b.style.background = 'transparent';
+        });
+        btn.classList.remove('border-transparent', 'text-muted');
+        btn.classList.add('border-line');
+        btn.style.background = 'var(--color-panel-2)';
+
+        const filtro = btn.getAttribute('data-filtro');
+        if (filtro === 'todos') lista.removeAttribute('data-feed-filtro');
+        else lista.setAttribute('data-feed-filtro', filtro || 'todos');
+      });
+    });
+  }
+
+  setupFeedTabs();
+  document.addEventListener('astro:page-load', setupFeedTabs);
+</script>
