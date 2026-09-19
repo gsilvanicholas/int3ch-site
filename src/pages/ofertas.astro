@@ -7,6 +7,8 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
 import { getOfertas, type Oferta } from '../lib/ofertas';
 import ShareButtons from '../components/ShareButtons.astro';
 
+const QTD_INICIAL = 12;
+
 let ofertas: Oferta[] = [];
 let erro = false;
 
@@ -39,9 +41,43 @@ try {
         <a href="https://t.me/int3ch" target="_blank" rel="noopener" class="text-brand-2 hover:text-brand transition-colors"> canal no Telegram</a>.
       </div>
     ) : (
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-        {ofertas.map((o) => <OfertaCard oferta={o} />)}
-      </div>
+      <>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+          {ofertas.map((o, i) => (
+            <div class="contents" data-oferta-extra={i >= QTD_INICIAL ? 'true' : 'false'}>
+              <OfertaCard oferta={o} />
+            </div>
+          ))}
+        </div>
+        {ofertas.length > QTD_INICIAL ? (
+          <div class="mt-8 flex justify-center">
+            <button type="button" id="carregar-mais-ofertas"
+                    class="rounded-full border border-line px-6 py-2.5 text-sm font-semibold text-text hover:border-brand/50 hover:text-brand-2 transition-colors">
+              Carregar mais ofertas ({ofertas.length - QTD_INICIAL})
+            </button>
+          </div>
+        ) : null}
+      </>
     )}
   </section>
 </BaseLayout>
+
+<style>
+  [data-oferta-extra="true"] {
+    display: none !important;
+  }
+</style>
+
+<script>
+  function setupCarregarMais() {
+    const btn = document.getElementById('carregar-mais-ofertas');
+    if (!btn || btn.hasAttribute('data-bound')) return;
+    btn.setAttribute('data-bound', 'true');
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('[data-oferta-extra="true"]').forEach((el) => el.setAttribute('data-oferta-extra', 'false'));
+      btn.remove();
+    });
+  }
+  setupCarregarMais();
+  document.addEventListener('astro:page-load', setupCarregarMais);
+</script>
