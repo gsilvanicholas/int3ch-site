@@ -3,16 +3,20 @@ export const prerender = false;
 
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getPublishedPosts } from '../lib/posts';
-import { getOfertasRecentes, type Oferta } from '../lib/ofertas';
+import { getOfertasRecentesComTotal, type Oferta } from '../lib/ofertas';
 import { getMembrosCanal } from '../lib/telegram';
 
 const posts = await getPublishedPosts();
 
 let ofertas: Oferta[] = [];
+let totalOfertas = 0;
 try {
-  ofertas = await getOfertasRecentes(4, 4);
+  const resultado = await getOfertasRecentesComTotal(4, 4);
+  ofertas = resultado.amostra;
+  totalOfertas = resultado.total;
 } catch {
   ofertas = [];
+  totalOfertas = 0;
 }
 
 let membros: number | null = null;
@@ -190,8 +194,8 @@ for (let i = 0; i < maxLen; i++) {
             </div>
           )}
           <div class={`flex items-center justify-between ${membros !== null ? 'mt-3' : ''}`}>
-            <span class="text-xs text-muted">Ofertas no feed</span>
-            <span class="text-lg font-bold text-text">{ofertas.length}</span>
+            <span class="text-xs text-muted">Ofertas ativas</span>
+            <span class="text-lg font-bold text-text">{totalOfertas}</span>
           </div>
         </div>
         <div class="rounded-2xl border border-brand-2/30 bg-panel p-5">

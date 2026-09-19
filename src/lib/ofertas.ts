@@ -37,6 +37,20 @@ export async function getOfertasRecentes(qtdManual: number, qtdAutomatico: numbe
   return [...manuais.slice(0, qtdManual), ...automaticas.slice(0, qtdAutomatico)];
 }
 
+// Igual getOfertasRecentes, mas tambem devolve o total real disponivel (manuais +
+// automaticas) - usado pra estatisticas na home, que nao podem mostrar so o
+// tamanho da amostra como se fosse o total de ofertas do site.
+export async function getOfertasRecentesComTotal(
+  qtdManual: number,
+  qtdAutomatico: number
+): Promise<{ amostra: Oferta[]; total: number }> {
+  const [manuais, automaticas] = await Promise.all([buscarFonte(URL_MANUAL), buscarFonte(URL_AUTOMATICO)]);
+  return {
+    amostra: [...manuais.slice(0, qtdManual), ...automaticas.slice(0, qtdAutomatico)],
+    total: manuais.length + automaticas.length,
+  };
+}
+
 export function filtrarPorTermos(ofertas: Oferta[], termos: string[], limite = 6, excluir: string[] = []): Oferta[] {
   const termosNormalizados = termos.map((t) => t.toLowerCase());
   const excluirNormalizados = excluir.map((t) => t.toLowerCase());
