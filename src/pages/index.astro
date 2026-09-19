@@ -4,13 +4,13 @@ export const prerender = false;
 import BaseLayout from '../layouts/BaseLayout.astro';
 import TelegramCTA from '../components/TelegramCTA.astro';
 import { getPublishedPosts, coverClara } from '../lib/posts';
-import { getOfertas, type Oferta } from '../lib/ofertas';
+import { getOfertasRecentes, type Oferta } from '../lib/ofertas';
 
 const posts = (await getPublishedPosts()).slice(0, 6);
 
 let ofertasFaixa: Oferta[] = [];
 try {
-  ofertasFaixa = (await getOfertas()).slice(0, 4);
+  ofertasFaixa = await getOfertasRecentes(2, 2);
 } catch {
   ofertasFaixa = [];
 }

@@ -9,25 +9,32 @@ export interface Oferta {
   cupom?: string;
 }
 
-const FONTES = [
-  'https://raw.githubusercontent.com/gsilvanicholas/int3ch-site/master/data/manual-ofertas.json',
-  'https://raw.githubusercontent.com/gsilvanicholas/int3ch-site/master/data/ofertas.json',
-];
+const URL_MANUAL = 'https://raw.githubusercontent.com/gsilvanicholas/int3ch-site/master/data/manual-ofertas.json';
+const URL_AUTOMATICO = 'https://raw.githubusercontent.com/gsilvanicholas/int3ch-site/master/data/ofertas.json';
+
+async function buscarFonte(url: string): Promise<Oferta[]> {
+  try {
+    const resp = await fetch(url, { cache: 'no-store' });
+    if (resp.ok) return (await resp.json()) as Oferta[];
+  } catch {
+    // ignora fonte indisponivel, segue com as demais
+  }
+  return [];
+}
 
 export async function getOfertas(): Promise<Oferta[]> {
-  const resultados = await Promise.all(
-    FONTES.map(async (url) => {
-      try {
-        const resp = await fetch(url, { cache: 'no-store' });
-        if (resp.ok) return (await resp.json()) as Oferta[];
-      } catch {
-        // ignora fonte indisponivel, segue com as demais
-      }
-      return [] as Oferta[];
-    })
-  );
-  // manuais primeiro: curadoria direta do canal, prioridade sobre o feed automatico
-  return resultados.flat();
+  // manuais primeiro (mais recente primeiro dentro da lista): curadoria direta do
+  // canal, prioridade sobre o feed automatico
+  const [manuais, automaticas] = await Promise.all([buscarFonte(URL_MANUAL), buscarFonte(URL_AUTOMATICO)]);
+  return [...manuais, ...automaticas];
+}
+
+// Mistura as ofertas manuais mais recentes com as do feed automatico (que se
+// renova a cada ciclo do bot), pra secoes de destaque nao ficarem sempre com
+// o mesmo conjunto parado.
+export async function getOfertasRecentes(qtdManual: number, qtdAutomatico: number): Promise<Oferta[]> {
+  const [manuais, automaticas] = await Promise.all([buscarFonte(URL_MANUAL), buscarFonte(URL_AUTOMATICO)]);
+  return [...manuais.slice(0, qtdManual), ...automaticas.slice(0, qtdAutomatico)];
 }
 
 export function filtrarPorTermos(ofertas: Oferta[], termos: string[], limite = 6, excluir: string[] = []): Oferta[] {
