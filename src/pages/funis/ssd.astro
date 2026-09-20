@@ -1,0 +1,96 @@
+---
+export const prerender = false;
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import TelegramCTA from '../../components/TelegramCTA.astro';
+import OfertasRelacionadas from '../../components/OfertasRelacionadas.astro';
+import FAQ from '../../components/FAQ.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ShareButtons from '../../components/ShareButtons.astro';
+
+const perguntas = [
+  {
+    pergunta: 'Preciso de NVMe ou SATA já resolve?',
+    resposta: 'SATA já é bem mais rápido que HD e resolve pra a maioria dos usos (sistema, jogos, arquivos). NVMe compensa quando você sente o tempo de carregamento (jogos muito grandes, edição de vídeo, transferência constante de arquivos pesados). Se sua placa-mãe tem slot M.2 livre, o custo extra do NVMe costuma valer a pena hoje.',
+  },
+  {
+    pergunta: 'SSD Gen5 vale a pena em 2026?',
+    resposta: 'Pra maioria dos usuários, não ainda — o ganho de Gen5 sobre Gen4 é pouco perceptível fora de cargas de trabalho bem específicas (edição profissional, servidores), e os modelos Gen5 custam significativamente mais e esquentam mais. Gen4 continua sendo o melhor custo-benefício pra jogos e uso geral.',
+  },
+  {
+    pergunta: 'Qual a diferença entre TLC e QLC?',
+    resposta: 'É o tipo de célula de memória usada internamente. TLC é mais rápido e mais durável a longo prazo. QLC costuma ser mais barato por GB, mas tem desempenho sustentado pior em transferências grandes e contínuas (a velocidade despenca quando o cache rápido enche). Pra uso geral não faz diferença perceptível; pra transferências grandes frequentes, TLC compensa.',
+  },
+  {
+    pergunta: 'Dá pra usar SSD SATA e NVMe juntos no mesmo PC?',
+    resposta: 'Sim, sem problema — são interfaces diferentes e a maioria das placas-mãe atuais tem pelo menos um slot M.2 (NVMe) e portas SATA. Uma estratégia comum é usar um NVMe menor pro sistema operacional e jogos principais, e um SATA maior pra armazenamento geral.',
+  },
+];
+
+const pontos = [
+  {
+    titulo: 'SATA vs NVMe: a diferença real de velocidade',
+    texto: 'SSD SATA já é muito mais rápido que HD, mas é limitado pela interface (~550MB/s). NVMe (via slot M.2) pode chegar a vários gigabytes por segundo, reduzindo tempo de carregamento em jogos grandes e transferências de arquivos pesados. Confirme se sua placa-mãe tem slot M.2 livre antes de escolher NVMe.',
+  },
+  {
+    titulo: 'Capacidade: pense no que realmente vai instalar',
+    texto: '500GB já aperta rápido com poucos jogos AAA instalados. 1TB é o ponto de equilíbrio mais comum hoje pra sistema + biblioteca de jogos média. 2TB ou mais vale pra quem mantém uma biblioteca grande ou trabalha com arquivos pesados (vídeo, fotografia em RAW).',
+  },
+  {
+    titulo: 'Geração do NVMe: Gen3, Gen4 ou Gen5',
+    texto: 'Cada geração dobra a velocidade máxima teórica da anterior, mas o ganho real percebido no dia a dia é bem menor que o ganho no papel — principalmente de Gen4 pra Gen5. Confira também se sua placa-mãe suporta a geração antes de pagar a mais por um SSD que ela não vai aproveitar por completo.',
+  },
+  {
+    titulo: 'TLC vs QLC e presença de cache DRAM',
+    texto: 'Dois SSDs com a mesma capacidade e interface podem ter desempenho sustentado bem diferente dependendo do tipo de célula (TLC é mais consistente, QLC é mais barato mas desacelera em transferências longas) e da presença de um cache DRAM dedicado. Vale olhar reviews técnicos, não só o preço por GB.',
+  },
+];
+---
+<BaseLayout
+  title="Como Escolher um SSD: Guia de Compra 2026"
+  description="SATA vs NVMe, capacidade, geracao Gen3/Gen4/Gen5 e TLC vs QLC explicados de forma pratica pra escolher o SSD certo."
+>
+  <Breadcrumbs itens={[{ nome: 'Início', href: '/' }, { nome: 'Guias', href: '/guias' }, { nome: 'SSD' }]} />
+  <section class="max-w-3xl mx-auto px-4 sm:px-6 pt-6 pb-14">
+    <p class="text-brand-2 font-semibold uppercase text-sm tracking-wide mb-3">Guia de compra</p>
+    <h1 class="text-3xl sm:text-4xl font-extrabold text-text leading-tight">Como Escolher um SSD</h1>
+    <p class="text-muted text-lg mt-4">
+      SATA, NVMe, Gen3, Gen4, TLC, QLC — a quantidade de sigla espanta mais do que devia. Esses quatro pontos
+      resumem o que de fato muda no dia a dia, sem pagar por velocidade que você não vai sentir.
+    </p>
+
+    <div class="mt-5">
+      <ShareButtons titulo="Como Escolher um SSD" />
+    </div>
+
+    <div class="mt-10 space-y-6">
+      {pontos.map((p) => (
+        <div class="rounded-2xl border border-line bg-panel p-6">
+          <h2 class="text-xl font-bold text-text">{p.titulo}</h2>
+          <p class="text-muted text-sm mt-3 leading-relaxed">{p.texto}</p>
+        </div>
+      ))}
+    </div>
+
+    <div class="mt-10 rounded-2xl border border-brand/30 bg-gradient-to-br from-panel to-panel-2 p-6">
+      <h2 class="text-xl font-bold text-text">Confira os slots da sua placa-mãe</h2>
+      <p class="text-muted text-sm mt-3 leading-relaxed">
+        A quantidade de slots M.2 e a geração PCIe suportada variam bastante entre modelos. Veja nosso
+        <a href="/funis/placa-mae" class="text-brand-2 hover:text-brand transition-colors">guia de placa-mãe</a>
+        antes de investir num SSD Gen4/Gen5 que sua placa pode não aproveitar por completo.
+      </p>
+    </div>
+
+    <OfertasRelacionadas
+      titulo="SSDs em oferta agora"
+      termos={['ssd', 'nvme', 'm.2', 'm2 2280']}
+      excluir={['case ssd', 'adaptador ssd', 'gaveta ssd']}
+    />
+
+    <FAQ perguntas={perguntas} />
+
+    <div class="mt-12">
+      <TelegramCTA variant="banner" texto="SSD com preço bom por GB some rápido do estoque — entre no canal pra não perder." />
+    </div>
+  </section>
+</BaseLayout>

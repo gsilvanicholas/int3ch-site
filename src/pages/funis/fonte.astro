@@ -1,0 +1,95 @@
+---
+export const prerender = false;
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import TelegramCTA from '../../components/TelegramCTA.astro';
+import OfertasRelacionadas from '../../components/OfertasRelacionadas.astro';
+import FAQ from '../../components/FAQ.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ShareButtons from '../../components/ShareButtons.astro';
+
+const perguntas = [
+  {
+    pergunta: 'Fonte muito mais potente que o necessário faz diferença?',
+    resposta: 'Não pra desempenho — a fonte não "empurra" mais performance pro PC. O que muda é a margem de segurança e, em alguns casos, a eficiência em cargas baixas. Passar de ~20-30% acima do consumo real já cobre folgadamente picos e upgrades futuros; exagerar além disso é só dinheiro parado.',
+  },
+  {
+    pergunta: 'O que significa 80 Plus Bronze, Gold, Platinum?',
+    resposta: 'É um selo de eficiência energética: quanto da energia que a fonte puxa da tomada vira energia útil pro PC, em vez de virar calor perdido. Bronze já é aceitável, Gold é o ponto de equilíbrio mais comum hoje, Platinum/Titanium custam mais e valem principalmente pra quem deixa o PC ligado por muitas horas.',
+  },
+  {
+    pergunta: 'Fonte modular vale o preço extra?',
+    resposta: 'Na prática, principalmente organização e fluxo de ar: você conecta só os cabos que vai usar, em vez de lidar com um molho fixo de fios. Não afeta a fonte em si, mas facilita montagem e manutenção. Semi-modular (cabos essenciais fixos, resto modular) costuma ser o meio-termo mais custo-benefício.',
+  },
+  {
+    pergunta: 'Fonte fraca ou ruim pode danificar outras peças?',
+    resposta: 'Sim — é o maior risco real de economizar na peça errada. Fontes sem proteções básicas (OCP, OVP, SCP) ou de marcas sem procedência podem entregar voltagem instável e danificar placa-mãe, GPU ou SSD. É a peça em que vale menos arriscar no genérico mais barato.',
+  },
+];
+
+const pontos = [
+  {
+    titulo: 'Calcule a potência real, não chute',
+    texto: 'A conta certa soma o consumo de CPU, GPU e demais componentes, com uma margem de segurança de 20-30% pra picos e upgrades futuros. Chutar "500W deve bastar" é como a maioria compra fonte fraca demais — ou cara demais. Use nossa calculadora de fonte pra ter o número certo antes de escolher o modelo.',
+  },
+  {
+    titulo: 'Certificação 80 Plus: eficiência, não potência',
+    texto: 'O selo (Bronze, Silver, Gold, Platinum, Titanium) mede a eficiência energética, não a qualidade geral da fonte. Uma Gold de marca confiável costuma ser o ponto de equilíbrio entre preço e eficiência pra maioria dos PCs — Platinum/Titanium só compensam pra quem roda o PC muitas horas por dia.',
+  },
+  {
+    titulo: 'Modular, semi-modular ou fixa',
+    texto: 'Modular total deixa só os cabos necessários conectados, facilitando organização e fluxo de ar dentro do gabinete. Semi-modular mantém os cabos essenciais (ATX 24-pin, CPU) fixos e o resto solto — bom custo-benefício. Fixa é a mais barata, mas sobra cabo pra esconder em qualquer configuração.',
+  },
+  {
+    titulo: 'Marca e proteções importam mais que nessa peça',
+    texto: 'Fonte é a peça errada pra economizar no genérico desconhecido: uma fonte instável ou sem proteções (OCP, OVP, SCP, sobretemperatura) pode danificar processador, placa de vídeo ou SSD numa falha só. Prefira marcas com histórico de reviews técnicos (não só nota de loja) e garantia real.',
+  },
+];
+---
+<BaseLayout
+  title="Como Escolher uma Fonte de Alimentação: Guia de Compra 2026"
+  description="Potência real, certificação 80 Plus, modular vs nao-modular e por que a fonte nao e peca pra economizar no generico."
+>
+  <Breadcrumbs itens={[{ nome: 'Início', href: '/' }, { nome: 'Guias', href: '/guias' }, { nome: 'Fonte' }]} />
+  <section class="max-w-3xl mx-auto px-4 sm:px-6 pt-6 pb-14">
+    <p class="text-brand-2 font-semibold uppercase text-sm tracking-wide mb-3">Guia de compra</p>
+    <h1 class="text-3xl sm:text-4xl font-extrabold text-text leading-tight">Como Escolher uma Fonte de Alimentação</h1>
+    <p class="text-muted text-lg mt-4">
+      É a peça mais fácil de subestimar e a mais cara de errar: uma fonte ruim pode levar outros componentes
+      junto numa falha. Esses quatro pontos evitam tanto o exagero desnecessário quanto o risco real.
+    </p>
+
+    <div class="mt-5">
+      <ShareButtons titulo="Como Escolher uma Fonte de Alimentação" />
+    </div>
+
+    <div class="mt-10 space-y-6">
+      {pontos.map((p) => (
+        <div class="rounded-2xl border border-line bg-panel p-6">
+          <h2 class="text-xl font-bold text-text">{p.titulo}</h2>
+          <p class="text-muted text-sm mt-3 leading-relaxed">{p.texto}</p>
+        </div>
+      ))}
+    </div>
+
+    <div class="mt-10 rounded-2xl border border-brand/30 bg-gradient-to-br from-panel to-panel-2 p-6">
+      <h2 class="text-xl font-bold text-text">Descubra sua potência real antes de comprar</h2>
+      <p class="text-muted text-sm mt-3 leading-relaxed">
+        Em vez de chutar o wattgem, use nossa <a href="/ferramentas/calculadora-de-fonte" class="text-brand-2 hover:text-brand transition-colors">calculadora de fonte</a> —
+        você informa processador e placa de vídeo e ela calcula o consumo real com margem de segurança incluída.
+      </p>
+    </div>
+
+    <OfertasRelacionadas
+      titulo="Fontes em oferta agora"
+      termos={['fonte atx', 'fonte gamer', '80 plus', 'power supply', 'psu']}
+      excluir={['fonte carregador', 'carregador', 'fonte celular', 'fonte notebook', 'fonte universal']}
+    />
+
+    <FAQ perguntas={perguntas} />
+
+    <div class="mt-12">
+      <TelegramCTA variant="banner" texto="Fonte boa e confiável em promoção não é todo dia — entre no canal pra não perder." />
+    </div>
+  </section>
+</BaseLayout>

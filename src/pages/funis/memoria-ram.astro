@@ -1,0 +1,95 @@
+---
+export const prerender = false;
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import TelegramCTA from '../../components/TelegramCTA.astro';
+import OfertasRelacionadas from '../../components/OfertasRelacionadas.astro';
+import FAQ from '../../components/FAQ.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ShareButtons from '../../components/ShareButtons.astro';
+
+const perguntas = [
+  {
+    pergunta: '16GB ainda é suficiente em 2026?',
+    resposta: 'Pra jogos e uso geral, sim, na maioria dos casos. 32GB faz diferença real se você joga com muitas abas/apps abertos ao mesmo tempo, edita vídeo, ou roda máquinas virtuais. Pra quem só joga e navega, o ganho de 16GB pra 32GB costuma ser pequeno.',
+  },
+  {
+    pergunta: 'DDR4 e DDR5 são intercambiáveis?',
+    resposta: 'Não — são fisicamente diferentes (encaixe diferente) e a placa-mãe só aceita um dos dois tipos. Quem determina isso é o soquete/plataforma da sua placa-mãe, não uma escolha livre na hora de comprar a RAM. Confira a ficha técnica da sua placa-mãe antes.',
+  },
+  {
+    pergunta: 'Vale a pena comprar RAM com clock muito alto?',
+    resposta: 'Depende da plataforma e do uso. Em jogos, o ganho de clocks muito acima do padrão costuma ser pequeno (poucos % de FPS). Em compensação, memórias com XMP/EXPO configurado corretamente já entregam a maior parte desse ganho sem pagar o prêmio dos kits mais extremos.',
+  },
+  {
+    pergunta: 'Um pente de 32GB é melhor que dois de 16GB?',
+    resposta: 'Pra a maioria dos usos, dois pentes (dual-channel) tendem a ter desempenho um pouco melhor que um pente único da mesma capacidade total, porque a plataforma consegue acessar os dois em paralelo. A diferença é pequena, mas dado o preço parecido, dual-channel costuma ser a escolha mais segura.',
+  },
+];
+
+const pontos = [
+  {
+    titulo: 'Capacidade: escolha pelo que você realmente faz',
+    texto: '8GB já é insuficiente pra maioria dos jogos atuais. 16GB é o ponto de equilíbrio pra jogos e uso geral. 32GB compensa pra quem edita vídeo, roda máquinas virtuais ou mantém dezenas de abas e programas abertos ao mesmo tempo. Mais que isso raramente faz diferença fora de cargas de trabalho bem específicas.',
+  },
+  {
+    titulo: 'DDR4 ou DDR5: a placa-mãe decide, não você',
+    texto: 'O tipo de memória é determinado pelo soquete/plataforma da sua placa-mãe — elas não são compatíveis entre si, nem fisicamente. Confirme sempre isso na ficha técnica da placa-mãe antes de escolher a RAM, não o contrário.',
+  },
+  {
+    titulo: 'Dual-channel: use dois pentes, não um só',
+    texto: 'Dois pentes de mesma capacidade e frequência (ex: 2x8GB em vez de 1x16GB) rodam em dual-channel, com acesso em paralelo que entrega desempenho um pouco melhor pelo mesmo preço total na maioria dos casos. Vale conferir se os dois pentes de um kit são realmente idênticos.',
+  },
+  {
+    titulo: 'Frequência e latência (CL): rendimentos decrescentes',
+    texto: 'Acima da frequência recomendada pela plataforma, o ganho real de desempenho em jogos costuma ser pequeno — geralmente não compensa pagar muito mais por kits extremos. Ativar o XMP/EXPO no BIOS (perfil de overclock certificado pelo fabricante) já entrega a maior parte do ganho disponível, de graça.',
+  },
+];
+---
+<BaseLayout
+  title="Como Escolher Memória RAM: Guia de Compra 2026"
+  description="Capacidade, DDR4 vs DDR5, dual-channel e frequencia explicados de forma pratica pra escolher a RAM certa sem pagar a mais."
+>
+  <Breadcrumbs itens={[{ nome: 'Início', href: '/' }, { nome: 'Guias', href: '/guias' }, { nome: 'Memória RAM' }]} />
+  <section class="max-w-3xl mx-auto px-4 sm:px-6 pt-6 pb-14">
+    <p class="text-brand-2 font-semibold uppercase text-sm tracking-wide mb-3">Guia de compra</p>
+    <h1 class="text-3xl sm:text-4xl font-extrabold text-text leading-tight">Como Escolher Memória RAM</h1>
+    <p class="text-muted text-lg mt-4">
+      Capacidade, tipo e velocidade parecem simples até você notar que a placa-mãe já decidiu metade
+      dessas escolhas por você. Esses quatro pontos evitam comprar RAM incompatível ou cara demais à toa.
+    </p>
+
+    <div class="mt-5">
+      <ShareButtons titulo="Como Escolher Memória RAM" />
+    </div>
+
+    <div class="mt-10 space-y-6">
+      {pontos.map((p) => (
+        <div class="rounded-2xl border border-line bg-panel p-6">
+          <h2 class="text-xl font-bold text-text">{p.titulo}</h2>
+          <p class="text-muted text-sm mt-3 leading-relaxed">{p.texto}</p>
+        </div>
+      ))}
+    </div>
+
+    <div class="mt-10 rounded-2xl border border-brand/30 bg-gradient-to-br from-panel to-panel-2 p-6">
+      <h2 class="text-xl font-bold text-text">Confirme a plataforma antes de comprar</h2>
+      <p class="text-muted text-sm mt-3 leading-relaxed">
+        DDR4 ou DDR5 é definido pela sua <a href="/funis/placa-mae" class="text-brand-2 hover:text-brand transition-colors">placa-mãe</a>,
+        e o processador escolhido também precisa suportar o mesmo padrão. Veja nosso <a href="/funis/processador" class="text-brand-2 hover:text-brand transition-colors">guia de processador</a> se ainda não fechou essa parte do PC.
+      </p>
+    </div>
+
+    <OfertasRelacionadas
+      titulo="Memórias RAM em oferta agora"
+      termos={['memória ram', 'memoria ram', 'ddr4', 'ddr5', 'kit ram']}
+      excluir={['pen drive', 'cartão de memória', 'memory card', 'ssd', 'hd externo']}
+    />
+
+    <FAQ perguntas={perguntas} />
+
+    <div class="mt-12">
+      <TelegramCTA variant="banner" texto="Kit de RAM bom por um preço justo não fica muito tempo em estoque — entre no canal." />
+    </div>
+  </section>
+</BaseLayout>
