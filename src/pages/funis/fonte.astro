@@ -25,6 +25,10 @@ const perguntas = [
     pergunta: 'Fonte fraca ou ruim pode danificar outras peças?',
     resposta: 'Sim — é o maior risco real de economizar na peça errada. Fontes sem proteções básicas (OCP, OVP, SCP) ou de marcas sem procedência podem entregar voltagem instável e danificar placa-mãe, GPU ou SSD. É a peça em que vale menos arriscar no genérico mais barato.',
   },
+  {
+    pergunta: 'O selo na caixa garante que a fonte é boa de verdade?',
+    resposta: 'Nem sempre — principalmente em marcas desconhecidas vendidas no Brasil, é comum a caixa anunciar uma potência ou certificação 80 Plus que o produto real não sustenta em teste de bancada. Antes de comprar um modelo de marca pouco conhecida, vale checar se existe teste independente dela: o Teclab é a referência brasileira mais respeitada nesse tipo de análise, testando fontes vendidas aqui e expondo quando o anunciado não bate com o real.',
+  },
 ];
 
 const pontos = [
@@ -44,11 +48,15 @@ const pontos = [
     titulo: 'Marca e proteções importam mais que nessa peça',
     texto: 'Fonte é a peça errada pra economizar no genérico desconhecido: uma fonte instável ou sem proteções (OCP, OVP, SCP, sobretemperatura) pode danificar processador, placa de vídeo ou SSD numa falha só. Prefira marcas com histórico de reviews técnicos (não só nota de loja) e garantia real.',
   },
+  {
+    titulo: 'O selo na caixa nem sempre bate com o produto real',
+    texto: 'No mercado brasileiro é comum fonte de marca pouco conhecida anunciar potência ou selo 80 Plus que não se sustenta em teste de bancada de verdade. Por isso vale desconfiar de um selo sozinho e procurar testes independentes antes de comprar — o Teclab é a referência nacional mais respeitada nesse tipo de análise, testando fontes vendidas aqui e expondo quando o anunciado na caixa não bate com o real.',
+  },
 ];
 ---
 <BaseLayout
   title="Como Escolher uma Fonte de Alimentação: Guia de Compra 2026"
-  description="Potência real, certificação 80 Plus, modular vs nao-modular e por que a fonte nao e peca pra economizar no generico."
+  description="Potência real, certificação 80 Plus, modular vs nao-modular e como saber se o selo da caixa e confiavel (Teclab)."
 >
   <Breadcrumbs itens={[{ nome: 'Início', href: '/' }, { nome: 'Guias', href: '/guias' }, { nome: 'Fonte' }]} />
   <section class="max-w-3xl mx-auto px-4 sm:px-6 pt-6 pb-14">
@@ -56,7 +64,7 @@ const pontos = [
     <h1 class="text-3xl sm:text-4xl font-extrabold text-text leading-tight">Como Escolher uma Fonte de Alimentação</h1>
     <p class="text-muted text-lg mt-4">
       É a peça mais fácil de subestimar e a mais cara de errar: uma fonte ruim pode levar outros componentes
-      junto numa falha. Esses quatro pontos evitam tanto o exagero desnecessário quanto o risco real.
+      junto numa falha. Esses cinco pontos evitam tanto o exagero desnecessário quanto o risco real.
     </p>
 
     <div class="mt-5">
