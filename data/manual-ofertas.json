@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "JBL Go 5 Caixa de Som Bluetooth Portátil à Prova d'Água Preta",
+    "preco": "R$281,20",
+    "link": "https://www.amazon.com.br/dp/B0H1F1VKJT?tag=int3ch0f-20",
+    "precoOriginal": "R$359,00",
+    "desconto": 22,
+    "imagem": "https://m.media-amazon.com/images/I/61qNLkprnrL._AC_SL1197_.jpg"
+  },
+  {
     "titulo": "Microfone Dinâmico Gamer Logitech G Yeti GX com RGB LIGHTSYNC Captação Dinâmica Supercardioide, USB Plug and Play para Streaming em PC e Mac",
     "preco": "R$599,90",
     "link": "https://www.amazon.com.br/dp/B0D1LKJ5RR?tag=int3ch0f-20",
@@ -309,13 +317,5 @@
     "desconto": 23,
     "imagem": "https://http2.mlstatic.com/D_NQ_NP_896263-MLA96145842619_102025-O.webp",
     "cupom": "GOLMELI10"
-  },
-  {
-    "titulo": "Pasta Térmica Maxtor Ctg8 2g 12.8 W/mk Pc Ps4 Xbox Overclock",
-    "preco": "R$24,58",
-    "link": "https://meli.la/2TxCwcF",
-    "precoOriginal": "R$49,99",
-    "desconto": 51,
-    "imagem": "https://http2.mlstatic.com/D_NQ_NP_686275-MLB94462971009_102025-O.webp"
   }
 ]
