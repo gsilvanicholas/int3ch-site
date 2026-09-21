@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Logitech Headset Gamer Sem Fio G321 Preto Lightspeed Bluetooth Microfone Boom 16kHz Bateria 20H Compatível c/ PC PS4 PS5 Nintendo Switch e Smartphone",
+    "preco": "R$349,90",
+    "link": "https://www.amazon.com.br/dp/B0FFM18D66?tag=int3ch0f-20",
+    "precoOriginal": "R$449,90",
+    "desconto": 22,
+    "imagem": "https://m.media-amazon.com/images/I/71yLbvA4jrL._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "JBL Go 5 Caixa de Som Bluetooth Portátil à Prova d'Água Preta",
     "preco": "R$281,20",
     "link": "https://www.amazon.com.br/dp/B0H1F1VKJT?tag=int3ch0f-20",
@@ -308,14 +316,5 @@
     "desconto": 53,
     "imagem": "/ofertas/camera-seguranca-a28.jpg",
     "cupom": "DESCONTOEMCASA"
-  },
-  {
-    "titulo": "Filtro de Linha com Protetor de Surto DPS iCLAMPER Energia 8 Tomadas",
-    "preco": "R$94,00",
-    "link": "https://meli.la/2XiVzd2",
-    "precoOriginal": "R$122,00",
-    "desconto": 23,
-    "imagem": "https://http2.mlstatic.com/D_NQ_NP_896263-MLA96145842619_102025-O.webp",
-    "cupom": "GOLMELI10"
   }
 ]
