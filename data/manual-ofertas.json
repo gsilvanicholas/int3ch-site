@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "LG Geladeira Frost Free 395 Litros Duplex com Compressor Smart Inverter Preta Top Freezer 2 Portas",
+    "preco": "R$2.838,60 pix",
+    "link": "https://link.amazon/B07Kx2ZYN",
+    "precoOriginal": "R$3.199,90",
+    "desconto": 11,
+    "imagem": "/ofertas/lg-geladeira-frost-free-395-litros-duplex-com-compressor-sma.jpg"
+  },
+  {
     "titulo": "Processador AMD Ryzen 7 9800X3D (AM5, 8 Cores, 16 Threads, 5.2GHz, 104MB Cache)",
     "preco": "R$2.500,00",
     "link": "https://www.amazon.com.br/dp/B0DKFMSMYK?tag=int3ch0f-20",
@@ -309,14 +317,5 @@
     "precoOriginal": "R$299,99",
     "desconto": 11,
     "imagem": "/ofertas/gabinete-mancer-cv550.jpg"
-  },
-  {
-    "titulo": "Fechadura Digital De Sobrepor Fr 102 Preto Intelbras",
-    "preco": "R$146,86",
-    "link": "https://meli.la/2EYzLdn",
-    "precoOriginal": "R$375,00",
-    "desconto": 61,
-    "imagem": "https://http2.mlstatic.com/D_Q_NP_2X_602779-MLA99373435896_112025-V.webp",
-    "cupom": "DESCONTOEMCASA"
   }
 ]
