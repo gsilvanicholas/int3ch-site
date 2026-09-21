@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Microfone de Lapela Sem Fio BOYA Omic-U USB-C com Cancelamento de Ruído para Android",
+    "preco": "R$367,29",
+    "link": "https://www.amazon.com.br/dp/B0CX4WDRZK?tag=int3ch0f-20",
+    "precoOriginal": "R$449,00",
+    "desconto": 18,
+    "imagem": "https://m.media-amazon.com/images/I/81uGkR+3u4L._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Headset Gamer Redragon Zeus Pro Preto Sem Fio 7.1 H510-PRO",
     "preco": "R$317,29",
     "link": "https://www.amazon.com.br/dp/B0CNKVYLF5?tag=int3ch0f-20",
@@ -304,15 +312,6 @@
     "precoOriginal": "R$699,00",
     "desconto": 33,
     "imagem": "/ofertas/ryzen-5-5500.jpg",
-    "cupom": "PROMOHOJE"
-  },
-  {
-    "titulo": "Monitor Gamer Curvo Samsung Odyssey G5, VA (32 POLEGADAS) (QHD, 165Hz)",
-    "preco": "R$919,00",
-    "link": "https://meli.la/2NuCu1E",
-    "precoOriginal": "R$1299,90",
-    "desconto": 29,
-    "imagem": "/ofertas/monitor-gamer-curvo-samsung-odyssey-g5-va-32-polegadas-qhd-1.jpg",
     "cupom": "PROMOHOJE"
   }
 ]
