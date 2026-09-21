@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Suporte para Notebook e MacBook em Alumínio com Altura Ajustável",
+    "preco": "R$17,29",
+    "link": "https://www.amazon.com.br/dp/B086CB6BXW?tag=int3ch0f-20",
+    "precoOriginal": "R$24,99",
+    "desconto": 31,
+    "imagem": "https://m.media-amazon.com/images/I/61Ggc5CthJL._AC_SL1367_.jpg"
+  },
+  {
     "titulo": "Microfone de Lapela Sem Fio BOYA Omic-U USB-C com Cancelamento de Ruído para Android",
     "preco": "R$367,29",
     "link": "https://www.amazon.com.br/dp/B0CX4WDRZK?tag=int3ch0f-20",
@@ -304,14 +312,5 @@
     "precoOriginal": "R$500,00",
     "desconto": 49,
     "imagem": "/ofertas/o-console-de-jogos-portatil-com-tela-lcd-de-4-3-quad-core-at.jpg"
-  },
-  {
-    "titulo": "Ryzen 5 5500",
-    "preco": "R$469,00",
-    "link": "https://meli.la/1eggmND",
-    "precoOriginal": "R$699,00",
-    "desconto": 33,
-    "imagem": "/ofertas/ryzen-5-5500.jpg",
-    "cupom": "PROMOHOJE"
   }
 ]
