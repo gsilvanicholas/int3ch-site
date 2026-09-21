@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Microfone Dinâmico Gamer Logitech G Yeti GX com RGB LIGHTSYNC Captação Dinâmica Supercardioide, USB Plug and Play para Streaming em PC e Mac",
+    "preco": "R$599,90",
+    "link": "https://www.amazon.com.br/dp/B0D1LKJ5RR?tag=int3ch0f-20",
+    "precoOriginal": "R$799,90",
+    "desconto": 25,
+    "imagem": "https://m.media-amazon.com/images/I/61AWuAkFr6L._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "LG Geladeira Frost Free 395 Litros Duplex com Compressor Smart Inverter Preta Top Freezer 2 Portas",
     "preco": "R$2.838,60 pix",
     "link": "https://link.amazon/B07Kx2ZYN",
@@ -309,13 +317,5 @@
     "precoOriginal": "R$49,99",
     "desconto": 51,
     "imagem": "https://http2.mlstatic.com/D_NQ_NP_686275-MLB94462971009_102025-O.webp"
-  },
-  {
-    "titulo": "Gabinete Gamer Mancer CV550",
-    "preco": "R$266,20",
-    "link": "https://s.shopee.com.br/7VGU0NBcjl",
-    "precoOriginal": "R$299,99",
-    "desconto": 11,
-    "imagem": "/ofertas/gabinete-mancer-cv550.jpg"
   }
 ]
