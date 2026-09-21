@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Haiz Monitor Gamer 25\" 144Hz 0.5ms 1920x1080 FHD IPS - Preço à Vista no Pix",
+    "preco": "R$410,00",
+    "link": "https://www.amazon.com.br/dp/B0DCW6W5BK?tag=int3ch0f-20",
+    "precoOriginal": "R$483,46",
+    "desconto": 15,
+    "imagem": "https://m.media-amazon.com/images/I/61h+iMmrOUL._AC_SL1280_.jpg"
+  },
+  {
     "titulo": "iCLAMPER Energia 5 - Filtro de Linha com Protetor contra Surtos (DPS), 5 Tomadas, 10A",
     "preco": "R$63,59",
     "link": "https://www.amazon.com.br/dp/B0D8V17JSG?tag=int3ch0f-20",
@@ -304,13 +312,5 @@
     "precoOriginal": "R$59,80",
     "desconto": 48,
     "imagem": "/ofertas/mouse-pad-gamer-60x30cm-65x32cm-70x35cm-80x40cm-90x40cm-bord.jpg"
-  },
-  {
-    "titulo": "Mouse Pad Gamer p/ Destktop PC Borda Costurada Periférico Japao Feudal Orientais Art",
-    "preco": "R$30,99",
-    "link": "https://int3ch.com.br/o?u=aHR0cHM6Ly9zaG9wZS5lZS9hbl9yZWRpcj9vcmlnaW5fbGluaz1odHRwczovL3Nob3BlZS5jb20uYnIvcHJvZHVjdC8xMjg1NDMyNDM0LzIzMzk0MTY3NTUw",
-    "precoOriginal": "R$59,80",
-    "desconto": 48,
-    "imagem": "/ofertas/mouse-pad-gamer-p-destktop-pc-borda-costurada-periferico-jap.jpg"
   }
 ]
