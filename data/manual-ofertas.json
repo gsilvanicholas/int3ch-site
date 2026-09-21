@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Funko POP! Chucky com Machado - 10cm",
+    "preco": "R$75,90",
+    "link": "https://www.amazon.com.br/dp/B0DDZW6NGS?tag=int3ch0f-20",
+    "precoOriginal": "R$149,99",
+    "desconto": 49,
+    "imagem": "https://m.media-amazon.com/images/I/61m+H1jfryL._AC_SL1000_.jpg"
+  },
+  {
     "titulo": "Celular Samsung Galaxy S26 5G, 256GB, 12GB RAM, Câmera Tripla 50+12+10MP, Tela 6.3\" - Azul",
     "preco": "R$4.297,50",
     "link": "https://www.amazon.com.br/dp/B0GKQNGV23?tag=int3ch0f-20",
@@ -304,13 +312,5 @@
     "desconto": 15,
     "imagem": "/ofertas/celular-samsung-galaxy-a57-5g-128gb-8gb-ram-camera-50mp-ip68.jpg",
     "cupom": "CELULAR100"
-  },
-  {
-    "titulo": "MousePad Grande Verde Desk Pad Couro Gamer Office",
-    "preco": "R$20,90",
-    "link": "https://int3ch.com.br/o?u=aHR0cHM6Ly9zaG9wZS5lZS9hbl9yZWRpcj9vcmlnaW5fbGluaz1odHRwczovL3Nob3BlZS5jb20uYnIvcHJvZHVjdC8xNTM5MjI4NTE0LzIzOTk5NDEwMDE4",
-    "precoOriginal": "R$39,90",
-    "desconto": 48,
-    "imagem": "/ofertas/mousepad-grande-verde-desk-pad-couro-gamer-office.jpg"
   }
 ]
