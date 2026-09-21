@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "iCLAMPER Energia 5 - Filtro de Linha com Protetor contra Surtos (DPS), 5 Tomadas, 10A",
+    "preco": "R$63,59",
+    "link": "https://www.amazon.com.br/dp/B0D8V17JSG?tag=int3ch0f-20",
+    "precoOriginal": "R$89,90",
+    "desconto": 29,
+    "imagem": "https://m.media-amazon.com/images/I/513zBX7OWdL._AC_SL1080_.jpg"
+  },
+  {
     "titulo": "Suporte para Notebook e MacBook em Alumínio com Altura Ajustável",
     "preco": "R$17,29",
     "link": "https://www.amazon.com.br/dp/B086CB6BXW?tag=int3ch0f-20",
@@ -304,13 +312,5 @@
     "precoOriginal": "R$59,80",
     "desconto": 48,
     "imagem": "/ofertas/mouse-pad-gamer-p-destktop-pc-borda-costurada-periferico-jap.jpg"
-  },
-  {
-    "titulo": "O Console de jogos portátil com tela LCD de 4,3\" Quad-core, até 1,2 GHz, 25 emuladores clássicos",
-    "preco": "R$256,99",
-    "link": "https://int3ch.com.br/o?u=aHR0cHM6Ly9zaG9wZS5lZS9hbl9yZWRpcj9vcmlnaW5fbGluaz1odHRwczovL3Nob3BlZS5jb20uYnIvcHJvZHVjdC80MTA3MDU5NzMvMjI5OTQwNjM3NDk",
-    "precoOriginal": "R$500,00",
-    "desconto": 49,
-    "imagem": "/ofertas/o-console-de-jogos-portatil-com-tela-lcd-de-4-3-quad-core-at.jpg"
   }
 ]
