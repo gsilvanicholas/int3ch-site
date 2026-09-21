@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Monitor AOC 27\" 120Hz 1ms Gaming IPS Adaptive-Sync 27B35H",
+    "preco": "R$539,45",
+    "link": "https://www.amazon.com.br/dp/B0F81WGSYP?tag=int3ch0f-20",
+    "precoOriginal": "R$819,00",
+    "desconto": 34,
+    "imagem": "https://m.media-amazon.com/images/I/612C5-fY6+L._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Gabinete Redragon Wideload Pro Branco CA-604W-PRO",
     "preco": "R$345,00",
     "link": "https://www.amazon.com.br/dp/B0CXZ6KJ8Y?tag=int3ch0f-20",
@@ -307,14 +315,5 @@
     "desconto": 25,
     "imagem": "/ofertas/placa-mae-gigabyte-b550m-aorus-elite-am4-ddr4.jpg",
     "cupom": "PROMOHOJE + PIX"
-  },
-  {
-    "titulo": "Controle 8BitDo Ultimate 2C",
-    "preco": "R$129,00",
-    "link": "https://s.click.aliexpress.com/e/_c44XVMFJ",
-    "precoOriginal": "R$199,90",
-    "desconto": 35,
-    "imagem": "/ofertas/controle-8bitdo-ultimate2c.jpg",
-    "cupom": "BRAE1"
   }
 ]
