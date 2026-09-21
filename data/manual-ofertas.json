@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Havit Headphone Fone de Ouvido H2002d Gamer com Microfone, Falante 53mm, Plug 3,5mm, Compatível com Xbox One e PS4",
+    "preco": "R$169,98",
+    "link": "https://www.amazon.com.br/dp/B0BTJBNFSV?tag=int3ch0f-20",
+    "precoOriginal": "R$229,00",
+    "desconto": 26,
+    "imagem": "https://m.media-amazon.com/images/I/71pJtOX24yL._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Logitech Headset Gamer Sem Fio G321 Preto Lightspeed Bluetooth Microfone Boom 16kHz Bateria 20H Compatível c/ PC PS4 PS5 Nintendo Switch e Smartphone",
     "preco": "R$349,90",
     "link": "https://www.amazon.com.br/dp/B0FFM18D66?tag=int3ch0f-20",
@@ -307,14 +315,5 @@
     "precoOriginal": "R$79,90",
     "desconto": 30,
     "imagem": "/ofertas/fone-ouvido-inova.jpg"
-  },
-  {
-    "titulo": "Câmera Segurança Ip Externa Wifi A28 App Icsee À Prova Dágua",
-    "preco": "R$70,00",
-    "link": "https://meli.la/2b2Rj31",
-    "precoOriginal": "R$149,00",
-    "desconto": 53,
-    "imagem": "/ofertas/camera-seguranca-a28.jpg",
-    "cupom": "DESCONTOEMCASA"
   }
 ]
