@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Headset Gamer Redragon Zeus Pro Preto Sem Fio 7.1 H510-PRO",
+    "preco": "R$317,29",
+    "link": "https://www.amazon.com.br/dp/B0CNKVYLF5?tag=int3ch0f-20",
+    "precoOriginal": "R$447,50",
+    "desconto": 29,
+    "imagem": "https://m.media-amazon.com/images/I/619T-Fp+EkL._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Monitor AOC 27\" 120Hz 1ms Gaming IPS Adaptive-Sync 27B35H",
     "preco": "R$539,45",
     "link": "https://www.amazon.com.br/dp/B0F81WGSYP?tag=int3ch0f-20",
@@ -306,14 +314,5 @@
     "desconto": 29,
     "imagem": "/ofertas/monitor-gamer-curvo-samsung-odyssey-g5-va-32-polegadas-qhd-1.jpg",
     "cupom": "PROMOHOJE"
-  },
-  {
-    "titulo": "Placa Mãe Gigabyte B550m Aorus Elite Am4 DDR4",
-    "preco": "R$582,00",
-    "link": "https://meli.la/1tdvcvK",
-    "precoOriginal": "R$779,90",
-    "desconto": 25,
-    "imagem": "/ofertas/placa-mae-gigabyte-b550m-aorus-elite-am4-ddr4.jpg",
-    "cupom": "PROMOHOJE + PIX"
   }
 ]
