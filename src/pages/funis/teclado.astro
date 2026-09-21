@@ -1,0 +1,106 @@
+---
+export const prerender = false;
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import TelegramCTA from '../../components/TelegramCTA.astro';
+import OfertasRelacionadas from '../../components/OfertasRelacionadas.astro';
+import FAQ from '../../components/FAQ.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ShareButtons from '../../components/ShareButtons.astro';
+
+const perguntas = [
+  {
+    pergunta: 'Teclado de membrana é ruim pra jogar?',
+    resposta: 'Não é "ruim", mas fica atrás em resposta e durabilidade. Pra uso geral e jogos casuais funciona bem; pra quem joga competitivo com frequência, o salto pra um mecânico costuma valer a pena pela consistência do acionamento.',
+  },
+  {
+    pergunta: 'Qual a diferença entre switch linear, tátil e clicky?',
+    resposta: 'Linear desce reto, sem nenhum "degrau" no meio do caminho — resposta mais rápida, preferido em jogos. Tátil tem uma leve resistência no ponto de acionamento, sem clique sonoro — bom equilíbrio entre jogo e digitação. Clicky soma o clique sonoro ao tátil — mais satisfatório de digitar, mas barulhento pra ambiente compartilhado.',
+  },
+  {
+    pergunta: 'O que é um teclado magnético (Hall Effect)?',
+    resposta: 'Em vez de um contato elétrico que só registra "apertou ou não apertou", um sensor magnético mede a posição exata da tecla o tempo todo. Isso permite ajustar o ponto de atuação (quão fundo precisa apertar pra registrar) e ativar o Rapid Trigger, que reage assim que a tecla começa a subir, sem esperar ela voltar totalmente.',
+  },
+  {
+    pergunta: 'Vale a pena pagar mais caro por hot-swap?',
+    resposta: 'Se você não sabe ainda qual switch prefere, ou pretende testar diferentes opções ao longo do tempo, sim — troca sem solda, sem risco de estragar a placa. Se você já sabe exatamente o que quer e não pretende mexer, não é um recurso essencial.',
+  },
+];
+
+const tipos = [
+  {
+    nome: 'Membrana (até R$80)',
+    para: 'Uso geral, escritório, digitação do dia a dia',
+    olhar: ['Switch de borracha (feeling mais macio e silencioso)', 'Custo bem menor que qualquer mecânico', 'Vida útil menor — tende a amolecer/travar depois de anos de uso intenso'],
+  },
+  {
+    nome: 'Mecânico (R$150-R$400)',
+    para: 'Digitação rápida, jogos competitivos, quem usa o teclado muitas horas por dia',
+    olhar: ['Switch individual por tecla (linear, tátil ou clicky) — resposta mais precisa e consistente', 'Vida útil bem maior (50-100 milhões de acionamentos por switch)', 'Hot-swap (trocar switch sem solda) já é comum nessa faixa'],
+  },
+  {
+    nome: 'Magnético / Hall Effect (R$400+)',
+    para: 'O que há de mais tecnológico hoje — competitivo sério, entusiastas',
+    olhar: ['Sensor magnético mede a posição exata da tecla, não só "apertou ou não"', 'Ponto de atuação ajustável e Rapid Trigger — reage mais rápido que qualquer switch mecânico tradicional', 'Ainda é nicho e mais caro, mas a diferença é real em jogos competitivos rápidos'],
+  },
+];
+---
+<BaseLayout
+  title="Como Escolher um Teclado: Guia de Compra 2026"
+  description="Membrana, mecânico ou magnético (Hall Effect) - qual tipo de teclado faz sentido pro seu uso e orçamento."
+>
+  <Breadcrumbs itens={[{ nome: 'Início', href: '/' }, { nome: 'Guias', href: '/guias' }, { nome: 'Teclado' }]} />
+  <section class="max-w-3xl mx-auto px-4 sm:px-6 pt-6 pb-14">
+    <p class="text-brand-2 font-semibold uppercase text-sm tracking-wide mb-3">Guia de compra</p>
+    <h1 class="text-3xl sm:text-4xl font-extrabold text-text leading-tight">Como Escolher um Teclado</h1>
+    <p class="text-muted text-lg mt-4">
+      De membrana a mecânico já é um salto conhecido. O que mudou recentemente é o magnético (Hall Effect) —
+      a tecnologia mais avançada disponível hoje. Veja o que cada tipo entrega de verdade, por faixa de preço.
+    </p>
+
+    <div class="mt-5">
+      <ShareButtons titulo="Como Escolher um Teclado" />
+    </div>
+
+    <div class="mt-10 space-y-6">
+      {tipos.map((t) => (
+        <div class="rounded-2xl border border-line bg-panel p-6">
+          <div class="flex items-baseline justify-between flex-wrap gap-2">
+            <h2 class="text-xl font-bold text-text">{t.nome}</h2>
+            <span class="text-muted text-sm">{t.para}</span>
+          </div>
+          <ul class="mt-4 space-y-2">
+            {t.olhar.map((item) => (
+              <li class="text-sm text-muted flex gap-2">
+                <span class="text-brand-2">✓</span> {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+
+    <div class="mt-10 rounded-2xl border border-brand/30 bg-gradient-to-br from-panel to-panel-2 p-6">
+      <h2 class="text-xl font-bold text-text">O que muda de verdade no teclado magnético</h2>
+      <p class="text-muted text-sm mt-3 leading-relaxed">
+        Um switch mecânico comum só sabe dizer "apertou" ou "não apertou". Um switch magnético mede a posição da
+        tecla continuamente, então dá pra ajustar <strong class="text-text">quão fundo</strong> ela precisa descer
+        pra registrar — e ativar o <strong class="text-text">Rapid Trigger</strong>, que já conta como solta assim
+        que a tecla começa a subir, sem esperar ela voltar totalmente. Em jogos que dependem de movimentos rápidos
+        e repetidos (contra-strafe em FPS, por exemplo), essa diferença é mensurável, não só marketing.
+      </p>
+    </div>
+
+    <OfertasRelacionadas
+      titulo="Teclados em oferta agora"
+      termos={['teclado']}
+      excluir={['suporte', 'cabo', 'adaptador', 'capa']}
+    />
+
+    <FAQ perguntas={perguntas} />
+
+    <div class="mt-12">
+      <TelegramCTA variant="banner" texto="Teclado bom em promoção passa rápido — entre no canal pra não perder." />
+    </div>
+  </section>
+</BaseLayout>
