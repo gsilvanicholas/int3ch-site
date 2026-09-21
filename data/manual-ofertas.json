@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Celular Samsung Galaxy S26 5G, 256GB, 12GB RAM, Câmera Tripla 50+12+10MP, Tela 6.3\" - Azul",
+    "preco": "R$4.297,50",
+    "link": "https://www.amazon.com.br/dp/B0GKQNGV23?tag=int3ch0f-20",
+    "precoOriginal": "R$7.499,00",
+    "desconto": 43,
+    "imagem": "https://m.media-amazon.com/images/I/61eUOIh87pL._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Haiz Monitor Gamer 25\" 144Hz 0.5ms 1920x1080 FHD IPS - Preço à Vista no Pix",
     "preco": "R$410,00",
     "link": "https://www.amazon.com.br/dp/B0DCW6W5BK?tag=int3ch0f-20",
@@ -304,13 +312,5 @@
     "precoOriginal": "R$39,90",
     "desconto": 48,
     "imagem": "/ofertas/mousepad-grande-verde-desk-pad-couro-gamer-office.jpg"
-  },
-  {
-    "titulo": "Mouse Pad Gamer 60x30cm / 65x32cm / 70x35cm / 80x40cm / 90x40cm Borda Costurada Estampas Oriental",
-    "preco": "R$30,99",
-    "link": "https://int3ch.com.br/o?u=aHR0cHM6Ly9zaG9wZS5lZS9hbl9yZWRpcj9vcmlnaW5fbGluaz1odHRwczovL3Nob3BlZS5jb20uYnIvcHJvZHVjdC8xMjg1NDMyNDM0LzE4OTk4MTExMzA3",
-    "precoOriginal": "R$59,80",
-    "desconto": 48,
-    "imagem": "/ofertas/mouse-pad-gamer-60x30cm-65x32cm-70x35cm-80x40cm-90x40cm-bord.jpg"
   }
 ]
