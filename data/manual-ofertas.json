@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Gabinete Gamer Redragon Eternal Pro Preto com Tela LCD - CA-613B",
+    "preco": "R$475,53",
+    "link": "https://www.amazon.com.br/dp/B0GLTN1DHR?tag=int3ch0f-20",
+    "precoOriginal": "R$799,00",
+    "desconto": 40,
+    "imagem": "https://m.media-amazon.com/images/I/61MFmKBtrLL._AC_SL1200_.jpg"
+  },
+  {
     "titulo": "Air Cooler Mach1 Boreal Digital, Compatível AMD e Intel, 120mm - B40 Dig V2",
     "preco": "R$148,00",
     "link": "https://www.amazon.com.br/dp/B0H6ZV6K15?tag=int3ch0f-20",
@@ -306,11 +314,5 @@
     "link": "https://www.amazon.com.br/dp/B07QQB9VCV?tag=int3ch0f-20",
     "precoOriginal": "R$699,90",
     "imagem": "https://m.media-amazon.com/images/I/51HaCM8wFcL._AC_SL1000_.jpg"
-  },
-  {
-    "titulo": "Mouse Gamer Sem Fio Logitech G PRO Wireless, RGB LIGHTSYNC, 8 Botões Programáveis, Sensor HERO 25K",
-    "preco": "R$439,00",
-    "link": "https://www.amazon.com.br/dp/B088GM47CD?tag=int3ch0f-20",
-    "imagem": "https://m.media-amazon.com/images/I/51dIRuK4TaL._AC_SL1500_.jpg"
   }
 ]
