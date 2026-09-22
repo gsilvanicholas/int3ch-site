@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Smartphone Motorola Moto G35 5G, 256GB, 12GB RAM (4GB+8GB Ram Boost), Câmera 50MP, Tela 6.7\"",
+    "preco": "R$899,10",
+    "link": "https://www.amazon.com.br/dp/B0DHWF5G76?tag=int3ch0f-20",
+    "precoOriginal": "R$1.699,00",
+    "desconto": 47,
+    "imagem": "https://m.media-amazon.com/images/I/51gcKxZwEIL._AC_SL1000_.jpg"
+  },
+  {
     "titulo": "Processador AMD Ryzen 7 5700X, 3.4GHz, 8 Núcleos, 16 Threads, Cache 32MB, Soquete AM4",
     "preco": "R$1.040,00",
     "link": "https://www.amazon.com.br/dp/B0C3T4MFMM?tag=int3ch0f-20",
@@ -309,12 +317,5 @@
     "precoOriginal": "R$2.679,90",
     "desconto": 22,
     "imagem": "https://m.media-amazon.com/images/I/61vkFq7H9tL._AC_SL1300_.jpg"
-  },
-  {
-    "titulo": "Mouse Gamer Sem Fio Kysona Jupiter X Ultra PAW3950 8000Hz, Fibra de Carbono, Tri-Mode 61g",
-    "preco": "R$198,00",
-    "link": "https://s.click.aliexpress.com/e/_c3Tc7qFn",
-    "imagem": "https://ae-pic-a1.aliexpress-media.com/kf/Se7affb1aa47f4a53a0062e5a5cdd8a31G.jpg",
-    "cupom": "BRFSAFF02 ou BRAE2 + Moedas no APP"
   }
 ]
