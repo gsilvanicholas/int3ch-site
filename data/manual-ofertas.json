@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "GameSir Kaleid Controller com Fio para Xbox, Alavancas Hall Effect e Gatilhos Analógicos",
+    "preco": "R$274,55",
+    "link": "https://www.amazon.com.br/dp/B0CY1PJ2CN?tag=int3ch0f-20",
+    "precoOriginal": "R$459,00",
+    "desconto": 40,
+    "imagem": "https://m.media-amazon.com/images/I/61rU5Owlk0L._AC_SL1000_.jpg"
+  },
+  {
     "titulo": "Smartphone Motorola Moto G35 5G, 256GB, 12GB RAM (4GB+8GB Ram Boost), Câmera 50MP, Tela 6.7\"",
     "preco": "R$899,10",
     "link": "https://www.amazon.com.br/dp/B0DHWF5G76?tag=int3ch0f-20",
@@ -309,13 +317,5 @@
     "desconto": 29,
     "imagem": "https://m.media-amazon.com/images/I/71RpoYhSWJL._AC_SL1500_.jpg",
     "cupom": "Desconto aplicado automaticamente na finalização da compra"
-  },
-  {
-    "titulo": "AMD Processador Ryzen 7 5800X3D, 8 núcleos e 16 threads, Tecnologia AMD 3D V-Cache",
-    "preco": "R$2.099,99",
-    "link": "https://www.amazon.com.br/dp/B0H41D4KFT?tag=int3ch0f-20",
-    "precoOriginal": "R$2.679,90",
-    "desconto": 22,
-    "imagem": "https://m.media-amazon.com/images/I/61vkFq7H9tL._AC_SL1300_.jpg"
   }
 ]
