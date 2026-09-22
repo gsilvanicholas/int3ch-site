@@ -102,6 +102,14 @@ export const GPU_LIST: ComponenteHardware[] = [
   { id: 'rtx4080super', label: 'RTX 4080 Super', watts: 320, tier: 8.5, grupo: 'NVIDIA RTX 40 série' },
   { id: 'rtx4090', label: 'RTX 4090', watts: 450, tier: 10, grupo: 'NVIDIA RTX 40 série' },
 
+  // NVIDIA RTX 50
+  { id: 'rtx5060', label: 'RTX 5060', watts: 145, tier: 4.8, grupo: 'NVIDIA RTX 50 série' },
+  { id: 'rtx5060ti', label: 'RTX 5060 Ti', watts: 180, tier: 5.6, grupo: 'NVIDIA RTX 50 série' },
+  { id: 'rtx5070', label: 'RTX 5070', watts: 250, tier: 7.4, grupo: 'NVIDIA RTX 50 série' },
+  { id: 'rtx5070ti', label: 'RTX 5070 Ti', watts: 300, tier: 8.4, grupo: 'NVIDIA RTX 50 série' },
+  { id: 'rtx5080', label: 'RTX 5080', watts: 360, tier: 8.8, grupo: 'NVIDIA RTX 50 série' },
+  { id: 'rtx5090', label: 'RTX 5090', watts: 575, tier: 11.5, grupo: 'NVIDIA RTX 50 série' },
+
   // AMD RX 500/5000
   { id: 'rx570', label: 'RX 570', watts: 150, tier: 2.2, grupo: 'AMD RX 500/5000 série' },
   { id: 'rx580', label: 'RX 580', watts: 185, tier: 2.5, grupo: 'AMD RX 500/5000 série' },
