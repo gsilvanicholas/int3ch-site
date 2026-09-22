@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Philips Smart TV 50\" 4K UHD 50PUG7019/78, Google TV, Comando de Voz, HDR",
+    "preco": "R$1.999,00",
+    "link": "https://www.amazon.com.br/dp/B0DFRSDH9P?tag=int3ch0f-20",
+    "precoOriginal": "R$2.499,00",
+    "desconto": 20,
+    "imagem": "https://m.media-amazon.com/images/I/615UmEOpLML._AC_SL1000_.jpg"
+  },
+  {
     "titulo": "Power Bank Basike 30000mAh Carregador Portátil com Cabo",
     "preco": "R$153,40",
     "link": "https://www.amazon.com.br/dp/B0FBGDSRP7?tag=int3ch0f-20",
@@ -307,13 +315,5 @@
     "precoOriginal": "R$504,00",
     "desconto": 35,
     "imagem": "/ofertas/water-cooler-msi-mag-coreliquid-a12-argb-360mm-intel-e-amd-p.jpg"
-  },
-  {
-    "titulo": "Processador AMD Ryzen 5 5500 100100000457BOX, Cerâmica Cinza",
-    "preco": "R$522,00",
-    "link": "https://link.amazon/B03FOUrVE",
-    "precoOriginal": "R$699,00",
-    "desconto": 25,
-    "imagem": "/ofertas/processador-amd-ryzen-5-5500-100100000457box-ceramica-cinza.jpg"
   }
 ]
