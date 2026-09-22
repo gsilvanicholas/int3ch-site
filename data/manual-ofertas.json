@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Mouse Gamer Sem Fio Logitech G703 LIGHTSPEED, RGB LIGHTSYNC, Sensor HERO 25K, Bateria Recarregável",
+    "preco": "R$349,90",
+    "link": "https://www.amazon.com.br/dp/B07W8X4F48?tag=int3ch0f-20",
+    "precoOriginal": "R$499,90",
+    "desconto": 30,
+    "imagem": "https://m.media-amazon.com/images/I/51fgVUBaPRL._AC_SL1000_.jpg"
+  },
+  {
     "titulo": "JBL Quantum 360 Wireless - Headset Gamer Over-Ear com Microfone Removível",
     "preco": "R$393,08",
     "link": "https://www.amazon.com.br/dp/B0D8QJRBV3?tag=int3ch0f-20",
@@ -305,12 +313,5 @@
     "link": "https://www.amazon.com.br/dp/B09HMVQ98L?tag=int3ch0f-20",
     "precoOriginal": "R$136,25",
     "imagem": "https://m.media-amazon.com/images/I/81VB4joY93L._AC_SL1500_.jpg"
-  },
-  {
-    "titulo": "Processador Intel Core i5-14600K (Turbo até 5.3GHz) 24MB LGA1700 14ª Geração",
-    "preco": "R$1.699,99",
-    "link": "https://www.amazon.com.br/dp/B0CHBGVFHP?tag=int3ch0f-20",
-    "precoOriginal": "R$2.576,99",
-    "imagem": "https://m.media-amazon.com/images/I/61mTntMQ4OL._AC_SL1500_.jpg"
   }
 ]
