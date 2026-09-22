@@ -20,6 +20,22 @@ const ogImage = new URL('/og-image.png', Astro.site);
     <meta name="theme-color" content="#000000" />
     <meta name="google-site-verification" content="VC-8t04DNg9DhghbqOnYSkbSn9FBoTgukRklDbvTI9A" />
 
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BPH03E5XR8"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      // send_page_view desligado no config: com View Transitions do Astro a
+      // navegacao entre paginas nao recarrega o documento, entao disparamos
+      // o page_view manualmente em astro:page-load (cobre a carga inicial
+      // e cada troca de pagina depois).
+      gtag('config', 'G-BPH03E5XR8', { send_page_view: false });
+      document.addEventListener('astro:page-load', function () {
+        gtag('event', 'page_view', { page_location: location.href, page_title: document.title });
+      });
+    </script>
+
     <!--
       Google AdSense: quando a conta for aprovada, descomente as duas linhas
       abaixo e troque ca-pub-XXXXXXXXXXXXXXXX pelo codigo de editor real
