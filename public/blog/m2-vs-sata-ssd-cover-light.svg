@@ -1,0 +1,32 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1d5fc7"/>
+      <stop offset="1" stop-color="#0c8a82"/>
+    </linearGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#edeff3"/>
+      <stop offset="1" stop-color="#f6f7f9"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+
+  <g transform="translate(120,140)">
+    <rect x="0" y="0" width="240" height="70" rx="6" fill="#f6f7f9" stroke="#1d5fc7" stroke-width="2.5"/>
+    <text x="120" y="30" text-anchor="middle" fill="#14181f" font-family="Arial, sans-serif" font-size="18" font-weight="700">SATA</text>
+    <text x="120" y="52" text-anchor="middle" fill="#5b6472" font-family="Arial, sans-serif" font-size="13">2.5" ou M.2</text>
+  </g>
+  <g transform="translate(120,240)">
+    <rect x="0" y="0" width="240" height="70" rx="6" fill="#f6f7f9" stroke="url(#g1)" stroke-width="3"/>
+    <text x="120" y="30" text-anchor="middle" fill="#14181f" font-family="Arial, sans-serif" font-size="18" font-weight="700">M.2 NVMe</text>
+    <text x="120" y="52" text-anchor="middle" fill="#0c8a82" font-family="Arial, sans-serif" font-size="13">protocolo diferente</text>
+  </g>
+
+  <text x="450" y="180" fill="#5b6472" font-family="Arial, sans-serif" font-size="16">~550 MB/s (trava do protocolo)</text>
+  <text x="450" y="280" fill="#0c8a82" font-family="Arial, sans-serif" font-size="16" font-weight="700">ate ~7.000 MB/s</text>
+
+  <line x1="450" y1="195" x2="600" y2="195" stroke="#1d5fc7" stroke-width="3"/>
+  <line x1="450" y1="295" x2="720" y2="295" stroke="url(#g1)" stroke-width="4"/>
+
+  <text x="400" y="390" text-anchor="middle" fill="#14181f" font-family="Arial, sans-serif" font-size="19" font-weight="700">M.2 e o formato. SATA/NVMe e a velocidade.</text>
+</svg>
