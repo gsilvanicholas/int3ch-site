@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Cooler para Processador Pcyes Frost Pulse White Ghost, TDP 180W",
+    "preco": "R$109,90",
+    "link": "https://www.amazon.com.br/dp/B0D6NJF17M?tag=int3ch0f-20",
+    "precoOriginal": "R$166,00",
+    "desconto": 34,
+    "imagem": "https://m.media-amazon.com/images/I/61CBw9o-ItL._SL1200_.jpg"
+  },
+  {
     "titulo": "GameSir Kaleid Controller com Fio para Xbox, Alavancas Hall Effect e Gatilhos Analógicos",
     "preco": "R$274,55",
     "link": "https://www.amazon.com.br/dp/B0CY1PJ2CN?tag=int3ch0f-20",
@@ -308,14 +316,5 @@
     "desconto": 27,
     "imagem": "https://m.media-amazon.com/images/I/71RpoYhSWJL._AC_SL1500_.jpg",
     "cupom": "Desconto aplicado automaticamente na finalização da compra (aceita 12x sem juros)"
-  },
-  {
-    "titulo": "Monitor Gamer AOC AGON G50 24\" 144Hz 0,5ms IPS HDR10 G-SYNC 24G50F",
-    "preco": "R$529,00",
-    "link": "https://link.amazon/B0fFNFIZk",
-    "precoOriginal": "R$749,00",
-    "desconto": 29,
-    "imagem": "https://m.media-amazon.com/images/I/71RpoYhSWJL._AC_SL1500_.jpg",
-    "cupom": "Desconto aplicado automaticamente na finalização da compra"
   }
 ]
