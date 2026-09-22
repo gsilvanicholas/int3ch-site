@@ -1,5 +1,11 @@
 [
   {
+    "titulo": "Air Cooler Mach1 Boreal Digital, Compatível AMD e Intel, 120mm - B40 Dig V2",
+    "preco": "R$148,00",
+    "link": "https://www.amazon.com.br/dp/B0H6ZV6K15?tag=int3ch0f-20",
+    "imagem": "https://m.media-amazon.com/images/I/51tKviQd15L._AC_SL1000_.jpg"
+  },
+  {
     "titulo": "Mouse Gamer Sem Fio Logitech G703 LIGHTSPEED, RGB LIGHTSYNC, Sensor HERO 25K, Bateria Recarregável",
     "preco": "R$349,90",
     "link": "https://www.amazon.com.br/dp/B07W8X4F48?tag=int3ch0f-20",
@@ -306,12 +312,5 @@
     "preco": "R$439,00",
     "link": "https://www.amazon.com.br/dp/B088GM47CD?tag=int3ch0f-20",
     "imagem": "https://m.media-amazon.com/images/I/51dIRuK4TaL._AC_SL1500_.jpg"
-  },
-  {
-    "titulo": "Cooler para Processador Redragon TYR Rainbow CC-9104",
-    "preco": "R$89,00",
-    "link": "https://www.amazon.com.br/dp/B09HMVQ98L?tag=int3ch0f-20",
-    "precoOriginal": "R$136,25",
-    "imagem": "https://m.media-amazon.com/images/I/81VB4joY93L._AC_SL1500_.jpg"
   }
 ]
