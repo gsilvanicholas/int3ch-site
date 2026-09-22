@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Power Bank Basike 30000mAh Carregador Portátil com Cabo",
+    "preco": "R$153,40",
+    "link": "https://www.amazon.com.br/dp/B0FBGDSRP7?tag=int3ch0f-20",
+    "precoOriginal": "R$199,00",
+    "desconto": 23,
+    "imagem": "https://m.media-amazon.com/images/I/61D6Zc5hctL._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Cooler para Processador Pcyes Frost Pulse White Ghost, TDP 180W",
     "preco": "R$109,90",
     "link": "https://www.amazon.com.br/dp/B0D6NJF17M?tag=int3ch0f-20",
@@ -307,14 +315,5 @@
     "precoOriginal": "R$699,00",
     "desconto": 25,
     "imagem": "/ofertas/processador-amd-ryzen-5-5500-100100000457box-ceramica-cinza.jpg"
-  },
-  {
-    "titulo": "Monitor Gamer AOC AGON G50 27\" 144Hz 0,5ms IPS HDR10 G-SYNC 27G50F",
-    "preco": "R$659,00",
-    "link": "https://link.amazon/B04VJrMyK",
-    "precoOriginal": "R$899,00",
-    "desconto": 27,
-    "imagem": "https://m.media-amazon.com/images/I/71RpoYhSWJL._AC_SL1500_.jpg",
-    "cupom": "Desconto aplicado automaticamente na finalização da compra (aceita 12x sem juros)"
   }
 ]
