@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Headset Havit FUXI-H5D com Fio, Drivers de 50mm, Conector P2 3,5mm",
+    "preco": "R$89,99",
+    "link": "https://www.amazon.com.br/dp/B07KBMHWLK?tag=int3ch0f-20",
+    "precoOriginal": "R$129,00",
+    "desconto": 30,
+    "imagem": "https://m.media-amazon.com/images/I/71uw6UUGq5L._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Kit com 3 Fans Redragon ARGB Infinity Mirror Pretas Interligáveis 120mm",
     "preco": "R$199,99",
     "link": "https://www.amazon.com.br/dp/B0DFWFSZ6C?tag=int3ch0f-20",
@@ -303,13 +311,5 @@
     "link": "https://link.amazon/B0hCu1jXz",
     "precoOriginal": "R$499,00",
     "imagem": "https://m.media-amazon.com/images/I/71nWVFteisL._AC_SL1500_.jpg"
-  },
-  {
-    "titulo": "Processador Amd Ryzen 7 9800x3d 104 MB 4.7ghz - 5.2ghz",
-    "preco": "R$2.499,99",
-    "link": "https://meli.la/31xEneU",
-    "precoOriginal": "R$1.999,00",
-    "imagem": "/ofertas/processador-amd-ryzen-7-9800x3d-104-mb-4-7ghz-5-2ghz.jpg",
-    "cupom": "PRECINHOAMIGO"
   }
 ]
