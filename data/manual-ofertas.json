@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Processador AMD Ryzen 7 5700X, 3.4GHz, 8 Núcleos, 16 Threads, Cache 32MB, Soquete AM4",
+    "preco": "R$1.040,00",
+    "link": "https://www.amazon.com.br/dp/B0C3T4MFMM?tag=int3ch0f-20",
+    "precoOriginal": "R$1.096,00",
+    "desconto": 5,
+    "imagem": "https://m.media-amazon.com/images/I/41zGH486zyL._AC_SL1260_.jpg"
+  },
+  {
     "titulo": "Teclado Mecânico Gamer Sem Fio Logitech G515 TKL LIGHTSPEED, RGB, Switch GL Brown Tactile - Branco",
     "preco": "R$569,90",
     "link": "https://www.amazon.com.br/dp/B0D1DN9GR2?tag=int3ch0f-20",
@@ -308,13 +316,5 @@
     "link": "https://s.click.aliexpress.com/e/_c3Tc7qFn",
     "imagem": "https://ae-pic-a1.aliexpress-media.com/kf/Se7affb1aa47f4a53a0062e5a5cdd8a31G.jpg",
     "cupom": "BRFSAFF02 ou BRAE2 + Moedas no APP"
-  },
-  {
-    "titulo": "Filtro de Linha iCLAMPER Energia 5, 5 Tomadas, Proteção Contra Surtos, 10A, Bivolt",
-    "preco": "R$64,95",
-    "link": "https://www.amazon.com.br/dp/B0D8V3QLDD?tag=int3ch0f-20",
-    "precoOriginal": "R$89,90",
-    "desconto": 28,
-    "imagem": "https://m.media-amazon.com/images/I/51rRxbJnGeL._AC_SL1080_.jpg"
   }
 ]
