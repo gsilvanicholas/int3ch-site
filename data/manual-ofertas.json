@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Headset Gamer Logitech G335 com Almofadas com Espuma de Memória, Design Leve e Conexão 3,5mm para PC, PlayStation, Xbox, Nintendo Switch e Mobile - Mint",
+    "preco": "R$389,11",
+    "link": "https://link.amazon/B08kjmoAV",
+    "precoOriginal": "R$826,47",
+    "desconto": 53,
+    "imagem": "https://m.media-amazon.com/images/I/71IVWDqBixS._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Cadeira Gamer ThunderX3 CORE Smart Loft Cinza Escuro",
     "preco": "R$1.817,50",
     "link": "https://link.amazon/B0cp8X3t7",
@@ -307,13 +315,5 @@
     "precoOriginal": "R$4.399,90",
     "desconto": 11,
     "imagem": "/ofertas/impressora-3d-creality-hi-combo-multicolor-com-auto-nivelame.jpg"
-  },
-  {
-    "titulo": "Monitor AOC 27\" 4K IPS 106% NTSC 97% DCI-P3 Speakers U27B3A",
-    "preco": "R$999,00 12x sem juros",
-    "link": "https://link.amazon/B07KE7uZA",
-    "precoOriginal": "R$1.299,90",
-    "desconto": 23,
-    "imagem": "/ofertas/monitor-aoc-27-4k-ips-106-ntsc-97-dci-p3-speakers-u27b3a.jpg"
   }
 ]
