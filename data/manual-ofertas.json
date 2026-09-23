@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Funko Marvel - Deadpool & Wolverine - Wolverine",
+    "preco": "R$123,39",
+    "link": "https://link.amazon/B0gAUOxZd",
+    "precoOriginal": "R$194,11",
+    "desconto": 36,
+    "imagem": "https://m.media-amazon.com/images/I/71OWslKIouL._AC_SL1300_.jpg"
+  },
+  {
     "titulo": "JBL, Caixa de Som com Rádio-relógio FM, Horizon 3, 5 W RMS, Bluetooth, USB-C - Preto",
     "preco": "R$719,90",
     "link": "https://link.amazon/B0dd7QhCM",
@@ -309,11 +317,5 @@
     "precoOriginal": "R$617,44",
     "desconto": 7,
     "imagem": "https://m.media-amazon.com/images/I/61EiKLstPAL._AC_SL1000_.jpg"
-  },
-  {
-    "titulo": "Placa Mãe Asrock B850M-X R2.0 (AM5, 2xDDR5, HDMI, DP, M.2, USB 3.2)",
-    "preco": "R$734,99",
-    "link": "https://www.amazon.com.br/dp/B0FH319HHD?tag=int3ch0f-20",
-    "imagem": "https://m.media-amazon.com/images/I/71KlaeVtcKL._AC_SL1200_.jpg"
   }
 ]
