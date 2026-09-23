@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Baseus Bass BC1 Fones de Ouvido True Wireless de Orelha Aberta (Tipo Presilha), Preto Estelar",
+    "preco": "R$189,05",
+    "link": "https://link.amazon/B00Om8FnP",
+    "precoOriginal": "R$299,99",
+    "desconto": 37,
+    "imagem": "https://m.media-amazon.com/images/I/513QdV9aTZL._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Amazon Fire TV Stick HD (modelo mais recente), Controle Remoto por Voz com Alexa, alimentado pela TV, com configuração simples e Acesso Antecipado à Alexa+",
     "preco": "R$229,00",
     "link": "https://link.amazon/B0glcQT9M",
@@ -309,13 +317,5 @@
     "precoOriginal": "R$3.199,90",
     "desconto": 11,
     "imagem": "/ofertas/lg-geladeira-frost-free-395-litros-duplex-com-compressor-sma.jpg"
-  },
-  {
-    "titulo": "Processador AMD Ryzen 7 9800X3D (AM5, 8 Cores, 16 Threads, 5.2GHz, 104MB Cache)",
-    "preco": "R$2.500,00",
-    "link": "https://www.amazon.com.br/dp/B0DKFMSMYK?tag=int3ch0f-20",
-    "precoOriginal": "R$2.941,16",
-    "desconto": 15,
-    "imagem": "https://m.media-amazon.com/images/I/71NMFO0iUhL._AC_SL1500_.jpg"
   }
 ]
