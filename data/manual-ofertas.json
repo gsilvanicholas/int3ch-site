@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "JBL, Caixa de Som com Rádio-relógio FM, Horizon 3, 5 W RMS, Bluetooth, USB-C - Preto",
+    "preco": "R$719,90",
+    "link": "https://link.amazon/B0dd7QhCM",
+    "precoOriginal": "R$959,00",
+    "desconto": 25,
+    "imagem": "https://m.media-amazon.com/images/I/71d9xWnEreL._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Mouse Pad Kapbom Standard Premium Anti derrapante ORIGINAL 27x22cm 3mm",
     "preco": "R$23,29",
     "link": "https://shope.ee/an_redir?origin_link=https%3A%2F%2Fshopee.com.br%2Fproduct%2F1282249658%2F58262450506",
@@ -307,13 +315,5 @@
     "preco": "R$734,99",
     "link": "https://www.amazon.com.br/dp/B0FH319HHD?tag=int3ch0f-20",
     "imagem": "https://m.media-amazon.com/images/I/71KlaeVtcKL._AC_SL1200_.jpg"
-  },
-  {
-    "titulo": "soundcore P30i da Anker, ANC Fone de Ouvido Bluetooth 5.4 Sem Fio, TWS",
-    "preco": "R$186,76",
-    "link": "https://www.amazon.com.br/dp/B0CRTPF7CZ?tag=int3ch0f-20",
-    "precoOriginal": "R$369,00",
-    "desconto": 49,
-    "imagem": "https://m.media-amazon.com/images/I/51MgcnjJKRL._AC_SL1500_.jpg"
   }
 ]
