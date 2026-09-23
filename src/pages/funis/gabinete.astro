@@ -1,0 +1,106 @@
+---
+export const prerender = false;
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import TelegramCTA from '../../components/TelegramCTA.astro';
+import OfertasRelacionadas from '../../components/OfertasRelacionadas.astro';
+import FAQ from '../../components/FAQ.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ShareButtons from '../../components/ShareButtons.astro';
+
+const perguntas = [
+  {
+    pergunta: 'Gabinete influencia no desempenho do PC?',
+    resposta: 'Não diretamente, mas influencia na temperatura — e temperatura alta demais faz CPU e placa de vídeo reduzirem o clock sozinhas pra se proteger (throttling). Um gabinete com fluxo de ar ruim pode fazer os mesmos componentes renderem menos do que rendem numa caixa bem ventilada.',
+  },
+  {
+    pergunta: 'ATX, Micro-ATX ou Mini-ITX: qual gabinete escolher?',
+    resposta: 'Isso depende do tamanho da sua placa-mãe, não do gabinete em si — um gabinete ATX aceita placas ATX, Micro-ATX e Mini-ITX (o padrão maior sempre aceita os menores). Só vá de gabinete Micro-ATX ou Mini-ITX se quiser um PC fisicamente mais compacto e já souber que sua placa-mãe é desse tamanho.',
+  },
+  {
+    pergunta: 'Quantas fans eu preciso, e em qual direção instalar?',
+    resposta: 'O básico funcional é 2 a 3: uma ou duas puxando ar frio pra dentro na frente (intake) e uma jogando ar quente pra fora atrás (exhaust). Mais fans ajudam, mas o fluxo direcionado importa mais que a quantidade — fans "brigando" entre si (todas soprando pra dentro, por exemplo) rendem menos que um fluxo simples e bem direcionado.',
+  },
+  {
+    pergunta: 'Frente em vidro/acrílico esquenta mais que frente em tela (mesh)?',
+    resposta: 'Sim, de forma mensurável. Frente fechada (vidro ou acrílico sólido) restringe a entrada de ar e eleva a temperatura interna em relação a uma frente em mesh, que deixa o ar passar livremente. Quem prioriza estética às vezes aceita essa troca, mas pra quem tem hardware que esquenta (placa de vídeo topo de linha, overclock), mesh na frente é a escolha mais segura.',
+  },
+];
+
+const tipos = [
+  {
+    nome: 'Entrada (R$150-R$300)',
+    para: 'Montagem básica, escritório, primeiro PC gamer com componentes de entrada',
+    olhar: ['Compatibilidade confirmada com o tamanho da sua placa-mãe (ATX/Micro-ATX/Mini-ITX)', 'Pelo menos 1-2 fans já inclusas — comprar fan avulsa depois encarece a conta', 'Espaço confirmado pro comprimento da sua placa de vídeo (algumas caixas de entrada são apertadas pra GPUs maiores)'],
+  },
+  {
+    nome: 'Intermediário (R$300-R$600)',
+    para: 'A maioria dos setups gamer, quem quer boa temperatura sem pagar por extras que não vai usar',
+    olhar: ['Frente em mesh (tela) — fluxo de ar bem melhor que frente fechada', 'Lateral em vidro temperado + gerenciamento de cabos (espaço atrás da bandeja da placa-mãe)', 'Já vem com 3+ fans e suporte pra adicionar mais depois, se precisar'],
+  },
+  {
+    nome: 'Premium (R$600+)',
+    para: 'Hardware de ponta, quem quer silêncio e temperatura baixa mesmo sob carga pesada',
+    olhar: ['Fluxo de ar otimizado (às vezes com câmara dupla, separando fonte/cabos do resto)', 'Suporte a radiador maior (240mm/360mm) pra quem pensa em water cooler no futuro', 'Filtros de poeira em todas as entradas de ar e fans de qualidade melhor (mais silenciosas no mesmo fluxo de ar)'],
+  },
+];
+---
+<BaseLayout
+  title="Como Escolher um Gabinete: Guia de Compra 2026"
+  description="Tamanho, fluxo de ar e o que realmente importa na hora de escolher o gabinete do seu PC, por faixa de orçamento."
+>
+  <Breadcrumbs itens={[{ nome: 'Início', href: '/' }, { nome: 'Guias', href: '/guias' }, { nome: 'Gabinete' }]} />
+  <section class="max-w-3xl mx-auto px-4 sm:px-6 pt-6 pb-14">
+    <p class="text-brand-2 font-semibold uppercase text-sm tracking-wide mb-3">Guia de compra</p>
+    <h1 class="text-3xl sm:text-4xl font-extrabold text-text leading-tight">Como Escolher um Gabinete</h1>
+    <p class="text-muted text-lg mt-4">
+      É fácil escolher gabinete só pela estética, mas o que decide a temperatura (e, por tabela, o desempenho)
+      do resto do PC é o fluxo de ar. Veja o que olhar em cada faixa de preço antes de comprar.
+    </p>
+
+    <div class="mt-5">
+      <ShareButtons titulo="Como Escolher um Gabinete" />
+    </div>
+
+    <div class="mt-10 space-y-6">
+      {tipos.map((t) => (
+        <div class="rounded-2xl border border-line bg-panel p-6">
+          <div class="flex items-baseline justify-between flex-wrap gap-2">
+            <h2 class="text-xl font-bold text-text">{t.nome}</h2>
+            <span class="text-muted text-sm">{t.para}</span>
+          </div>
+          <ul class="mt-4 space-y-2">
+            {t.olhar.map((item) => (
+              <li class="text-sm text-muted flex gap-2">
+                <span class="text-brand-2">✓</span> {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+
+    <div class="mt-10 rounded-2xl border border-brand/30 bg-gradient-to-br from-panel to-panel-2 p-6">
+      <h2 class="text-xl font-bold text-text">O que muda de verdade no fluxo de ar</h2>
+      <p class="text-muted text-sm mt-3 leading-relaxed">
+        Fluxo de ar bom não é "quantas fans tem", é <strong class="text-text">entrada e saída bem direcionadas</strong>.
+        O padrão que funciona na prática: fans puxando ar frio pela frente (intake) e uma fan jogando o ar quente
+        pra fora, atrás ou em cima (exhaust) — criando um caminho contínuo de ar frio entrando e ar quente saindo.
+        Frente em mesh (tela) deixa esse ar entrar com muito menos resistência que uma frente fechada em vidro ou
+        acrílico, o que faz diferença real na temperatura da placa de vídeo e do processador sob carga.
+      </p>
+    </div>
+
+    <OfertasRelacionadas
+      titulo="Gabinetes em oferta agora"
+      termos={['gabinete']}
+      excluir={['fan', 'cooler', 'suporte']}
+    />
+
+    <FAQ perguntas={perguntas} />
+
+    <div class="mt-12">
+      <TelegramCTA variant="banner" texto="Gabinete bom em promoção passa rápido — entre no canal pra não perder." />
+    </div>
+  </section>
+</BaseLayout>
