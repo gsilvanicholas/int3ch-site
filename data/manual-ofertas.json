@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "GIGABYTE Placa-mae B840M Eagle WIFI6 - processadores AMD Ryzen 9000, 5+2+2 VRM, ate 7600MHz DDR5 (O.C.), 1 x M.2 PCIe 4.0 + 1 x M.2 PCIe 3.0, Wi-Fi 6, LAN 2,5 GbE, USB 3.2 Gen 1",
+    "preco": "R$888,88",
+    "link": "https://link.amazon/B0d7bLX4F",
+    "precoOriginal": "R$1.066,56",
+    "desconto": 17,
+    "imagem": "https://m.media-amazon.com/images/I/81Xhj4D0GTL._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Caixa de Som Boombox Waaw by Alok Hyperboom 1000 Bluetooth À Prova d'Água 180W RMS Até 12h de Autonomia",
     "preco": "R$948,10",
     "link": "https://meli.la/1mvPwaf",
@@ -307,13 +315,5 @@
     "precoOriginal": "R$5.573,90",
     "desconto": 10,
     "imagem": "/ofertas/placa-de-video-pny-geforce-rtx-5070-oc-triple-fan-12gb-gddr7.jpg"
-  },
-  {
-    "titulo": "Gabinete Gamer Lian Li Vector V100 Preto Sem Fans V100X",
-    "preco": "R$406,80 8x sem juros",
-    "link": "https://link.amazon/B0astHfZr",
-    "precoOriginal": "R$499,00",
-    "desconto": 18,
-    "imagem": "/ofertas/gabinete-gamer-lian-li-vector-v100-preto-sem-fans-v100x.jpg"
   }
 ]
