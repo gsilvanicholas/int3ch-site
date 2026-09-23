@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Cadeira Gamer ThunderX3 CORE Smart Loft Cinza Escuro",
+    "preco": "R$1.817,50",
+    "link": "https://link.amazon/B0cp8X3t7",
+    "precoOriginal": "R$2.499,88",
+    "desconto": 27,
+    "imagem": "/ofertas/cadeira-gamer-thunderx3-core-smart-loft-cinza-escuro.jpg"
+  },
+  {
     "titulo": "GIGABYTE Placa-mae B840M Eagle WIFI6 - processadores AMD Ryzen 9000, 5+2+2 VRM, ate 7600MHz DDR5 (O.C.), 1 x M.2 PCIe 4.0 + 1 x M.2 PCIe 3.0, Wi-Fi 6, LAN 2,5 GbE, USB 3.2 Gen 1",
     "preco": "R$888,88",
     "link": "https://link.amazon/B0d7bLX4F",
@@ -307,13 +315,5 @@
     "precoOriginal": "R$247,90",
     "desconto": 71,
     "imagem": "/ofertas/kit-ventoinha-pichau-ventus-nx-reverse-argb-3x120mm-branco-p.jpg"
-  },
-  {
-    "titulo": "Placa de Video PNY GeForce RTX 5070 OC Triple Fan, 12GB, GDDR7, 192-bit",
-    "preco": "R$5.035,99 pix",
-    "link": "https://s.shopee.com.br/7ptPLDeaBR",
-    "precoOriginal": "R$5.573,90",
-    "desconto": 10,
-    "imagem": "/ofertas/placa-de-video-pny-geforce-rtx-5070-oc-triple-fan-12gb-gddr7.jpg"
   }
 ]
