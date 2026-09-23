@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Caixa de Som Boombox Waaw by Alok Hyperboom 1000 Bluetooth À Prova d'Água 180W RMS Até 12h de Autonomia",
+    "preco": "R$948,10",
+    "link": "https://meli.la/1mvPwaf",
+    "precoOriginal": "R$1.599,00",
+    "desconto": 41,
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_892015-MLA109898913184_042026-O.webp"
+  },
+  {
     "titulo": "Philips Smart TV 50\" 4K UHD 50PUG7019/78, Google TV, Comando de Voz, HDR",
     "preco": "R$1.999,00",
     "link": "https://www.amazon.com.br/dp/B0DFRSDH9P?tag=int3ch0f-20",
@@ -307,13 +315,5 @@
     "precoOriginal": "R$499,00",
     "desconto": 18,
     "imagem": "/ofertas/gabinete-gamer-lian-li-vector-v100-preto-sem-fans-v100x.jpg"
-  },
-  {
-    "titulo": "Water Cooler MSI MAG Coreliquid A12, ARGB, 360mm, Intel e AMD, Preto - CLA12360",
-    "preco": "R$326,33 7x sem juros",
-    "link": "https://link.amazon/B0egpKXwK",
-    "precoOriginal": "R$504,00",
-    "desconto": 35,
-    "imagem": "/ofertas/water-cooler-msi-mag-coreliquid-a12-argb-360mm-intel-e-amd-p.jpg"
   }
 ]
