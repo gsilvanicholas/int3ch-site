@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Cadeira de Escritório Ergonômica Testada conforme NR-17, Duplo Apoio Lombar, Assento Deslizante com Ajuste de Profundidade 5cm, Apoio para Pés Retrátil, Reclinável até 135° para Home Office (Preto)",
+    "preco": "R$630,83",
+    "link": "https://link.amazon/B012Iw8dm",
+    "precoOriginal": "R$999,00",
+    "desconto": 37,
+    "imagem": "https://m.media-amazon.com/images/I/81GwvztsDBL._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Funko Marvel - Deadpool & Wolverine - Wolverine",
     "preco": "R$123,39",
     "link": "https://link.amazon/B0gAUOxZd",
@@ -309,13 +317,5 @@
     "precoOriginal": "R$1.799,90",
     "desconto": 11,
     "imagem": "https://m.media-amazon.com/images/I/61j1ZCgzQRL._AC_SL1500_.jpg"
-  },
-  {
-    "titulo": "Asus PRIME H610M-F D4 R2.0 Placa Mãe LGA 1700, DDR4, M.2, USB 3.2",
-    "preco": "R$575,00",
-    "link": "https://www.amazon.com.br/dp/B0DRVKLX9S?tag=int3ch0f-20",
-    "precoOriginal": "R$617,44",
-    "desconto": 7,
-    "imagem": "https://m.media-amazon.com/images/I/61EiKLstPAL._AC_SL1000_.jpg"
   }
 ]
