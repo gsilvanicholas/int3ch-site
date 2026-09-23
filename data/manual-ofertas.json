@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Celular Samsung Galaxy A57 5G 128GB + Samsung Galaxy Buds Core, Fone de Ouvido, sem fio, cancelamento de ruído, interprete inteligente",
+    "preco": "R$2.079,00",
+    "link": "https://link.amazon/B06ZtuR3t",
+    "precoOriginal": "R$3.998,00",
+    "desconto": 48,
+    "imagem": "https://m.media-amazon.com/images/I/21ofr-NGODL._AC_.jpg"
+  },
+  {
     "titulo": "Baseus Bass BC1 Fones de Ouvido True Wireless de Orelha Aberta (Tipo Presilha), Preto Estelar",
     "preco": "R$189,05",
     "link": "https://link.amazon/B00Om8FnP",
@@ -309,13 +317,5 @@
     "precoOriginal": "R$799,90",
     "desconto": 25,
     "imagem": "https://m.media-amazon.com/images/I/61AWuAkFr6L._AC_SL1500_.jpg"
-  },
-  {
-    "titulo": "LG Geladeira Frost Free 395 Litros Duplex com Compressor Smart Inverter Preta Top Freezer 2 Portas",
-    "preco": "R$2.838,60 pix",
-    "link": "https://link.amazon/B07Kx2ZYN",
-    "precoOriginal": "R$3.199,90",
-    "desconto": 11,
-    "imagem": "/ofertas/lg-geladeira-frost-free-395-litros-duplex-com-compressor-sma.jpg"
   }
 ]
