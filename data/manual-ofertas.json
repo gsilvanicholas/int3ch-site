@@ -5,6 +5,14 @@
     "link": "https://link.amazon/B0cp8X3t7",
     "precoOriginal": "R$2.499,88",
     "desconto": 27,
+    "imagem": "https://m.media-amazon.com/images/I/61hAIJ0ZX3L._AC_SL1500_.jpg"
+  },
+  {
+    "titulo": "Cadeira Gamer ThunderX3 CORE Smart Loft Cinza Escuro",
+    "preco": "R$1.817,50",
+    "link": "https://link.amazon/B0cp8X3t7",
+    "precoOriginal": "R$2.499,88",
+    "desconto": 27,
     "imagem": "/ofertas/cadeira-gamer-thunderx3-core-smart-loft-cinza-escuro.jpg"
   },
   {
@@ -307,13 +315,5 @@
     "precoOriginal": "R$1.299,90",
     "desconto": 23,
     "imagem": "/ofertas/monitor-aoc-27-4k-ips-106-ntsc-97-dci-p3-speakers-u27b3a.jpg"
-  },
-  {
-    "titulo": "Kit Ventoinha Pichau Ventus NX Reverse, ARGB, 3x120mm, Branco, PCH-VTNXR3-WH01",
-    "preco": "R$71,90",
-    "link": "https://s.shopee.com.br/1VzLnrztH6",
-    "precoOriginal": "R$247,90",
-    "desconto": 71,
-    "imagem": "/ofertas/kit-ventoinha-pichau-ventus-nx-reverse-argb-3x120mm-branco-p.jpg"
   }
 ]
