@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "soundcore Q11i da Anker Headphone Bluetooth Over Ear, 60H Fone Gamer Preto",
+    "preco": "R$199,00",
+    "link": "https://link.amazon/B0hFvPTAF",
+    "precoOriginal": "R$222,00",
+    "desconto": 10,
+    "imagem": "https://m.media-amazon.com/images/I/51PJaneR7wL._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Monitor LG UltraGear™ 24G411A-B 24\",FHD, 144Hz, 1ms (MBR), NVIDIA G-SYNC, AMD FreeSync, HDR10",
     "preco": "R$537,00",
     "link": "https://meli.la/17c2im4",
@@ -310,13 +318,5 @@
     "desconto": 10,
     "imagem": "https://m.media-amazon.com/images/I/61EFNhsLQ7L._AC_SL1000_.jpg",
     "cupom": "GAMERS80F"
-  },
-  {
-    "titulo": "Havit Headphone Fone de Ouvido H2002d Gamer com Microfone, Falante 53mm, Plug 3,5mm, Compatível com Xbox One e PS4",
-    "preco": "R$169,98",
-    "link": "https://www.amazon.com.br/dp/B0BTJBNFSV?tag=int3ch0f-20",
-    "precoOriginal": "R$229,00",
-    "desconto": 26,
-    "imagem": "https://m.media-amazon.com/images/I/71pJtOX24yL._AC_SL1500_.jpg"
   }
 ]
