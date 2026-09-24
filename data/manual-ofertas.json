@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Hivento Ventilador Torre com Controle Remoto, 3 Velocidades, 3 Modos de Vento, Oscilação de 70°, Timer de 15h, Controle Touch Econômico – Ventilador para Quarto, Sala e Uso Doméstico,127V",
+    "preco": "R$272,72",
+    "link": "https://link.amazon/B07Skp28R",
+    "precoOriginal": "R$319,00",
+    "desconto": 15,
+    "imagem": "https://m.media-amazon.com/images/I/61vhsp6g26L._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Mouse Sem Fio Gamer Leve, 2.4G, Bluetooth, USB-C, 4000DPI, 1000Hz, Bateria 400mAh, Ergonômico para PC/Notebook",
     "preco": "R$90,00",
     "link": "https://link.amazon/B01yUdqkI",
@@ -307,13 +315,5 @@
     "precoOriginal": "R$89,90",
     "desconto": 29,
     "imagem": "https://m.media-amazon.com/images/I/513zBX7OWdL._AC_SL1080_.jpg"
-  },
-  {
-    "titulo": "Suporte para Notebook e MacBook em Alumínio com Altura Ajustável",
-    "preco": "R$17,29",
-    "link": "https://www.amazon.com.br/dp/B086CB6BXW?tag=int3ch0f-20",
-    "precoOriginal": "R$24,99",
-    "desconto": 31,
-    "imagem": "https://m.media-amazon.com/images/I/61Ggc5CthJL._AC_SL1367_.jpg"
   }
 ]
