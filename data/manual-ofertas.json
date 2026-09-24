@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Babá Eletrônica VM481 Tela LCD 2.0 e Zoom Digital - Motorola",
+    "preco": "R$310,65",
+    "link": "https://link.amazon/B0cgAytWe",
+    "precoOriginal": "R$899,90",
+    "desconto": 65,
+    "imagem": "https://m.media-amazon.com/images/I/51RGP0T-GkL._AC_SL1000_.jpg"
+  },
+  {
     "titulo": "JBL, Headset Gamer, Quantum 400 - Preto",
     "preco": "R$386,00",
     "link": "https://link.amazon/B01tmHla3",
@@ -307,13 +315,5 @@
     "precoOriginal": "R$7.499,00",
     "desconto": 43,
     "imagem": "https://m.media-amazon.com/images/I/61eUOIh87pL._AC_SL1500_.jpg"
-  },
-  {
-    "titulo": "Haiz Monitor Gamer 25\" 144Hz 0.5ms 1920x1080 FHD IPS - Preço à Vista no Pix",
-    "preco": "R$410,00",
-    "link": "https://www.amazon.com.br/dp/B0DCW6W5BK?tag=int3ch0f-20",
-    "precoOriginal": "R$483,46",
-    "desconto": 15,
-    "imagem": "https://m.media-amazon.com/images/I/61h+iMmrOUL._AC_SL1280_.jpg"
   }
 ]
