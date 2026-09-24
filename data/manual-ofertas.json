@@ -1,5 +1,11 @@
 [
   {
+    "titulo": "Mouse Sem Fio Gamer Leve, 2.4G, Bluetooth, USB-C, 4000DPI, 1000Hz, Bateria 400mAh, Ergonômico para PC/Notebook",
+    "preco": "R$90,00",
+    "link": "https://link.amazon/B01yUdqkI",
+    "imagem": "https://m.media-amazon.com/images/I/51jRjk+rIyL._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "MONDIAL Caixa de Som Party Box, Luzes Multicores, Bluetooth, 350W RMS, TWS - PBX-350",
     "preco": "R$349,00",
     "link": "https://link.amazon/B08mvb58h",
@@ -309,13 +315,5 @@
     "precoOriginal": "R$24,99",
     "desconto": 31,
     "imagem": "https://m.media-amazon.com/images/I/61Ggc5CthJL._AC_SL1367_.jpg"
-  },
-  {
-    "titulo": "Microfone de Lapela Sem Fio BOYA Omic-U USB-C com Cancelamento de Ruído para Android",
-    "preco": "R$367,29",
-    "link": "https://www.amazon.com.br/dp/B0CX4WDRZK?tag=int3ch0f-20",
-    "precoOriginal": "R$449,00",
-    "desconto": 18,
-    "imagem": "https://m.media-amazon.com/images/I/81uGkR+3u4L._AC_SL1500_.jpg"
   }
 ]
