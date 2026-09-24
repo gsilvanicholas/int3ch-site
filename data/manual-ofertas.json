@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Processador AMD Ryzen 5 8400F (AM5/ 6 Cores/ 12 Threads/ 4.7 GHz/ 22MB Cache/Sem Vídeo/Com Cooler)",
+    "preco": "R$759,99",
+    "link": "https://link.amazon/B09lOoLEU",
+    "precoOriginal": "R$1.365,16",
+    "desconto": 44,
+    "imagem": "https://m.media-amazon.com/images/I/51drz0yDCJL._AC_SL1000_.jpg"
+  },
+  {
     "titulo": "Celular Samsung Galaxy A57 5G 128GB + Samsung Galaxy Buds Core, Fone de Ouvido, sem fio, cancelamento de ruído, interprete inteligente",
     "preco": "R$2.079,00",
     "link": "https://link.amazon/B06ZtuR3t",
@@ -309,13 +317,5 @@
     "precoOriginal": "R$359,00",
     "desconto": 22,
     "imagem": "https://m.media-amazon.com/images/I/61qNLkprnrL._AC_SL1197_.jpg"
-  },
-  {
-    "titulo": "Microfone Dinâmico Gamer Logitech G Yeti GX com RGB LIGHTSYNC Captação Dinâmica Supercardioide, USB Plug and Play para Streaming em PC e Mac",
-    "preco": "R$599,90",
-    "link": "https://www.amazon.com.br/dp/B0D1LKJ5RR?tag=int3ch0f-20",
-    "precoOriginal": "R$799,90",
-    "desconto": 25,
-    "imagem": "https://m.media-amazon.com/images/I/61AWuAkFr6L._AC_SL1500_.jpg"
   }
 ]
