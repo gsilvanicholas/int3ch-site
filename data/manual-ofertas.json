@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "PHILIPS, Fone de Ouvido Sem Fio TWS, TAT1109BK/00, Bluetooth, Com Microfone, Até 24 horas de bateria, Preto",
+    "preco": "R$109,90",
+    "link": "https://link.amazon/B08P88h4H",
+    "precoOriginal": "R$144,00",
+    "desconto": 24,
+    "imagem": "https://m.media-amazon.com/images/I/519bjoeFBTL._AC_SL1000_.jpg"
+  },
+  {
     "titulo": "Processador AMD Ryzen 5 8400F (AM5/ 6 Cores/ 12 Threads/ 4.7 GHz/ 22MB Cache/Sem Vídeo/Com Cooler)",
     "preco": "R$759,99",
     "link": "https://link.amazon/B09lOoLEU",
@@ -309,13 +317,5 @@
     "precoOriginal": "R$449,90",
     "desconto": 22,
     "imagem": "https://m.media-amazon.com/images/I/71yLbvA4jrL._AC_SL1500_.jpg"
-  },
-  {
-    "titulo": "JBL Go 5 Caixa de Som Bluetooth Portátil à Prova d'Água Preta",
-    "preco": "R$281,20",
-    "link": "https://www.amazon.com.br/dp/B0H1F1VKJT?tag=int3ch0f-20",
-    "precoOriginal": "R$359,00",
-    "desconto": 22,
-    "imagem": "https://m.media-amazon.com/images/I/61qNLkprnrL._AC_SL1197_.jpg"
   }
 ]
