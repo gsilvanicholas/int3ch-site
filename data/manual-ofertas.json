@@ -1,5 +1,14 @@
 [
   {
+    "titulo": "Monitor LG UltraGear™ 24G411A-B 24\",FHD, 144Hz, 1ms (MBR), NVIDIA G-SYNC, AMD FreeSync, HDR10",
+    "preco": "R$537,00",
+    "link": "https://meli.la/17c2im4",
+    "precoOriginal": "R$649,00",
+    "desconto": 17,
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_685909-MLA101438581463_122025-O.webp",
+    "cupom": "SONOML"
+  },
+  {
     "titulo": "PHILIPS, Fone de Ouvido Sem Fio TWS, TAT1109BK/00, Bluetooth, Com Microfone, Até 24 horas de bateria, Preto",
     "preco": "R$109,90",
     "link": "https://link.amazon/B08P88h4H",
@@ -309,13 +318,5 @@
     "precoOriginal": "R$229,00",
     "desconto": 26,
     "imagem": "https://m.media-amazon.com/images/I/71pJtOX24yL._AC_SL1500_.jpg"
-  },
-  {
-    "titulo": "Logitech Headset Gamer Sem Fio G321 Preto Lightspeed Bluetooth Microfone Boom 16kHz Bateria 20H Compatível c/ PC PS4 PS5 Nintendo Switch e Smartphone",
-    "preco": "R$349,90",
-    "link": "https://www.amazon.com.br/dp/B0FFM18D66?tag=int3ch0f-20",
-    "precoOriginal": "R$449,90",
-    "desconto": 22,
-    "imagem": "https://m.media-amazon.com/images/I/71yLbvA4jrL._AC_SL1500_.jpg"
   }
 ]
