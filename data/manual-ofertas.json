@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Suporte Articulado para TV de 23\" a 60\" até 50kg – Ajuste Completo com Rotação, Inclinação e Giro Suporte de Tv",
+    "preco": "R$49,90",
+    "link": "https://link.amazon/B07AOXswK",
+    "precoOriginal": "R$55,90",
+    "desconto": 11,
+    "imagem": "https://m.media-amazon.com/images/I/71V0ecvEBfL._AC_SL1254_.jpg"
+  },
+  {
     "titulo": "Extensao com Terra, 5 Entradas, Cabo 3X0,75Mm2, 5M Br",
     "preco": "R$50,48",
     "link": "https://link.amazon/B08SUsvfN",
@@ -305,13 +313,5 @@
     "precoOriginal": "R$129,00",
     "desconto": 30,
     "imagem": "https://m.media-amazon.com/images/I/71uw6UUGq5L._AC_SL1500_.jpg"
-  },
-  {
-    "titulo": "Kit com 3 Fans Redragon ARGB Infinity Mirror Pretas Interligáveis 120mm",
-    "preco": "R$199,99",
-    "link": "https://www.amazon.com.br/dp/B0DFWFSZ6C?tag=int3ch0f-20",
-    "precoOriginal": "R$353,00",
-    "desconto": 43,
-    "imagem": "https://m.media-amazon.com/images/I/71yXTDoNKsL._AC_SL1500_.jpg"
   }
 ]
