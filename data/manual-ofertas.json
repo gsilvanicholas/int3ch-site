@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Headset Gamer Redragon Zeus Lite Preto P3 H510-LT",
+    "preco": "R$145,99",
+    "link": "https://link.amazon/B09M8IPVu",
+    "precoOriginal": "R$249,90",
+    "desconto": 42,
+    "imagem": "https://m.media-amazon.com/images/I/61pvhJpLRRL._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Babá Eletrônica VM481 Tela LCD 2.0 e Zoom Digital - Motorola",
     "preco": "R$310,65",
     "link": "https://link.amazon/B0cgAytWe",
@@ -307,13 +315,5 @@
     "precoOriginal": "R$149,99",
     "desconto": 49,
     "imagem": "https://m.media-amazon.com/images/I/61m+H1jfryL._AC_SL1000_.jpg"
-  },
-  {
-    "titulo": "Celular Samsung Galaxy S26 5G, 256GB, 12GB RAM, Câmera Tripla 50+12+10MP, Tela 6.3\" - Azul",
-    "preco": "R$4.297,50",
-    "link": "https://www.amazon.com.br/dp/B0GKQNGV23?tag=int3ch0f-20",
-    "precoOriginal": "R$7.499,00",
-    "desconto": 43,
-    "imagem": "https://m.media-amazon.com/images/I/61eUOIh87pL._AC_SL1500_.jpg"
   }
 ]
