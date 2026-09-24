@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "JBL, Headset Gamer, Quantum 400 - Preto",
+    "preco": "R$386,00",
+    "link": "https://link.amazon/B01tmHla3",
+    "precoOriginal": "R$429,00",
+    "desconto": 10,
+    "imagem": "https://m.media-amazon.com/images/I/61GjlALH-gL._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Hivento Ventilador Torre com Controle Remoto, 3 Velocidades, 3 Modos de Vento, Oscilação de 70°, Timer de 15h, Controle Touch Econômico – Ventilador para Quarto, Sala e Uso Doméstico,127V",
     "preco": "R$272,72",
     "link": "https://link.amazon/B07Skp28R",
@@ -307,13 +315,5 @@
     "precoOriginal": "R$483,46",
     "desconto": 15,
     "imagem": "https://m.media-amazon.com/images/I/61h+iMmrOUL._AC_SL1280_.jpg"
-  },
-  {
-    "titulo": "iCLAMPER Energia 5 - Filtro de Linha com Protetor contra Surtos (DPS), 5 Tomadas, 10A",
-    "preco": "R$63,59",
-    "link": "https://www.amazon.com.br/dp/B0D8V17JSG?tag=int3ch0f-20",
-    "precoOriginal": "R$89,90",
-    "desconto": 29,
-    "imagem": "https://m.media-amazon.com/images/I/513zBX7OWdL._AC_SL1080_.jpg"
   }
 ]
