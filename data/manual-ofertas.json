@@ -1,5 +1,11 @@
 [
   {
+    "titulo": "Extensao com Terra, 5 Entradas, Cabo 3X0,75Mm2, 5M Br",
+    "preco": "R$50,48",
+    "link": "https://link.amazon/B08SUsvfN",
+    "imagem": "https://m.media-amazon.com/images/I/81poRiFfPUL._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Headset Gamer Redragon Zeus Lite Preto P3 H510-LT",
     "preco": "R$145,99",
     "link": "https://link.amazon/B09M8IPVu",
@@ -307,13 +313,5 @@
     "precoOriginal": "R$353,00",
     "desconto": 43,
     "imagem": "https://m.media-amazon.com/images/I/71yXTDoNKsL._AC_SL1500_.jpg"
-  },
-  {
-    "titulo": "Funko POP! Chucky com Machado - 10cm",
-    "preco": "R$75,90",
-    "link": "https://www.amazon.com.br/dp/B0DDZW6NGS?tag=int3ch0f-20",
-    "precoOriginal": "R$149,99",
-    "desconto": 49,
-    "imagem": "https://m.media-amazon.com/images/I/61m+H1jfryL._AC_SL1000_.jpg"
   }
 ]
