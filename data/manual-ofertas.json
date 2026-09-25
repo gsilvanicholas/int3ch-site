@@ -1,5 +1,11 @@
 [
   {
+    "titulo": "Balança Digital de Bioimpedância com Bluetooth, Análise Corporal Completa, IMC, Gordura, Massa Muscular, App iOS e Android, Até 180kg",
+    "preco": "R$27,90",
+    "link": "https://link.amazon/B03rjrVY3",
+    "imagem": "https://m.media-amazon.com/images/I/51RBgQX-2vL._SL1000_.jpg"
+  },
+  {
     "titulo": "GAINWARD Placa gráfica RTX 5060 Ghost 8GB GDDR7 128bit 3-DP HDMI NE75060019P1-GB2063B VD9198",
     "preco": "R$2.600,00",
     "link": "https://link.amazon/B0ddisiZj",
@@ -295,13 +301,5 @@
     "precoOriginal": "R$826,47",
     "desconto": 53,
     "imagem": "https://m.media-amazon.com/images/I/71IVWDqBixS._AC_SL1500_.jpg"
-  },
-  {
-    "titulo": "Cadeira Gamer ThunderX3 CORE Smart Loft Cinza Escuro",
-    "preco": "R$1.817,50",
-    "link": "https://link.amazon/B0cp8X3t7",
-    "precoOriginal": "R$2.499,88",
-    "desconto": 27,
-    "imagem": "https://m.media-amazon.com/images/I/61hAIJ0ZX3L._AC_SL1500_.jpg"
   }
 ]
