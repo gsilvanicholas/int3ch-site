@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Luminária de Teto LED Moderna, Design Geométrico, 3 Modos de Iluminação, Luz Quente e Fria, Plafon Branco (Círculo)",
+    "preco": "R$59,00",
+    "link": "https://link.amazon/B0bcjDIGp",
+    "precoOriginal": "R$79,00",
+    "desconto": 25,
+    "imagem": "https://m.media-amazon.com/images/I/511MoCzMRjL._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Philips Aparador e Raspador de Pelos Corporais Masculino À Prova d'Água com Bateria Recarregável, Bivolt – BG3470/15",
     "preco": "R$209,16",
     "link": "https://link.amazon/B034HXTQd",
@@ -299,13 +307,5 @@
     "precoOriginal": "R$199,00",
     "desconto": 23,
     "imagem": "https://m.media-amazon.com/images/I/61D6Zc5hctL._AC_SL1500_.jpg"
-  },
-  {
-    "titulo": "Cooler para Processador Pcyes Frost Pulse White Ghost, TDP 180W",
-    "preco": "R$109,90",
-    "link": "https://www.amazon.com.br/dp/B0D6NJF17M?tag=int3ch0f-20",
-    "precoOriginal": "R$166,00",
-    "desconto": 34,
-    "imagem": "https://m.media-amazon.com/images/I/61CBw9o-ItL._SL1200_.jpg"
   }
 ]
