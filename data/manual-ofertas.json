@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Headset Gamer Sem Fio Logitech G321, LIGHTSPEED, Bluetooth, Confortável, microfone 16 kHz, bateria de mais de 20 horas de duração. Compatível com PC, PS4, PS5, Nintendo Switch, Smartphone - Branco",
+    "preco": "R$349,90",
+    "link": "https://link.amazon/B06xIpvF1",
+    "precoOriginal": "R$449,90",
+    "desconto": 22,
+    "imagem": "https://m.media-amazon.com/images/I/71sCfhPJSjL._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Placa de Vídeo Pny Nvidia Geforce Rtx 5060 Epic-x Rgb Oc Triple Fan, 8gb, Gddr7, Dlss, Ray Tracing, Vcg50608tfxxpb1-o-tf",
     "preco": "R$2.699,99",
     "link": "https://link.amazon/B08umN6qu",
@@ -301,13 +309,5 @@
     "precoOriginal": "R$1.699,00",
     "desconto": 47,
     "imagem": "https://m.media-amazon.com/images/I/51gcKxZwEIL._AC_SL1000_.jpg"
-  },
-  {
-    "titulo": "Processador AMD Ryzen 7 5700X, 3.4GHz, 8 Núcleos, 16 Threads, Cache 32MB, Soquete AM4",
-    "preco": "R$1.040,00",
-    "link": "https://www.amazon.com.br/dp/B0C3T4MFMM?tag=int3ch0f-20",
-    "precoOriginal": "R$1.096,00",
-    "desconto": 5,
-    "imagem": "https://m.media-amazon.com/images/I/41zGH486zyL._AC_SL1260_.jpg"
   }
 ]
