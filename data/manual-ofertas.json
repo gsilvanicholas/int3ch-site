@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Mouse sem Fio Gamer HyperX Pulsefire Haste 2 – Ultraleve, 61 g, Wireless e Bluetooth 2,4GHz, até 26000 DPI, Sensor HyperX 26K, 100 Horas de Duração de Bateria, Preto (6N0B0AA)",
+    "preco": "R$279,99",
+    "link": "https://link.amazon/B0bRrN3QZ",
+    "precoOriginal": "R$349,90",
+    "desconto": 20,
+    "imagem": "https://m.media-amazon.com/images/I/614KYrmdHoL._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Kit Starlink Mini Internet via satélite, Dual Band 3 x 3 Mu-mimo, Wifi 5, Wpa2, Ethernet Lan, Plugue Starlink, Branco - 2535008br (kit sem plano de assinatura)",
     "preco": "R$499,00",
     "link": "https://link.amazon/B01Gp0FtK",
@@ -303,13 +311,5 @@
     "preco": "R$148,00",
     "link": "https://www.amazon.com.br/dp/B0H6ZV6K15?tag=int3ch0f-20",
     "imagem": "https://m.media-amazon.com/images/I/51tKviQd15L._AC_SL1000_.jpg"
-  },
-  {
-    "titulo": "Mouse Gamer Sem Fio Logitech G703 LIGHTSPEED, RGB LIGHTSYNC, Sensor HERO 25K, Bateria Recarregável",
-    "preco": "R$349,90",
-    "link": "https://www.amazon.com.br/dp/B07W8X4F48?tag=int3ch0f-20",
-    "precoOriginal": "R$499,90",
-    "desconto": 30,
-    "imagem": "https://m.media-amazon.com/images/I/51fgVUBaPRL._AC_SL1000_.jpg"
   }
 ]
