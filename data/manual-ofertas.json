@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "JBL Go Essential 2 Caixa de Som Bluetooth Portátil Preta",
+    "preco": "R$165,56",
+    "link": "https://link.amazon/B09MyKXW6",
+    "precoOriginal": "R$219,00",
+    "desconto": 24,
+    "imagem": "https://m.media-amazon.com/images/I/71cWjfs8G3L._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Mouse sem Fio Gamer HyperX Pulsefire Haste 2 – Ultraleve, 61 g, Wireless e Bluetooth 2,4GHz, até 26000 DPI, Sensor HyperX 26K, 100 Horas de Duração de Bateria, Preto (6N0B0AA)",
     "preco": "R$279,99",
     "link": "https://link.amazon/B0bRrN3QZ",
@@ -305,11 +313,5 @@
     "precoOriginal": "R$799,00",
     "desconto": 40,
     "imagem": "https://m.media-amazon.com/images/I/61MFmKBtrLL._AC_SL1200_.jpg"
-  },
-  {
-    "titulo": "Air Cooler Mach1 Boreal Digital, Compatível AMD e Intel, 120mm - B40 Dig V2",
-    "preco": "R$148,00",
-    "link": "https://www.amazon.com.br/dp/B0H6ZV6K15?tag=int3ch0f-20",
-    "imagem": "https://m.media-amazon.com/images/I/51tKviQd15L._AC_SL1000_.jpg"
   }
 ]
