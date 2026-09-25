@@ -1,5 +1,11 @@
 [
   {
+    "titulo": "JBL, Fone de Ouvido On-ear, Headphone, Tune 520BT, Sem Fio - Branco",
+    "preco": "R$199,00",
+    "link": "https://link.amazon/B06qeQ4Hm",
+    "imagem": "https://m.media-amazon.com/images/I/51ioaVBj-zL._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Suporte Articulado para TV de 23\" a 60\" até 50kg – Ajuste Completo com Rotação, Inclinação e Giro Suporte de Tv",
     "preco": "R$49,90",
     "link": "https://link.amazon/B07AOXswK",
@@ -305,13 +311,5 @@
     "precoOriginal": "R$699,00",
     "desconto": 44,
     "imagem": "https://m.media-amazon.com/images/I/619cYdY-PkL._AC_SL1500_.jpg"
-  },
-  {
-    "titulo": "Headset Havit FUXI-H5D com Fio, Drivers de 50mm, Conector P2 3,5mm",
-    "preco": "R$89,99",
-    "link": "https://www.amazon.com.br/dp/B07KBMHWLK?tag=int3ch0f-20",
-    "precoOriginal": "R$129,00",
-    "desconto": 30,
-    "imagem": "https://m.media-amazon.com/images/I/71uw6UUGq5L._AC_SL1500_.jpg"
   }
 ]
