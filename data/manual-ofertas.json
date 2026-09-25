@@ -1,5 +1,11 @@
 [
   {
+    "titulo": "Placa de Vídeo Pny Nvidia Geforce Rtx 5060 Epic-x Rgb Oc Triple Fan, 8gb, Gddr7, Dlss, Ray Tracing, Vcg50608tfxxpb1-o-tf",
+    "preco": "R$2.699,99",
+    "link": "https://link.amazon/B08umN6qu",
+    "imagem": "https://m.media-amazon.com/images/I/61vW9k-STZL._AC_SL1000_.jpg"
+  },
+  {
     "titulo": "Mouse Gamer Redragon K1ng 1K Preto PAW3327 Cabo USB Tipo-C Removível 12400 DPI M724",
     "preco": "R$83,99",
     "link": "https://link.amazon/B06hIMVDz",
@@ -303,13 +309,5 @@
     "precoOriginal": "R$1.096,00",
     "desconto": 5,
     "imagem": "https://m.media-amazon.com/images/I/41zGH486zyL._AC_SL1260_.jpg"
-  },
-  {
-    "titulo": "Teclado Mecânico Gamer Sem Fio Logitech G515 TKL LIGHTSPEED, RGB, Switch GL Brown Tactile - Branco",
-    "preco": "R$569,90",
-    "link": "https://www.amazon.com.br/dp/B0D1DN9GR2?tag=int3ch0f-20",
-    "precoOriginal": "R$949,90",
-    "desconto": 40,
-    "imagem": "https://m.media-amazon.com/images/I/61kFc75+7OL._AC_SL1500_.jpg"
   }
 ]
