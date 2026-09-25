@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Intel Core i3-13100F 3.4GHz (4.5 Turbo) Processador para desktop LGA 1700 de 4 núcleos (Raptor Lake)",
+    "preco": "R$775,00",
+    "link": "https://link.amazon/B0bfvrvKP",
+    "precoOriginal": "R$897,49",
+    "desconto": 14,
+    "imagem": "https://m.media-amazon.com/images/I/41XsVrkh8XL._AC_SL1080_.jpg"
+  },
+  {
     "titulo": "Gigabyte B650M GAMING PLUS WIFI Placa-Mãe Micro-ATX, Socket AM5, DDR5, para AMD Ryzen Série 7000/8000/9000",
     "preco": "R$999,99",
     "link": "https://link.amazon/B0fSqbvj8",
@@ -297,13 +305,5 @@
     "precoOriginal": "R$2.499,88",
     "desconto": 27,
     "imagem": "/ofertas/cadeira-gamer-thunderx3-core-smart-loft-cinza-escuro.jpg"
-  },
-  {
-    "titulo": "GIGABYTE Placa-mae B840M Eagle WIFI6 - processadores AMD Ryzen 9000, 5+2+2 VRM, ate 7600MHz DDR5 (O.C.), 1 x M.2 PCIe 4.0 + 1 x M.2 PCIe 3.0, Wi-Fi 6, LAN 2,5 GbE, USB 3.2 Gen 1",
-    "preco": "R$888,88",
-    "link": "https://link.amazon/B0d7bLX4F",
-    "precoOriginal": "R$1.066,56",
-    "desconto": 17,
-    "imagem": "https://m.media-amazon.com/images/I/81Xhj4D0GTL._AC_SL1500_.jpg"
   }
 ]
