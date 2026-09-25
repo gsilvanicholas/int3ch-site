@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Kit Starlink Mini Internet via satélite, Dual Band 3 x 3 Mu-mimo, Wifi 5, Wpa2, Ethernet Lan, Plugue Starlink, Branco - 2535008br (kit sem plano de assinatura)",
+    "preco": "R$499,00",
+    "link": "https://link.amazon/B01Gp0FtK",
+    "precoOriginal": "R$719,10",
+    "desconto": 31,
+    "imagem": "https://m.media-amazon.com/images/I/412S5CxpfAL._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "JBL, Fone de Ouvido On-ear, Headphone, Tune 520BT, Sem Fio - Branco",
     "preco": "R$199,00",
     "link": "https://link.amazon/B06qeQ4Hm",
@@ -303,13 +311,5 @@
     "precoOriginal": "R$499,90",
     "desconto": 30,
     "imagem": "https://m.media-amazon.com/images/I/51fgVUBaPRL._AC_SL1000_.jpg"
-  },
-  {
-    "titulo": "JBL Quantum 360 Wireless - Headset Gamer Over-Ear com Microfone Removível",
-    "preco": "R$393,08",
-    "link": "https://www.amazon.com.br/dp/B0D8QJRBV3?tag=int3ch0f-20",
-    "precoOriginal": "R$699,00",
-    "desconto": 44,
-    "imagem": "https://m.media-amazon.com/images/I/619cYdY-PkL._AC_SL1500_.jpg"
   }
 ]
