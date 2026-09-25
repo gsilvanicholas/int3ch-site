@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Samsung Combo Smart TV 43\" QLED Full HD Q5F + Soundbar HW B400F",
+    "preco": "R$2.089,05",
+    "link": "https://link.amazon/B033DU5Tv",
+    "precoOriginal": "R$3.806,00",
+    "desconto": 45,
+    "imagem": "https://m.media-amazon.com/images/I/513sHm9G9XL._AC_SL1000_.jpg"
+  },
+  {
     "titulo": "Cadeira Ergonômica XTC Mesh Preta ThunderX3",
     "preco": "R$1.999,89",
     "link": "https://link.amazon/B03oZe9ra",
@@ -299,13 +307,5 @@
     "precoOriginal": "R$1.599,00",
     "desconto": 41,
     "imagem": "https://http2.mlstatic.com/D_NQ_NP_892015-MLA109898913184_042026-O.webp"
-  },
-  {
-    "titulo": "Philips Smart TV 50\" 4K UHD 50PUG7019/78, Google TV, Comando de Voz, HDR",
-    "preco": "R$1.999,00",
-    "link": "https://www.amazon.com.br/dp/B0DFRSDH9P?tag=int3ch0f-20",
-    "precoOriginal": "R$2.499,00",
-    "desconto": 20,
-    "imagem": "https://m.media-amazon.com/images/I/615UmEOpLML._AC_SL1000_.jpg"
   }
 ]
