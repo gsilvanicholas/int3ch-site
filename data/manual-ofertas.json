@@ -1,5 +1,11 @@
 [
   {
+    "titulo": "GAINWARD Placa gráfica RTX 5060 Ghost 8GB GDDR7 128bit 3-DP HDMI NE75060019P1-GB2063B VD9198",
+    "preco": "R$2.600,00",
+    "link": "https://link.amazon/B0ddisiZj",
+    "imagem": "https://m.media-amazon.com/images/I/71n1ZJMVzGL._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Intel Core i3-13100F 3.4GHz (4.5 Turbo) Processador para desktop LGA 1700 de 4 núcleos (Raptor Lake)",
     "preco": "R$775,00",
     "link": "https://link.amazon/B0bfvrvKP",
@@ -297,13 +303,5 @@
     "precoOriginal": "R$2.499,88",
     "desconto": 27,
     "imagem": "https://m.media-amazon.com/images/I/61hAIJ0ZX3L._AC_SL1500_.jpg"
-  },
-  {
-    "titulo": "Cadeira Gamer ThunderX3 CORE Smart Loft Cinza Escuro",
-    "preco": "R$1.817,50",
-    "link": "https://link.amazon/B0cp8X3t7",
-    "precoOriginal": "R$2.499,88",
-    "desconto": 27,
-    "imagem": "/ofertas/cadeira-gamer-thunderx3-core-smart-loft-cinza-escuro.jpg"
   }
 ]
