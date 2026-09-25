@@ -1,5 +1,11 @@
 [
   {
+    "titulo": "Notebook ASUS VivoBook Go 15, AMD RYZEN 5 7520U, 8GB, 256GB SSD, KeepOS, Tela 15,6\" FHD, Mixed Black - E1504FA-NJ731",
+    "preco": "R$2.678,65",
+    "link": "https://link.amazon/B03S8ZqUN",
+    "imagem": "https://m.media-amazon.com/images/I/71TK+vh6JIL._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "JBL Go Essential 2 Caixa de Som Bluetooth Portátil Preta",
     "preco": "R$165,56",
     "link": "https://link.amazon/B09MyKXW6",
@@ -305,13 +311,5 @@
     "precoOriginal": "R$297,50",
     "desconto": 46,
     "imagem": "https://m.media-amazon.com/images/I/51D3XVu2TFL._AC_SL1500_.jpg"
-  },
-  {
-    "titulo": "Gabinete Gamer Redragon Eternal Pro Preto com Tela LCD - CA-613B",
-    "preco": "R$475,53",
-    "link": "https://www.amazon.com.br/dp/B0GLTN1DHR?tag=int3ch0f-20",
-    "precoOriginal": "R$799,00",
-    "desconto": 40,
-    "imagem": "https://m.media-amazon.com/images/I/61MFmKBtrLL._AC_SL1200_.jpg"
   }
 ]
