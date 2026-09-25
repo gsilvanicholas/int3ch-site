@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Cadeira Ergonômica XTC Mesh Preta ThunderX3",
+    "preco": "R$1.999,89",
+    "link": "https://link.amazon/B03oZe9ra",
+    "precoOriginal": "R$2.949,90",
+    "desconto": 32,
+    "imagem": "https://m.media-amazon.com/images/I/71z3VNcWNvL._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Luminária de Teto LED Moderna, Design Geométrico, 3 Modos de Iluminação, Luz Quente e Fria, Plafon Branco (Círculo)",
     "preco": "R$59,00",
     "link": "https://link.amazon/B0bcjDIGp",
@@ -299,13 +307,5 @@
     "precoOriginal": "R$2.499,00",
     "desconto": 20,
     "imagem": "https://m.media-amazon.com/images/I/615UmEOpLML._AC_SL1000_.jpg"
-  },
-  {
-    "titulo": "Power Bank Basike 30000mAh Carregador Portátil com Cabo",
-    "preco": "R$153,40",
-    "link": "https://www.amazon.com.br/dp/B0FBGDSRP7?tag=int3ch0f-20",
-    "precoOriginal": "R$199,00",
-    "desconto": 23,
-    "imagem": "https://m.media-amazon.com/images/I/61D6Zc5hctL._AC_SL1500_.jpg"
   }
 ]
