@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Philips Aparador e Raspador de Pelos Corporais Masculino À Prova d'Água com Bateria Recarregável, Bivolt – BG3470/15",
+    "preco": "R$209,16",
+    "link": "https://link.amazon/B034HXTQd",
+    "precoOriginal": "R$339,90",
+    "desconto": 38,
+    "imagem": "https://m.media-amazon.com/images/I/71m0DOvqtgL._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Teclado Gamer Magnético Redragon Ucal RGB Preto 75% ABNT2 8K Polling Rate K673RGB-M",
     "preco": "R$249,99",
     "link": "https://link.amazon/B0bnNBCtM",
@@ -299,13 +307,5 @@
     "precoOriginal": "R$166,00",
     "desconto": 34,
     "imagem": "https://m.media-amazon.com/images/I/61CBw9o-ItL._SL1200_.jpg"
-  },
-  {
-    "titulo": "GameSir Kaleid Controller com Fio para Xbox, Alavancas Hall Effect e Gatilhos Analógicos",
-    "preco": "R$274,55",
-    "link": "https://www.amazon.com.br/dp/B0CY1PJ2CN?tag=int3ch0f-20",
-    "precoOriginal": "R$459,00",
-    "desconto": 40,
-    "imagem": "https://m.media-amazon.com/images/I/61rU5Owlk0L._AC_SL1000_.jpg"
   }
 ]
