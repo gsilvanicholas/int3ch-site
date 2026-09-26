@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Tablet Lenovo Idea Tab 11\" 90Hz - Octa-Core, 4GB RAM, 128GB, Wi-Fi 5, Android 15, Caneta e Capa",
+    "preco": "R$1.649,00",
+    "link": "https://link.amazon/B0fd5O2Ji",
+    "precoOriginal": "R$1.799,00",
+    "desconto": 8,
+    "imagem": "https://m.media-amazon.com/images/I/61tVQTdW0nL._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Filtro de Linha Clamper iClamper Energia 5 Tomadas, com DPS e Proteção contra Raios e Surtos Elétricos (preço no Pix)",
     "preco": "R$69,30",
     "link": "https://meli.la/2ban7Qp",
@@ -292,13 +300,5 @@
     "desconto": 17,
     "imagem": "https://http2.mlstatic.com/D_NQ_NP_685909-MLA101438581463_122025-O.webp",
     "cupom": "SONOML"
-  },
-  {
-    "titulo": "PHILIPS, Fone de Ouvido Sem Fio TWS, TAT1109BK/00, Bluetooth, Com Microfone, Até 24 horas de bateria, Preto",
-    "preco": "R$109,90",
-    "link": "https://link.amazon/B08P88h4H",
-    "precoOriginal": "R$144,00",
-    "desconto": 24,
-    "imagem": "https://m.media-amazon.com/images/I/519bjoeFBTL._AC_SL1000_.jpg"
   }
 ]
