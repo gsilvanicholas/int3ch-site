@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Mouse Gamer Redragon King Pro 4k Preto PAW3395 4000Hz M916-PRO-4K",
+    "preco": "R$210,47",
+    "link": "https://link.amazon/B08GJ9W6D",
+    "precoOriginal": "R$423,75",
+    "desconto": 50,
+    "imagem": "https://m.media-amazon.com/images/I/51EBglsGc+L._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Fone De Ouvido Gamer Headset Havit H2015D Pc/Xbox/Ps4/Ps5",
     "preco": "R$128,15",
     "link": "https://link.amazon/B039nLTt3",
@@ -293,13 +301,5 @@
     "precoOriginal": "R$959,00",
     "desconto": 25,
     "imagem": "https://m.media-amazon.com/images/I/71d9xWnEreL._AC_SL1500_.jpg"
-  },
-  {
-    "titulo": "Mouse Pad Kapbom Standard Premium Anti derrapante ORIGINAL 27x22cm 3mm",
-    "preco": "R$23,29",
-    "link": "https://shope.ee/an_redir?origin_link=https%3A%2F%2Fshopee.com.br%2Fproduct%2F1282249658%2F58262450506",
-    "precoOriginal": "R$37,99",
-    "desconto": 39,
-    "imagem": "/ofertas/mouse-pad-kapbom-standard-premium-anti-derrapante-original-2.jpg"
   }
 ]
