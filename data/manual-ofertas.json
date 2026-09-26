@@ -1,5 +1,14 @@
 [
   {
+    "titulo": "MONDIAL Cafeteira Elétrica Dolce Arome Digital, Preto/Inox, 800W, 110V - C-44-32X-SDI",
+    "preco": "R$186,00",
+    "link": "https://link.amazon/B0ecO0aHt",
+    "precoOriginal": "R$219,00",
+    "desconto": 15,
+    "imagem": "https://m.media-amazon.com/images/I/712oLx9akuL._AC_SL1500_.jpg",
+    "cupom": "CAFETEIRAS10"
+  },
+  {
     "titulo": "kit 10 un fonte led 12v2a  ac 100-240v adaptador de alimentação ue plug macho",
     "preco": "R$63,06",
     "link": "https://shope.ee/an_redir?origin_link=https%3A%2F%2Fshopee.com.br%2Fproduct%2F567246440%2F21197389244",
@@ -291,13 +300,5 @@
     "preco": "R$90,00",
     "link": "https://link.amazon/B01yUdqkI",
     "imagem": "https://m.media-amazon.com/images/I/51jRjk+rIyL._AC_SL1500_.jpg"
-  },
-  {
-    "titulo": "MONDIAL Caixa de Som Party Box, Luzes Multicores, Bluetooth, 350W RMS, TWS - PBX-350",
-    "preco": "R$349,00",
-    "link": "https://link.amazon/B08mvb58h",
-    "precoOriginal": "R$829,90",
-    "desconto": 58,
-    "imagem": "https://m.media-amazon.com/images/I/9107aJ29QTL._AC_SL1500_.jpg"
   }
 ]
