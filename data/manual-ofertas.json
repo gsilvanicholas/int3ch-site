@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Lixeira Quadrada Preta 16L Inteligente Automática com Sensor para Banheiro e Cozinha",
+    "preco": "R$69,89",
+    "link": "https://meli.la/1Rq1pkk",
+    "precoOriginal": "R$249,99",
+    "desconto": 72,
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_985087-MLA110679666782_052026-O.webp"
+  },
+  {
     "titulo": "MONDIAL Caixa Amplificada, Preto, 150W RMS, Bivolt - CM-150",
     "preco": "R$149,00",
     "link": "https://link.amazon/B08ASFjd7",
@@ -292,13 +300,5 @@
     "precoOriginal": "R$3.998,00",
     "desconto": 48,
     "imagem": "https://m.media-amazon.com/images/I/21ofr-NGODL._AC_.jpg"
-  },
-  {
-    "titulo": "Baseus Bass BC1 Fones de Ouvido True Wireless de Orelha Aberta (Tipo Presilha), Preto Estelar",
-    "preco": "R$189,05",
-    "link": "https://link.amazon/B00Om8FnP",
-    "precoOriginal": "R$299,99",
-    "desconto": 37,
-    "imagem": "https://m.media-amazon.com/images/I/513QdV9aTZL._AC_SL1500_.jpg"
   }
 ]
