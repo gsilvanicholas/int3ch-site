@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Sanduicheira Elétrica Antiaderente Grill 750w Preto 110/220v Preto 220v",
+    "preco": "R$69,99",
+    "link": "https://meli.la/12yPvec",
+    "precoOriginal": "R$129,99",
+    "desconto": 46,
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_743803-MLB112778780274_062026-O.webp"
+  },
+  {
     "titulo": "Lixeira Quadrada Preta 16L Inteligente Automática com Sensor para Banheiro e Cozinha",
     "preco": "R$69,89",
     "link": "https://meli.la/1Rq1pkk",
@@ -292,13 +300,5 @@
     "precoOriginal": "R$1.365,16",
     "desconto": 44,
     "imagem": "https://m.media-amazon.com/images/I/51drz0yDCJL._AC_SL1000_.jpg"
-  },
-  {
-    "titulo": "Celular Samsung Galaxy A57 5G 128GB + Samsung Galaxy Buds Core, Fone de Ouvido, sem fio, cancelamento de ruído, interprete inteligente",
-    "preco": "R$2.079,00",
-    "link": "https://link.amazon/B06ZtuR3t",
-    "precoOriginal": "R$3.998,00",
-    "desconto": 48,
-    "imagem": "https://m.media-amazon.com/images/I/21ofr-NGODL._AC_.jpg"
   }
 ]
