@@ -1,5 +1,11 @@
 [
   {
+    "titulo": "GPU NV RTX5050 8GB GDDR6 128BITS VENTUS 2X OC MSI 912-V538-010",
+    "preco": "R$2.200,00",
+    "link": "https://link.amazon/B0j75G5mS",
+    "imagem": "https://m.media-amazon.com/images/I/71I6T45IdjL._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Monitor Gigabyte Gs24f14 23.8 Pol Full Hd Ips 144hz 1ms",
     "preco": "R$517,00",
     "link": "https://meli.la/1j1P1FF",
@@ -294,13 +300,5 @@
     "precoOriginal": "R$999,00",
     "desconto": 37,
     "imagem": "https://m.media-amazon.com/images/I/81GwvztsDBL._AC_SL1500_.jpg"
-  },
-  {
-    "titulo": "Funko Marvel - Deadpool & Wolverine - Wolverine",
-    "preco": "R$123,39",
-    "link": "https://link.amazon/B0gAUOxZd",
-    "precoOriginal": "R$194,11",
-    "desconto": 36,
-    "imagem": "https://m.media-amazon.com/images/I/71OWslKIouL._AC_SL1300_.jpg"
   }
 ]
