@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Smartphone Motorola Edge 60 Fusion 5G - 16GB (8GB RAM+8GB Ram Boost) 50MP Sony AI Camera IP68 NFC - Cinza",
+    "preco": "R$1.713,60",
+    "link": "https://link.amazon/B0dmO1ucv",
+    "precoOriginal": "R$2.999,00",
+    "desconto": 43,
+    "imagem": "https://m.media-amazon.com/images/I/61D-EYiVoVL._AC_SL1000_.jpg"
+  },
+  {
     "titulo": "Gamdias Water Cooler Aura GL240 V2 240mm ARGB Compatível c/ Intel LGA 1700/1200/1151 e AMD AM5/AM4 Desktop",
     "preco": "R$274,23",
     "link": "https://link.amazon/B03AkO1Ju",
@@ -294,13 +302,5 @@
     "precoOriginal": "R$899,90",
     "desconto": 65,
     "imagem": "https://m.media-amazon.com/images/I/51RGP0T-GkL._AC_SL1000_.jpg"
-  },
-  {
-    "titulo": "JBL, Headset Gamer, Quantum 400 - Preto",
-    "preco": "R$386,00",
-    "link": "https://link.amazon/B01tmHla3",
-    "precoOriginal": "R$429,00",
-    "desconto": 10,
-    "imagem": "https://m.media-amazon.com/images/I/61GjlALH-gL._AC_SL1500_.jpg"
   }
 ]
