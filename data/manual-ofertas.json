@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Havit Headphone Fone de Ouvido H2002d Red, Gamer, com Microfone, Falante 53mm, Plug 3, 5mm: compatível com XBOX ONE e PS4, HV-H2002d Cor Vermelho e Branco",
+    "preco": "R$169,98",
+    "link": "https://link.amazon/B046nYMHG",
+    "precoOriginal": "R$229,00",
+    "desconto": 26,
+    "imagem": "https://m.media-amazon.com/images/I/71pJtOX24yL._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Teclado Mecânico Redragon Dark Avenger Preto Iluminação Rainbow Switch Marrom K568R",
     "preco": "R$148,83",
     "link": "https://link.amazon/B0dedBENU",
@@ -294,13 +302,5 @@
     "preco": "R$50,48",
     "link": "https://link.amazon/B08SUsvfN",
     "imagem": "https://m.media-amazon.com/images/I/81poRiFfPUL._AC_SL1500_.jpg"
-  },
-  {
-    "titulo": "Headset Gamer Redragon Zeus Lite Preto P3 H510-LT",
-    "preco": "R$145,99",
-    "link": "https://link.amazon/B09M8IPVu",
-    "precoOriginal": "R$249,90",
-    "desconto": 42,
-    "imagem": "https://m.media-amazon.com/images/I/61pvhJpLRRL._AC_SL1500_.jpg"
   }
 ]
