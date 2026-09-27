@@ -1,0 +1,105 @@
+---
+export const prerender = false;
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import TelegramCTA from '../../components/TelegramCTA.astro';
+import OfertasRelacionadas from '../../components/OfertasRelacionadas.astro';
+import FAQ from '../../components/FAQ.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ShareButtons from '../../components/ShareButtons.astro';
+
+const perguntas = [
+  {
+    pergunta: 'Headset com som 7.1 é melhor pra jogar?',
+    resposta: 'Na maioria dos casos o "7.1" de headset barato é um efeito virtual de software, não são 8 alto-falantes separados. Ele pode ajudar a localizar sons em alguns jogos, mas quem define a qualidade é o conjunto: drivers bons, conforto e um microfone decente. Não pague a mais só pelo número 7.1 na caixa.',
+  },
+  {
+    pergunta: 'Headset Bluetooth serve pra jogar?',
+    resposta: 'Serve pra jogos casuais e pra uso no dia a dia, mas tem mais atraso (latência) que a conexão com fio ou o wireless 2.4 GHz com adaptador USB. Em jogo competitivo, onde milissegundos importam, prefira fio ou 2.4 GHz. Muitos modelos sem fio trazem os dois modos: 2.4 GHz pra jogar e Bluetooth pro celular.',
+  },
+  {
+    pergunta: 'P2, USB ou sem fio: qual conexão escolher?',
+    resposta: 'P2 (3,5 mm) funciona em PC, console e celular sem instalar nada. USB entrega uma "placa de som" própria no headset e costuma trazer software de ajuste, mas só roda onde houver porta USB compatível. Sem fio dá liberdade, mas exige carregar a bateria e custa mais caro pela mesma qualidade de som.',
+  },
+  {
+    pergunta: 'Vale comprar um headset ou um fone + microfone separados?',
+    resposta: 'Fone bom com microfone de mesa costuma soar melhor, mas ocupa mais espaço e custa mais. O headset ganha em praticidade: microfone sempre na posição certa, um cabo só e compatibilidade com console. Pra quem quer simplicidade e orçamento fechado, o headset é a escolha mais direta.',
+  },
+];
+
+const tipos = [
+  {
+    nome: 'Entrada (até R$200)',
+    para: 'Primeiro headset, jogos casuais, quem só precisa de áudio e microfone que funcionem',
+    olhar: ['Conexão P2 ou USB: mais simples e sem atraso (evite pagar por recursos que você não vai usar)', 'Conforto acima de RGB: almofadas macias e peso baixo, porque você vai usar por horas', 'Microfone destacável ou articulado, que dê pra tirar da frente da boca quando não estiver falando'],
+  },
+  {
+    nome: 'Intermediário (R$200-R$500)',
+    para: 'Quem joga com frequência e quer som melhor, microfone claro e mais liberdade',
+    olhar: ['Opções sem fio 2.4 GHz com bateria de 20 horas ou mais', 'Drivers maiores (40-50 mm) e almofadas de espuma com memória, que aliviam a pressão', 'Microfone com boa captação de voz (ideal quando tem redução de ruído)'],
+  },
+  {
+    nome: 'Premium (R$500+)',
+    para: 'Uso intenso, competitivo ou som de referência, também pra músicas e filmes',
+    olhar: ['Áudio mais refinado e microfone de qualidade de transmissão', 'Construção melhor (armação resistente, almofadas trocáveis)', 'Recursos extras, como cancelamento de ruído, conexão dupla (2.4 GHz + Bluetooth) e software de equalização'],
+  },
+];
+---
+<BaseLayout
+  title="Como Escolher um Headset Gamer: Guia de Compra 2026"
+  description="P2, USB ou sem fio, conforto, microfone e o que realmente importa na hora de escolher um headset gamer, por faixa de orçamento."
+>
+  <Breadcrumbs itens={[{ nome: 'Início', href: '/' }, { nome: 'Guias', href: '/guias' }, { nome: 'Headset Gamer' }]} />
+  <section class="max-w-3xl mx-auto px-4 sm:px-6 pt-6 pb-14">
+    <p class="text-brand-2 font-semibold uppercase text-sm tracking-wide mb-3">Guia de compra</p>
+    <h1 class="text-3xl sm:text-4xl font-extrabold text-text leading-tight">Como Escolher um Headset Gamer</h1>
+    <p class="text-muted text-lg mt-4">
+      Tem headset de R$100 e de R$1.500, e a diferença de som nem sempre acompanha o preço. Veja o que olhar em cada
+      faixa e quais recursos são marketing, pra você gastar no que faz diferença.
+    </p>
+
+    <div class="mt-5">
+      <ShareButtons titulo="Como Escolher um Headset Gamer" />
+    </div>
+
+    <div class="mt-10 space-y-6">
+      {tipos.map((t) => (
+        <div class="rounded-2xl border border-line bg-panel p-6">
+          <div class="flex items-baseline justify-between flex-wrap gap-2">
+            <h2 class="text-xl font-bold text-text">{t.nome}</h2>
+            <span class="text-muted text-sm">{t.para}</span>
+          </div>
+          <ul class="mt-4 space-y-2">
+            {t.olhar.map((item) => (
+              <li class="text-sm text-muted flex gap-2">
+                <span class="text-brand-2">✓</span> {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+
+    <div class="mt-10 rounded-2xl border border-brand/30 bg-gradient-to-br from-panel to-panel-2 p-6">
+      <h2 class="text-xl font-bold text-text">O que mais pesa na escolha: conexão e conforto</h2>
+      <p class="text-muted text-sm mt-3 leading-relaxed">
+        Pra jogar, o ideal é <strong class="text-text">fio (P2 ou USB)</strong> ou <strong class="text-text">wireless 2.4 GHz
+        com adaptador</strong>: são as opções com menos atraso. Bluetooth é ótimo pra celular e uso geral, mas tem mais latência.
+        E não subestime o <strong class="text-text">conforto</strong>: um headset que aperta ou esquenta a orelha acaba
+        deixado de lado, por melhor que seja o som. Se der, experimente antes ou confira se a loja aceita troca.
+      </p>
+    </div>
+
+    <OfertasRelacionadas
+      titulo="Headsets em oferta agora"
+      termos={['headset']}
+      excluir={['suporte', 'adaptador', 'almofada', 'capa']}
+    />
+
+    <FAQ perguntas={perguntas} />
+
+    <div class="mt-12">
+      <TelegramCTA variant="banner" texto="Headset bom em promoção passa rápido — entre no canal pra não perder." />
+    </div>
+  </section>
+</BaseLayout>
