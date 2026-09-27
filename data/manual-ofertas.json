@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Teclado Mecânico Redragon Dark Avenger Preto Iluminação Rainbow Switch Marrom K568R",
+    "preco": "R$148,83",
+    "link": "https://link.amazon/B0dedBENU",
+    "precoOriginal": "R$379,00",
+    "desconto": 61,
+    "imagem": "https://m.media-amazon.com/images/I/61O+xK4F6aL._AC_SL1000_.jpg"
+  },
+  {
     "titulo": "Smartphone Motorola Edge 60 Fusion 5G - 16GB (8GB RAM+8GB Ram Boost) 50MP Sony AI Camera IP68 NFC - Cinza",
     "preco": "R$1.713,60",
     "link": "https://link.amazon/B0dmO1ucv",
@@ -294,13 +302,5 @@
     "precoOriginal": "R$249,90",
     "desconto": 42,
     "imagem": "https://m.media-amazon.com/images/I/61pvhJpLRRL._AC_SL1500_.jpg"
-  },
-  {
-    "titulo": "Babá Eletrônica VM481 Tela LCD 2.0 e Zoom Digital - Motorola",
-    "preco": "R$310,65",
-    "link": "https://link.amazon/B0cgAytWe",
-    "precoOriginal": "R$899,90",
-    "desconto": 65,
-    "imagem": "https://m.media-amazon.com/images/I/51RGP0T-GkL._AC_SL1000_.jpg"
   }
 ]
