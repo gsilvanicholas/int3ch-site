@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Placa Mãe Gigabyte A520M K V2 (AM4/2xDDR4/HDMI/D-Sub/M.2/USB 3.2)",
+    "preco": "R$398,05",
+    "link": "https://link.amazon/B092wjsUD",
+    "precoOriginal": "R$583,75",
+    "desconto": 32,
+    "imagem": "https://m.media-amazon.com/images/I/8167DVOm0ZL._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Microfone Dinâmico Gamer Logitech G Yeti GX com RGB LIGHTSYNC Captação Dinâmica Supercardioide, Conexão USB Plug and Play para Gravação de Conteúdo e Streaming em PC e Mac - Preto",
     "preco": "R$599,90",
     "link": "https://link.amazon/B06Wf4kfi",
@@ -302,11 +310,5 @@
     "precoOriginal": "R$449,90",
     "desconto": 22,
     "imagem": "https://m.media-amazon.com/images/I/71sCfhPJSjL._AC_SL1500_.jpg"
-  },
-  {
-    "titulo": "Placa de Vídeo Pny Nvidia Geforce Rtx 5060 Epic-x Rgb Oc Triple Fan, 8gb, Gddr7, Dlss, Ray Tracing, Vcg50608tfxxpb1-o-tf",
-    "preco": "R$2.699,99",
-    "link": "https://link.amazon/B08umN6qu",
-    "imagem": "https://m.media-amazon.com/images/I/61vW9k-STZL._AC_SL1000_.jpg"
   }
 ]
