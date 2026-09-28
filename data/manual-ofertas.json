@@ -1,5 +1,12 @@
 [
   {
+    "titulo": "Suporte De Mesa Para Tv/monitor De 17 Até 30 Preto Nb F80",
+    "preco": "R$79,00",
+    "link": "https://meli.la/1kfY4RM",
+    "imagem": "https://http2.mlstatic.com/D_Q_NP_2X_967508-MLA115291492479_072026-V.webp",
+    "cupom": "BARATINHO"
+  },
+  {
     "titulo": "Redragon TECLADO MECANICO GAMER FIZZ RAINBOW PRETO SWITCH AZUL",
     "preco": "R$125,00",
     "link": "https://link.amazon/B0cNKNnr4",
@@ -299,13 +306,5 @@
     "precoOriginal": "R$219,00",
     "desconto": 24,
     "imagem": "https://m.media-amazon.com/images/I/71cWjfs8G3L._AC_SL1500_.jpg"
-  },
-  {
-    "titulo": "Mouse sem Fio Gamer HyperX Pulsefire Haste 2 – Ultraleve, 61 g, Wireless e Bluetooth 2,4GHz, até 26000 DPI, Sensor HyperX 26K, 100 Horas de Duração de Bateria, Preto (6N0B0AA)",
-    "preco": "R$279,99",
-    "link": "https://link.amazon/B0bRrN3QZ",
-    "precoOriginal": "R$349,90",
-    "desconto": 20,
-    "imagem": "https://m.media-amazon.com/images/I/614KYrmdHoL._AC_SL1500_.jpg"
   }
 ]
