@@ -1,5 +1,12 @@
 [
   {
+    "titulo": "Tablet Samsung Galaxy Tab A11+, 128gb, 6gb Ram, Tela De 11, Câmera Traseira 8mp, Wifi, Android 16",
+    "preco": "R$1.238,00",
+    "link": "https://meli.la/2RnVk9V",
+    "imagem": "https://http2.mlstatic.com/D_Q_NP_2X_940271-MLA114610203683_072026-V.webp",
+    "cupom": "HOJETEMPROMO"
+  },
+  {
     "titulo": "Impressora Multifuncional Brother A4 DCP-T230 Tanque de Tinta, Colorida, USB, Bivolt",
     "preco": "R$849,00",
     "link": "https://link.amazon/B0eeCpPa0",
@@ -299,11 +306,5 @@
     "precoOriginal": "R$897,49",
     "desconto": 14,
     "imagem": "https://m.media-amazon.com/images/I/41XsVrkh8XL._AC_SL1080_.jpg"
-  },
-  {
-    "titulo": "Gigabyte B650M GAMING PLUS WIFI Placa-Mãe Micro-ATX, Socket AM5, DDR5, para AMD Ryzen Série 7000/8000/9000",
-    "preco": "R$999,99",
-    "link": "https://link.amazon/B0fSqbvj8",
-    "imagem": "https://m.media-amazon.com/images/I/81w8OonbkYL._AC_SL1500_.jpg"
   }
 ]
