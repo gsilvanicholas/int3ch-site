@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Mouse Gamer Redragon K1ng 1K Preto PAW3327 Cabo USB Tipo-C Removível 12400 DPI M724",
+    "preco": "R$83,98",
+    "link": "https://link.amazon/B033qad9w",
+    "precoOriginal": "R$153,00",
+    "desconto": 45,
+    "imagem": "https://m.media-amazon.com/images/I/51h06ltKy4L._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Bettdow Projetor 4k 8k 15000 Lumens Hd 1080p Compatível Completo De Android 9, Smart Projetores Retroprojetor Portatil 600 ANSI WiFi6, Auto Correção Trapezoidal, Foco Eletronico",
     "preco": "R$789,23",
     "link": "https://link.amazon/B0h2wDNoa",
@@ -300,11 +308,5 @@
     "precoOriginal": "R$153,00",
     "desconto": 45,
     "imagem": "https://m.media-amazon.com/images/I/51h06ltKy4L._AC_SL1500_.jpg"
-  },
-  {
-    "titulo": "Notebook ASUS VivoBook Go 15, AMD RYZEN 5 7520U, 8GB, 256GB SSD, KeepOS, Tela 15,6\" FHD, Mixed Black - E1504FA-NJ731",
-    "preco": "R$2.678,65",
-    "link": "https://link.amazon/B03S8ZqUN",
-    "imagem": "https://m.media-amazon.com/images/I/71TK+vh6JIL._AC_SL1500_.jpg"
   }
 ]
