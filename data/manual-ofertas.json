@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "soundcore Select 4 go da Anker, Caixa de Som Portátil Bluetooth Pequena",
+    "preco": "R$158,65",
+    "link": "https://link.amazon/B0d6IZFvF",
+    "precoOriginal": "R$339,00",
+    "desconto": 53,
+    "imagem": "https://m.media-amazon.com/images/I/619AGOcVVaL._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Placa Mae Gigabyte B550m Aorus Elite Am4 Ddr4 Hdmi M-atx Cor Preto",
     "preco": "R$581,00",
     "link": "https://meli.la/1zaDbwg",
@@ -297,13 +305,5 @@
     "precoOriginal": "R$3.806,00",
     "desconto": 45,
     "imagem": "https://m.media-amazon.com/images/I/513sHm9G9XL._AC_SL1000_.jpg"
-  },
-  {
-    "titulo": "Cadeira Ergonômica XTC Mesh Preta ThunderX3",
-    "preco": "R$1.999,89",
-    "link": "https://link.amazon/B03oZe9ra",
-    "precoOriginal": "R$2.949,90",
-    "desconto": 32,
-    "imagem": "https://m.media-amazon.com/images/I/71z3VNcWNvL._AC_SL1500_.jpg"
   }
 ]
