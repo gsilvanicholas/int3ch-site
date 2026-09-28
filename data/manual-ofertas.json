@@ -1,5 +1,12 @@
 [
   {
+    "titulo": "Placa Mae Gigabyte B550m Aorus Elite Am4 Ddr4 Hdmi M-atx Cor Preto",
+    "preco": "R$581,00",
+    "link": "https://meli.la/1zaDbwg",
+    "imagem": "https://http2.mlstatic.com/D_Q_NP_2X_846714-MLA99464080574_112025-V.webp",
+    "cupom": "HOJETEMPROMO"
+  },
+  {
     "titulo": "Filtro De Linha Dps Clamper 5 Tomadas 1m Transparente 021516 Transparente 127/220v",
     "preco": "R$52,00",
     "link": "https://meli.la/1YHxxsQ",
@@ -299,11 +306,5 @@
     "preco": "R$27,90",
     "link": "https://link.amazon/B03rjrVY3",
     "imagem": "https://m.media-amazon.com/images/I/51RBgQX-2vL._SL1000_.jpg"
-  },
-  {
-    "titulo": "GAINWARD Placa gráfica RTX 5060 Ghost 8GB GDDR7 128bit 3-DP HDMI NE75060019P1-GB2063B VD9198",
-    "preco": "R$2.600,00",
-    "link": "https://link.amazon/B0ddisiZj",
-    "imagem": "https://m.media-amazon.com/images/I/71n1ZJMVzGL._AC_SL1500_.jpg"
   }
 ]
