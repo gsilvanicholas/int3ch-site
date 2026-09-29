@@ -70,7 +70,7 @@ const gpuGrupos = agruparPorGrupo(GPU_LIST.filter((g) => g.grupo));
             {Array.from(gpuGrupos).map(([grupo, itens]) => (
               <optgroup label={grupo}>
                 {itens.map((item) => (
-                  <option value={item.id} selected={item.id === 'rtx3060'}>{item.label}</option>
+                  <option value={item.id} selected={item.id === 'rtx3060-12gb'}>{item.label}</option>
                 ))}
               </optgroup>
             ))}

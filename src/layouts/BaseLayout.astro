@@ -34,6 +34,23 @@ const ogImage = new URL('/og-image.png', Astro.site);
       document.addEventListener('astro:page-load', function () {
         gtag('event', 'page_view', { page_location: location.href, page_title: document.title });
       });
+
+      // Rastreia cliques nos links que importam pra medir campanha (Google Ads etc):
+      // entrar no Telegram, entrar no WhatsApp e clicar numa oferta (link de afiliado,
+      // identificado por rel="sponsored"). Delegado no document (nao no astro:page-load)
+      // pra registrar o listener uma vez so, mesmo com navegacao via View Transitions.
+      document.addEventListener('click', function (e) {
+        const a = e.target.closest('a[href]');
+        if (!a) return;
+        const href = a.href;
+        if (href.indexOf('t.me/int3ch') !== -1) {
+          gtag('event', 'click_telegram', { link_url: href, page_location: location.href });
+        } else if (href.indexOf('whatsapp.com/channel') !== -1) {
+          gtag('event', 'click_whatsapp', { link_url: href, page_location: location.href });
+        } else if ((a.rel || '').indexOf('sponsored') !== -1) {
+          gtag('event', 'click_oferta', { link_url: href, page_location: location.href });
+        }
+      });
     </script>
 
     <!--

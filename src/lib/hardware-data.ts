@@ -82,7 +82,8 @@ export const GPU_LIST: ComponenteHardware[] = [
   { id: 'rtx2070super', label: 'RTX 2070 Super', watts: 215, tier: 4.8, grupo: 'NVIDIA RTX 20/30 série' },
   { id: 'rtx2080super', label: 'RTX 2080 Super', watts: 250, tier: 5.3, grupo: 'NVIDIA RTX 20/30 série' },
   { id: 'rtx3050', label: 'RTX 3050', watts: 130, tier: 3.3, grupo: 'NVIDIA RTX 20/30 série' },
-  { id: 'rtx3060', label: 'RTX 3060', watts: 170, tier: 4.3, grupo: 'NVIDIA RTX 20/30 série' },
+  { id: 'rtx3060-8gb', label: 'RTX 3060 8GB', watts: 170, tier: 4.0, grupo: 'NVIDIA RTX 20/30 série' },
+  { id: 'rtx3060-12gb', label: 'RTX 3060 12GB', watts: 170, tier: 4.3, grupo: 'NVIDIA RTX 20/30 série' },
   { id: 'rtx3060ti', label: 'RTX 3060 Ti', watts: 200, tier: 5, grupo: 'NVIDIA RTX 20/30 série' },
   { id: 'rtx3070', label: 'RTX 3070', watts: 220, tier: 5.5, grupo: 'NVIDIA RTX 20/30 série' },
   { id: 'rtx3070ti', label: 'RTX 3070 Ti', watts: 290, tier: 5.8, grupo: 'NVIDIA RTX 20/30 série' },
@@ -103,7 +104,7 @@ export const GPU_LIST: ComponenteHardware[] = [
   { id: 'rtx4090', label: 'RTX 4090', watts: 450, tier: 10, grupo: 'NVIDIA RTX 40 série' },
 
   // NVIDIA RTX 50
-  { id: 'rtx5060', label: 'RTX 5060', watts: 145, tier: 4.8, grupo: 'NVIDIA RTX 50 série' },
+  { id: 'rtx5060', label: 'RTX 5060', watts: 145, tier: 5.3, grupo: 'NVIDIA RTX 50 série' },
   { id: 'rtx5060ti', label: 'RTX 5060 Ti', watts: 180, tier: 5.6, grupo: 'NVIDIA RTX 50 série' },
   { id: 'rtx5070', label: 'RTX 5070', watts: 250, tier: 7.4, grupo: 'NVIDIA RTX 50 série' },
   { id: 'rtx5070ti', label: 'RTX 5070 Ti', watts: 300, tier: 8.4, grupo: 'NVIDIA RTX 50 série' },
