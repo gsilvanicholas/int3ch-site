@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "JBL, Fone de Ouvido Bluetooth Over-Ear, Tune 530BT, Sem Fio, Até 76 Horas de Bateria - Azul",
+    "preco": "R$189,00",
+    "link": "https://link.amazon/B07BeJzYf",
+    "precoOriginal": "R$299,00",
+    "desconto": 37,
+    "imagem": "https://m.media-amazon.com/images/I/61rGUHFQFiL._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Teclado Mecânico Gamer Logitech G PRO com Layout US (teclas em inglês, sem ABNT2), RGB LIGHTSYNC, Design TKL, Cabo Destacável e Switch Exclusivo GX Blue Clicky",
     "preco": "R$449,90",
     "link": "https://link.amazon/B026faVOf",
@@ -300,13 +308,5 @@
     "precoOriginal": "R$189,00",
     "desconto": 32,
     "imagem": "https://m.media-amazon.com/images/I/51L4C1i5kEL._AC_SL1201_.jpg"
-  },
-  {
-    "titulo": "Hub Controlador Fan Pcyes Light Core 9 Pwm Argb Led Controle Preto",
-    "preco": "R$79,98",
-    "link": "https://meli.la/1szgMvB",
-    "precoOriginal": "R$129,99",
-    "desconto": 38,
-    "imagem": "https://http2.mlstatic.com/D_NQ_NP_801794-MLB117166181841_092026-O.webp"
   }
 ]
