@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Teclado Mecânico Gamer Logitech G PRO com Layout US (teclas em inglês, sem ABNT2), RGB LIGHTSYNC, Design TKL, Cabo Destacável e Switch Exclusivo GX Blue Clicky",
+    "preco": "R$449,90",
+    "link": "https://link.amazon/B026faVOf",
+    "precoOriginal": "R$699,90",
+    "desconto": 36,
+    "imagem": "https://m.media-amazon.com/images/I/51HaCM8wFcL._AC_SL1000_.jpg"
+  },
+  {
     "titulo": "Placa Mae Gigabyte B550m Aorus Elite Am4 Ddr4 Hdmi M-atx Cor Preto",
     "preco": "R$581,00",
     "link": "https://meli.la/1zaDbwg",
@@ -300,11 +308,5 @@
     "precoOriginal": "R$129,99",
     "desconto": 38,
     "imagem": "https://http2.mlstatic.com/D_NQ_NP_801794-MLB117166181841_092026-O.webp"
-  },
-  {
-    "titulo": "Balança Digital de Bioimpedância com Bluetooth, Análise Corporal Completa, IMC, Gordura, Massa Muscular, App iOS e Android, Até 180kg",
-    "preco": "R$27,90",
-    "link": "https://link.amazon/B03rjrVY3",
-    "imagem": "https://m.media-amazon.com/images/I/51RBgQX-2vL._SL1000_.jpg"
   }
 ]
