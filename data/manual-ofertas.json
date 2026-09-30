@@ -1,5 +1,11 @@
 [
   {
+    "titulo": "Haiz Monitor Gamer 25'' 144hz 0.5ms 1920x1080 Adaptive Sync FHD HDMI/DP IPS VESA",
+    "preco": "R$484,49",
+    "link": "https://www.amazon.com.br/dp/B0DCW6W5BK?tag=int3ch0f-20",
+    "imagem": "/ofertas/haiz-monitor-gamer-25-144hz-0-5ms-1920x1080-adaptive-sync-fh.jpg"
+  },
+  {
     "titulo": "Redragon Water Cooler GamerStorm LE240 RD 240mm RGB Compativel c/ Intel LGA 1851/1700/1200/1151 e AMD AM4/AM5 Preto",
     "preco": "R$294,00",
     "link": "https://www.amazon.com.br/dp/B0G5SDXLWV?tag=int3ch0f-20",
@@ -300,13 +306,5 @@
     "desconto": 35,
     "imagem": "https://http2.mlstatic.com/D_NQ_NP_872401-MLA113528429319_062026-O.webp",
     "cupom": "APROVEITAHOJE"
-  },
-  {
-    "titulo": "Mouse Gamer Redragon King Pro 4k Preto PAW3395 4000Hz M916-PRO-4K",
-    "preco": "R$210,47",
-    "link": "https://link.amazon/B08GJ9W6D",
-    "precoOriginal": "R$423,75",
-    "desconto": 50,
-    "imagem": "https://m.media-amazon.com/images/I/51EBglsGc+L._AC_SL1500_.jpg"
   }
 ]
