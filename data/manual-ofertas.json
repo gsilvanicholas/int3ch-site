@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Redragon Water Cooler GamerStorm LE240 RD 240mm RGB Compativel c/ Intel LGA 1851/1700/1200/1151 e AMD AM4/AM5 Preto",
+    "preco": "R$294,00",
+    "link": "https://www.amazon.com.br/dp/B0G5SDXLWV?tag=int3ch0f-20",
+    "precoOriginal": "R$449,00",
+    "desconto": 35,
+    "imagem": "https://m.media-amazon.com/images/I/61rPOZXcaaL._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "JBL, Fone de Ouvido Bluetooth Over-Ear, Tune 530BT, Sem Fio, Até 76 Horas de Bateria - Azul",
     "preco": "R$189,00",
     "link": "https://link.amazon/B07BeJzYf",
@@ -300,13 +308,5 @@
     "precoOriginal": "R$423,75",
     "desconto": 50,
     "imagem": "https://m.media-amazon.com/images/I/51EBglsGc+L._AC_SL1500_.jpg"
-  },
-  {
-    "titulo": "Fone De Ouvido Gamer Headset Havit H2015D Pc/Xbox/Ps4/Ps5",
-    "preco": "R$128,15",
-    "link": "https://link.amazon/B039nLTt3",
-    "precoOriginal": "R$189,00",
-    "desconto": 32,
-    "imagem": "https://m.media-amazon.com/images/I/51L4C1i5kEL._AC_SL1201_.jpg"
   }
 ]
