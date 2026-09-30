@@ -29,6 +29,33 @@ const POSTS_BLOG = [
   'vida-util-ssd',
   '144hz-vs-240hz',
   'overclock-vale-a-pena',
+  'm2-vs-sata-ssd',
+  'mini-pc-gamer-vale-a-pena',
+];
+
+// Noticias tambem sao SSR (mesmo motivo do blog) - mesma lista manual.
+// Atualizar ao adicionar noticias novas.
+const NOTICIAS = [
+  'adobe-premiere-gratis-android',
+  'oculos-com-ia-privacidade',
+  'lian-li-edge-hub-adv-gpu',
+  'minisforum-atomman-g1-pro-mini-pc-gamer',
+];
+
+// Guias (funis) tambem sao SSR - mesma lista manual. Atualizar ao adicionar
+// guias novos em src/pages/funis/*.astro.
+const GUIAS = [
+  'placa-de-video',
+  'processador',
+  'placa-mae',
+  'monitores-gamer',
+  'mouses-gamer',
+  'memoria-ram',
+  'ssd',
+  'fonte',
+  'teclado',
+  'gabinete',
+  'headset-gamer',
 ];
 
 // https://astro.build/config
@@ -45,12 +72,10 @@ export default defineConfig({
         SITE,
         `${SITE}/blog`,
         ...POSTS_BLOG.map((slug) => `${SITE}/blog/${slug}`),
+        `${SITE}/noticias`,
+        ...NOTICIAS.map((slug) => `${SITE}/noticias/${slug}`),
         `${SITE}/ofertas`,
-        `${SITE}/funis/placa-de-video`,
-        `${SITE}/funis/processador`,
-        `${SITE}/funis/placa-mae`,
-        `${SITE}/funis/monitores-gamer`,
-        `${SITE}/funis/mouses-gamer`,
+        ...GUIAS.map((slug) => `${SITE}/funis/${slug}`),
       ],
     }),
   ],
