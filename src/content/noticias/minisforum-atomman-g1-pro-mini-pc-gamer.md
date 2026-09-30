@@ -1,7 +1,7 @@
 ---
 title: "Minisforum lança mini PC gamer AtomMan G1 Pro com opção 100% AMD"
 description: "O AtomMan G1 Pro vem com Ryzen 9 8945HX e permite escolher entre RTX 5060 ou Radeon RX 9060 XT de 16GB, num gabinete de menos de 4kg."
-pubDate: 2026-09-30T11:00:00-03:00
+pubDate: 2026-09-30T09:00:00-03:00
 tags: ["hardware", "mini-pc"]
 fonteNome: "Adrenaline"
 fonteUrl: "https://www.adrenaline.com.br/hardware/minisforum-apresenta-novo-mini-pc-para-jogos-com-cpu-ryzen-e-gpu-amd-ou-nvidia/"

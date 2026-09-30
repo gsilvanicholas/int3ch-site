@@ -1,7 +1,7 @@
 ---
 title: "Mini PC dá pra jogar de verdade? O que considerar antes de comprar"
 description: "Mini PCs gamers estao cada vez mais fortes, mas nem todo modelo compacto entrega desempenho de PC de mesa. Veja o que olhar antes de trocar de formato."
-pubDate: 2026-09-30T12:00:00-03:00
+pubDate: 2026-09-30T09:30:00-03:00
 tags: ["hardware", "guia"]
 cover: "/blog/minipc-cover.svg"
 ---
