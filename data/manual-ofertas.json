@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Water Cooler MSI MAG Coreliquid A12, ARGB, 360mm, Intel e AMD, Preto - CLA12360",
+    "preco": "R$309,98",
+    "link": "https://www.amazon.com.br/dp/B0FFJCHP6W?tag=int3ch0f-20",
+    "precoOriginal": "R$504,80",
+    "desconto": 39,
+    "imagem": "https://m.media-amazon.com/images/I/71m8SHYSeRL._SL1500_.jpg"
+  },
+  {
     "titulo": "Haiz Monitor Gamer 25'' 144hz 0.5ms 1920x1080 Adaptive Sync FHD HDMI/DP IPS VESA",
     "preco": "R$484,49",
     "link": "https://www.amazon.com.br/dp/B0DCW6W5BK?tag=int3ch0f-20",
@@ -297,11 +305,5 @@
     "precoOriginal": "R$139,00",
     "desconto": 45,
     "imagem": "https://http2.mlstatic.com/D_NQ_NP_697097-MLU75640875732_042024-O.webp"
-  },
-  {
-    "titulo": "GPU NV RTX5050 8GB GDDR6 128BITS VENTUS 2X OC MSI 912-V538-010",
-    "preco": "R$2.200,00",
-    "link": "https://link.amazon/B0j75G5mS",
-    "imagem": "https://m.media-amazon.com/images/I/71I6T45IdjL._AC_SL1500_.jpg"
   }
 ]
