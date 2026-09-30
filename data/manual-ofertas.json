@@ -3,6 +3,12 @@
     "titulo": "Haiz Monitor Gamer 25'' 144hz 0.5ms 1920x1080 Adaptive Sync FHD HDMI/DP IPS VESA",
     "preco": "R$484,49",
     "link": "https://www.amazon.com.br/dp/B0DCW6W5BK?tag=int3ch0f-20",
+    "imagem": "https://m.media-amazon.com/images/I/71fAStedVQL._AC_SL1500_.jpg"
+  },
+  {
+    "titulo": "Haiz Monitor Gamer 25'' 144hz 0.5ms 1920x1080 Adaptive Sync FHD HDMI/DP IPS VESA",
+    "preco": "R$484,49",
+    "link": "https://www.amazon.com.br/dp/B0DCW6W5BK?tag=int3ch0f-20",
     "imagem": "/ofertas/haiz-monitor-gamer-25-144hz-0-5ms-1920x1080-adaptive-sync-fh.jpg"
   },
   {
@@ -297,14 +303,5 @@
     "preco": "R$2.200,00",
     "link": "https://link.amazon/B0j75G5mS",
     "imagem": "https://m.media-amazon.com/images/I/71I6T45IdjL._AC_SL1500_.jpg"
-  },
-  {
-    "titulo": "Monitor Gigabyte Gs24f14 23.8 Pol Full Hd Ips 144hz 1ms",
-    "preco": "R$517,00",
-    "link": "https://meli.la/1j1P1FF",
-    "precoOriginal": "R$799,00",
-    "desconto": 35,
-    "imagem": "https://http2.mlstatic.com/D_NQ_NP_872401-MLA113528429319_062026-O.webp",
-    "cupom": "APROVEITAHOJE"
   }
 ]
