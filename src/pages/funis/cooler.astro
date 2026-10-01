@@ -1,0 +1,105 @@
+---
+export const prerender = false;
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import TelegramCTA from '../../components/TelegramCTA.astro';
+import OfertasRelacionadas from '../../components/OfertasRelacionadas.astro';
+import FAQ from '../../components/FAQ.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ShareButtons from '../../components/ShareButtons.astro';
+
+const perguntas = [
+  {
+    pergunta: 'Water cooler esfria mais que air cooler?',
+    resposta: 'Nos processadores atuais de consumo mais alto, sim, principalmente em cargas longas - mas a diferença só aparece de verdade acima de uns 200W de TDP ou em overclock pesado. Pra uso normal, um air cooler bom (torre dupla) chega muito perto de um water cooler de 240mm pelo mesmo dinheiro ou menos.',
+  },
+  {
+    pergunta: 'Water cooler pode vazar?',
+    resposta: 'É raro, mas existe o risco - e quando acontece, o líquido pode danificar placa-mãe e outros componentes. Air cooler não tem esse risco porque não usa líquido. Se você se preocupa com isso, ou não vai abrir o PC pra checar de vez em quando, o air cooler é a opção mais tranquila.',
+  },
+  {
+    pergunta: 'Preciso trocar a pasta térmica do cooler que já vem instalado?',
+    resposta: 'Não, a maioria dos coolers (ar ou água) já vem com uma camada de pasta térmica aplicada ou um sachê incluso, pronta pra primeira instalação. Só vale reaplicar se você for reutilizar o cooler numa segunda montagem, ou depois de 2-3 anos de uso contínuo.',
+  },
+  {
+    pergunta: '120mm, 240mm ou 360mm: qual water cooler escolher?',
+    resposta: 'O tamanho do radiador é o número de ventoinhas que ele comporta (120mm = 1 fan, 240mm = 2, 360mm = 3) - quanto maior, mais área de troca de calor e mais silencioso ele pode rodar pra mesma temperatura. 240mm já atende bem processadores de 6-8 núcleos; 360mm vale a pena pra CPUs de consumo alto (12+ núcleos) ou overclock.',
+  },
+];
+
+const tipos = [
+  {
+    nome: 'Air Cooler (até R$150)',
+    para: 'Processadores de entrada e intermediários, quem quer simplicidade e zero risco de vazamento',
+    olhar: ['Torre dupla (2 conjuntos de aletas) esfria bem mais que o cooler box que acompanha a CPU', 'Confira a altura - gabinetes compactos têm um limite de clearance pro cooler', 'Heatpipes de cobre (os tubos que saem da base) ajudam a dissipar calor mais rápido'],
+  },
+  {
+    nome: 'Water Cooler 240mm (R$150-R$350)',
+    para: 'Processadores intermediários a avançados (6-8 núcleos), quem quer silêncio e visual limpo',
+    olhar: ['Confira se o gabinete tem onde encaixar um radiador de 240mm (topo ou frente)', 'Bomba com garantia de pelo menos 2 anos - é a parte que, se falhar, para o resfriamento todo', 'RGB e tela no bloco são estética, não desempenho - não pague a mais só por isso se o orçamento for curto'],
+  },
+  {
+    nome: 'Water Cooler 360mm (R$350+)',
+    para: 'CPUs de consumo alto (12+ núcleos), overclock, quem quer a menor temperatura possível',
+    olhar: ['Exige gabinete com espaço confirmado pra radiador de 360mm - meça antes de comprar', 'Compatibilidade de soquete (AM4/AM5 ou LGA) - confira o kit de fixação incluso', 'Ventoinhas PWM controladas pela placa-mãe, pra variar a rotação conforme a temperatura'],
+  },
+];
+---
+<BaseLayout
+  title="Como Escolher um Cooler: Air Cooler ou Water Cooler - Guia de Compra 2026"
+  description="Air cooler ou water cooler, 120mm, 240mm ou 360mm: veja o que realmente importa pra resfriar seu processador, por faixa de orçamento."
+>
+  <Breadcrumbs itens={[{ nome: 'Início', href: '/' }, { nome: 'Guias', href: '/guias' }, { nome: 'Cooler' }]} />
+  <section class="max-w-3xl mx-auto px-4 sm:px-6 pt-6 pb-14">
+    <p class="text-brand-2 font-semibold uppercase text-sm tracking-wide mb-3">Guia de compra</p>
+    <h1 class="text-3xl sm:text-4xl font-extrabold text-text leading-tight">Como Escolher um Cooler</h1>
+    <p class="text-muted text-lg mt-4">
+      O cooler que acompanha o processador funciona, mas é o ponto fraco da montagem. Veja quando um air cooler
+      já resolve e quando vale a pena ir de water cooler, por faixa de orçamento.
+    </p>
+
+    <div class="mt-5">
+      <ShareButtons titulo="Como Escolher um Cooler" />
+    </div>
+
+    <div class="mt-10 space-y-6">
+      {tipos.map((t) => (
+        <div class="rounded-2xl border border-line bg-panel p-6">
+          <div class="flex items-baseline justify-between flex-wrap gap-2">
+            <h2 class="text-xl font-bold text-text">{t.nome}</h2>
+            <span class="text-muted text-sm">{t.para}</span>
+          </div>
+          <ul class="mt-4 space-y-2">
+            {t.olhar.map((item) => (
+              <li class="text-sm text-muted flex gap-2">
+                <span class="text-brand-2">✓</span> {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+
+    <div class="mt-10 rounded-2xl border border-brand/30 bg-gradient-to-br from-panel to-panel-2 p-6">
+      <h2 class="text-xl font-bold text-text">O que mais pesa na escolha: o TDP do seu processador</h2>
+      <p class="text-muted text-sm mt-3 leading-relaxed">
+        Antes de decidir entre ar ou água, olhe o <strong class="text-text">TDP</strong> (consumo térmico) do seu processador
+        na ficha técnica. Processadores de até 65-95W de TDP rodam frios até com um air cooler de torre dupla. Acima disso,
+        ou em overclock, o <strong class="text-text">water cooler</strong> passa a fazer diferença real na temperatura e no
+        ruído sob carga. Silêncio e estética à parte, não compre mais resfriamento do que o seu processador pede.
+      </p>
+    </div>
+
+    <OfertasRelacionadas
+      titulo="Coolers em oferta agora"
+      termos={['cooler', 'water cooler']}
+      excluir={['suporte', 'adesivo', 'pasta termica']}
+    />
+
+    <FAQ perguntas={perguntas} />
+
+    <div class="mt-12">
+      <TelegramCTA variant="banner" texto="Air cooler ou water cooler em promoção passa rápido — entre no canal pra não perder." />
+    </div>
+  </section>
+</BaseLayout>
