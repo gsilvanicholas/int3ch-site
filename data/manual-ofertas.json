@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "HyperX Cloud Stinger 2 - Headset gamer (preto)",
+    "preco": "R$169,00",
+    "link": "https://www.amazon.com.br/dp/B0B8PGDMWK?tag=int3ch0f-20",
+    "precoOriginal": "R$230,90",
+    "desconto": 27,
+    "imagem": "https://m.media-amazon.com/images/I/61gKp5mi0-L._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Gabinete Gamer Lian Li Dynamic Mini O11 Branco Snow Branco",
     "preco": "R$665,37",
     "link": "https://www.mercadolivre.com.br/gabinete-gamer-lian-li-dynamic-mini-o11-branco-snow/up/MLBU3687780021?pdp_filters=item_id%3AMLB4379661775&matt_tool_id=36099038",
@@ -297,13 +305,5 @@
     "precoOriginal": "R$129,99",
     "desconto": 46,
     "imagem": "https://http2.mlstatic.com/D_NQ_NP_743803-MLB112778780274_062026-O.webp"
-  },
-  {
-    "titulo": "Lixeira Quadrada Preta 16L Inteligente Automática com Sensor para Banheiro e Cozinha",
-    "preco": "R$69,89",
-    "link": "https://meli.la/1Rq1pkk",
-    "precoOriginal": "R$249,99",
-    "desconto": 72,
-    "imagem": "https://http2.mlstatic.com/D_NQ_NP_985087-MLA110679666782_052026-O.webp"
   }
 ]
