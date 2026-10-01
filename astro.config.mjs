@@ -56,6 +56,7 @@ const GUIAS = [
   'teclado',
   'gabinete',
   'headset-gamer',
+  'cooler',
 ];
 
 // https://astro.build/config
