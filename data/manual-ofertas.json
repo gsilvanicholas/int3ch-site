@@ -1,5 +1,11 @@
 [
   {
+    "titulo": "DPS iClamper Pocket LCF 2 Pinos - 20A Transparente",
+    "preco": "R$37,05",
+    "link": "https://www.amazon.com.br/dp/B0FS92VS99?tag=int3ch02-20",
+    "imagem": "https://m.media-amazon.com/images/I/51RbIaH-I7L._AC_SL1080_.jpg"
+  },
+  {
     "titulo": "Processador AMD Ryzen 5 8400F (AM5, 6 Cores, 12 Threads, 4.7 GHz, 22MB Cache, Sem Video, Com Cooler)",
     "preco": "R$759,98",
     "link": "https://www.amazon.com.br/dp/B0D2JD6P86?tag=int3ch02-20",
@@ -297,13 +303,5 @@
     "precoOriginal": "R$174,00",
     "desconto": 73,
     "imagem": "https://http2.mlstatic.com/D_Q_NP_2X_891709-MLA115068451649_072026-V.webp"
-  },
-  {
-    "titulo": "Geonav Power Bank, Carregador Portátil Universal por Indução 10.000mAh, Carregamento rápido*, Suporte Dobrável, Compatível com MagSafe®, PB10MAGBK, Preto",
-    "preco": "R$165,97",
-    "link": "https://link.amazon/B01jG9DAz",
-    "precoOriginal": "R$299,00",
-    "desconto": 44,
-    "imagem": "https://m.media-amazon.com/images/I/71rVp-0wkvL._AC_SL1500_.jpg"
   }
 ]
