@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Acer Aspire Go 15 Notebook 15.6'' Intel Core i5 13a Geracao 16GB Windows",
+    "preco": "R$4.184,07",
+    "link": "https://www.amazon.com.br/dp/B0FY3TV864?tag=int3ch02-20",
+    "precoOriginal": "R$5.199,00",
+    "desconto": 20,
+    "imagem": "https://m.media-amazon.com/images/I/712nW-3hYBL._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "HyperX Cloud Stinger 2 - Headset gamer (preto)",
     "preco": "R$169,00",
     "link": "https://www.amazon.com.br/dp/B0B8PGDMWK?tag=int3ch0f-20",
@@ -297,13 +305,5 @@
     "precoOriginal": "R$99,99",
     "desconto": 31,
     "imagem": "https://http2.mlstatic.com/D_Q_NP_2X_670747-MLA100186033229_122025-V.webp"
-  },
-  {
-    "titulo": "Sanduicheira Elétrica Antiaderente Grill 750w Preto 110/220v Preto 220v",
-    "preco": "R$69,99",
-    "link": "https://meli.la/12yPvec",
-    "precoOriginal": "R$129,99",
-    "desconto": 46,
-    "imagem": "https://http2.mlstatic.com/D_NQ_NP_743803-MLB112778780274_062026-O.webp"
   }
 ]
