@@ -1,5 +1,11 @@
 [
   {
+    "titulo": "Console Nintendo Switch 2 - Modelo Nacional de Tomada",
+    "preco": "R$3.799,05",
+    "link": "https://www.amazon.com.br/dp/B0F6D7MQQB?tag=int3ch02-20",
+    "imagem": "https://m.media-amazon.com/images/I/51DCY2ooVtL._AC_SL1000_.jpg"
+  },
+  {
     "titulo": "ATTACK  SHARK R1 Mouse with PAW3311 Sensor Three-mode Wireless Bluetooth Gaming Mouse Customizable",
     "preco": "R$113,99",
     "link": "https://shope.ee/an_redir?origin_link=https%3A%2F%2Fshopee.com.br%2Fproduct%2F1460195677%2F27774634871",
@@ -294,14 +300,5 @@
     "precoOriginal": "R$50,25",
     "desconto": 30,
     "imagem": "https://m.media-amazon.com/images/I/51g5ObsHk-L._AC_SL1000_.jpg"
-  },
-  {
-    "titulo": "MONDIAL Cafeteira Elétrica Dolce Arome Digital, Preto/Inox, 800W, 110V - C-44-32X-SDI",
-    "preco": "R$186,00",
-    "link": "https://link.amazon/B0ecO0aHt",
-    "precoOriginal": "R$219,00",
-    "desconto": 15,
-    "imagem": "https://m.media-amazon.com/images/I/712oLx9akuL._AC_SL1500_.jpg",
-    "cupom": "CAFETEIRAS10"
   }
 ]
