@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Geonav Power Bank, Carregador Portatil Universal 10.000mAh, Carga rapida, 2 saidas USB-A e 1 USB-C, Preto",
+    "preco": "R$104,40",
+    "link": "https://www.amazon.com.br/dp/B0F6B226NK?tag=int3ch02-20",
+    "precoOriginal": "R$109,90",
+    "desconto": 5,
+    "imagem": "https://m.media-amazon.com/images/I/71VoFVTnY8L._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Acer Aspire Go 15 Notebook 15.6'' Intel Core i5 13a Geracao 16GB Windows",
     "preco": "R$4.184,07",
     "link": "https://www.amazon.com.br/dp/B0FY3TV864?tag=int3ch02-20",
@@ -297,13 +305,5 @@
     "precoOriginal": "R$1.799,00",
     "desconto": 8,
     "imagem": "https://m.media-amazon.com/images/I/61tVQTdW0nL._AC_SL1500_.jpg"
-  },
-  {
-    "titulo": "Filtro de Linha Clamper iClamper Energia 5 Tomadas, com DPS e Proteção contra Raios e Surtos Elétricos (preço no Pix)",
-    "preco": "R$69,30",
-    "link": "https://meli.la/2ban7Qp",
-    "precoOriginal": "R$99,99",
-    "desconto": 31,
-    "imagem": "https://http2.mlstatic.com/D_Q_NP_2X_670747-MLA100186033229_122025-V.webp"
   }
 ]
