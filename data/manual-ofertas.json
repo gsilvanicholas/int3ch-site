@@ -1,5 +1,14 @@
 [
   {
+    "titulo": "Motorola Moto G56 5G Dual Sim 256GB + 8GB Preto",
+    "preco": "R$1.249,00",
+    "link": "https://www.mercadolivre.com.br/motorola-moto-g56-5g-dual-sim-256gb-8gb-preto/p/MLB67890591?matt_tool_id=36099038",
+    "precoOriginal": "R$2.699,00",
+    "desconto": 54,
+    "imagem": "https://http2.mlstatic.com/D_Q_NP_2X_835488-MLA109454418800_042026-V.webp",
+    "cupom": "VALEDESCONTO"
+  },
+  {
     "titulo": "SSD Kingston NV3 1TB M.2 2280 PCIe 4.0 NVMe 6000 MB/s",
     "preco": "R$822,00",
     "link": "https://www.mercadolivre.com.br/ssd-kingston-nv3-1tb-m2-2280-pcie-40-nvme-6000-mbs/p/MLB39766120?pdp_filters=item_id%3AMLB7626397204&matt_tool_id=36099038",
@@ -293,13 +302,5 @@
     "desconto": 11,
     "imagem": "https://m.media-amazon.com/images/I/61ygOAYPNVL._AC_SL1500_.jpg",
     "cupom": "GAMER50F"
-  },
-  {
-    "titulo": "Fone De Ouvido Sem Fio Havit Tw982 Enc Bluetooth 5.4 Cor Preto",
-    "preco": "R$78,90",
-    "link": "https://meli.la/1PzZAPF",
-    "precoOriginal": "R$119,00",
-    "desconto": 34,
-    "imagem": "https://http2.mlstatic.com/D_Q_NP_2X_687944-MLA96073444085_102025-V.webp"
   }
 ]
