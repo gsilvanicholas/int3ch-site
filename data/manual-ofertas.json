@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Cadeira de Escritorio Ergonomica Python Fly em Malha - Testada conforme NR-17, Lombar Integrada Fixa, Assento Arejado, Bracos 3D, Suporta ate 150kg (preto)",
+    "preco": "R$569,04",
+    "link": "https://www.amazon.com.br/dp/B0CZLBXZ56?tag=int3ch02-20",
+    "precoOriginal": "R$799,00",
+    "desconto": 29,
+    "imagem": "https://m.media-amazon.com/images/I/7184zXQJSpL._AC_SL1200_.jpg"
+  },
+  {
     "titulo": "Notebook Acer Aspire Go 15 AG15-71P-5939 - Intel Core i5-13420H 13a Geracao, 8GB DDR5, 256GB SSD NVMe, Tela 15,6', Windows 11 Home",
     "preco": "R$3.491,22",
     "link": "https://www.mercadolivre.com.br/notebook-acer-aspire-go-15-ag15-71p-5939-intel-core-i5-13420h-13-geracao-8gb-ddr5-256gb-ssd-nvme-tela-156-windows-11-home/p/MLB52934530?matt_tool_id=36099038",
@@ -292,13 +300,5 @@
     "precoOriginal": "R$379,00",
     "desconto": 61,
     "imagem": "https://m.media-amazon.com/images/I/61O+xK4F6aL._AC_SL1000_.jpg"
-  },
-  {
-    "titulo": "Smartphone Motorola Edge 60 Fusion 5G - 16GB (8GB RAM+8GB Ram Boost) 50MP Sony AI Camera IP68 NFC - Cinza",
-    "preco": "R$1.713,60",
-    "link": "https://link.amazon/B0dmO1ucv",
-    "precoOriginal": "R$2.999,00",
-    "desconto": 43,
-    "imagem": "https://m.media-amazon.com/images/I/61D-EYiVoVL._AC_SL1000_.jpg"
   }
 ]
