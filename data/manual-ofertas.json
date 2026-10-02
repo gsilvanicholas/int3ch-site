@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Monitor Portatil Gamer Bettdow 15.6'' Full HD 60Hz IPS Compativel 4K Preto",
+    "preco": "R$394,25",
+    "link": "https://www.mercadolivre.com.br/monitor-portatil-gamer-bettdow-156-full-hd-60hz-ips-compativel-4k-preto/p/MLB44320380?matt_tool_id=36099038",
+    "precoOriginal": "R$799,00",
+    "desconto": 51,
+    "imagem": "https://http2.mlstatic.com/D_Q_NP_2X_660084-MLA99977469865_112025-V.webp"
+  },
+  {
     "titulo": "Motorola Moto G56 5G Dual Sim 256GB + 8GB Preto",
     "preco": "R$1.249,00",
     "link": "https://www.mercadolivre.com.br/motorola-moto-g56-5g-dual-sim-256gb-8gb-preto/p/MLB67890591?matt_tool_id=36099038",
@@ -293,14 +301,5 @@
     "link": "https://meli.la/1kfY4RM",
     "imagem": "https://http2.mlstatic.com/D_Q_NP_2X_967508-MLA115291492479_072026-V.webp",
     "cupom": "BARATINHO"
-  },
-  {
-    "titulo": "Redragon TECLADO MECANICO GAMER FIZZ RAINBOW PRETO SWITCH AZUL",
-    "preco": "R$125,00",
-    "link": "https://link.amazon/B0cNKNnr4",
-    "precoOriginal": "R$139,99",
-    "desconto": 11,
-    "imagem": "https://m.media-amazon.com/images/I/61ygOAYPNVL._AC_SL1500_.jpg",
-    "cupom": "GAMER50F"
   }
 ]
