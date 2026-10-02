@@ -1,5 +1,11 @@
 [
   {
+    "titulo": "Impressora 3D Bambu Lab A1 Combo AMS 110v/220v 4 Cores Prateado",
+    "preco": "R$4.789,00",
+    "link": "https://www.mercadolivre.com.br/impressora-3d-bambu-lab-a1-combo-ams-110v220v-4-cores/up/MLBU5242472790?pdp_filters=item_id%3AMLB7664947516&matt_tool_id=36099038",
+    "imagem": "/ofertas/impressora-3d-bambu-lab-a1-combo-ams-110v-220v-4-cores-prate.jpg"
+  },
+  {
     "titulo": "Cadeira de Escritorio Ergonomica Python Fly em Malha - Testada conforme NR-17, Lombar Integrada Fixa, Assento Arejado, Bracos 3D, Suporta ate 150kg (preto)",
     "preco": "R$569,04",
     "link": "https://www.amazon.com.br/dp/B0CZLBXZ56?tag=int3ch02-20",
@@ -292,13 +298,5 @@
     "precoOriginal": "R$229,00",
     "desconto": 26,
     "imagem": "https://m.media-amazon.com/images/I/71pJtOX24yL._AC_SL1500_.jpg"
-  },
-  {
-    "titulo": "Teclado Mecânico Redragon Dark Avenger Preto Iluminação Rainbow Switch Marrom K568R",
-    "preco": "R$148,83",
-    "link": "https://link.amazon/B0dedBENU",
-    "precoOriginal": "R$379,00",
-    "desconto": 61,
-    "imagem": "https://m.media-amazon.com/images/I/61O+xK4F6aL._AC_SL1000_.jpg"
   }
 ]
