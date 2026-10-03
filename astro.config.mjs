@@ -40,6 +40,7 @@ const NOTICIAS = [
   'oculos-com-ia-privacidade',
   'lian-li-edge-hub-adv-gpu',
   'minisforum-atomman-g1-pro-mini-pc-gamer',
+  'steam-setembro-2026-rtx-5070-32gb-ram',
 ];
 
 // Guias (funis) tambem sao SSR - mesma lista manual. Atualizar ao adicionar
