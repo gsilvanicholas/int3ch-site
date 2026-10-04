@@ -1,5 +1,11 @@
 [
   {
+    "titulo": "GAINWARD Placa Grafica RTX 5060 Ghost 8GB GDDR7 128bit 3-DP HDMI",
+    "preco": "R$2.640,00",
+    "link": "https://www.amazon.com.br/dp/B0F8H4RWB8?tag=int3ch02-20",
+    "imagem": "https://m.media-amazon.com/images/I/71n1ZJMVzGL._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Mixer Apr 400 Lamina de Aco 2 Velocidades 400W Amvox Preto",
     "preco": "R$59,00",
     "link": "https://www.mercadolivre.com.br/mixer-apr-400-lamina-de-aco-2-velocidade-400w-amvox-cor-preto/p/MLB29008928?pdp_filters=item_id%3AMLB4959080006&matt_tool_id=36099038",
@@ -294,13 +300,5 @@
     "precoOriginal": "R$583,75",
     "desconto": 32,
     "imagem": "https://m.media-amazon.com/images/I/8167DVOm0ZL._AC_SL1500_.jpg"
-  },
-  {
-    "titulo": "Microfone Dinâmico Gamer Logitech G Yeti GX com RGB LIGHTSYNC Captação Dinâmica Supercardioide, Conexão USB Plug and Play para Gravação de Conteúdo e Streaming em PC e Mac - Preto",
-    "preco": "R$599,90",
-    "link": "https://link.amazon/B06Wf4kfi",
-    "precoOriginal": "R$799,90",
-    "desconto": 25,
-    "imagem": "https://m.media-amazon.com/images/I/61AWuAkFr6L._AC_SL1500_.jpg"
   }
 ]
