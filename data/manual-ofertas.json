@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Monitor Gamer Samsung Odyssey G5 27'' QHD 165Hz 1ms (MPRT) Curvo 1000R HDR10 AMD FreeSync",
+    "preco": "R$948,58",
+    "link": "https://www.amazon.com.br/dp/B0DWQK1Q8S?tag=int3ch02-20",
+    "precoOriginal": "R$1.449,00",
+    "desconto": 35,
+    "imagem": "https://m.media-amazon.com/images/I/61Jv+Gj6aBL._AC_SL1000_.jpg"
+  },
+  {
     "titulo": "GAINWARD Placa Grafica RTX 5060 Ghost 8GB GDDR7 128bit 3-DP HDMI",
     "preco": "R$2.640,00",
     "link": "https://www.amazon.com.br/dp/B0F8H4RWB8?tag=int3ch02-20",
@@ -292,13 +300,5 @@
     "link": "https://meli.la/1E8kce7",
     "imagem": "https://http2.mlstatic.com/D_Q_NP_2X_748325-MLA95379123655_102025-V.webp",
     "cupom": "HOJETEMPROMO"
-  },
-  {
-    "titulo": "Placa Mãe Gigabyte A520M K V2 (AM4/2xDDR4/HDMI/D-Sub/M.2/USB 3.2)",
-    "preco": "R$398,05",
-    "link": "https://link.amazon/B092wjsUD",
-    "precoOriginal": "R$583,75",
-    "desconto": 32,
-    "imagem": "https://m.media-amazon.com/images/I/8167DVOm0ZL._AC_SL1500_.jpg"
   }
 ]
