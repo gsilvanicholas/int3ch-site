@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Teclado sem fio Logitech Pebble Keys 2 K380s Bluetooth Easy-Switch, Layout US - Rosa (preco Prime)",
+    "preco": "R$159,90",
+    "link": "https://www.amazon.com.br/dp/B0CJ3P5RX9?tag=int3ch02-20",
+    "precoOriginal": "R$247,90",
+    "desconto": 35,
+    "imagem": "https://m.media-amazon.com/images/I/61vnuYiLrXL._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Webcam Fifine K420 2K 1440p Full HD com Microfone e Tripe para PC, Desktop e Notebook",
     "preco": "R$80,00",
     "link": "https://s.click.aliexpress.com/e/_c4oqqsdR",
@@ -304,13 +312,5 @@
     "link": "https://meli.la/2RnVk9V",
     "imagem": "https://http2.mlstatic.com/D_Q_NP_2X_940271-MLA114610203683_072026-V.webp",
     "cupom": "HOJETEMPROMO"
-  },
-  {
-    "titulo": "Impressora Multifuncional Brother A4 DCP-T230 Tanque de Tinta, Colorida, USB, Bivolt",
-    "preco": "R$849,00",
-    "link": "https://link.amazon/B0eeCpPa0",
-    "precoOriginal": "R$1.099,00",
-    "desconto": 23,
-    "imagem": "https://m.media-amazon.com/images/I/51EQj0OUwKL._AC_SL1000_.jpg"
   }
 ]
