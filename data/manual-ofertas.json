@@ -1,5 +1,14 @@
 [
   {
+    "titulo": "SSD NVMe M.2 2280 512GB Kootion X15 Lite PCIe 3.0x4 (ate 3500 MB/s)",
+    "preco": "R$395,00",
+    "link": "https://s.click.aliexpress.com/e/_c3LwDcNJ",
+    "precoOriginal": "R$494,97",
+    "desconto": 20,
+    "imagem": "https://ae-pic-a1.aliexpress-media.com/kf/Sf8952f3f489d4ff9bd695ed3c3df06e6z.jpg",
+    "cupom": "KT0001 + BRCD3"
+  },
+  {
     "titulo": "Monitor Gamer Samsung Odyssey G5 27'' QHD 165Hz 1ms (MPRT) Curvo 1000R HDR10 AMD FreeSync",
     "preco": "R$948,58",
     "link": "https://www.amazon.com.br/dp/B0DWQK1Q8S?tag=int3ch02-20",
@@ -292,13 +301,6 @@
     "titulo": "Tablet Samsung Galaxy Tab A11+, 128gb, 6gb Ram, Tela De 11, Câmera Traseira 8mp, Wifi, Android 16",
     "preco": "R$1.238,00",
     "link": "https://meli.la/2RnVk9V",
-    "cupom": "HOJETEMPROMO"
-  },
-  {
-    "titulo": "Caixa de Som JBL PartyBox Stage 320 Bluetooth Portátil Com Show de Luzes e Resistente a Respingos – 240W RMS Preta",
-    "preco": "R$2.033,00",
-    "link": "https://meli.la/1E8kce7",
-    "imagem": "https://http2.mlstatic.com/D_Q_NP_2X_748325-MLA95379123655_102025-V.webp",
     "cupom": "HOJETEMPROMO"
   }
 ]
