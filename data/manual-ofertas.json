@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Teclado sem fio Logitech Pebble Keys 2 K380s Bluetooth Easy-Switch, Layout US - Branco (preco Prime)",
+    "preco": "R$159,90",
+    "link": "https://www.amazon.com.br/dp/B0CJ3J2WCR?tag=int3ch02-20",
+    "precoOriginal": "R$247,90",
+    "desconto": 35,
+    "imagem": "https://m.media-amazon.com/images/I/61y-lcvG7VL._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Teclado sem fio Logitech Pebble Keys 2 K380s Bluetooth Easy-Switch, Layout US - Rosa (preco Prime)",
     "preco": "R$159,90",
     "link": "https://www.amazon.com.br/dp/B0CJ3P5RX9?tag=int3ch02-20",
@@ -305,12 +313,5 @@
     "link": "https://meli.la/1YHxxsQ",
     "imagem": "https://http2.mlstatic.com/D_Q_NP_2X_750783-MLB92358534719_092025-V.webp",
     "cupom": "COMPRACERTA"
-  },
-  {
-    "titulo": "Tablet Samsung Galaxy Tab A11+, 128gb, 6gb Ram, Tela De 11, Câmera Traseira 8mp, Wifi, Android 16",
-    "preco": "R$1.238,00",
-    "link": "https://meli.la/2RnVk9V",
-    "imagem": "https://http2.mlstatic.com/D_Q_NP_2X_940271-MLA114610203683_072026-V.webp",
-    "cupom": "HOJETEMPROMO"
   }
 ]
