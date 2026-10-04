@@ -31,6 +31,7 @@ const POSTS_BLOG = [
   'overclock-vale-a-pena',
   'm2-vs-sata-ssd',
   'mini-pc-gamer-vale-a-pena',
+  '8gb-vram-suficiente-2026',
 ];
 
 // Noticias tambem sao SSR (mesmo motivo do blog) - mesma lista manual.
