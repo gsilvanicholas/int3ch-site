@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Gabinete Redragon Wideload Pro CA-604B-PRO Preto (preco Prime)",
+    "preco": "R$318,98",
+    "link": "https://www.amazon.com.br/dp/B0CRHN3M8D?tag=int3ch02-20",
+    "precoOriginal": "R$399,90",
+    "desconto": 20,
+    "imagem": "https://m.media-amazon.com/images/I/81ksnT7oAFL._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "ANTUVI Monitor Portatil 15.6'' com Case 1080P, Ultra-Slim, Segunda Tela para Notebook, com alto-falante (preco Prime)",
     "preco": "R$333,89",
     "link": "https://www.amazon.com.br/dp/B0FF9PZG5Z?tag=int3ch02-20",
@@ -306,13 +314,5 @@
     "preco": "R$3.799,05",
     "link": "https://www.amazon.com.br/dp/B0F6D7MQQB?tag=int3ch02-20",
     "imagem": "https://m.media-amazon.com/images/I/51DCY2ooVtL._AC_SL1000_.jpg"
-  },
-  {
-    "titulo": "ATTACK  SHARK R1 Mouse with PAW3311 Sensor Three-mode Wireless Bluetooth Gaming Mouse Customizable",
-    "preco": "R$113,99",
-    "link": "https://shope.ee/an_redir?origin_link=https%3A%2F%2Fshopee.com.br%2Fproduct%2F1460195677%2F27774634871",
-    "precoOriginal": "R$240,03",
-    "desconto": 53,
-    "imagem": "/ofertas/attack-shark-r1-mouse-with-paw3311-sensor-three-mode-wireles.jpg"
   }
 ]
