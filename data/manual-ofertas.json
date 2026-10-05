@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "LG UltraGear Monitor Gamer OLED 27'' 240Hz 0.03ms QHD 2K HDR True Black 400 G-SYNC FreeSync Premium Pro 27GX704 (preco Prime)",
+    "preco": "R$3.599,00",
+    "link": "https://www.amazon.com.br/dp/B0GN9QR7JJ?tag=int3ch02-20",
+    "precoOriginal": "R$3.999,00",
+    "desconto": 10,
+    "imagem": "https://m.media-amazon.com/images/I/61Pyx+-XV5L._AC_SL1200_.jpg"
+  },
+  {
     "titulo": "Mouse Vertical Ergonomico (Bluetooth + Wireless) Ugreen 25444 Preto",
     "preco": "R$112,26",
     "link": "https://www.mercadolivre.com.br/mouse-vertical-ergonomico-bluetoothwireless-ugreen-25444-preto/p/MLB37183070?pdp_filters=item_id%3AMLB4815165959&matt_tool_id=36099038",
@@ -308,13 +316,5 @@
     "precoOriginal": "R$33,90",
     "desconto": 32,
     "imagem": "/ofertas/adaptador-tipo-c-para-usb-otg-3-2-alta-velocidade-10gbps-con.jpg"
-  },
-  {
-    "titulo": "Water Cooler MSI MAG Coreliquid A12, ARGB, 360mm, Intel e AMD, Preto - CLA12360",
-    "preco": "R$309,98",
-    "link": "https://www.amazon.com.br/dp/B0FFJCHP6W?tag=int3ch0f-20",
-    "precoOriginal": "R$504,80",
-    "desconto": 39,
-    "imagem": "https://m.media-amazon.com/images/I/71m8SHYSeRL._SL1500_.jpg"
   }
 ]
