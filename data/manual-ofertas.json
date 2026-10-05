@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "AOC GK280 Teclado sem fio 70% Bluetooth Trimodo/2.4GHz/USB-C RGB Gamer (preco Prime)",
+    "preco": "R$208,05",
+    "link": "https://www.amazon.com.br/dp/B0G5Y91BJL?tag=int3ch02-20",
+    "precoOriginal": "R$289,00",
+    "desconto": 28,
+    "imagem": "https://m.media-amazon.com/images/I/61Dwc5uBnQL._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Gabinete Gamer Redragon Eternal Preto e Vermelho Sem Fans CA-612BR",
     "preco": "R$346,15",
     "link": "https://www.amazon.com.br/dp/B0GJ7GG3YV?tag=int3ch02-20",
@@ -304,13 +312,5 @@
     "preco": "R$37,05",
     "link": "https://www.amazon.com.br/dp/B0FS92VS99?tag=int3ch02-20",
     "imagem": "https://m.media-amazon.com/images/I/51RbIaH-I7L._AC_SL1080_.jpg"
-  },
-  {
-    "titulo": "Processador AMD Ryzen 5 8400F (AM5, 6 Cores, 12 Threads, 4.7 GHz, 22MB Cache, Sem Video, Com Cooler)",
-    "preco": "R$759,98",
-    "link": "https://www.amazon.com.br/dp/B0D2JD6P86?tag=int3ch02-20",
-    "precoOriginal": "R$1.365,16",
-    "desconto": 44,
-    "imagem": "https://m.media-amazon.com/images/I/51drz0yDCJL._AC_SL1000_.jpg"
   }
 ]
