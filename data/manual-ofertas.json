@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Mouse Vertical Ergonomico (Bluetooth + Wireless) Ugreen 25444 Preto",
+    "preco": "R$112,26",
+    "link": "https://www.mercadolivre.com.br/mouse-vertical-ergonomico-bluetoothwireless-ugreen-25444-preto/p/MLB37183070?pdp_filters=item_id%3AMLB4815165959&matt_tool_id=36099038",
+    "precoOriginal": "R$136,90",
+    "desconto": 18,
+    "imagem": "https://http2.mlstatic.com/D_Q_NP_2X_752699-MLA99465438390_112025-V.webp"
+  },
+  {
     "titulo": "Fone de Ouvido Headphone Dapon H02D Bluetooth 5.1 Over-ear 22h Preto",
     "preco": "R$70,30",
     "link": "https://www.mercadolivre.com.br/fone-de-ouvido-headphone-dapon-h02d-bluetooth-51-over-ear-22h-preto/p/MLB24117280?matt_tool_id=36099038",
@@ -308,11 +316,5 @@
     "precoOriginal": "R$504,80",
     "desconto": 39,
     "imagem": "https://m.media-amazon.com/images/I/71m8SHYSeRL._SL1500_.jpg"
-  },
-  {
-    "titulo": "Haiz Monitor Gamer 25'' 144hz 0.5ms 1920x1080 Adaptive Sync FHD HDMI/DP IPS VESA",
-    "preco": "R$484,49",
-    "link": "https://www.amazon.com.br/dp/B0DCW6W5BK?tag=int3ch0f-20",
-    "imagem": "https://m.media-amazon.com/images/I/71fAStedVQL._AC_SL1500_.jpg"
   }
 ]
