@@ -1,5 +1,11 @@
 [
   {
+    "titulo": "Placa-Mae MSI PRO B840M-P WIFI6E",
+    "preco": "R$700,00",
+    "link": "https://www.amazon.com.br/dp/B096Y53VL8?tag=int3ch02-20",
+    "imagem": "https://m.media-amazon.com/images/I/81Ecw3co68L._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Teclado Sem Fio Gamer Magnetico Rapid Trigger 0,01mm 8000hz RGB Fire Phoenix BK-X68 Preto Black Contour",
     "preco": "R$202,40",
     "link": "https://www.mercadolivre.com.br/teclado-sem-fio-gamer-magnetico-rapid-trigger-001mm-8000hz-rgb-fire-phoenix-bk-x68-preto-black-contour/p/MLB68825301?pdp_filters=item_id%3AMLB6989355312&matt_tool_id=36099038",
@@ -308,12 +314,5 @@
     "precoOriginal": "R$699,90",
     "desconto": 36,
     "imagem": "https://m.media-amazon.com/images/I/51HaCM8wFcL._AC_SL1000_.jpg"
-  },
-  {
-    "titulo": "Placa Mae Gigabyte B550m Aorus Elite Am4 Ddr4 Hdmi M-atx Cor Preto",
-    "preco": "R$581,00",
-    "link": "https://meli.la/1zaDbwg",
-    "imagem": "https://http2.mlstatic.com/D_Q_NP_2X_846714-MLA99464080574_112025-V.webp",
-    "cupom": "HOJETEMPROMO"
   }
 ]
