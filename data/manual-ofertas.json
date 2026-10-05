@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Headset Gamer Logitech G335 com Almofadas de Espuma de Memoria, Design Leve e Conexao 3,5mm para PC, PlayStation, Xbox e Nintendo Switch (preco Prime)",
+    "preco": "R$279,90",
+    "link": "https://www.amazon.com.br/dp/B08KKBSDTY?tag=int3ch02-20",
+    "precoOriginal": "R$599,90",
+    "desconto": 53,
+    "imagem": "https://m.media-amazon.com/images/I/71YEF3ZjzkL._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "GameSir X2s Type-C Controlador de jogos movel para Android e iPhone 15 (USB-C) (preco Prime)",
     "preco": "R$195,78",
     "link": "https://www.amazon.com.br/dp/B0CRTMNQBL?tag=int3ch02-20",
@@ -306,13 +314,5 @@
     "precoOriginal": "R$549,99",
     "desconto": 43,
     "imagem": "/ofertas/wap-aspirador-de-po-robo-robot-w90-3-em-1-automatico-250ml-s.jpg"
-  },
-  {
-    "titulo": "Gabinete Gamer Gamdias Neso P1 Br Preto Com Vermelho Branco Com Vermelho",
-    "preco": "R$579,95",
-    "link": "https://www.mercadolivre.com.br/gabinete-gamer-gamdias-neso-p1-br-preto-com-vermelho-branco-com-vermelho/p/MLB27952778?matt_tool_id=36099038",
-    "precoOriginal": "R$993,00",
-    "desconto": 42,
-    "imagem": "https://http2.mlstatic.com/D_Q_NP_2X_823506-MLA91566963224_092025-V.webp"
   }
 ]
