@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "GameSir X2s Type-C Controlador de jogos movel para Android e iPhone 15 (USB-C) (preco Prime)",
+    "preco": "R$195,78",
+    "link": "https://www.amazon.com.br/dp/B0CRTMNQBL?tag=int3ch02-20",
+    "precoOriginal": "R$229,00",
+    "desconto": 15,
+    "imagem": "https://m.media-amazon.com/images/I/517zyogdvoL._AC_SL1000_.jpg"
+  },
+  {
     "titulo": "AOC GK280 Teclado sem fio 70% Bluetooth Trimodo/2.4GHz/USB-C RGB Gamer (preco Prime)",
     "preco": "R$208,05",
     "link": "https://www.amazon.com.br/dp/B0G5Y91BJL?tag=int3ch02-20",
@@ -306,11 +314,5 @@
     "precoOriginal": "R$993,00",
     "desconto": 42,
     "imagem": "https://http2.mlstatic.com/D_Q_NP_2X_823506-MLA91566963224_092025-V.webp"
-  },
-  {
-    "titulo": "DPS iClamper Pocket LCF 2 Pinos - 20A Transparente",
-    "preco": "R$37,05",
-    "link": "https://www.amazon.com.br/dp/B0FS92VS99?tag=int3ch02-20",
-    "imagem": "https://m.media-amazon.com/images/I/51RbIaH-I7L._AC_SL1080_.jpg"
   }
 ]
