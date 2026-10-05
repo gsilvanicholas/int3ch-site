@@ -1,5 +1,11 @@
 [
   {
+    "titulo": "Processador AMD Ryzen 5 8600G (AM5, video integrado, box)",
+    "preco": "R$969,99",
+    "link": "https://www.amazon.com.br/dp/B0CQ4GYTTX?tag=int3ch02-20",
+    "imagem": "https://m.media-amazon.com/images/I/615TPN-DayL._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Placa-Mae MSI PRO B840M-P WIFI6E",
     "preco": "R$700,00",
     "link": "https://www.amazon.com.br/dp/B096Y53VL8?tag=int3ch02-20",
@@ -306,13 +312,5 @@
     "precoOriginal": "R$299,00",
     "desconto": 37,
     "imagem": "https://m.media-amazon.com/images/I/61rGUHFQFiL._AC_SL1500_.jpg"
-  },
-  {
-    "titulo": "Teclado Mecânico Gamer Logitech G PRO com Layout US (teclas em inglês, sem ABNT2), RGB LIGHTSYNC, Design TKL, Cabo Destacável e Switch Exclusivo GX Blue Clicky",
-    "preco": "R$449,90",
-    "link": "https://link.amazon/B026faVOf",
-    "precoOriginal": "R$699,90",
-    "desconto": 36,
-    "imagem": "https://m.media-amazon.com/images/I/51HaCM8wFcL._AC_SL1000_.jpg"
   }
 ]
