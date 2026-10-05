@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Mouse Gamer Redragon Cobra V3 Preto RGB PMW3327 10000DPI M711 V3",
+    "preco": "R$80,32",
+    "link": "https://www.amazon.com.br/dp/B07Q437WXK?tag=int3ch02-20",
+    "precoOriginal": "R$119,90",
+    "desconto": 33,
+    "imagem": "https://m.media-amazon.com/images/I/61saZHQI52L._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Controle sem fio PlayStation DualSense Rhythm Blue (preco Prime)",
     "preco": "R$479,90",
     "link": "https://www.amazon.com.br/dp/B0GFQBQ4KZ?tag=int3ch02-20",
@@ -306,13 +314,5 @@
     "precoOriginal": "R$109,90",
     "desconto": 5,
     "imagem": "https://m.media-amazon.com/images/I/71VoFVTnY8L._AC_SL1500_.jpg"
-  },
-  {
-    "titulo": "Acer Aspire Go 15 Notebook 15.6'' Intel Core i5 13a Geracao 16GB Windows",
-    "preco": "R$4.184,07",
-    "link": "https://www.amazon.com.br/dp/B0FY3TV864?tag=int3ch02-20",
-    "precoOriginal": "R$5.199,00",
-    "desconto": 20,
-    "imagem": "https://m.media-amazon.com/images/I/712nW-3hYBL._AC_SL1500_.jpg"
   }
 ]
