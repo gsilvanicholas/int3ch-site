@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Headphone HB200 Bluetooth Preto Pulse PH430 (preco Prime)",
+    "preco": "R$79,89",
+    "link": "https://www.amazon.com.br/dp/B0D37YTSHG?tag=int3ch02-20",
+    "precoOriginal": "R$139,90",
+    "desconto": 43,
+    "imagem": "https://m.media-amazon.com/images/I/41IRMonUPYL._AC_SL1000_.jpg"
+  },
+  {
     "titulo": "Gabinete Redragon Wideload Pro CA-604B-PRO Preto (preco Prime)",
     "preco": "R$318,98",
     "link": "https://www.amazon.com.br/dp/B0CRHN3M8D?tag=int3ch02-20",
@@ -308,11 +316,5 @@
     "precoOriginal": "R$199,00",
     "desconto": 60,
     "imagem": "https://http2.mlstatic.com/D_Q_NP_2X_696266-MLA97205822349_112025-V.webp"
-  },
-  {
-    "titulo": "Console Nintendo Switch 2 - Modelo Nacional de Tomada",
-    "preco": "R$3.799,05",
-    "link": "https://www.amazon.com.br/dp/B0F6D7MQQB?tag=int3ch02-20",
-    "imagem": "https://m.media-amazon.com/images/I/51DCY2ooVtL._AC_SL1000_.jpg"
   }
 ]
