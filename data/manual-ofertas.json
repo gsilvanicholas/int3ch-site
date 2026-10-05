@@ -1,5 +1,11 @@
 [
   {
+    "titulo": "Gabinete Gamer Redragon Eternal Preto e Vermelho Sem Fans CA-612BR",
+    "preco": "R$346,15",
+    "link": "https://www.amazon.com.br/dp/B0GJ7GG3YV?tag=int3ch02-20",
+    "imagem": "https://m.media-amazon.com/images/I/61dvkSHMZoL._AC_SL1200_.jpg"
+  },
+  {
     "titulo": "Mouse Gamer Redragon Cobra V3 Preto RGB PMW3327 10000DPI M711 V3",
     "preco": "R$80,32",
     "link": "https://www.amazon.com.br/dp/B07Q437WXK?tag=int3ch02-20",
@@ -306,13 +312,5 @@
     "precoOriginal": "R$1.365,16",
     "desconto": 44,
     "imagem": "https://m.media-amazon.com/images/I/51drz0yDCJL._AC_SL1000_.jpg"
-  },
-  {
-    "titulo": "Geonav Power Bank, Carregador Portatil Universal 10.000mAh, Carga rapida, 2 saidas USB-A e 1 USB-C, Preto",
-    "preco": "R$104,40",
-    "link": "https://www.amazon.com.br/dp/B0F6B226NK?tag=int3ch02-20",
-    "precoOriginal": "R$109,90",
-    "desconto": 5,
-    "imagem": "https://m.media-amazon.com/images/I/71VoFVTnY8L._AC_SL1500_.jpg"
   }
 ]
