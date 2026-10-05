@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "ANTUVI Monitor Portatil 15.6'' com Case 1080P, Ultra-Slim, Segunda Tela para Notebook, com alto-falante (preco Prime)",
+    "preco": "R$333,89",
+    "link": "https://www.amazon.com.br/dp/B0FF9PZG5Z?tag=int3ch02-20",
+    "precoOriginal": "R$409,99",
+    "desconto": 19,
+    "imagem": "https://m.media-amazon.com/images/I/71xU-VrqsHL._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Headset Gamer Logitech G335 com Almofadas de Espuma de Memoria, Design Leve e Conexao 3,5mm para PC, PlayStation, Xbox e Nintendo Switch (preco Prime)",
     "preco": "R$279,90",
     "link": "https://www.amazon.com.br/dp/B08KKBSDTY?tag=int3ch02-20",
@@ -306,13 +314,5 @@
     "precoOriginal": "R$240,03",
     "desconto": 53,
     "imagem": "/ofertas/attack-shark-r1-mouse-with-paw3311-sensor-three-mode-wireles.jpg"
-  },
-  {
-    "titulo": "WAP Aspirador de Pó Robô ROBOT W90 3 em 1, Automático, 250ml, Sistema Antiqueda e Rodas Emborrachadas, 30W 3,6VDC Bivolt",
-    "preco": "R$315,41",
-    "link": "https://link.amazon/B07YBBSe7",
-    "precoOriginal": "R$549,99",
-    "desconto": 43,
-    "imagem": "/ofertas/wap-aspirador-de-po-robo-robot-w90-3-em-1-automatico-250ml-s.jpg"
   }
 ]
