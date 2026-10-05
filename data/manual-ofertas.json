@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Smartphone Xiaomi Poco X7 Pro 5G 12GB RAM 512GB Global NFC Dual SIM",
+    "preco": "R$2.316,00",
+    "link": "https://www.mercadolivre.com.br/xiaomi-poco-x7-pro-5g-12gb-ram-512gb-global-nfc-dual-sim/p/MLB47314852?matt_tool_id=36099038",
+    "precoOriginal": "R$4.575,00",
+    "desconto": 49,
+    "imagem": "https://http2.mlstatic.com/D_Q_NP_2X_888609-MLA99444545828_112025-V.webp"
+  },
+  {
     "titulo": "Processador AMD Ryzen 5 8600G (AM5, video integrado, box)",
     "preco": "R$969,99",
     "link": "https://www.amazon.com.br/dp/B0CQ4GYTTX?tag=int3ch02-20",
@@ -304,13 +312,5 @@
     "precoOriginal": "R$449,00",
     "desconto": 35,
     "imagem": "https://m.media-amazon.com/images/I/61rPOZXcaaL._AC_SL1500_.jpg"
-  },
-  {
-    "titulo": "JBL, Fone de Ouvido Bluetooth Over-Ear, Tune 530BT, Sem Fio, Até 76 Horas de Bateria - Azul",
-    "preco": "R$189,00",
-    "link": "https://link.amazon/B07BeJzYf",
-    "precoOriginal": "R$299,00",
-    "desconto": 37,
-    "imagem": "https://m.media-amazon.com/images/I/61rGUHFQFiL._AC_SL1500_.jpg"
   }
 ]
