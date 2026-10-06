@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Gigabyte B650M GAMING WIFI Placa-Mae Micro-ATX, Socket AM5, DDR5, para AMD Ryzen Serie 7000/8000/9000 (preco Prime)",
+    "preco": "R$713,11",
+    "link": "https://www.amazon.com.br/dp/B0D5NM5184?tag=int3ch02-20",
+    "precoOriginal": "R$937,32",
+    "desconto": 24,
+    "imagem": "https://m.media-amazon.com/images/I/61bqSMeAWGL._AC_SL1280_.jpg"
+  },
+  {
     "titulo": "Placa de Video ASRock Radeon RX 7600 Challenger OC, 8GB GDDR6, 128-Bit, FSR, Ray Tracing, Preto",
     "preco": "R$1.899,99",
     "link": "https://www.amazon.com.br/dp/B0C626FFG2?tag=int3ch02-20",
@@ -308,13 +316,5 @@
     "preco": "R$4.789,00",
     "link": "https://www.mercadolivre.com.br/impressora-3d-bambu-lab-a1-combo-ams-110v220v-4-cores/up/MLBU5242472790?pdp_filters=item_id%3AMLB7664947516&matt_tool_id=36099038",
     "imagem": "https://http2.mlstatic.com/D_Q_NP_2X_965623-MLB117876008577_092026-V.webp"
-  },
-  {
-    "titulo": "Cadeira de Escritorio Ergonomica Python Fly em Malha - Testada conforme NR-17, Lombar Integrada Fixa, Assento Arejado, Bracos 3D, Suporta ate 150kg (preto)",
-    "preco": "R$569,04",
-    "link": "https://www.amazon.com.br/dp/B0CZLBXZ56?tag=int3ch02-20",
-    "precoOriginal": "R$799,00",
-    "desconto": 29,
-    "imagem": "https://m.media-amazon.com/images/I/7184zXQJSpL._AC_SL1200_.jpg"
   }
 ]
