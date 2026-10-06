@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Caixa de Som Speaker AIWA SP-05-LB 30W Bluetooth IPX5 (preco Prime)",
+    "preco": "R$290,00",
+    "link": "https://www.amazon.com.br/dp/B0FHYLZ7W1?tag=int3ch02-20",
+    "precoOriginal": "R$330,00",
+    "desconto": 12,
+    "imagem": "https://m.media-amazon.com/images/I/818o0JxXW8L._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "LG UltraGear Monitor Gamer 27'' IPS 240Hz 1ms (GtG) Full HD, sRGB 99%, HDMI 2.0, G-SYNC, FreeSync Premium",
     "preco": "R$1.091,55",
     "link": "https://www.amazon.com.br/dp/B0GNDP4LTL?tag=int3ch02-20",
@@ -304,14 +312,5 @@
     "precoOriginal": "R$799,00",
     "desconto": 51,
     "imagem": "https://http2.mlstatic.com/D_Q_NP_2X_660084-MLA99977469865_112025-V.webp"
-  },
-  {
-    "titulo": "Motorola Moto G56 5G Dual Sim 256GB + 8GB Preto",
-    "preco": "R$1.249,00",
-    "link": "https://www.mercadolivre.com.br/motorola-moto-g56-5g-dual-sim-256gb-8gb-preto/p/MLB67890591?matt_tool_id=36099038",
-    "precoOriginal": "R$2.699,00",
-    "desconto": 54,
-    "imagem": "https://http2.mlstatic.com/D_Q_NP_2X_835488-MLA109454418800_042026-V.webp",
-    "cupom": "VALEDESCONTO"
   }
 ]
