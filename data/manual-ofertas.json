@@ -1,5 +1,11 @@
 [
   {
+    "titulo": "Smart TV Semp 32'' LED Full HD S42R Roku TV, Wi-Fi, Dolby Audio, brilho ate 220 nits 32S42R",
+    "preco": "R$844,55",
+    "link": "https://www.amazon.com.br/dp/B0HC8LP3JZ?tag=int3ch02-20",
+    "imagem": "https://m.media-amazon.com/images/I/51kef+krBEL._AC_SL1000_.jpg"
+  },
+  {
     "titulo": "Gabinete Gamer Kalkan Alfern Lite Preto ATX Mid Tower Sem Fans, Janela Lateral Acrilico, USB 3.0, Frente Mesh KLK00088",
     "preco": "R$116,59",
     "link": "https://www.amazon.com.br/dp/B0GTW7H1BC?tag=int3ch02-20",
@@ -307,15 +313,6 @@
     "precoOriginal": "R$1.069,00",
     "desconto": 23,
     "imagem": "https://http2.mlstatic.com/D_Q_NP_2X_930129-MLU78451929490_082024-V.webp",
-    "cupom": "VALEDESCONTO"
-  },
-  {
-    "titulo": "Monitor Gamer AOC Serie B30 21.5'' Full HD Gaming 120Hz 1ms 22B30HM23 Preto",
-    "preco": "R$377,00",
-    "link": "https://www.mercadolivre.com.br/monitor-gamer-aoc-serie-b30-215-full-hd-gaming-120hz-1ms-22b30hm23-cor-preto/p/MLB50200257?pdp_filters=item_id%3AMLB7620607478&matt_tool_id=36099038",
-    "precoOriginal": "R$419,00",
-    "desconto": 10,
-    "imagem": "https://http2.mlstatic.com/D_Q_NP_2X_621055-MLA91966913733_092025-V.webp",
     "cupom": "VALEDESCONTO"
   }
 ]
