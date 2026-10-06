@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Samsung Galaxy S25 Edge 5G, 512GB, 12GB RAM, Camera 200MP",
+    "preco": "R$3.865,55",
+    "link": "https://www.amazon.com.br/dp/B0F8PP7VMS?smid=ALWWYP7RC31TD&tag=int3ch02-20",
+    "precoOriginal": "R$4.507,00",
+    "desconto": 14,
+    "imagem": "https://m.media-amazon.com/images/I/61DzBFiq6yL._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Caixa de Som Speaker AIWA SP-05-LB 30W Bluetooth IPX5 (preco Prime)",
     "preco": "R$290,00",
     "link": "https://www.amazon.com.br/dp/B0FHYLZ7W1?tag=int3ch02-20",
@@ -304,13 +312,5 @@
     "precoOriginal": "R$149,90",
     "desconto": 56,
     "imagem": "https://http2.mlstatic.com/D_Q_NP_2X_925922-MLA99475407944_112025-V.webp"
-  },
-  {
-    "titulo": "Monitor Portatil Gamer Bettdow 15.6'' Full HD 60Hz IPS Compativel 4K Preto",
-    "preco": "R$394,25",
-    "link": "https://www.mercadolivre.com.br/monitor-portatil-gamer-bettdow-156-full-hd-60hz-ips-compativel-4k-preto/p/MLB44320380?matt_tool_id=36099038",
-    "precoOriginal": "R$799,00",
-    "desconto": 51,
-    "imagem": "https://http2.mlstatic.com/D_Q_NP_2X_660084-MLA99977469865_112025-V.webp"
   }
 ]
