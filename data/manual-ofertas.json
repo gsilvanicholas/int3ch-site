@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Gabinete Gamer Kalkan Alfern Lite Preto ATX Mid Tower Sem Fans, Janela Lateral Acrilico, USB 3.0, Frente Mesh KLK00088",
+    "preco": "R$116,59",
+    "link": "https://www.amazon.com.br/dp/B0GTW7H1BC?tag=int3ch02-20",
+    "precoOriginal": "R$129,53",
+    "desconto": 10,
+    "imagem": "https://m.media-amazon.com/images/I/71jE7BL6LIL._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Cadeira Gamer Fox Racer ate 130kg com RGB e Iluminacao LED, almofadas, Reclinavel, Preta",
     "preco": "R$436,05",
     "link": "https://www.amazon.com.br/dp/B09RNGCHT8?tag=int3ch02-20",
@@ -308,15 +316,6 @@
     "precoOriginal": "R$419,00",
     "desconto": 10,
     "imagem": "https://http2.mlstatic.com/D_Q_NP_2X_621055-MLA91966913733_092025-V.webp",
-    "cupom": "VALEDESCONTO"
-  },
-  {
-    "titulo": "Teclado Gamer Magnetico Dareu Cool68 Ice Black 8000hz Rapid Trigger 0,01mm Hot Swap RGB",
-    "preco": "R$287,00",
-    "link": "https://www.mercadolivre.com.br/teclado-gamer-magnetico-8000hz-rapid-trigger-001mm-hot-swap-switch-ice-blade-cool68-led-rgb-dareu-ice-black/p/MLB68412096?pdp_filters=item_id%3AMLB7363608224&matt_tool_id=36099038",
-    "precoOriginal": "R$319,99",
-    "desconto": 10,
-    "imagem": "https://http2.mlstatic.com/D_Q_NP_2X_974753-MLA110748171653_042026-V.webp",
     "cupom": "VALEDESCONTO"
   }
 ]
