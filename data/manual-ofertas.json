@@ -1,5 +1,11 @@
 [
   {
+    "titulo": "GAINWARD Placa Grafica RTX 5060 Ghost 8GB GDDR7 128bit 3-DP HDMI",
+    "preco": "R$2.639,99",
+    "link": "https://www.amazon.com.br/dp/B0F8H4RWB8?tag=int3ch02-20",
+    "imagem": "https://m.media-amazon.com/images/I/71n1ZJMVzGL._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Samsung Galaxy S25 Edge 5G, 512GB, 12GB RAM, Camera 200MP",
     "preco": "R$3.865,55",
     "link": "https://www.amazon.com.br/dp/B0F8PP7VMS?smid=ALWWYP7RC31TD&tag=int3ch02-20",
@@ -282,12 +288,6 @@
     "precoOriginal": "R$1.449,00",
     "desconto": 35,
     "imagem": "https://m.media-amazon.com/images/I/61Jv+Gj6aBL._AC_SL1000_.jpg"
-  },
-  {
-    "titulo": "GAINWARD Placa Grafica RTX 5060 Ghost 8GB GDDR7 128bit 3-DP HDMI",
-    "preco": "R$2.640,00",
-    "link": "https://www.amazon.com.br/dp/B0F8H4RWB8?tag=int3ch02-20",
-    "imagem": "https://m.media-amazon.com/images/I/71n1ZJMVzGL._AC_SL1500_.jpg"
   },
   {
     "titulo": "Mixer Apr 400 Lamina de Aco 2 Velocidades 400W Amvox Preto",
