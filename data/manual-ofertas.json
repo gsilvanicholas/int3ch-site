@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "LG UltraGear Monitor Gamer 27'' IPS 240Hz 1ms (GtG) Full HD, sRGB 99%, HDMI 2.0, G-SYNC, FreeSync Premium",
+    "preco": "R$1.091,55",
+    "link": "https://www.amazon.com.br/dp/B0GNDP4LTL?tag=int3ch02-20",
+    "precoOriginal": "R$1.699,85",
+    "desconto": 36,
+    "imagem": "https://m.media-amazon.com/images/I/61SrxpFHcDL._AC_SL1200_.jpg"
+  },
+  {
     "titulo": "Smart TV Semp 32'' LED Full HD S42R Roku TV, Wi-Fi, Dolby Audio, brilho ate 220 nits 32S42R",
     "preco": "R$844,55",
     "link": "https://www.amazon.com.br/dp/B0HC8LP3JZ?tag=int3ch02-20",
@@ -304,15 +312,6 @@
     "precoOriginal": "R$2.699,00",
     "desconto": 54,
     "imagem": "https://http2.mlstatic.com/D_Q_NP_2X_835488-MLA109454418800_042026-V.webp",
-    "cupom": "VALEDESCONTO"
-  },
-  {
-    "titulo": "SSD Kingston NV3 1TB M.2 2280 PCIe 4.0 NVMe 6000 MB/s",
-    "preco": "R$822,00",
-    "link": "https://www.mercadolivre.com.br/ssd-kingston-nv3-1tb-m2-2280-pcie-40-nvme-6000-mbs/p/MLB39766120?pdp_filters=item_id%3AMLB7626397204&matt_tool_id=36099038",
-    "precoOriginal": "R$1.069,00",
-    "desconto": 23,
-    "imagem": "https://http2.mlstatic.com/D_Q_NP_2X_930129-MLU78451929490_082024-V.webp",
     "cupom": "VALEDESCONTO"
   }
 ]
