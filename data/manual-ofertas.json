@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Cadeira Gamer Fox Racer ate 130kg com RGB e Iluminacao LED, almofadas, Reclinavel, Preta",
+    "preco": "R$436,05",
+    "link": "https://www.amazon.com.br/dp/B09RNGCHT8?tag=int3ch02-20",
+    "precoOriginal": "R$688,77",
+    "desconto": 37,
+    "imagem": "https://m.media-amazon.com/images/I/51ezTsYlVJL._AC_SL1000_.jpg"
+  },
+  {
     "titulo": "Gigabyte B650M GAMING WIFI Placa-Mae Micro-ATX, Socket AM5, DDR5, para AMD Ryzen Serie 7000/8000/9000 (preco Prime)",
     "preco": "R$713,11",
     "link": "https://www.amazon.com.br/dp/B0D5NM5184?tag=int3ch02-20",
@@ -310,11 +318,5 @@
     "desconto": 10,
     "imagem": "https://http2.mlstatic.com/D_Q_NP_2X_974753-MLA110748171653_042026-V.webp",
     "cupom": "VALEDESCONTO"
-  },
-  {
-    "titulo": "Impressora 3D Bambu Lab A1 Combo AMS 110v/220v 4 Cores Prateado",
-    "preco": "R$4.789,00",
-    "link": "https://www.mercadolivre.com.br/impressora-3d-bambu-lab-a1-combo-ams-110v220v-4-cores/up/MLBU5242472790?pdp_filters=item_id%3AMLB7664947516&matt_tool_id=36099038",
-    "imagem": "https://http2.mlstatic.com/D_Q_NP_2X_965623-MLB117876008577_092026-V.webp"
   }
 ]
