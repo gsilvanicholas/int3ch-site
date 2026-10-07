@@ -1,0 +1,110 @@
+---
+export const prerender = false;
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import TelegramCTA from '../../components/TelegramCTA.astro';
+import OfertasRelacionadas from '../../components/OfertasRelacionadas.astro';
+import FAQ from '../../components/FAQ.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ShareButtons from '../../components/ShareButtons.astro';
+
+const perguntas = [
+  {
+    pergunta: 'O que é drift e como evitar?',
+    resposta: 'Drift é quando o analógico "anda sozinho" e move a câmera ou o personagem sem você encostar. Ele acontece pelo desgaste do potenciômetro, o sensor de contato usado nos analógicos tradicionais. Controles com sensores magnéticos (Hall Effect ou TMR) não têm esse atrito, então o problema é bem menos comum, e é por isso que esse tipo virou o diferencial dos modelos mais novos.',
+  },
+  {
+    pergunta: 'Hall Effect ou TMR: qual é melhor?',
+    resposta: 'Os dois são sensores magnéticos sem contato físico e resolvem o drift. O TMR é uma evolução mais recente, com a proposta de ser mais preciso e gastar menos bateria, mas na prática a diferença percebida entre um bom controle Hall Effect e um TMR é pequena. Pesa mais a qualidade geral do controle (gatilhos, botões, bateria) do que o nome do sensor.',
+  },
+  {
+    pergunta: '2.4 GHz, Bluetooth ou cabo: qual conexão usar?',
+    resposta: 'Cabo e 2.4 GHz com adaptador USB têm o menor atraso e são os mais indicados pra jogo competitivo. Bluetooth é mais prático (funciona com celular, tablet e console sem adaptador), mas costuma ter um pouco mais de latência. Muitos controles trazem os dois modos, e vale escolher um que tenha o 2.4 GHz se você joga muito no PC.',
+  },
+  {
+    pergunta: 'Controle de PlayStation ou Xbox funciona no PC?',
+    resposta: 'Funciona. O controle do Xbox é reconhecido direto no Windows. O DualSense do PlayStation também conecta por cabo ou Bluetooth, mas alguns jogos só mostram os botões certos ou liberam recursos como o gatilho adaptativo com ajustes extras no Steam. Se a ideia é jogar só no PC, um controle no padrão XInput (o mesmo do Xbox) costuma dar menos dor de cabeça.',
+  },
+  {
+    pergunta: 'Controle de celular (de encaixar) vale a pena?',
+    resposta: 'Vale pra quem joga bastante no celular ou usa streaming de jogos. Ele prende nas laterais do aparelho, dá botões e analógicos de verdade e não depende de bateria própria na maioria dos modelos. Confira a compatibilidade com o seu celular (USB-C ou Lightning, e o tamanho da capa) antes de comprar.',
+  },
+];
+
+const tipos = [
+  {
+    nome: 'Entrada (até R$150)',
+    para: 'Jogos casuais, platformers, emulador e quem só precisa de um controle que funcione',
+    olhar: ['Conexão por cabo ou 2.4 GHz: mais estável e sem atraso nessa faixa', 'Confira se o padrão é XInput (compatível com a maioria dos jogos de PC)', 'Avaliações de durabilidade: nessa faixa a qualidade varia muito de marca pra marca'],
+  },
+  {
+    nome: 'Intermediário (R$150 a R$350)',
+    para: 'Quem joga com frequência e quer analógicos que não deem drift',
+    olhar: ['Sensores magnéticos (Hall Effect ou TMR) no analógico e nos gatilhos', 'Conexão dupla (2.4 GHz e Bluetooth) e bateria de várias horas', 'Dock de carregamento e botões extras programáveis são um bônus útil'],
+  },
+  {
+    nome: 'Premium (R$350+)',
+    para: 'Uso intenso, jogo competitivo ou quem quer o melhor conforto e acabamento',
+    olhar: ['Construção melhor, gatilhos ajustáveis e botões traseiros', 'Recursos próprios do ecossistema (como o gatilho adaptativo do DualSense)', 'Software pra remapear botões e ajustar a sensibilidade'],
+  },
+];
+---
+<BaseLayout
+  title="Como Escolher um Controle para PC e Celular: Guia de Compra 2026"
+  description="Hall Effect, TMR, 2.4 GHz ou Bluetooth: veja o que realmente importa na hora de escolher um controle para PC, console ou celular, por faixa de orçamento."
+>
+  <Breadcrumbs itens={[{ nome: 'Início', href: '/' }, { nome: 'Guias', href: '/guias' }, { nome: 'Controle' }]} />
+  <section class="max-w-3xl mx-auto px-4 sm:px-6 pt-6 pb-14">
+    <p class="text-brand-2 font-semibold uppercase text-sm tracking-wide mb-3">Guia de compra</p>
+    <h1 class="text-3xl sm:text-4xl font-extrabold text-text leading-tight">Como Escolher um Controle</h1>
+    <p class="text-muted text-lg mt-4">
+      Tem controle de R$80 e de R$600, e o que mais envelhece mal é o analógico que dá drift. Veja o que olhar
+      em cada faixa de preço pra jogar no PC, no console ou no celular.
+    </p>
+
+    <div class="mt-5">
+      <ShareButtons titulo="Como Escolher um Controle" />
+    </div>
+
+    <div class="mt-10 space-y-6">
+      {tipos.map((t) => (
+        <div class="rounded-2xl border border-line bg-panel p-6">
+          <div class="flex items-baseline justify-between flex-wrap gap-2">
+            <h2 class="text-xl font-bold text-text">{t.nome}</h2>
+            <span class="text-muted text-sm">{t.para}</span>
+          </div>
+          <ul class="mt-4 space-y-2">
+            {t.olhar.map((item) => (
+              <li class="text-sm text-muted flex gap-2">
+                <span class="text-brand-2">✓</span> {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+
+    <div class="mt-10 rounded-2xl border border-brand/30 bg-gradient-to-br from-panel to-panel-2 p-6">
+      <h2 class="text-xl font-bold text-text">O que mais pesa na escolha: sensor do analógico e conexão</h2>
+      <p class="text-muted text-sm mt-3 leading-relaxed">
+        Pra durar, prefira controles com <strong class="text-text">sensor magnético (Hall Effect ou TMR)</strong>:
+        eles não sofrem o desgaste que causa o <strong class="text-text">drift</strong> nos analógicos comuns.
+        Pra jogar no PC, a conexão por <strong class="text-text">cabo ou 2.4 GHz</strong> tem o menor atraso, e o
+        Bluetooth fica como segunda opção pra celular e tablet. Confira também o padrão de compatibilidade
+        (XInput é o mais aceito nos jogos de PC) antes de fechar a compra.
+      </p>
+    </div>
+
+    <OfertasRelacionadas
+      titulo="Controles em oferta agora"
+      termos={['controle', 'gamepad', 'joystick']}
+      excluir={['remoto', 'tv', 'ar condicionado', 'capa', 'suporte', 'grip', 'portão', 'portao', 'cabo']}
+    />
+
+    <FAQ perguntas={perguntas} />
+
+    <div class="mt-12">
+      <TelegramCTA variant="banner" texto="Controle bom em promoção passa rápido — entre no canal pra não perder." />
+    </div>
+  </section>
+</BaseLayout>

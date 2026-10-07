@@ -59,6 +59,7 @@ const GUIAS = [
   'gabinete',
   'headset-gamer',
   'cooler',
+  'controle',
 ];
 
 // https://astro.build/config
