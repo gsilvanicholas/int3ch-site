@@ -42,6 +42,7 @@ const NOTICIAS = [
   'lian-li-edge-hub-adv-gpu',
   'minisforum-atomman-g1-pro-mini-pc-gamer',
   'steam-setembro-2026-rtx-5070-32gb-ram',
+  'pichau-arena-2026-joinville',
 ];
 
 // Guias (funis) tambem sao SSR - mesma lista manual. Atualizar ao adicionar
