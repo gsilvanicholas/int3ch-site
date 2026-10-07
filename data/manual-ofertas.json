@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Headset Gamer Redragon Zeus Pro Preto Sem Fio 7.1 H510-PRO (preco Prime)",
+    "preco": "R$299,00",
+    "link": "https://www.amazon.com.br/dp/B0CNKVYLF5?tag=int3ch02-20",
+    "precoOriginal": "R$447,50",
+    "desconto": 33,
+    "imagem": "https://m.media-amazon.com/images/I/619T-Fp+EkL._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Controle Gamer Machenike G3 V2 com Dock, Hall Effect, para PC, Android, iPhone e Nintendo Switch",
     "preco": "R$98,38",
     "link": "https://s.click.aliexpress.com/e/_c4LtvMdf",
@@ -305,13 +313,5 @@
     "precoOriginal": "R$165,40",
     "desconto": 64,
     "imagem": "https://http2.mlstatic.com/D_Q_NP_2X_627209-MLA99957233851_112025-V.webp"
-  },
-  {
-    "titulo": "Fone Open Ear Dapon DPF25 Bluetooth 6.0 Sem Fio Azul",
-    "preco": "R$71,84",
-    "link": "https://www.mercadolivre.com.br/fone-open-ear-dapon-dpf25-bluetooth-60-sem-fio-azul/p/MLB77083873?pdp_filters=item_id%3AMLB7397308322&matt_tool_id=36099038",
-    "precoOriginal": "R$109,00",
-    "desconto": 34,
-    "imagem": "https://http2.mlstatic.com/D_Q_NP_2X_693187-MLA114651303696_082026-V.webp"
   }
 ]
