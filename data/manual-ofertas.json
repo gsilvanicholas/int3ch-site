@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Placa de Video ASRock Radeon RX 7600 Challenger OC, 8GB GDDR6, 128-Bit, FSR, Ray Tracing, Preto",
+    "preco": "R$1.839,99",
+    "link": "https://www.amazon.com.br/dp/B0C626FFG2?tag=int3ch02-20",
+    "precoOriginal": "R$2.149,99",
+    "desconto": 14,
+    "imagem": "https://m.media-amazon.com/images/I/612GZBgV5TL._AC_SL1200_.jpg"
+  },
+  {
     "titulo": "Amazon Fire TV Stick HD (modelo mais recente), Controle Remoto por Voz com Alexa, alimentado pela TV",
     "preco": "R$224,00",
     "link": "https://www.amazon.com.br/dp/B0DVK166SV?tag=int3ch02-20",
@@ -84,14 +92,6 @@
     "precoOriginal": "R$937,32",
     "desconto": 24,
     "imagem": "https://m.media-amazon.com/images/I/61bqSMeAWGL._AC_SL1280_.jpg"
-  },
-  {
-    "titulo": "Placa de Video ASRock Radeon RX 7600 Challenger OC, 8GB GDDR6, 128-Bit, FSR, Ray Tracing, Preto",
-    "preco": "R$1.899,99",
-    "link": "https://www.amazon.com.br/dp/B0C626FFG2?tag=int3ch02-20",
-    "precoOriginal": "R$2.149,99",
-    "desconto": 12,
-    "imagem": "https://m.media-amazon.com/images/I/612GZBgV5TL._AC_SL1200_.jpg"
   },
   {
     "titulo": "Kit Starlink Mini Internet via Satelite, Dual Band, Wi-Fi 5, Ethernet, Branco 2535008br (plano de assinatura vendido a parte)",
