@@ -1,5 +1,11 @@
 [
   {
+    "titulo": "GAINWARD Placa Grafica RTX 5060 Ghost 8GB GDDR7 128bit 3-DP HDMI",
+    "preco": "R$2.639,99",
+    "link": "https://www.amazon.com.br/dp/B0F8H4RWB8?tag=int3ch02-20",
+    "imagem": "https://m.media-amazon.com/images/I/71n1ZJMVzGL._AC_SL1500_.jpg"
+  },
+  {
     "titulo": "Placa de Video ASRock Radeon RX 7600 Challenger OC, 8GB GDDR6, 128-Bit, FSR, Ray Tracing, Preto",
     "preco": "R$1.839,99",
     "link": "https://www.amazon.com.br/dp/B0C626FFG2?tag=int3ch02-20",
@@ -32,12 +38,6 @@
     "desconto": 15,
     "imagem": "https://ae-pic-a1.aliexpress-media.com/kf/S4abcba0839e345ce848a65796b89e7dbw.jpg",
     "cupom": "BRCD1"
-  },
-  {
-    "titulo": "GAINWARD Placa Grafica RTX 5060 Ghost 8GB GDDR7 128bit 3-DP HDMI",
-    "preco": "R$2.639,99",
-    "link": "https://www.amazon.com.br/dp/B0F8H4RWB8?tag=int3ch02-20",
-    "imagem": "https://m.media-amazon.com/images/I/71n1ZJMVzGL._AC_SL1500_.jpg"
   },
   {
     "titulo": "Samsung Galaxy S25 Edge 5G, 512GB, 12GB RAM, Camera 200MP",
