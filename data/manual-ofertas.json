@@ -1,5 +1,14 @@
 [
   {
+    "titulo": "Amazon Fire TV Stick HD (modelo mais recente), Controle Remoto por Voz com Alexa, alimentado pela TV",
+    "preco": "R$224,00",
+    "link": "https://www.amazon.com.br/dp/B0DVK166SV?tag=int3ch02-20",
+    "precoOriginal": "R$277,67",
+    "desconto": 19,
+    "imagem": "https://m.media-amazon.com/images/I/61EwP1HwXlL._AC_SL1500_.jpg",
+    "cupom": "NOITEPRIME"
+  },
+  {
     "titulo": "Headset Gamer Redragon Zeus Pro Preto Sem Fio 7.1 H510-PRO (preco Prime)",
     "preco": "R$299,00",
     "link": "https://www.amazon.com.br/dp/B0CNKVYLF5?tag=int3ch02-20",
@@ -305,13 +314,5 @@
     "precoOriginal": "R$1.449,00",
     "desconto": 35,
     "imagem": "https://m.media-amazon.com/images/I/61Jv+Gj6aBL._AC_SL1000_.jpg"
-  },
-  {
-    "titulo": "Mixer Apr 400 Lamina de Aco 2 Velocidades 400W Amvox Preto",
-    "preco": "R$59,00",
-    "link": "https://www.mercadolivre.com.br/mixer-apr-400-lamina-de-aco-2-velocidade-400w-amvox-cor-preto/p/MLB29008928?pdp_filters=item_id%3AMLB4959080006&matt_tool_id=36099038",
-    "precoOriginal": "R$165,40",
-    "desconto": 64,
-    "imagem": "https://http2.mlstatic.com/D_Q_NP_2X_627209-MLA99957233851_112025-V.webp"
   }
 ]
