@@ -1,5 +1,14 @@
 [
   {
+    "titulo": "Placa de Video Inno3D Nvidia GeForce RTX 5070 12GB GDDR6",
+    "preco": "R$4.973,00",
+    "link": "https://www.mercadolivre.com.br/placa-de-video-inno3d-nvidia-geforce-rtx-5070-12gb-gddr6/p/MLB53659625?matt_tool_id=36099038",
+    "precoOriginal": "R$5.173,00",
+    "desconto": 4,
+    "imagem": "https://http2.mlstatic.com/D_Q_NP_2X_666984-MLA99504982496_112025-V.webp",
+    "cupom": "BOLSOCHEIO"
+  },
+  {
     "titulo": "Placa De Vídeo Superframe Nvidia Geforce Rtx 3070 Epic 8GB",
     "preco": "R$2.155,00",
     "link": "https://meli.la/2yLDWnR",
@@ -305,14 +314,5 @@
     "desconto": 27,
     "imagem": "https://ae-pic-a1.aliexpress-media.com/kf/S1d6053bfb45248b4acd70d45a11a635cT.jpg",
     "cupom": "BRCD1"
-  },
-  {
-    "titulo": "Controle Sem Fio 8BitDo Ultimate 2 com Dock, RGB, Joysticks TMR, Motion Control, Bluetooth/2.4G para PC e Android",
-    "preco": "R$201,00",
-    "link": "https://s.click.aliexpress.com/e/_c2JWdN1L",
-    "precoOriginal": "R$258,18",
-    "desconto": 22,
-    "imagem": "https://ae-pic-a1.aliexpress-media.com/kf/S31d015e19a134d46980af638a5f333e5Q.jpg",
-    "cupom": "BRCD2"
   }
 ]
