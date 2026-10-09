@@ -1,5 +1,14 @@
 [
   {
+    "titulo": "SSD 1TB Western Digital Green SN350 NVMe Gen3 M.2 2280 Azul",
+    "preco": "R$808,68",
+    "link": "https://www.mercadolivre.com.br/ssd-1tb-western-digital-green-sn350-nvme-gen3-m2-2280-azul/p/MLB54166677?matt_tool_id=36099038",
+    "precoOriginal": "R$900,68",
+    "desconto": 10,
+    "imagem": "https://http2.mlstatic.com/D_Q_NP_2X_932631-MLA96073227449_102025-V.webp",
+    "cupom": "MELIMAIS"
+  },
+  {
     "titulo": "Placa de Video ASRock Radeon RX 7600 8GB Challenger OC GDDR6 HDMI 2.1",
     "preco": "R$1.799,00",
     "link": "https://www.mercadolivre.com.br/placa-de-video-asrock-radeon-rx-7600-8gb-challenger-oc-gddr6-hdmi-21/p/MLB26915018?pdp_filters=item_id%3AMLB7761665108&matt_tool_id=36099038",
@@ -303,14 +312,5 @@
     "precoOriginal": "R$247,90",
     "desconto": 35,
     "imagem": "https://m.media-amazon.com/images/I/61vnuYiLrXL._AC_SL1500_.jpg"
-  },
-  {
-    "titulo": "Webcam Fifine K420 2K 1440p Full HD com Microfone e Tripe para PC, Desktop e Notebook",
-    "preco": "R$80,00",
-    "link": "https://s.click.aliexpress.com/e/_c4oqqsdR",
-    "precoOriginal": "R$101,25",
-    "desconto": 21,
-    "imagem": "https://ae-pic-a1.aliexpress-media.com/kf/Sfba9e5229a304069ac31d3f7dbdb7664E.jpg",
-    "cupom": "BRCD1"
   }
 ]
