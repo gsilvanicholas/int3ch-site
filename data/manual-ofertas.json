@@ -1,5 +1,14 @@
 [
   {
+    "titulo": "Mouse Gamer Redragon Astrolabe Lite Preto PAW3313 10000 DPI Sem Fio Tri-Mode USB 2.4GHz Bluetooth, USB Tipo-C, Estrutura Perfurada Honeycomb 49g",
+    "preco": "R$53,00",
+    "link": "https://www.amazon.com.br/dp/B0G4VCY39X?tag=int3ch02-20",
+    "precoOriginal": "R$83,11",
+    "desconto": 36,
+    "imagem": "https://m.media-amazon.com/images/I/71paPjEiEjL._AC_SL1500_.jpg",
+    "cupom": "AMOPRIME15"
+  },
+  {
     "titulo": "SSD 1TB Western Digital Green SN350 NVMe Gen3 M.2 2280 Azul",
     "preco": "R$808,68",
     "link": "https://www.mercadolivre.com.br/ssd-1tb-western-digital-green-sn350-nvme-gen3-m2-2280-azul/p/MLB54166677?matt_tool_id=36099038",
@@ -304,13 +313,5 @@
     "precoOriginal": "R$247,90",
     "desconto": 35,
     "imagem": "https://m.media-amazon.com/images/I/61y-lcvG7VL._AC_SL1500_.jpg"
-  },
-  {
-    "titulo": "Teclado sem fio Logitech Pebble Keys 2 K380s Bluetooth Easy-Switch, Layout US - Rosa (preco Prime)",
-    "preco": "R$159,90",
-    "link": "https://www.amazon.com.br/dp/B0CJ3P5RX9?tag=int3ch02-20",
-    "precoOriginal": "R$247,90",
-    "desconto": 35,
-    "imagem": "https://m.media-amazon.com/images/I/61vnuYiLrXL._AC_SL1500_.jpg"
   }
 ]
