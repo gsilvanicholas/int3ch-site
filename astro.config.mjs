@@ -43,6 +43,7 @@ const NOTICIAS = [
   'minisforum-atomman-g1-pro-mini-pc-gamer',
   'steam-setembro-2026-rtx-5070-32gb-ram',
   'pichau-arena-2026-joinville',
+  'pimax-spation-mini-pc-steamos',
 ];
 
 // Guias (funis) tambem sao SSR - mesma lista manual. Atualizar ao adicionar
