@@ -1,5 +1,14 @@
 [
   {
+    "titulo": "Placa de Video ASRock Radeon RX 7600 8GB Challenger OC GDDR6 HDMI 2.1",
+    "preco": "R$1.799,00",
+    "link": "https://www.mercadolivre.com.br/placa-de-video-asrock-radeon-rx-7600-8gb-challenger-oc-gddr6-hdmi-21/p/MLB26915018?pdp_filters=item_id%3AMLB7761665108&matt_tool_id=36099038",
+    "precoOriginal": "R$1.999,00",
+    "desconto": 10,
+    "imagem": "https://http2.mlstatic.com/D_Q_NP_2X_943539-MLA99518576410_112025-V.webp",
+    "cupom": "BOLSOCHEIO"
+  },
+  {
     "titulo": "Placa de Vídeo Inno3D Nvidia GeForce RTX 5070 12GB GDDR6",
     "preco": "R$4.973,00",
     "link": "https://meli.la/2K6gDFJ",
@@ -302,15 +311,6 @@
     "precoOriginal": "R$101,25",
     "desconto": 21,
     "imagem": "https://ae-pic-a1.aliexpress-media.com/kf/Sfba9e5229a304069ac31d3f7dbdb7664E.jpg",
-    "cupom": "BRCD1"
-  },
-  {
-    "titulo": "Mouse Gamer Sem Fio Attack Shark X11 Tri-Mode com Dock Magnetica PAW3311 22000 DPI Bluetooth/2.4G (branco)",
-    "preco": "R$77,00",
-    "link": "https://s.click.aliexpress.com/e/_c3OTrTH7",
-    "precoOriginal": "R$105,72",
-    "desconto": 27,
-    "imagem": "https://ae-pic-a1.aliexpress-media.com/kf/S1d6053bfb45248b4acd70d45a11a635cT.jpg",
     "cupom": "BRCD1"
   }
 ]
