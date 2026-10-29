@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Cabo HDMI para VGA 3 Metros Conversor 1080p PC Notebook Monitor",
+    "preco": "R$49,99",
+    "link": "https://shope.ee/an_redir?origin_link=https%3A%2F%2Fshopee.com.br%2Fproduct%2F344506366%2F58213434970",
+    "precoOriginal": "R$79,99",
+    "desconto": 38,
+    "imagem": "/ofertas/cabo-hdmi-para-vga-3-metros-conversor-1080p-pc-notebook-moni.jpg"
+  },
+  {
     "titulo": "Bluetooth Celular Original LG B220 Simples Teclado Para Idoso Ou Áreas Rurais Dual SIM Telefone Com FM E Lanterna 2GGSM",
     "preco": "R$139,00",
     "link": "https://shope.ee/an_redir?origin_link=https%3A%2F%2Fshopee.com.br%2Fproduct%2F1834123639%2F58268615549",
@@ -309,13 +317,5 @@
     "precoOriginal": "R$3.999,00",
     "desconto": 10,
     "imagem": "https://m.media-amazon.com/images/I/61Pyx+-XV5L._AC_SL1200_.jpg"
-  },
-  {
-    "titulo": "Mouse Vertical Ergonomico (Bluetooth + Wireless) Ugreen 25444 Preto",
-    "preco": "R$112,26",
-    "link": "https://www.mercadolivre.com.br/mouse-vertical-ergonomico-bluetoothwireless-ugreen-25444-preto/p/MLB37183070?pdp_filters=item_id%3AMLB4815165959&matt_tool_id=36099038",
-    "precoOriginal": "R$136,90",
-    "desconto": 18,
-    "imagem": "https://http2.mlstatic.com/D_Q_NP_2X_752699-MLA99465438390_112025-V.webp"
   }
 ]
