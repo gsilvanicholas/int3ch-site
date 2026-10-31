@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Teclado e Mouse Sem Fio – Recarregável, 150h de Bateria, Compatível com Tablet, Notebook e Celular",
+    "preco": "R$43,69",
+    "link": "https://shope.ee/an_redir?origin_link=https%3A%2F%2Fshopee.com.br%2Fproduct%2F1609769135%2F22394327549",
+    "precoOriginal": "R$98,99",
+    "desconto": 56,
+    "imagem": "/ofertas/teclado-e-mouse-sem-fio-recarregavel-150h-de-bateria-compati.jpg"
+  },
+  {
     "titulo": "Cabo HDMI para VGA 3 Metros Conversor 1080p PC Notebook Monitor",
     "preco": "R$49,99",
     "link": "https://shope.ee/an_redir?origin_link=https%3A%2F%2Fshopee.com.br%2Fproduct%2F344506366%2F58213434970",
@@ -309,13 +317,5 @@
     "precoOriginal": "R$2.941,16",
     "desconto": 18,
     "imagem": "https://m.media-amazon.com/images/I/71NMFO0iUhL._AC_SL1500_.jpg"
-  },
-  {
-    "titulo": "LG UltraGear Monitor Gamer OLED 27'' 240Hz 0.03ms QHD 2K HDR True Black 400 G-SYNC FreeSync Premium Pro 27GX704 (preco Prime)",
-    "preco": "R$3.599,00",
-    "link": "https://www.amazon.com.br/dp/B0GN9QR7JJ?tag=int3ch02-20",
-    "precoOriginal": "R$3.999,00",
-    "desconto": 10,
-    "imagem": "https://m.media-amazon.com/images/I/61Pyx+-XV5L._AC_SL1200_.jpg"
   }
 ]
