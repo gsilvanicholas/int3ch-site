@@ -1,5 +1,13 @@
 [
   {
+    "titulo": "Mouse Wireless Bluetooth 5.2 RGB Silencioso Recarregável Pronta Entrega",
+    "preco": "R$20,99",
+    "link": "https://shope.ee/an_redir?origin_link=https%3A%2F%2Fshopee.com.br%2Fproduct%2F1724021947%2F58259566514",
+    "precoOriginal": "R$37,98",
+    "desconto": 45,
+    "imagem": "/ofertas/mouse-wireless-bluetooth-5-2-rgb-silencioso-recarregavel-pro.jpg"
+  },
+  {
     "titulo": "Teclado e Mouse Sem Fio – Recarregável, 150h de Bateria, Compatível com Tablet, Notebook e Celular",
     "preco": "R$43,69",
     "link": "https://shope.ee/an_redir?origin_link=https%3A%2F%2Fshopee.com.br%2Fproduct%2F1609769135%2F22394327549",
@@ -309,13 +317,5 @@
     "preco": "R$311,89",
     "link": "https://www.amazon.com.br/dp/B0GJ716T2R?tag=int3ch02-20",
     "imagem": "https://m.media-amazon.com/images/I/61NXdWkfXeL._SL1500_.jpg"
-  },
-  {
-    "titulo": "Processador AMD Ryzen 7 9800X3D (AM5, 8 Cores, 16 Threads, 5.2 GHz, 104MB Cache, sem cooler)",
-    "preco": "R$2.399,99",
-    "link": "https://www.amazon.com.br/dp/B0DKFMSMYK?tag=int3ch02-20",
-    "precoOriginal": "R$2.941,16",
-    "desconto": 18,
-    "imagem": "https://m.media-amazon.com/images/I/71NMFO0iUhL._AC_SL1500_.jpg"
   }
 ]
